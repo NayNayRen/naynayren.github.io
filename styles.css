@@ -546,6 +546,14 @@ input[name='r']{
   #r6:checked ~ .slide1{
     margin-left: -1500px;
   }
+  
+  .social-media-button{
+    font-size: 35px;
+  }
+
+  .social-media-container{
+    max-width: 90%;
+  }
 
   .slideshow{
     height: 150px;
