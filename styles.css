@@ -517,7 +517,15 @@ input[name='r']{
 }
 
 @media (max-width: 500px){
+  
+    .heading{
+    margin-bottom: 0;
+  }
 
+  h3{
+    font-size: 16px;
+  }
+  
   .nav-button{
     font-size: 18px;
     margin: 0 5px;
