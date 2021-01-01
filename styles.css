@@ -10,8 +10,8 @@
   font-size: 20px;
   height: 100%;
   line-height: 25px;
-  margin: 50px auto;
-  max-width: 75%;
+  margin: 20px auto;
+  max-width: 85%;
   padding: 20px;
   text-shadow: -1px 1px 1px #000,
   1px 1px 2px #000,
@@ -135,12 +135,12 @@ fieldset {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 35px;
+  margin: 0;
 }
 .heading-span{
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  font-style: italic;
 }
 
 html{
@@ -152,25 +152,15 @@ h3{
   background: -webkit-linear-gradient(left, rgb(255,140,0), rgb(255,0,255));
   background: -o-linear-gradient(left, rgb(255,140,0), rgb(255,0,255));
   background: linear-gradient(to right, rgb(255,140,0), rgb(255,0,255));
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
   margin: 0;
-  padding: 30px;
+  height: 100px;
   position: relative;
-  text-align: center;
-  text-shadow: -1px 1px 1px #000,
-  1px 1px 2px #000,
-  1px -1px 0 #000,
-  -1px -1px 0 #000,
-  2px 0 2px #000;
   width: 100%;
 }
 h3::after, h3::before{
-  border-radius: 20px;
-  bottom: -55px;
+  bottom: -35px;
   content: '';
-  height: 200px;
+  height: 175px;
   position: absolute;
   width: 75px;
   z-index: -1;
@@ -211,6 +201,7 @@ li{
 }
 
 .nav-container{
+  border-bottom: solid 1px #fff;
   background-color: #000;
   display: flex;
   flex-direction: row;
@@ -396,7 +387,6 @@ input[name='r']{
   }
 
   h3{
-    font-size: 22px;
   }
 
   .degree-container{
@@ -469,6 +459,13 @@ input[name='r']{
     font-size: 18px;
   }
 
+  .heading{
+    font-size: 30px;
+  }
+  .heading-span{
+    font-size: 16px;
+  }
+
   h3{
     font-size: 20px;
   }
@@ -517,7 +514,7 @@ input[name='r']{
 }
 
 @media (max-width: 500px){
-  
+
     .heading{
     margin-bottom: 0;
   }
@@ -525,7 +522,7 @@ input[name='r']{
   h3{
     font-size: 16px;
   }
-  
+
   .nav-button{
     font-size: 18px;
     margin: 0 5px;
@@ -546,7 +543,7 @@ input[name='r']{
   #r6:checked ~ .slide1{
     margin-left: -1500px;
   }
-  
+
   .social-media-button{
     font-size: 35px;
   }
