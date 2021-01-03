@@ -53,7 +53,7 @@ body{
 }
 
 .closing{
-  margin: 40px 0;
+  margin-top: 40px;
   max-width: 100%;
   padding: 30px;
   text-align: center;
@@ -200,7 +200,7 @@ li{
 }
 
 .main-container{
-  min-height: 100%;
+  min-height: 60vh;
   padding-bottom: 25px;
   width: 100%;
 }
