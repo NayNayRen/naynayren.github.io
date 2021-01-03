@@ -43,6 +43,8 @@
 
 body{
   background-attachment: fixed;
+  background-image: -webkit-linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('img/atom-background.jpg');
+  background-image: -o-linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('img/atom-background.jpg');
   background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('img/atom-background.jpg');
   background-size: cover;
   margin: 0;
@@ -102,7 +104,7 @@ fieldset {
   border-top: none;
   line-height: 25px;
   margin: auto;
-  max-width: 70%;
+  max-width: 80%;
 }
 
 .fixed {
@@ -290,12 +292,10 @@ input[name='r']{
 }
 
 .slideshow-navigation{
-  bottom: 10px;
   display: flex;
+  height: 60px;
   justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
+  position: relative;
 }
 
 .slides{
@@ -315,14 +315,20 @@ input[name='r']{
 
 .slide-count{
   background: rgba(0,0,0,0.85);
-  border-bottom: solid 1px #fff;
-  border-right: solid 1px #fff;
+  border-top: solid 1px #fff;
+  border-left: solid 1px #fff;
+  bottom: 0;
   color: #fff;
   font-size: 14px;
-  left: 0;
   padding: 0 5px;
   position: absolute;
-  top: 0;
+  right: 0;
+}
+
+.slide-use{
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
 }
 
 .social-media-button{
@@ -370,6 +376,12 @@ input[name='r']{
   color: rgb(255,99,71);
   list-style-type: none;
   margin-bottom: 5px;
+}
+
+.up-arrow{
+  color: rgb(255,99,71);
+  bottom: 0;
+  position: absolute;
 }
 
 
@@ -431,6 +443,10 @@ input[name='r']{
     width: 600px;
   }
 
+  .slideshow-navigation{
+    height: 50px;
+  }
+
   .slide img{
     width: 600px;
   }
@@ -446,7 +462,7 @@ input[name='r']{
 
 @media (max-width: 700px){
 
-  .about-container, .education-container, .projects-container, .work-container, .contact-container, fieldset{
+  .about-container, .education-container, .projects-container, .work-container, .contact-container{
     font-size: 16px;
     max-width: 100%;
   }
@@ -464,6 +480,11 @@ input[name='r']{
   .degree-text{
     font-size: 18px;
   }
+
+   fieldset{
+     font-size: 16px;
+     max-width: 90%;
+   }
 
   .heading{
     font-size: 30px;
@@ -510,6 +531,11 @@ input[name='r']{
     height: 200px;
     width: 400px;
   }
+  .slideshow-bar{
+    height: 15px;
+    margin: 0 5px;
+    width: 50px;
+  }
 
   .slide img{
     width: 400px;
@@ -552,6 +578,21 @@ input[name='r']{
     margin-left: -1500px;
   }
 
+  .slideshow{
+    height: 150px;
+    width: 300px;
+  }
+
+  .slideshow-bar{
+    height: 15px;
+    margin: 0 2px;
+    width: 45px;
+  }
+
+  .slide img{
+    width: 300px;
+  }
+
   .social-media-button{
     font-size: 30px;
   }
@@ -560,13 +601,6 @@ input[name='r']{
     max-width: 90%;
   }
 
-  .slideshow{
-    height: 150px;
-    width: 300px;
-  }
 
-  .slide img{
-    width: 300px;
-  }
 
 }
