@@ -130,6 +130,8 @@ fieldset {
 .header{
   background-color: #000;
   padding: 10px 0 0 10px;
+  position: relative;
+  width: 100%;
 }
 
 .heading{
@@ -180,25 +182,30 @@ h4{
   font-size: 25px;
 }
 
-.horizontal:before, .horizontal-purple:before {
-  border-top: solid 2px #fff;
+.horizontal:before {
+  background: linear-gradient(to right, rgb(255,140,0), rgb(255,0,255));
+  border-radius: 5px;
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 15px;
   left: 0;
   width: 0;
-  height: 15px;
+  height: 2px;
   transition: all 200ms ease-out;
 }
-.horizontal:hover:before, .horizontal-purple:hover:before {
+.horizontal:hover:before {
   width: 100%;
-}
-.horizontal-purple:before{
-  border-top: solid 2px rgb(255,0,255);
 }
 
 li{
   list-style-type: none;
+}
+
+.logo{
+  max-height: 75%;
+  position: absolute;
+  right: 15px;
+  top: 5px;
 }
 
 .main-container{
@@ -230,9 +237,6 @@ li{
   text-decoration: none;
   transition: all 150ms ease-in;
   max-width: 200px;
-}
-.nav-button:active{
-  color: red;
 }
 
 .purple {
@@ -339,7 +343,6 @@ input[name='r']{
   transition: all 200ms ease-in;
 }
 .social-media-button:hover{
-  color: rgb(255,0,255);
   cursor: pointer;
 }
 
@@ -501,6 +504,11 @@ input[name='r']{
     bottom: -15px;
     height: 80px;
     width: 20px;
+  }
+
+  .logo{
+    max-height: 50%;
+    right: 5px;
   }
 
   .nav-button{
