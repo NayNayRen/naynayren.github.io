@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
+@keyframes animateLogo {
+  0%{
+    right: -95px;
+  }
+  100%{
+    right: 15px;
+  }
+}
+
 *{
   box-sizing: border-box;
 }
@@ -202,7 +211,9 @@ li{
 }
 
 .logo{
-  max-height: 75%;
+  animation: animateLogo 1.5s ease-in-out;
+  animation-iteration-count: 1;
+  height: 75%;
   position: absolute;
   right: 15px;
   top: 5px;
@@ -508,7 +519,6 @@ input[name='r']{
 
   .logo{
     max-height: 50%;
-    right: 5px;
   }
 
   .nav-button{
@@ -563,6 +573,11 @@ input[name='r']{
 
   h4{
     font-size: 18px;
+  }
+
+  .logo{
+    animation: none;
+    right: 5px;
   }
 
   .nav-button{
