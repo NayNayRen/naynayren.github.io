@@ -211,7 +211,7 @@ li{
 }
 
 .logo{
-  animation: animateLogo 1.5s ease-in-out;
+  animation: animateLogo 2s ease-in-out;
   animation-iteration-count: 1;
   height: 75%;
   position: absolute;
@@ -600,6 +600,9 @@ input[name='r']{
   #r6:checked ~ .slide1{
     margin-left: -1500px;
   }
+  #r7:checked ~ .slide1{
+    margin-left: -1800px;
+  }
 
   .slideshow{
     height: 150px;
@@ -608,7 +611,7 @@ input[name='r']{
 
   .slideshow-bar{
     height: 15px;
-    margin: 0 2px;
+    margin: 0 0;
     width: 45px;
   }
 
