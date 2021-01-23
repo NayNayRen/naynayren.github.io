@@ -297,7 +297,7 @@ input[name='r']{
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   height: 18px;
-  margin: 0 10px;
+  margin: 5px 10px;
   transition: 250ms;
   width: 60px;
 }
@@ -308,7 +308,8 @@ input[name='r']{
 
 .slideshow-navigation{
   display: flex;
-  height: 60px;
+  flex-wrap: wrap;
+  height: auto;
   justify-content: center;
   position: relative;
 }
@@ -394,8 +395,7 @@ input[name='r']{
 
 .up-arrow{
   color: rgb(255,99,71);
-  bottom: 0;
-  position: absolute;
+  text-align: center;
 }
 
 
@@ -455,10 +455,6 @@ input[name='r']{
   .slideshow{
     height: 300px;
     width: 600px;
-  }
-
-  .slideshow-navigation{
-    height: 50px;
   }
 
   .slide img{
@@ -551,7 +547,6 @@ input[name='r']{
   }
   .slideshow-bar{
     height: 15px;
-    margin: 0 5px;
     width: 45px;
   }
 
@@ -611,7 +606,6 @@ input[name='r']{
 
   .slideshow-bar{
     height: 15px;
-    margin: 0 0;
     width: 45px;
   }
 
@@ -626,7 +620,4 @@ input[name='r']{
   .social-media-container{
     max-width: 90%;
   }
-
-
-
 }
