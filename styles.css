@@ -304,7 +304,7 @@ input[name='r']{
   width: 60px;
 }
 .slideshow-bar:hover{
-  background: rgb(255,0,255);
+  background: rgba(255,255,255,0.75);
   cursor: pointer;
 }
 
