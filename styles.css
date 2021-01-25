@@ -227,16 +227,6 @@ li{
   width: 100%;
 }
 
-.nav-container{
-  border-bottom: solid 1px #fff;
-  background-color: #000;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  z-index: 100;
-}
-
 .nav-button{
   align-items: center;
   color: #fff;
@@ -250,6 +240,16 @@ li{
   text-decoration: none;
   transition: all 150ms ease-in;
   max-width: 200px;
+}
+
+.nav-container{
+  border-bottom: solid 1px #fff;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  z-index: 100;
 }
 
 .purple {
@@ -304,7 +304,7 @@ input[name='r']{
   width: 60px;
 }
 .slideshow-bar:hover{
-  background: rgba(255,255,255,0.75);
+  background: rgb(255,0,255);
   cursor: pointer;
 }
 
@@ -324,23 +324,28 @@ input[name='r']{
 
 .slide{
   position: relative;
-  transition: 500ms;
+  transition: 250ms;
+}
+.slide:hover{
+  transform: scale(0.9);
 }
 .slide img{
+  border: solid 1px #fff;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   height: 100%;
   width: 700px;
 }
 
 .slide-count{
   background: rgba(0,0,0,0.85);
-  border-top: solid 1px #fff;
-  border-left: solid 1px #fff;
-  bottom: 0;
+  outline: solid 1px #fff;
+  bottom: 1px;
   color: #fff;
   font-size: 14px;
   padding: 0 5px;
   position: absolute;
-  right: 0;
+  right: 1px;
 }
 
 .slide-use{
@@ -611,7 +616,12 @@ input[name='r']{
     width: 45px;
   }
 
+  .slide:hover{
+    transform: none;
+  }
+
   .slide img{
+    border: none;
     width: 300px;
   }
 
