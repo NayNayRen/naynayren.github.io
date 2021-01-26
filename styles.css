@@ -50,6 +50,11 @@
   width: 100%;
 }
 
+.animation{
+  animation: animateLogo 2s ease-in-out;
+  animation-iteration-count: 1;
+}
+
 body{
   background-attachment: fixed;
   background-image: -webkit-linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.9)), url('img/atom-background.jpg');
@@ -66,7 +71,6 @@ body{
 }
 
 .closing{
-  margin-top: 40px;
   max-width: 100%;
   padding: 30px;
   text-align: center;
@@ -116,6 +120,7 @@ fieldset {
   line-height: 25px;
   margin: auto;
   max-width: 80%;
+  text-align: left;
 }
 
 .fixed {
@@ -158,7 +163,7 @@ fieldset {
 }
 
 html{
-  height: 100%;
+  height: 100vh;
   scroll-behavior: smooth;
 }
 
@@ -213,8 +218,6 @@ li{
 }
 
 .logo{
-  animation: animateLogo 2s ease-in-out;
-  animation-iteration-count: 1;
   height: 75%;
   position: absolute;
   right: 15px;
@@ -375,18 +378,27 @@ input[name='r']{
   position: relative;
 }
 
+.social-media-logo{
+  height: 100px;
+  margin: auto;
+}
+
+.social-media-logo-container{
+  align-items: center;
+  display: grid;
+  justify-content: center;
+}
+
 .social-media-pdf{
   background: rgba(0,0,0,0.85);
   border: solid 1px #fff;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  bottom: -50px;
   color: #fff;
-  left: 50%;
+  margin-bottom: 20px;
   padding: 5px 15px;
-  position: absolute;
+  text-align: center;
   text-decoration: none;
-  transform: translateX(-50%);
   transition: all 250ms ease-in;
 }
 .social-media-pdf:hover{
@@ -398,6 +410,10 @@ input[name='r']{
   color: rgb(255,99,71);
   list-style-type: none;
   margin-bottom: 5px;
+}
+
+ul{
+  padding: 0;
 }
 
 .up-arrow{
@@ -474,6 +490,10 @@ input[name='r']{
 
   .social-media-container{
     max-width: 80%;
+  }
+
+  .social-media-logo{
+    height: 75px;
   }
 }
 
@@ -563,6 +583,10 @@ input[name='r']{
 
   .social-media-button{
     font-size: 40px;
+  }
+
+  .social-media-logo{
+    height: 50px;
   }
 
 }
