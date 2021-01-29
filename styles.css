@@ -64,7 +64,6 @@ body{
   display: flex;
   flex-direction: column;
   margin: 0;
-  min-height: 100vh;
   overflow-x: hidden;
   padding: 0;
   position: relative;
@@ -129,18 +128,27 @@ fieldset {
 }
 
 .footer-container{
+  align-items: center;
   background: -webkit-linear-gradient(left, rgb(255,140,0), rgb(255,0,255));
   background: -o-linear-gradient(left, rgb(255,140,0), rgb(255,0,255));
   background: linear-gradient(to right, rgb(255,140,0), rgb(255,0,255));
   border-top: solid 1px #000;
   color: #fff;
+  display: flex;
   font-family: 'Roboto', sans-serif;
+  height: 50px;
+  justify-content: center;
   padding: 10px 0;
   text-align: center;
   text-shadow: -1px 1px 1px #000,
   1px 1px 2px #000,
   1px -1px 0 #000,
   -1px -1px 0 #000;
+}
+
+.footer-image{
+  width: 40px;
+  margin-right: 10px;
 }
 
 .header{
@@ -163,8 +171,11 @@ fieldset {
 }
 
 html{
-  height: 100vh;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 h3{
