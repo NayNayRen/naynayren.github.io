@@ -50,10 +50,10 @@
   width: 100%;
 }
 
-/*.animation{
+.animation{
   animation: animateLogo 2s ease-in-out;
   animation-iteration-count: 1;
-}*/
+}
 
 body{
   background-attachment: fixed;
