@@ -50,10 +50,10 @@
   width: 100%;
 }
 
-.animation{
+/*.animation{
   animation: animateLogo 2s ease-in-out;
   animation-iteration-count: 1;
-}
+}*/
 
 body{
   background-attachment: fixed;
@@ -297,7 +297,6 @@ li{
 }
 
 .slideshow{
-  border: solid 1px #fff;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   margin: 10px auto;
@@ -341,8 +340,6 @@ input[name='r']{
 }
 
 .slide{
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
   position: relative;
   transition: 250ms;
 }
@@ -350,23 +347,31 @@ input[name='r']{
   transform: scale(0.9);
 }
 .slide img{
-  border: solid 1px #fff;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   height: 100%;
   width: 700px;
 }
 
+.slide-caption{
+  background-color: rgba(0,0,0,0.75);
+  border-bottom-left-radius: 10px;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  padding-left: 10px;
+  position: absolute;
+  width: 100%;
+}
+
 .slide-count{
-  background: rgb(0,0,0);
-  border-left: solid 1px #fff;
-  border-top: solid 1px #fff;
-  bottom: 1px;
+  background: #000;
+  bottom: 0;
   color: #fff;
   font-size: 14px;
   padding: 0 5px;
   position: absolute;
-  right: 1px;
+  right: 0;
 }
 
 .slide-use{
@@ -593,6 +598,7 @@ ul{
   }
 
   .slideshow{
+    border: solid 1px #fff;
     height: 200px;
     width: 400px;
   }
@@ -679,6 +685,11 @@ ul{
 
   .slide img{
     width: 300px;
+  }
+
+  .slide-caption{
+    font-size: 14px;
+
   }
 
   .social-media-button{
