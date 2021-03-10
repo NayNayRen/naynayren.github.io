@@ -292,6 +292,9 @@ li{
 #r7:checked ~ .slide1{
   margin-left: -4200px;
 }
+#r8:checked ~ .slide1{
+  margin-left: -4900px;
+}
 
 .slideshow{
   border: solid 1px #fff;
@@ -489,6 +492,9 @@ ul{
   #r7:checked ~ .slide1{
     margin-left: -3600px;
   }
+  #r8:checked ~ .slide1{
+    margin-left: -4200px;
+  }
 
   .slideshow{
     height: 300px;
@@ -582,6 +588,9 @@ ul{
   #r7:checked ~ .slide1{
     margin-left: -2400px;
   }
+  #r8:checked ~ .slide1{
+    margin-left: -2800px;
+  }
 
   .slideshow{
     height: 200px;
@@ -653,6 +662,9 @@ ul{
   }
   #r7:checked ~ .slide1{
     margin-left: -1800px;
+  }
+  #r8:checked ~ .slide1{
+    margin-left: -2100px;
   }
 
   .slideshow{
