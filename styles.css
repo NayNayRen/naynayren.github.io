@@ -225,6 +225,11 @@ h4{
   width: 100%;
 }
 
+input[name='r']{
+  visibility: hidden;
+  position: absolute;
+}
+
 li{
   list-style-type: none;
 }
@@ -304,10 +309,6 @@ li{
   max-width: 700px;
   overflow: hidden;
   position: relative;
-}
-input[name='r']{
-  visibility: hidden;
-  position: absolute;
 }
 
 .slideshow-bar{
