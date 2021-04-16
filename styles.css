@@ -102,7 +102,7 @@ body{
 
 .degree-text{
   bottom: 0;
-  font-size: 22px;
+  font-size: 20px;
   left: 0;
   padding-left: 5px;
   position: absolute;
@@ -236,6 +236,8 @@ input[name='r']{
 }
 
 li{
+  color: rgba(230,230,250,1);
+  font-style: italic;
   list-style-type: none;
 }
 
@@ -696,7 +698,10 @@ ul{
 
   .slide-caption{
     font-size: 14px;
+  }
 
+  .slide-use{
+    font-size: 14px;
   }
 
   .social-media-button{
