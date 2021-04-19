@@ -41,7 +41,7 @@
 .about-photo{
   border-left: solid 1px rgb(255,140,0);
   border-right: solid 1px rgb(75,0,130);
-  margin: 50px auto;
+  margin: 50px 15px 20px auto;
   max-width: 300px;
   padding: 20px;
 }
@@ -212,7 +212,7 @@ h3::before{
 h4{
   color: rgb(255,0,255);
   font-family: 'Zen Dots', cursive;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .horizontal:before {
@@ -236,7 +236,7 @@ input[name='r']{
 }
 
 li{
-  color: rgba(230,230,250,1);
+  color: rgb(230,230,250);
   font-style: italic;
   list-style-type: none;
 }
@@ -461,6 +461,10 @@ ul{
     max-width: 90%;
   }
 
+  .about-photo{
+    margin: 50px auto;
+  }
+
   .about-photo-container{
     flex-direction: column;
   }
@@ -656,8 +660,7 @@ ul{
   }
 
   .nav-button{
-    font-size: 16px;
-    margin: 0 5px;
+    font-size: 12px;
   }
 
   #r2:checked ~ .slide1{

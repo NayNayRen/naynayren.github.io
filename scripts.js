@@ -14,7 +14,7 @@ function fixedNav() {
     nav.style.boxShadow = 'none';
     scrollPoint.style.paddingTop = '45px';// padding of the scroll point when not fixed
   }
-  if(document.documentElement.scrollTop > 70 && window.innerWidth <= 700){// changes scroll point and padding for 700px width
+  if(document.documentElement.scrollTop > 60 && window.innerWidth <= 700){// changes scroll point and padding for 700px width
     nav.classList.add('fixed');
     nav.style.boxShadow = 'none';
     scrollPoint.style.paddingTop = '110px';
