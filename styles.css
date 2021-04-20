@@ -28,6 +28,7 @@
   1px -1px 0 #000,
   -1px -1px 0 #000;
 }
+
 .about-photo-container{
   align-items: center;
   display: flex;
@@ -38,6 +39,7 @@
 .about-photo-text{
   max-width: 70%;
 }
+
 .about-photo{
   border-left: solid 1px rgb(255,140,0);
   border-right: solid 1px rgb(75,0,130);
@@ -166,9 +168,10 @@ fieldset {
   margin: 0;
 }
 .heading-span{
-  color: #fff;
+  color: rgb(255,99,71);
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
+  font-style: italic;
 }
 
 html{
@@ -654,13 +657,22 @@ ul{
     font-size: 18px;
   }
 
+  .horizontal:before{
+    display: none;
+  }
+
   .logo{
     animation: none;
     right: 5px;
   }
 
   .nav-button{
-    font-size: 12px;
+    font-size: 14px;
+    padding: 5px 0;
+  }
+
+  .nav-container{
+    flex-wrap: wrap;
   }
 
   #r2:checked ~ .slide1{
