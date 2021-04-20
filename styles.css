@@ -213,7 +213,7 @@ h3::before{
 }
 
 h4{
-  color: rgb(255,0,255);
+  color: rgba(255,0,255,0.85);
   font-family: 'Zen Dots', cursive;
   font-size: 30px;
 }
@@ -283,7 +283,7 @@ li{
 }
 
 .purple {
-  color: rgb(255,0,255);
+  color: rgba(255,0,255,0.85);
 }
 
 #r1:checked ~ .slide1{
@@ -442,9 +442,8 @@ li{
 }
 
 .tomatoe {
-  color: rgb(255,99,71);
-  list-style-type: none;
-  margin-bottom: 5px;
+  color: rgba(255,99,71,0.85);
+
 }
 
 ul{
