@@ -184,33 +184,8 @@ html{
 }
 
 h3{
-  background: -webkit-linear-gradient(left, rgb(255,140,0), rgb(75,0,130));
-  background: -o-linear-gradient(left, rgb(255,140,0), rgb(75,0,130));
-  background: linear-gradient(to right, rgb(255,140,0), rgb(75,0,130));
   margin: 0;
   height: 50px;
-  position: relative;
-  width: 100%;
-}
-h3::after, h3::before{
-  bottom: -35px;
-  content: '';
-  height: 120px;
-  position: absolute;
-  width: 25px;
-  z-index: -1;
-}
-h3::after{
-  background: rgb(75,0,130);
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
-  right: 0;
-}
-h3::before{
-  background: rgb(255,140,0);
-  border-bottom-right-radius: 50px;
-  border-top-right-radius: 50px;
-  left: 0;
 }
 
 h4{
@@ -278,6 +253,7 @@ li{
   background-color: #000;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   z-index: 100;
@@ -357,9 +333,6 @@ p{
 .slide{
   position: relative;
   transition: 250ms;
-}
-.slide:hover{
-  transform: scale(0.9);
 }
 .slide img{
   border-top-right-radius: 10px;
@@ -463,7 +436,9 @@ ul{
 @media (max-width: 1000px) {
 
   .about-container, .education-container, .projects-container, .work-container, .contact-container{
+    /* outline: solid 1px blue; */
     font-size: 18px;
+    margin: 10px auto;
     max-width: 90%;
   }
 
@@ -545,6 +520,7 @@ ul{
 @media (max-width: 700px){
 
   .about-container, .education-container, .projects-container, .work-container, .contact-container{
+    /* outline: solid 1px pink; */
     font-size: 16px;
     max-width: 100%;
   }
@@ -576,15 +552,8 @@ ul{
   }
 
   h3{
-    height: 50px;
+    height: 25px;
   }
-
-  h3::after, h3::before{
-    bottom: -15px;
-    height: 80px;
-    width: 20px;
-  }
-
   .logo{
     max-height: 50%;
   }
@@ -672,10 +641,6 @@ ul{
   .nav-button{
     font-size: 14px;
     padding: 5px 0;
-  }
-
-  .nav-container{
-    flex-wrap: wrap;
   }
 
   #r2:checked ~ .slide1{
