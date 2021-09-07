@@ -652,13 +652,13 @@
      height: 225px;
      padding: 50px 15px 5px 5px;
      position: absolute;
-     right: -130px;
-     top: 0;
-     transition: right 150ms ease-in-out;
+     right: 0;
+     top: -300px;
+     transition: all 250ms ease-in-out;
    }
 
    .move-nav-links-on {
-     right: 0;
+     top: 0;
    }
 
    .profile-photo{
