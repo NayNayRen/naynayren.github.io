@@ -7,9 +7,9 @@
 
  body {
    background-attachment: fixed;
-   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url('img/white-bg.jpg');
-   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url('img/white-bg.jpg');
-   background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url('img/white-bg.jpg');
+   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url('img/white-bg.jpg');
+   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url('img/white-bg.jpg');
+   background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url('img/white-bg.jpg');
    background-position: center;
    background-size: cover;
    font-family: 'Nunito', sans-serif;
@@ -293,6 +293,13 @@
    width: 250px;
  }
 
+ .project-photo-container img{
+   transition: opacity 250ms ease;
+ }
+
+ .project-photo-container img:hover{
+   opacity: 0.85;
+ }
 
  .read-button {
    -webkit-transition: all 150ms ease;
@@ -513,9 +520,9 @@
 
  @media (max-width: 700px) {
    body {
-     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url('img/white-bg-mobile.jpg');
-     background-image: -o-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url('img/white-bg-mobile.jpg');
-     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url('img/white-bg-mobile.jpg');
+     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url('img/white-bg-mobile.jpg');
+     background-image: -o-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url('img/white-bg-mobile.jpg');
+     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url('img/white-bg-mobile.jpg');
    }
 
    .burger-menu {
