@@ -37,9 +37,9 @@
    padding-left: 50px;
    position: relative;
    text-shadow: 0 1px 1px #000,
-   0 -1px 1px #000,
-   1px 0 1px #000,
-   -1px 0 1px #000;
+     0 -1px 1px #000,
+     1px 0 1px #000,
+     -1px 0 1px #000;
  }
 
  .container h1::before {
@@ -90,9 +90,9 @@
    font-size: 20px;
    padding: 0 50px;
    text-shadow: 0 1px 1px #000,
-   0 -1px 1px #000,
-   1px 0 1px #000,
-   -1px 0 1px #000;
+     0 -1px 1px #000,
+     1px 0 1px #000,
+     -1px 0 1px #000;
    width: 75%;
  }
 
@@ -124,6 +124,10 @@
    margin: 25px 20px;
    min-height: 200px;
    width: 700px;
+ }
+
+ .education{
+   opacity: 0;
  }
 
  .footer {
@@ -293,19 +297,19 @@
    padding: 0 0 0 10px;
  }
 
- .profile-photo{
+ .profile-photo {
    float: left;
    height: 325px;
    margin: 30px 20px 5px 50px;
    width: 250px;
  }
 
- .project-photo-container img{
+ .project-photo-container img {
    -webkit-transition: opacity 250ms ease;
    transition: opacity 250ms ease;
  }
 
- .project-photo-container img:hover{
+ .project-photo-container img:hover {
    opacity: 0.85;
  }
 
@@ -466,7 +470,7 @@
      font-size: 18px;
    }
 
-   .profile-photo{
+   .profile-photo {
      height: 300px;
      margin: 25px 20px 0 30px;
      width: 225px;
@@ -513,7 +517,7 @@
      font-size: 16px;
    }
 
-   .profile-photo{
+   .profile-photo {
      height: 275px;
      margin: 20px 15px 0 30px;
      width: 200px;
@@ -564,7 +568,6 @@
 
    .burger-menu:hover .burger-bars {
      background-color: #FFEC68;
-
    }
 
    .burger-bars {
@@ -624,7 +627,7 @@
      width: 95%;
    }
 
-   .degree-photo-container{
+   .degree-photo-container {
      width: 400px;
    }
 
@@ -697,13 +700,13 @@
      top: 0;
    }
 
-   .profile-photo{
+   .profile-photo {
      height: 200px;
      margin: 25px 10px 0 20px;
      width: 150px;
    }
 
-   .project-photo-container{
+   .project-photo-container {
      width: 100%;
    }
 
@@ -779,7 +782,7 @@
      font-size: 14px;
    }
 
-   .profile-photo{
+   .profile-photo {
      height: 175px;
      margin: 20px 5px 0 10px;
      width: 125px;
