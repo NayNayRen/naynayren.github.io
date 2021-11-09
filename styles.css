@@ -122,6 +122,7 @@
    box-shadow: 0 0 15px #000;
    height: 100%;
    margin: 25px 20px;
+   min-height: 200px;
    width: 700px;
  }
 
@@ -188,12 +189,12 @@
 
  .link {
    -webkit-transition: color 250ms ease;
-   color: #FFEC68;
+   color: #FFDE00;
    transition: color 250ms ease;
  }
 
  .link:hover {
-   color: #FFDE00;
+   color: #FFEC68;
  }
 
  .logo {
@@ -309,18 +310,18 @@
  }
 
  .read-button {
-   -webkit-transition: opacity 250ms ease;
+   -webkit-transition: color 250ms ease;
    background: none;
    border: none;
-   color: #FFEC68;
+   color: #FFDE00;
    font-size: 16px;
    font-style: italic;
-   transition: opacity 250ms ease;
+   transition: color 250ms ease;
  }
 
  .read-button:hover {
+   color: #FFEC68;
    cursor: pointer;
-   opacity: .75;
  }
 
  .resume {
@@ -384,7 +385,7 @@
    border-top-right-radius: 5px;
    bottom: 0;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
-   color: #FFEC68;
+   color: #FFDE00;
    font-size: 40px;
    left: -60px;
    padding: 0 5px 0 2px;
@@ -395,7 +396,7 @@
  }
 
  .up-arrow:hover {
-   color: #FFDE00;
+   color: #FFEC68;
  }
 
  @media (max-width: 1300px) {
@@ -562,13 +563,14 @@
    }
 
    .burger-menu:hover .burger-bars {
-     background-color: #FFDE00;
+     background-color: #FFEC68;
+
    }
 
    .burger-bars {
      -o-transition: all 250ms ease;
      -webkit-transition: all 250ms ease;
-     background-color: #FFEC68;
+     background-color: #FFDE00;
      border-radius: 5px;
      height: 1px;
      margin: 2px 0;
@@ -771,10 +773,6 @@
    .nav-button {
      font-size: 18px;
      margin: 0 0 10px 0;
-   }
-
-   .nav-links-container {
-     /* height: 220px; */
    }
 
    .photo-caption, .read-button {
