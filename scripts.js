@@ -57,7 +57,13 @@ function fadeIn(container){
 window.addEventListener('scroll', () => {
   containers.forEach(container =>{
     const distanceFromTopOfPage = container.getBoundingClientRect().top;
-    if(distanceFromTopOfPage < 700){
+    if(distanceFromTopOfPage < 650 && window.innerWidth > 1000){
+      fadeIn(container);
+    }else if(distanceFromTopOfPage < 575 && window.innerWidth < 1000 && window.innerWidth > 700){
+      fadeIn(container);
+    }else if(distanceFromTopOfPage < 500 && window.innerWidth < 700 && window.innerWidth > 400){
+      fadeIn(container);
+    }else if(distanceFromTopOfPage < 350 && window.innerWidth < 400){
       fadeIn(container);
     }else{
       container.style.opacity = '0';
