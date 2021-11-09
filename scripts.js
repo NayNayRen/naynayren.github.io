@@ -102,14 +102,20 @@ window.addEventListener('scroll', () => {
 });
 // on page load, checks to see where education container is according to page top, and adds opacity
 window.addEventListener('load', () => {
-  const distanceFromEducationToTopOfPage = education.getBoundingClientRect().top;
-  if (distanceFromEducationToTopOfPage < 650 && window.innerWidth > 1000) {
-    education.style.opacity = '1';
-  } else if (distanceFromEducationToTopOfPage < 575 && window.innerWidth < 1000 && window.innerWidth > 700) {
-    education.style.opacity = '1';
-  } else {
-    education.style.opacity = '0';
-  }
+  containers.forEach(container => {
+    const distanceFromTopOfPage = container.getBoundingClientRect().top;
+    if (distanceFromTopOfPage < 650 && window.innerWidth > 1000) {
+      fadeIn(container);
+    } else if (distanceFromTopOfPage < 575 && window.innerWidth < 1000 && window.innerWidth > 700) {
+      fadeIn(container);
+    } else if (distanceFromTopOfPage < 500 && window.innerWidth < 700 && window.innerWidth > 400) {
+      fadeIn(container);
+    } else if (distanceFromTopOfPage < 350 && window.innerWidth < 400) {
+      fadeIn(container);
+    } else {
+      container.style.opacity = '0';
+    }
+  });
   containerSquares.forEach(square => {
     const squareDistanceFromTopOfPage = square.getBoundingClientRect().top;
     if (squareDistanceFromTopOfPage < 425 && window.innerWidth > 1000) {
