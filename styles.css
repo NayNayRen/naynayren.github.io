@@ -256,7 +256,7 @@
    -webkit-box-orient: horizontal;
    -webkit-box-pack: center;
    align-items: center;
-   background-color: #000;
+   background-color: rgba(0,0,0,0.85);
    display: -ms-flexbox;
    display: -webkit-box;
    display: flex;

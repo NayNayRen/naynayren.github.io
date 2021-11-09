@@ -3,36 +3,37 @@ const nav = document.querySelector('.nav-container');
 const scrollPoint = document.getElementById('scroll-point');
 const containers = document.querySelectorAll('.container');
 
+// fixed navigation settings for all screens
 function fixedNav() {
-  if (document.documentElement.scrollTop > 120 && window.innerWidth > 1300) { // scroll point in pixels to start the fixed position
+  // scroll point in pixels to start the fixed position and window width
+  if (document.documentElement.scrollTop > 120 && window.innerWidth > 1300) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     document.querySelector('.up-arrow').style.left = '0';
-    scrollPoint.style.paddingTop = '80px'; // padding when 0px from the top is hit
-  } else if (document.documentElement.scrollTop > 105 && window.innerWidth < 1300 && window.innerWidth > 700) { // range from 1000px to 700px width
+    scrollPoint.style.paddingTop = '80px';
+  } else if (document.documentElement.scrollTop > 105 && window.innerWidth < 1300 && window.innerWidth > 700) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     document.querySelector('.up-arrow').style.left = '0';
-    scrollPoint.style.paddingTop = '75px'; // padding when 0px from the top is hit
-  } else if (document.documentElement.scrollTop > 85 && window.innerWidth < 700 && window.innerWidth > 400) { // range from 1000px to 700px width
+    scrollPoint.style.paddingTop = '75px';
+  } else if (document.documentElement.scrollTop > 85 && window.innerWidth < 700 && window.innerWidth > 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     document.querySelector('.up-arrow').style.left = '0';
-    scrollPoint.style.paddingTop = '35px'; // padding when 0px from the top is hit
-  } else if (document.documentElement.scrollTop > 60 && window.innerWidth < 400) { // range from 1000px to 700px width
+    scrollPoint.style.paddingTop = '35px';
+  } else if (document.documentElement.scrollTop > 60 && window.innerWidth < 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     document.querySelector('.up-arrow').style.left = '0';
-    scrollPoint.style.paddingTop = '25px'; // padding when 0px from the top is hit
+    scrollPoint.style.paddingTop = '25px';
   } else {
-    // education.style.opacity = '0';
-    // projects.style.opacity = '0';
     nav.style.position = 'relative';
     document.querySelector('.up-arrow').style.left = '-60px';
-    scrollPoint.style.paddingTop = '0px'; // padding of the scroll point when at the top of the page
+    scrollPoint.style.paddingTop = '0px';
   }
 }
 
+// read more buttons for each project in the projects section
 function readMore(project) {
   let dots = document.querySelector(`.project-photo-container[data-project="${project}"] .dots`);
   let moreText = document.querySelector(`.project-photo-container[data-project="${project}"] .more`);
@@ -49,29 +50,12 @@ function readMore(project) {
   }
 }
 
-function fadeIn(container){
+// fades each container for the scroll effect
+function fadeIn(container) {
   container.style.opacity = '1';
   container.style.transition = 'opacity 750ms ease';
 }
 
-window.addEventListener('scroll', () => {
-  containers.forEach(container =>{
-    const distanceFromTopOfPage = container.getBoundingClientRect().top;
-    if(distanceFromTopOfPage < 650 && window.innerWidth > 1000){
-      fadeIn(container);
-    }else if(distanceFromTopOfPage < 575 && window.innerWidth < 1000 && window.innerWidth > 700){
-      fadeIn(container);
-    }else if(distanceFromTopOfPage < 500 && window.innerWidth < 700 && window.innerWidth > 400){
-      fadeIn(container);
-    }else if(distanceFromTopOfPage < 350 && window.innerWidth < 400){
-      fadeIn(container);
-    }else{
-      container.style.opacity = '0';
-    }
-  });
-});
-
-window.addEventListener('scroll', fixedNav);
 // toggles the links menu left and right when clicked
 burgerMenu.addEventListener('click', () => {
   document.querySelector('.nav-links-container').classList.toggle('move-nav-links-on');
@@ -80,3 +64,23 @@ burgerMenu.addEventListener('click', () => {
   document.querySelector('#burger-bars-3').classList.toggle('burger-bars-rotate-counter-clockwise');
   document.querySelector('#burger-bars-4').classList.toggle('burger-bars-remove');
 });
+
+// on page scroll containers are faded in and out when reaching the distance from the top and according to window width
+window.addEventListener('scroll', () => {
+  containers.forEach(container => {
+    const distanceFromTopOfPage = container.getBoundingClientRect().top;
+    if (distanceFromTopOfPage < 650 && window.innerWidth > 1000) {
+      fadeIn(container);
+    } else if (distanceFromTopOfPage < 575 && window.innerWidth < 1000 && window.innerWidth > 700) {
+      fadeIn(container);
+    } else if (distanceFromTopOfPage < 500 && window.innerWidth < 700 && window.innerWidth > 400) {
+      fadeIn(container);
+    } else if (distanceFromTopOfPage < 350 && window.innerWidth < 400) {
+      fadeIn(container);
+    } else {
+      container.style.opacity = '0';
+    }
+  });
+});
+// on page scroll sticky nav container takes hold
+window.addEventListener('scroll', fixedNav);
