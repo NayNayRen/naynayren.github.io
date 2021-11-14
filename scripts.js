@@ -59,8 +59,9 @@ function fadeIn(element) {
 }
 // fades each square for the scroll effect
 function moveSquares(element) {
-  element.style.right = '-100px';
-  element.style.transition = 'right 650ms ease-out';
+  element.style.opacity = '1';
+  element.style.right = '250px';
+  element.style.transition = 'opacity 1100ms ease, right 750ms ease';
 }
 
 // on page scroll sticky nav container takes hold
@@ -96,7 +97,9 @@ window.addEventListener('scroll', () => {
     } else if (squareDistanceFromTopOfPage < 400 && window.innerWidth < 1000 && window.innerWidth > 700) {
       moveSquares(square);
     } else {
-      square.style.right = '-1000px';
+      square.style.opacity = '0';
+      square.style.right = '-500px';
+      square.style.transition = 'opacity 500ms ease, right 1100ms ease';
     }
   });
 });
