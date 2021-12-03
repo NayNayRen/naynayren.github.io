@@ -8,15 +8,15 @@ const containerSquares = document.querySelectorAll('.container-square');
 // fixed navigation settings for all screens
 function fixedNav() {
   // scroll point in pixels to start the fixed position and window width
-  if (document.documentElement.scrollTop > 120 && window.innerWidth > 1300) {
-    nav.style.position = 'fixed';
-    nav.style.top = '0';
-    scrollPoint.style.paddingTop = '80px';
-    document.querySelector('.up-arrow').style.left = '0';
-  } else if (document.documentElement.scrollTop > 105 && window.innerWidth < 1300 && window.innerWidth > 700) {
+  if (document.documentElement.scrollTop > 110 && window.innerWidth > 1300) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '75px';
+    document.querySelector('.up-arrow').style.left = '0';
+  } else if (document.documentElement.scrollTop > 100 && window.innerWidth < 1300 && window.innerWidth > 700) {
+    nav.style.position = 'fixed';
+    nav.style.top = '0';
+    scrollPoint.style.paddingTop = '80px';
     document.querySelector('.up-arrow').style.left = '0';
   } else if (document.documentElement.scrollTop > 85 && window.innerWidth < 700 && window.innerWidth > 400) {
     nav.style.position = 'fixed';
@@ -26,7 +26,7 @@ function fixedNav() {
   } else if (document.documentElement.scrollTop > 60 && window.innerWidth < 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    scrollPoint.style.paddingTop = '25px';
+    scrollPoint.style.paddingTop = '30px';
     document.querySelector('.up-arrow').style.left = '0';
   } else {
     nav.style.position = 'relative';

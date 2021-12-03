@@ -153,18 +153,22 @@
    position: relative;
  }
 
- .footer .logo {
+ .footer-logo {
    bottom: 5px;
+   position: absolute;
  }
 
  .header {
    background-color: #000;
    padding: 5px 50px;
    position: relative;
+   z-index: 3;
  }
 
- .header .logo {
+ .header-logo {
+   position: fixed;
    top: 5px;
+   z-index: 5;
  }
 
  .header h1 {
@@ -206,7 +210,6 @@
 
  .logo {
    height: 50px;
-   position: absolute;
    right: 5px;
    width: 75px;
  }
@@ -259,7 +262,7 @@
    -webkit-box-orient: horizontal;
    -webkit-box-pack: center;
    align-items: center;
-   background-color: rgba(0,0,0,0.85);
+   background-color: #000;
    display: -ms-flexbox;
    display: -webkit-box;
    display: flex;
@@ -269,7 +272,7 @@
    justify-content: center;
    position: relative;
    width: 100%;
-   z-index: 10;
+   z-index: 2;
  }
 
  .nav-links-container {
@@ -386,16 +389,15 @@
  }
 
  .up-arrow {
-   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
    -webkit-transition: all 250ms ease-in-out;
    background-color: #000;
    border-top-right-radius: 5px;
    bottom: 0;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
    color: #FFDE00;
-   font-size: 40px;
+   font-size: 45px;
+   height: 35px;
    left: -60px;
-   padding: 0 5px 0 2px;
+   padding: 0 10px;
    position: fixed;
    text-decoration: none;
    transition: all 250ms ease-in-out;
@@ -512,10 +514,6 @@
      width: 500px;
    }
 
-   .up-arrow {
-     font-size: 30px;
-   }
-
    .photo-title, .photo-caption {
      font-size: 16px;
    }
@@ -534,34 +532,33 @@
 
  @media (max-width: 700px) {
    body {
-     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url('img/white-bg-mobile.jpg');
-     background-image: -o-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url('img/white-bg-mobile.jpg');
-     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url('img/white-bg-mobile.jpg');
+     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url('img/white-bg-mobile.jpg');
+     background-image: -o-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url('img/white-bg-mobile.jpg');
+     background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url('img/white-bg-mobile.jpg');
    }
 
    .burger-menu {
-     -ms-flex-align: center;
+     -ms-flex-align: start;
      -ms-flex-direction: column;
      -ms-flex-pack: center;
-     -webkit-box-align: center;
+     -webkit-box-align: start;
      -webkit-box-direction: normal;
      -webkit-box-orient: vertical;
      -webkit-box-pack: center;
-     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.85);
-     align-items: center;
+     align-items: flex-start;
      background-color: #000;
      border-bottom-left-radius: 5px;
-     box-shadow: 0 0 15px rgba(0, 0, 0, 0.85);
      display: -ms-flexbox;
      display: -webkit-box;
      display: flex;
      flex-direction: column;
      height: 45px;
      justify-content: center;
-     padding: 10px;
+     padding: 0 74px 0 15px;
      position: absolute;
      right: 0;
      top: 0;
+     width: auto;
      z-index: 2;
    }
 
@@ -593,7 +590,7 @@
      -webkit-transform: rotate(45deg);
      height: 2px;
      position: absolute;
-     top: 20px;
+     top: 18px;
      transform: rotate(45deg);
    }
 
@@ -602,7 +599,7 @@
      -webkit-transform: rotate(-45deg);
      height: 2px;
      position: absolute;
-     top: 20px;
+     top: 18px;
      transform: rotate(-45deg);
    }
 
@@ -684,19 +681,17 @@
      -ms-flex-direction: column;
      -webkit-box-direction: normal;
      -webkit-box-orient: vertical;
-     -webkit-box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.75);
      -webkit-transition: all 350ms ease-out;
      background-color: #000;
-     border-bottom-left-radius: 15px;
-     box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.75);
+     border-bottom-left-radius: 5px;
      flex-direction: column;
-     height: 225px;
-     padding: 50px 15px 5px 5px;
+     height: auto;
+     padding: 50px 10px 5px 10px;
      position: absolute;
      right: 0;
      top: -320px;
      transition: all 350ms ease-out;
-     width: 125px;
+     width: auto;
    }
 
    .move-nav-links-on {
@@ -723,6 +718,16 @@
  }
 
  @media (max-width: 400px) {
+   .burger-menu {
+     -ms-flex-align: start;
+     -webkit-box-align: start;
+     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.85);
+     align-items: flex-start;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.85);
+     height: 40px;
+     padding: 0 70px 0 10px;
+   }
+
    .container h1 {
      font-size: 20px;
      padding-left: 10px;
