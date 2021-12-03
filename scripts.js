@@ -5,6 +5,7 @@ const containers = document.querySelectorAll('.container');
 const education = document.querySelector('.education');
 const containerSquares = document.querySelectorAll('.container-square');
 const headerLogo = document.querySelector('.header-logo');
+const upArrow = document.querySelector('.up-arrow');
 
 // fixed navigation settings for all screens
 function fixedNav() {
@@ -14,30 +15,30 @@ function fixedNav() {
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '75px';
     headerLogo.style.top = '10px';
-    document.querySelector('.up-arrow').style.left = '0';
+    upArrow.style.right = '0';
   } else if (document.documentElement.scrollTop > 95 && window.innerWidth < 1300 && window.innerWidth > 700) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '80px';
     headerLogo.style.top = '15px';
-    document.querySelector('.up-arrow').style.left = '0';
+    upArrow.style.right = '0';
   } else if (document.documentElement.scrollTop > 85 && window.innerWidth < 700 && window.innerWidth > 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '35px';
     headerLogo.style.top = '7px';
-    document.querySelector('.up-arrow').style.left = '0';
+    upArrow.style.right = '0';
   } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '25px';
     headerLogo.style.top = '7px';
-    document.querySelector('.up-arrow').style.left = '0';
+    upArrow.style.right = '0';
   } else {
     nav.style.position = 'relative';
     scrollPoint.style.paddingTop = '0px';
     headerLogo.style.top = '5px';
-    document.querySelector('.up-arrow').style.left = '-60px';
+    upArrow.style.right = '-60px';
   }
 }
 

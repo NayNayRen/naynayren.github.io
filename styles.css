@@ -155,7 +155,10 @@
 
  .footer-logo {
    bottom: 5px;
+   height: 50px;
+   left: 5px;
    position: absolute;
+   width: 75px;
  }
 
  .header {
@@ -167,10 +170,13 @@
 
  .header-logo {
    -webkit-transition: top 150ms ease-out;
+   height: 50px;
    position: fixed;
+   right: 5px;
    top: 5px;
    transition: top 150ms ease-out;
    z-index: 5;
+   width: 75px;
  }
 
  .header h1 {
@@ -208,12 +214,6 @@
 
  .link:hover {
    color: #FFEC68;
- }
-
- .logo {
-   height: 50px;
-   right: 5px;
-   width: 75px;
  }
 
  .main {
@@ -393,17 +393,19 @@
  .up-arrow {
    -webkit-transition: all 250ms ease-in-out;
    background-color: #000;
-   border-top-right-radius: 5px;
+   border-top-left-radius: 5px;
    bottom: 0;
    color: #FFDE00;
    font-size: 45px;
    height: 40px;
-   left: -60px;
-   padding: 0 10px;
+   right: -60px;
+   padding: 0 5px;
    position: fixed;
+   text-align: center;
    text-decoration: none;
    transition: all 250ms ease-in-out;
    z-index: 1;
+   width: 45px;
  }
 
  .up-arrow:hover {
@@ -447,6 +449,11 @@
      padding: 5px 0;
    }
 
+   .footer-logo, .header-logo {
+     height: 40px;
+     width: 65px;
+   }
+
    .header {
      padding: 5px 30px;
    }
@@ -462,11 +469,6 @@
 
    .header span {
      font-size: 20px;
-   }
-
-   .logo {
-     height: 40px;
-     width: 65px;
    }
 
    .nav-button {
@@ -643,6 +645,12 @@
      padding: 5px 0;
    }
 
+   .footer-logo {
+     height: 30px;
+     left: 10px;
+     width: 50px;
+   }
+
    .header {
      background: rgba(0, 0, 0, 1);
      padding: 5px 20px;
@@ -662,7 +670,7 @@
      font-size: 18px;
    }
 
-   .logo {
+   .header-logo {
      height: 30px;
      right: 10px;
      width: 50px;
@@ -760,6 +768,11 @@
      padding: 2px 0;
    }
 
+   .footer-logo, .header-logo {
+     height: 25px;
+     width: 40px;
+   }
+
    .header {
      padding: 2px 10px;
    }
@@ -777,11 +790,6 @@
 
    .header span {
      font-size: 14px;
-   }
-
-   .logo {
-     height: 25px;
-     width: 40px;
    }
 
    .nav-button {
