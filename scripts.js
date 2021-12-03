@@ -4,6 +4,7 @@ const scrollPoint = document.getElementById('scroll-point');
 const containers = document.querySelectorAll('.container');
 const education = document.querySelector('.education');
 const containerSquares = document.querySelectorAll('.container-square');
+const headerLogo = document.querySelector('.header-logo');
 
 // fixed navigation settings for all screens
 function fixedNav() {
@@ -12,25 +13,30 @@ function fixedNav() {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '75px';
+    headerLogo.style.top = '10px';
     document.querySelector('.up-arrow').style.left = '0';
-  } else if (document.documentElement.scrollTop > 100 && window.innerWidth < 1300 && window.innerWidth > 700) {
+  } else if (document.documentElement.scrollTop > 95 && window.innerWidth < 1300 && window.innerWidth > 700) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '80px';
+    headerLogo.style.top = '15px';
     document.querySelector('.up-arrow').style.left = '0';
   } else if (document.documentElement.scrollTop > 85 && window.innerWidth < 700 && window.innerWidth > 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '35px';
+    headerLogo.style.top = '7px';
     document.querySelector('.up-arrow').style.left = '0';
   } else if (document.documentElement.scrollTop > 60 && window.innerWidth < 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '30px';
+    headerLogo.style.top = '7px';
     document.querySelector('.up-arrow').style.left = '0';
   } else {
     nav.style.position = 'relative';
     scrollPoint.style.paddingTop = '0px';
+    headerLogo.style.top = '5px';
     document.querySelector('.up-arrow').style.left = '-60px';
   }
 }
@@ -64,7 +70,8 @@ function moveSquares(element) {
   element.style.transition = 'opacity 1100ms ease, right 750ms ease';
 }
 
-// on page scroll sticky nav container takes hold
+// on page load and scroll sticky nav container takes hold
+window.addEventListener('load', fixedNav);
 window.addEventListener('scroll', fixedNav);
 // toggles the links menu left and right when clicked
 burgerMenu.addEventListener('click', () => {

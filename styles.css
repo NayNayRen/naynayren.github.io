@@ -166,8 +166,10 @@
  }
 
  .header-logo {
+   -webkit-transition: top 150ms ease-out;
    position: fixed;
    top: 5px;
+   transition: top 150ms ease-out;
    z-index: 5;
  }
 
@@ -662,6 +664,7 @@
 
    .logo {
      height: 30px;
+     right: 10px;
      width: 50px;
    }
 
