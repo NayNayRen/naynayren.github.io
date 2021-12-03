@@ -27,10 +27,10 @@ function fixedNav() {
     scrollPoint.style.paddingTop = '35px';
     headerLogo.style.top = '7px';
     document.querySelector('.up-arrow').style.left = '0';
-  } else if (document.documentElement.scrollTop > 55 && window.innerWidth < 400) {
+  } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    scrollPoint.style.paddingTop = '35px';
+    scrollPoint.style.paddingTop = '25px';
     headerLogo.style.top = '7px';
     document.querySelector('.up-arrow').style.left = '0';
   } else {
