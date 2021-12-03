@@ -154,10 +154,11 @@
  }
 
  .footer-logo {
-   bottom: 5px;
    height: 50px;
    left: 5px;
    position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
    width: 75px;
  }
 
@@ -393,19 +394,17 @@
  .up-arrow {
    -webkit-transition: all 250ms ease-in-out;
    background-color: #000;
-   border-top-left-radius: 5px;
+   border-radius: 50%;
    bottom: 0;
    color: #FFDE00;
    font-size: 45px;
    height: 40px;
    right: -60px;
-   padding: 0 5px;
    position: fixed;
    text-align: center;
-   text-decoration: none;
    transition: all 250ms ease-in-out;
    z-index: 1;
-   width: 45px;
+   width: 40px;
  }
 
  .up-arrow:hover {
@@ -732,9 +731,7 @@
    .burger-menu {
      -ms-flex-align: start;
      -webkit-box-align: start;
-     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.85);
      align-items: flex-start;
-     box-shadow: 0 0 15px rgba(0, 0, 0, 0.85);
      height: 40px;
      padding: 0 70px 0 10px;
    }
