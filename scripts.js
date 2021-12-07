@@ -67,10 +67,10 @@ function fadeIn(element) {
 }
 // fades each square for the scroll effect
 function moveSquares(element) {
-  element.style.webkitTransition = 'opacity 1100ms ease, right 850ms ease';
+  element.style.webkitTransition = 'opacity 1500ms ease, right 750ms ease';
   element.style.opacity = '1';
   element.style.right = '10%';
-  element.style.transition = 'opacity 1100ms ease, right 850ms ease';
+  element.style.transition = 'opacity 1500ms ease, right 750ms ease';
 }
 
 // settings for container info and decorative squares to be faded in
