@@ -61,19 +61,60 @@ function readMore(project) {
 
 // fades each container for the scroll effect
 function fadeIn(element) {
+  element.style.webkitTransition = 'opacity 750ms ease';
   element.style.opacity = '1';
-  element.style.transition = 'opacity 750ms ease-in';
+  element.style.transition = 'opacity 750ms ease';
 }
 // fades each square for the scroll effect
 function moveSquares(element) {
+  element.style.webkitTransition = 'opacity 1100ms ease, right 850ms ease';
   element.style.opacity = '1';
-  element.style.right = '250px';
-  element.style.transition = 'opacity 1100ms ease, right 750ms ease';
+  element.style.right = '10%';
+  element.style.transition = 'opacity 1100ms ease, right 850ms ease';
+}
+
+// settings for container info and decorative squares to be faded in
+function pageContainerActions(){
+  containers.forEach(container => {
+    const distanceFromTopOfPage = container.getBoundingClientRect().top;
+    if (distanceFromTopOfPage < 650 && window.innerWidth > 1000) {
+      fadeIn(container);
+    } else if (distanceFromTopOfPage < 575 && window.innerWidth < 1000 && window.innerWidth > 700) {
+      fadeIn(container);
+    } else if (distanceFromTopOfPage < 500 && window.innerWidth < 700 && window.innerWidth > 400) {
+      fadeIn(container);
+    } else if (distanceFromTopOfPage < 350 && window.innerWidth < 400) {
+      fadeIn(container);
+    } else {
+      container.style.opacity = '0';
+    }
+  });
+  containerSquares.forEach(square => {
+    const squareDistanceFromTopOfPage = square.getBoundingClientRect().top;
+    if (squareDistanceFromTopOfPage < 425 && window.innerWidth > 1000) {
+      moveSquares(square);
+    } else if (squareDistanceFromTopOfPage < 400 && window.innerWidth < 1000 && window.innerWidth > 700) {
+      moveSquares(square);
+    } else {
+      square.style.webkitTransition = 'opacity 500ms ease, right 1100ms ease';
+      square.style.opacity = '0';
+      square.style.right = '-600px';
+      square.style.transition = 'opacity 500ms ease, right 1100ms ease';
+    }
+  });
 }
 
 // on page load and scroll sticky nav container takes hold
-window.addEventListener('load', fixedNav);
-window.addEventListener('scroll', fixedNav);
+// on page load and scroll containers are faded in and out when reaching the distance from the top and according to window width
+window.addEventListener('load', () => {
+  fixedNav();
+  pageContainerActions();
+});
+window.addEventListener('scroll', () => {
+  fixedNav();
+  pageContainerActions();
+});
+
 // toggles the links menu left and right when clicked
 burgerMenu.addEventListener('click', () => {
   document.querySelector('#burger-overlay').classList.toggle('burger-overlay-dim');
@@ -82,60 +123,4 @@ burgerMenu.addEventListener('click', () => {
   document.querySelector('#burger-bars-2').classList.toggle('burger-bars-rotate-clockwise');
   document.querySelector('#burger-bars-3').classList.toggle('burger-bars-rotate-counter-clockwise');
   document.querySelector('#burger-bars-4').classList.toggle('burger-bars-remove');
-});
-// on page scroll containers are faded in and out when reaching the distance from the top and according to window width
-window.addEventListener('scroll', () => {
-  containers.forEach(container => {
-    const distanceFromTopOfPage = container.getBoundingClientRect().top;
-    if (distanceFromTopOfPage < 650 && window.innerWidth > 1000) {
-      fadeIn(container);
-    } else if (distanceFromTopOfPage < 575 && window.innerWidth < 1000 && window.innerWidth > 700) {
-      fadeIn(container);
-    } else if (distanceFromTopOfPage < 500 && window.innerWidth < 700 && window.innerWidth > 400) {
-      fadeIn(container);
-    } else if (distanceFromTopOfPage < 350 && window.innerWidth < 400) {
-      fadeIn(container);
-    } else {
-      container.style.opacity = '0';
-    }
-  });
-  containerSquares.forEach(square => {
-    const squareDistanceFromTopOfPage = square.getBoundingClientRect().top;
-    if (squareDistanceFromTopOfPage < 425 && window.innerWidth > 1000) {
-      moveSquares(square);
-    } else if (squareDistanceFromTopOfPage < 400 && window.innerWidth < 1000 && window.innerWidth > 700) {
-      moveSquares(square);
-    } else {
-      square.style.opacity = '0';
-      square.style.right = '-500px';
-      square.style.transition = 'opacity 500ms ease, right 1100ms ease';
-    }
-  });
-});
-// on page load, checks to see where education container is according to page top, and adds opacity
-window.addEventListener('load', () => {
-  containers.forEach(container => {
-    const distanceFromTopOfPage = container.getBoundingClientRect().top;
-    if (distanceFromTopOfPage < 650 && window.innerWidth > 1000) {
-      fadeIn(container);
-    } else if (distanceFromTopOfPage < 575 && window.innerWidth < 1000 && window.innerWidth > 700) {
-      fadeIn(container);
-    } else if (distanceFromTopOfPage < 500 && window.innerWidth < 700 && window.innerWidth > 400) {
-      fadeIn(container);
-    } else if (distanceFromTopOfPage < 350 && window.innerWidth < 400) {
-      fadeIn(container);
-    } else {
-      container.style.opacity = '0';
-    }
-  });
-  containerSquares.forEach(square => {
-    const squareDistanceFromTopOfPage = square.getBoundingClientRect().top;
-    if (squareDistanceFromTopOfPage < 425 && window.innerWidth > 1000) {
-      moveSquares(square);
-    } else if (squareDistanceFromTopOfPage < 400 && window.innerWidth < 1000 && window.innerWidth > 700) {
-      moveSquares(square);
-    } else {
-      square.style.right = '-1000px';
-    }
-  });
 });
