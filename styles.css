@@ -166,6 +166,8 @@
    padding: 5px 50px;
    position: relative;
    z-index: 4;
+   width: 100%;
+   /* border: solid 1px blue; */
  }
 
  .header-logo {
