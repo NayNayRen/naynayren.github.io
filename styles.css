@@ -330,6 +330,69 @@
    opacity: 0.85;
  }
 
+ /* .banner {
+   width: 80%;
+   margin: 10px auto;
+   position: relative;
+ }
+
+ .next,
+ .prev {
+   align-items: center;
+   background-color: #000;
+   border-radius: 50%;
+   box-shadow: 0 2px 5px #333333;
+   color: #fff;
+   font-size: 40px;
+   display: flex;
+   height: 40px;
+   justify-content: center;
+   transition: opacity 250ms ease;
+   width: 40px;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+
+ .next {
+   right: 0;
+ }
+
+ .prev{
+   left: 0;
+ }
+
+ .next:hover,
+ .prev:hover {
+   opacity: 0.5;
+   cursor: pointer;
+ }
+
+ .slide {
+   box-shadow: 0 0 25px #333333;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   opacity: 0;
+   transition: all 1000ms ease;
+   display: grid;
+   transform: translateX(100%);
+ }
+
+ .slide-container {
+   align-items: center;
+   display: flex;
+   height: 600px;
+   justify-content: center;
+   padding: 10px;
+   position: relative;
+ }
+
+ .slide.current {
+   opacity: 1;
+   transform: translateX(0);
+ } */
+
  .read-button {
    -webkit-transition: color 250ms ease;
    background: none;
@@ -625,7 +688,7 @@
 
    .burger-overlay {
      -webkit-transition: all 350ms ease;
-     background-color: rgba(0,0,0,0.85);
+     background-color: rgba(0, 0, 0, 0.85);
      height: 0;
      position: fixed;
      right: 0;
