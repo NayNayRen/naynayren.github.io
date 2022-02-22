@@ -201,6 +201,7 @@
  }
 
  html {
+   height: 100%;
    margin: 0;
    padding: 0;
    scroll-behavior: smooth;
@@ -705,7 +706,6 @@
 
    .nav-container {
      background-color: transparent;
-     /* height: 0; */
      height: 25px;
      z-index: 3;
    }
