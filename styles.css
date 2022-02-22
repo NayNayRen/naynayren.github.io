@@ -724,7 +724,7 @@
      right: 0;
      top: -320px;
      transition: all 350ms ease-out;
-     width: auto;
+     width: 175px;
    }
 
    .move-nav-links-on {
@@ -814,6 +814,10 @@
 
    .nav-button {
      font-size: 25px;
+   }
+
+   .nav-links-container {
+     width: 155px;
    }
 
    .photo-caption, .read-button {
