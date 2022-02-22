@@ -1,5 +1,5 @@
 const burgerMenu = document.querySelector('.burger-menu');
-const nav = document.querySelector('.nav-container');
+const nav = document.getElementById('nav-container');
 const scrollPoint = document.getElementById('scroll-point');
 const containers = document.querySelectorAll('.container');
 const education = document.querySelector('.education');

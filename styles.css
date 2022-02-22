@@ -281,12 +281,17 @@
 
  .nav-links-container {
    -ms-flex-direction: row;
+   -ms-flex-pack: center;
    -webkit-box-direction: normal;
    -webkit-box-orient: horizontal;
+   -webkit-box-pack: center;
    display: -ms-flexbox;
    display: -webkit-box;
    display: flex;
    flex-direction: row;
+   justify-content: center;
+   width: 100%;
+   /* border: solid 1px blue; */
  }
 
  .photo-caption {
@@ -570,7 +575,7 @@
      position: absolute;
      right: 0;
      top: 0;
-     width: 125px;
+     width: 175px;
      z-index: 3;
    }
 
@@ -587,8 +592,9 @@
      -webkit-transition: all 250ms ease;
      background-color: #FFDE00;
      border-radius: 5px;
-     height: 1px;
+     height: 2px;
      margin: 2px 0;
+     opacity: 1;
      transition: all 250ms ease;
      width: 30px;
    }
@@ -600,7 +606,7 @@
    .burger-bars-rotate-clockwise {
      -ms-transform: rotate(45deg);
      -webkit-transform: rotate(45deg);
-     height: 2px;
+     height: 3px;
      position: absolute;
      top: 18px;
      transform: rotate(45deg);
@@ -609,20 +615,20 @@
    .burger-bars-rotate-counter-clockwise {
      -ms-transform: rotate(-45deg);
      -webkit-transform: rotate(-45deg);
-     height: 2px;
+     height: 3px;
      position: absolute;
      top: 18px;
      transform: rotate(-45deg);
    }
 
    .burger-overlay {
-     -webkit-transition: height 250ms ease-out, width 250ms ease-out;
-     background-color: rgba(0,0,0,0.75);
+     -webkit-transition: all 350ms ease;
+     background-color: rgba(0,0,0,0.85);
      height: 0;
      position: fixed;
      right: 0;
      top: 0;
-     transition: height 250ms ease-out, width 250ms ease-out;
+     transition: all 350ms ease;
      width: 0;
      z-index: 2;
    }
@@ -708,13 +714,14 @@
      background-color: transparent;
      height: 25px;
      z-index: 3;
+     /* border: solid 1px blue; */
    }
 
    .nav-links-container {
      -ms-flex-direction: column;
      -webkit-box-direction: normal;
      -webkit-box-orient: vertical;
-     -webkit-transition: all 350ms ease-out;
+     -webkit-transition: all 250ms ease-out;
      background-color: #000;
      border-bottom-left-radius: 5px;
      flex-direction: column;
@@ -723,8 +730,9 @@
      position: absolute;
      right: 0;
      top: -320px;
-     transition: all 350ms ease-out;
+     transition: all 250ms ease-out;
      width: 175px;
+     /* border: solid 1px blue; */
    }
 
    .move-nav-links-on {
@@ -757,7 +765,7 @@
      align-items: flex-start;
      height: 40px;
      padding: 0 0 0 10px;
-     width: 115px;
+     width: 155px;
    }
 
    .container h1 {
