@@ -15,25 +15,25 @@ function fixedNav() {
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '75px';
     headerLogo.style.top = '10px';
-    upArrow.style.right = '0';
+    upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 95 && window.innerWidth < 1300 && window.innerWidth > 700) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '80px';
     headerLogo.style.top = '15px';
-    upArrow.style.right = '0';
+    upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 85 && window.innerWidth < 700 && window.innerWidth > 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '35px';
     headerLogo.style.top = '7px';
-    upArrow.style.right = '0';
+    upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '25px';
     headerLogo.style.top = '7px';
-    upArrow.style.right = '0';
+    upArrow.style.right = '5px';
   } else {
     nav.style.position = 'relative';
     scrollPoint.style.paddingTop = '0px';
@@ -68,7 +68,7 @@ function fadeIn(element) {
 // fades each square for the scroll effect
 function moveSquares(element) {
   element.style.webkitTransition = 'opacity 1500ms ease, right 750ms ease';
-  element.style.opacity = '1';
+  element.style.opacity = '0.5';
   element.style.right = '10%';
   element.style.transition = 'opacity 1500ms ease, right 750ms ease';
 }
