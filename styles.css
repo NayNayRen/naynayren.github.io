@@ -704,7 +704,9 @@
    }
 
    .nav-container {
-     height: 0;
+     background-color: transparent;
+     /* height: 0; */
+     height: 25px;
      z-index: 3;
    }
 
