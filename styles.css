@@ -791,7 +791,7 @@
 
    .nav-container {
      background-color: transparent;
-     height: 0;
+     height: 25;
      z-index: 3;
      /* border: solid 1px blue; */
    }
