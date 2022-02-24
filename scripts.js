@@ -41,35 +41,35 @@ function fixedNav() {
     navigationLogo.style.right = '10px';
     scrollPoint.style.paddingTop = '75px';
     headerLogo.style.right = '-80px';
-    upArrow.style.right = '5px';
+    upArrow.style.right = '10px';
   } else if (document.documentElement.scrollTop > 95 && window.innerWidth < 1300 && window.innerWidth > 1000) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     navigationLogo.style.right = '10px';
     scrollPoint.style.paddingTop = '80px';
     headerLogo.style.right = '-80px';
-    upArrow.style.right = '5px';
+    upArrow.style.right = '10px';
   } else if (document.documentElement.scrollTop > 100 && window.innerWidth < 1000 && window.innerWidth > 700) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     navigationLogo.style.right = '10px';
     scrollPoint.style.paddingTop = '75px';
     headerLogo.style.right = '-80px';
-    upArrow.style.right = '5px';
+    upArrow.style.right = '10px';
   }else if (document.documentElement.scrollTop > 90 && window.innerWidth < 700 && window.innerWidth > 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     navigationLogo.style.right = '10px';
     scrollPoint.style.paddingTop = '40px';
     headerLogo.style.right = '-80px';
-    upArrow.style.right = '5px';
+    upArrow.style.right = '10px';
   } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     navigationLogo.style.right = '10px';
     scrollPoint.style.paddingTop = '35px';
     headerLogo.style.right = '-80px';
-    upArrow.style.right = '5px';
+    upArrow.style.right = '10px';
   } else {
     nav.style.position = 'relative';
     navigationLogo.style.right = '-80px';

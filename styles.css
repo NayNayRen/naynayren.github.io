@@ -171,13 +171,13 @@
  }
 
  .header-logo {
-   /* -webkit-transition: right 150ms ease-out; */
+   -webkit-transition: right 150ms ease-out;
    background-color: #000;
    height: 50px;
    position: absolute;
    right: 5px;
    top: 5px;
-   /* transition: right 150ms ease-out; */
+   transition: right 150ms ease-out;
    z-index: 5;
    width: 75px;
  }
@@ -300,14 +300,14 @@
  }
 
  .navigation-logo {
-   /* -webkit-transition: right 150ms ease-out; */
+   -webkit-transition: right 150ms ease-out;
    background-color: #000;
    height: 50px;
    position: absolute;
    right: -80px;
    top: 50%;
    transform: translateY(-50%);
-   /* transition: right 150ms ease-out; */
+   transition: right 150ms ease-out;
    z-index: 5;
    width: 75px;
  }
@@ -795,7 +795,6 @@
 
    .header-logo {
      height: 30px;
-     right: 10px;
      width: 50px;
    }
 
