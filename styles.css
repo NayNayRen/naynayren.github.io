@@ -171,13 +171,13 @@
  }
 
  .header-logo {
-   -webkit-transition: top 150ms ease-out;
+   /* -webkit-transition: right 150ms ease-out; */
    background-color: #000;
    height: 50px;
-   position: fixed;
+   position: absolute;
    right: 5px;
    top: 5px;
-   transition: top 150ms ease-out;
+   /* transition: right 150ms ease-out; */
    z-index: 5;
    width: 75px;
  }
@@ -299,6 +299,19 @@
    /* border: solid 1px blue; */
  }
 
+ .navigation-logo {
+   /* -webkit-transition: right 150ms ease-out; */
+   background-color: #000;
+   height: 50px;
+   position: absolute;
+   right: -80px;
+   top: 50%;
+   transform: translateY(-50%);
+   /* transition: right 150ms ease-out; */
+   z-index: 5;
+   width: 75px;
+ }
+
  .photo-caption {
    font-size: 20px;
    margin: 0;
@@ -397,7 +410,6 @@
    opacity: 1;
    transform: translateX(0);
  } */
-
  .read-button {
    -webkit-transition: color 250ms ease;
    background: none;
@@ -501,11 +513,11 @@
  }
 
  @media (max-width: 1300px) {
+
    /* .banner {
      width: 85%;
      margin: 10px auto;
    } */
-
    .container h1 {
      font-size: 30px;
      padding-left: 30px;
@@ -565,6 +577,11 @@
      font-size: 22px;
    }
 
+   .navigation-logo {
+     height: 40px;
+     width: 65px;
+   }
+
    .photo-title, .photo-caption {
      font-size: 18px;
    }
@@ -581,10 +598,10 @@
  }
 
  @media (max-width: 1000px) {
+
    /* .banner {
      width: 95%;
    } */
-
    .container h1 {
      font-size: 25px;
    }
@@ -625,11 +642,11 @@
  }
 
  @media (max-width: 700px) {
+
    /* .banner {
      width: 100%;
      margin: 10px auto;
    } */
-
    body {
      background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95)), url('img/white-bg-mobile.jpg');
      background-image: -o-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95)), url('img/white-bg-mobile.jpg');
@@ -791,9 +808,9 @@
 
    .nav-container {
      background-color: transparent;
-     height: 25px;
+     height: 45px;
      z-index: 3;
-     /* border: solid 1px blue; */
+     /* outline: solid 1px blue; */
    }
 
    .nav-links-container {
@@ -812,6 +829,11 @@
      transition: all 250ms ease-out;
      width: 175px;
      /* border: solid 1px blue; */
+   }
+
+   .navigation-logo {
+     height: 30px;
+     width: 50px;
    }
 
    .move-nav-links-on {
@@ -905,8 +927,17 @@
      font-size: 25px;
    }
 
+   .nav-container {
+     height: 40px;
+   }
+
    .nav-links-container {
      width: 155px;
+   }
+
+   .navigation-logo {
+     height: 25px;
+     width: 40px;
    }
 
    .photo-caption, .read-button {

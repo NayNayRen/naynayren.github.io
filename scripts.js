@@ -5,6 +5,7 @@ const containers = document.querySelectorAll('.container');
 const education = document.querySelector('.education');
 const containerSquares = document.querySelectorAll('.container-square');
 const headerLogo = document.querySelector('.header-logo');
+const navigationLogo = document.querySelector('.navigation-logo');
 const upArrow = document.querySelector('.up-arrow');
 
 // const nextBtn = document.querySelector(".next");
@@ -37,37 +38,43 @@ function fixedNav() {
   if (document.documentElement.scrollTop > 110 && window.innerWidth > 1300) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
+    navigationLogo.style.right = '10px';
     scrollPoint.style.paddingTop = '75px';
-    headerLogo.style.top = '10px';
+    headerLogo.style.right = '-80px';
     upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 95 && window.innerWidth < 1300 && window.innerWidth > 1000) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
+    navigationLogo.style.right = '10px';
     scrollPoint.style.paddingTop = '80px';
-    headerLogo.style.top = '15px';
+    headerLogo.style.right = '-80px';
     upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 100 && window.innerWidth < 1000 && window.innerWidth > 700) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
+    navigationLogo.style.right = '10px';
     scrollPoint.style.paddingTop = '75px';
-    headerLogo.style.top = '15px';
+    headerLogo.style.right = '-80px';
     upArrow.style.right = '5px';
   }else if (document.documentElement.scrollTop > 90 && window.innerWidth < 700 && window.innerWidth > 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    scrollPoint.style.paddingTop = '30px';
-    headerLogo.style.top = '7px';
+    navigationLogo.style.right = '10px';
+    scrollPoint.style.paddingTop = '40px';
+    headerLogo.style.right = '-80px';
     upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    scrollPoint.style.paddingTop = '25px';
-    headerLogo.style.top = '7px';
+    navigationLogo.style.right = '10px';
+    scrollPoint.style.paddingTop = '35px';
+    headerLogo.style.right = '-80px';
     upArrow.style.right = '5px';
   } else {
     nav.style.position = 'relative';
+    navigationLogo.style.right = '-80px';
     scrollPoint.style.paddingTop = '0px';
-    headerLogo.style.top = '5px';
+    headerLogo.style.right = '10px';
     upArrow.style.right = '-60px';
   }
 }
