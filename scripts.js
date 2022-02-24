@@ -55,13 +55,13 @@ function fixedNav() {
   }else if (document.documentElement.scrollTop > 95 && window.innerWidth < 700 && window.innerWidth > 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    scrollPoint.style.paddingTop = '30px';
+    scrollPoint.style.paddingTop = '45px';
     headerLogo.style.top = '7px';
     upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    scrollPoint.style.paddingTop = '25px';
+    scrollPoint.style.paddingTop = '40px';
     headerLogo.style.top = '7px';
     upArrow.style.right = '5px';
   } else {
