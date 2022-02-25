@@ -43,7 +43,7 @@ function fixedNav() {
   if (document.documentElement.scrollTop > 115 && window.innerWidth > 1300) {
     stickNavigation();
     scrollPoint.style.paddingTop = '75px';
-    headerLogo.style.top = '10px';
+    // headerLogo.style.top = '10px';
     upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 105 && window.innerWidth < 1300 && window.innerWidth > 1000) {
     stickNavigation();
@@ -58,12 +58,12 @@ function fixedNav() {
   }else if (document.documentElement.scrollTop > 80 && window.innerWidth < 700 && window.innerWidth > 400) {
     stickNavigation();
     scrollPoint.style.paddingTop = '55px';
-    headerLogo.style.top = '10px';
+    // headerLogo.style.top = '10px';
     upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 60 && window.innerWidth < 400) {
     stickNavigation();
     scrollPoint.style.paddingTop = '50px';
-    headerLogo.style.top = '10px';
+    // headerLogo.style.top = '10px';
     upArrow.style.right = '5px';
   } else {
     nav.style.position = 'relative';
