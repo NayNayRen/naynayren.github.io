@@ -62,7 +62,7 @@ function fixedNav() {
     upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
     stickNavigation();
-    scrollPoint.style.paddingTop = '40px';
+    scrollPoint.style.paddingTop = '45px';
     headerLogo.style.top = '7px';
     upArrow.style.right = '5px';
   } else {

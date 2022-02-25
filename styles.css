@@ -852,7 +852,7 @@
      -ms-flex-align: start;
      -webkit-box-align: start;
      align-items: flex-start;
-     height: 40px;
+     /* height: 40px; */
      padding: 0 0 0 10px;
      right: 110px;
    }
@@ -885,7 +885,7 @@
      padding: 2px 0;
    }
 
-   .footer-logo, .header-logo {
+   .footer-logo {
      height: 25px;
      width: 40px;
    }
@@ -915,9 +915,9 @@
      font-size: 25px;
    }
 
-   .nav-container {
+   /* .nav-container {
      height: 40px;
-   }
+   } */
 
    .nav-links-container {
      width: 155px;
