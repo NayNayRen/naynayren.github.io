@@ -68,7 +68,7 @@ function fixedNav() {
   } else {
     nav.style.position = 'relative';
     scrollPoint.style.paddingTop = '0px';
-    headerLogo.style.top = '5px';
+    headerLogo.style.top = '10px';
     upArrow.style.right = '-60px';
   }
 }
