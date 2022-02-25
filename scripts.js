@@ -35,33 +35,33 @@ const upArrow = document.querySelector('.up-arrow');
 function fixedNav() {
   // scroll point in pixels to start the fixed position and window width
   if (document.documentElement.scrollTop > 110 && window.innerWidth > 1300) {
-    nav.style.position = 'fixed';
+    nav.style.position = 'sticky';
     nav.style.top = '0';
-    scrollPoint.style.paddingTop = '75px';
+    scrollPoint.style.paddingTop = '0px';
     headerLogo.style.top = '10px';
     upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 95 && window.innerWidth < 1300 && window.innerWidth > 1000) {
-    nav.style.position = 'fixed';
+    nav.style.position = 'sticky';
     nav.style.top = '0';
-    scrollPoint.style.paddingTop = '80px';
+    scrollPoint.style.paddingTop = '0px';
     headerLogo.style.top = '10px';
     upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 100 && window.innerWidth < 1000 && window.innerWidth > 700) {
-    nav.style.position = 'fixed';
+    nav.style.position = 'sticky';
     nav.style.top = '0';
-    scrollPoint.style.paddingTop = '75px';
+    scrollPoint.style.paddingTop = '0px';
     headerLogo.style.top = '15px';
     upArrow.style.right = '5px';
   }else if (document.documentElement.scrollTop > 95 && window.innerWidth < 700 && window.innerWidth > 400) {
-    nav.style.position = 'fixed';
+    nav.style.position = 'sticky';
     nav.style.top = '0';
-    scrollPoint.style.paddingTop = '45px';
+    scrollPoint.style.paddingTop = '0px';
     headerLogo.style.top = '7px';
     upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
-    nav.style.position = 'fixed';
+    nav.style.position = 'sticky';
     nav.style.top = '0';
-    scrollPoint.style.paddingTop = '40px';
+    scrollPoint.style.paddingTop = '0px';
     headerLogo.style.top = '7px';
     upArrow.style.right = '5px';
   } else {

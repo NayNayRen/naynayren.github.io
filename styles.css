@@ -174,8 +174,8 @@
    -webkit-transition: top 150ms ease-out;
    background-color: #000;
    height: 50px;
-   position: fixed;
-   right: 10px;
+   position: absolute;
+   right: 5px;
    top: 5px;
    transition: top 150ms ease-out;
    z-index: 5;
@@ -297,6 +297,17 @@
    justify-content: center;
    width: 100%;
    /* border: solid 1px blue; */
+ }
+
+ .nav-logo {
+   background-color: #000;
+   height: 50px;
+   position: absolute;
+   right: 5px;
+   top: 50%;
+   transform: translateY(-50%);
+   /* z-index: 5; */
+   width: 75px;
  }
 
  .photo-caption {
@@ -540,7 +551,7 @@
      padding: 5px 0;
    }
 
-   .footer-logo, .header-logo {
+   .footer-logo, .header-logo, .nav-logo {
      height: 40px;
      width: 65px;
    }
