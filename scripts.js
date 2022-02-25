@@ -55,15 +55,15 @@ function fixedNav() {
     scrollPoint.style.paddingTop = '80px';
     headerLogo.style.top = '15px';
     upArrow.style.right = '5px';
-  }else if (document.documentElement.scrollTop > 75 && window.innerWidth < 700 && window.innerWidth > 400) {
+  }else if (document.documentElement.scrollTop > 80 && window.innerWidth < 700 && window.innerWidth > 400) {
     stickNavigation();
-    scrollPoint.style.paddingTop = '35px';
-    headerLogo.style.top = '7px';
+    scrollPoint.style.paddingTop = '55px';
+    headerLogo.style.top = '10px';
     upArrow.style.right = '5px';
-  } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
+  } else if (document.documentElement.scrollTop > 60 && window.innerWidth < 400) {
     stickNavigation();
-    scrollPoint.style.paddingTop = '45px';
-    headerLogo.style.top = '7px';
+    scrollPoint.style.paddingTop = '50px';
+    headerLogo.style.top = '10px';
     upArrow.style.right = '5px';
   } else {
     nav.style.position = 'relative';

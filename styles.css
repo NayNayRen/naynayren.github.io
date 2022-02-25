@@ -655,21 +655,21 @@
      -webkit-box-direction: normal;
      -webkit-box-orient: vertical;
      -webkit-box-pack: center;
-     align-items: flex-start;
+     align-items: center;
      background-color: #000;
-     border-bottom-left-radius: 5px;
      display: -ms-flexbox;
      display: -webkit-box;
      display: flex;
      flex-direction: column;
-     height: 45px;
+     height: 40px;
      justify-content: center;
-     padding: 0 0 0 15px;
      position: absolute;
      right: 130px;
-     top: 0;
-     width: auto;
+     top: 50%;
+     transform: translateY(-50%);
+     width: 45px;
      z-index: 3;
+     /* border: solid 1px blue; */
    }
 
    .burger-menu:hover {
@@ -701,7 +701,7 @@
      -webkit-transform: rotate(45deg);
      height: 3px;
      position: absolute;
-     top: 18px;
+     top: 15px;
      transform: rotate(45deg);
    }
 
@@ -710,14 +710,14 @@
      -webkit-transform: rotate(-45deg);
      height: 3px;
      position: absolute;
-     top: 18px;
+     top: 15px;
      transform: rotate(-45deg);
    }
 
    .burger-overlay {
      -webkit-transition: all 500ms ease;
      background-color: rgba(0, 0, 0, 0.85);
-     height: 0;
+     height: 100%;
      position: fixed;
      right: 0;
      top: 0;
@@ -727,7 +727,7 @@
    }
 
    .burger-overlay-dim {
-     height: 100%;
+
      width: 100%;
    }
 
@@ -800,7 +800,7 @@
    }
 
    .nav-container {
-     height: 45px;
+     height: 50px;
      width: 100%;
      z-index: 3;
      /* outline: solid 1px blue; */
@@ -810,22 +810,22 @@
      -ms-flex-direction: column;
      -webkit-box-direction: normal;
      -webkit-box-orient: vertical;
-     -webkit-transition: top 500ms ease;
+     -webkit-transition: right 500ms ease;
      background-color: #000;
      border-bottom-left-radius: 5px;
      flex-direction: column;
      height: auto;
-     padding: 50px 10px 0 10px;
+     padding: 20px 10px 0 10px;
      position: absolute;
-     right: 0;
-     top: -300px;
-     transition: top 500ms ease;
+     right: -200px;
+     top: 50px;
+     transition: right 500ms ease;
      width: 175px;
      /* border: solid 1px blue; */
    }
 
    .move-nav-links-on {
-     top: 0;
+     right: 0;
    }
 
    .profile-photo {
@@ -849,11 +849,6 @@
 
  @media (max-width: 400px) {
    .burger-menu {
-     -ms-flex-align: start;
-     -webkit-box-align: start;
-     align-items: flex-start;
-     /* height: 40px; */
-     padding: 0 0 0 10px;
      right: 110px;
    }
 
@@ -914,10 +909,6 @@
    .nav-button {
      font-size: 25px;
    }
-
-   /* .nav-container {
-     height: 40px;
-   } */
 
    .nav-links-container {
      width: 155px;
