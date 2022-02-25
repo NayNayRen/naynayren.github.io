@@ -803,7 +803,7 @@
      border-bottom-left-radius: 5px;
      flex-direction: column;
      height: auto;
-     padding: 20px 10px 0 10px;
+     padding: 0 10px;
      position: absolute;
      right: 0;
      top: -350px;
@@ -813,7 +813,7 @@
    }
 
    .move-nav-links-on {
-     top: 0;
+     top: 50px;
    }
 
    .profile-photo {
