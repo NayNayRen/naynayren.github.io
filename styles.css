@@ -18,7 +18,7 @@
    height: 100vh;
    overflow-x: hidden;
    padding: 0;
-   position: relative;
+   /* position: relative; */
  }
 
  .burger-menu {
