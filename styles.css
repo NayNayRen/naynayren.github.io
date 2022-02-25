@@ -281,7 +281,7 @@
    position: relative;
    width: 100%;
    z-index: 2;
-   border: solid 1px blue;
+   /* border: solid 1px blue; */
  }
 
  .nav-links-container {
@@ -297,18 +297,6 @@
    justify-content: center;
    width: 100%;
    /* border: solid 1px blue; */
- }
-
- .nav-logo {
-   background-color: #000;
-   display: none;
-   height: 50px;
-   position: absolute;
-   right: 10px;
-   top: 50%;
-   transform: translateY(-50%);
-   z-index: 5;
-   width: 75px;
  }
 
  .photo-caption {
@@ -801,7 +789,7 @@
 
    .nav-container {
      height: 50px;
-     width: 100%;
+     /* width: 100%; */
      z-index: 3;
      /* outline: solid 1px blue; */
    }
@@ -810,22 +798,22 @@
      -ms-flex-direction: column;
      -webkit-box-direction: normal;
      -webkit-box-orient: vertical;
-     -webkit-transition: right 500ms ease;
+     -webkit-transition: top 500ms ease;
      background-color: #000;
      border-bottom-left-radius: 5px;
      flex-direction: column;
      height: auto;
      padding: 20px 10px 0 10px;
      position: absolute;
-     right: -200px;
-     top: 50px;
-     transition: right 500ms ease;
+     right: 0;
+     top: -350px;
+     transition: top 500ms ease;
      width: 175px;
      /* border: solid 1px blue; */
    }
 
    .move-nav-links-on {
-     right: 0;
+     top: 0;
    }
 
    .profile-photo {

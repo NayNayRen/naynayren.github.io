@@ -30,40 +30,37 @@ const upArrow = document.querySelector('.up-arrow');
 //   slide[i].classList.add("current");
 // };
 
-function stickNavigation(){
-  nav.style.position = 'fixed';
-  nav.style.width = '100%';
-  nav.style.top = '0';
-}
-
 
 // fixed navigation settings for all screens
 function fixedNav() {
   // scroll point in pixels to start the fixed position and window width
-  if (document.documentElement.scrollTop > 115 && window.innerWidth > 1300) {
-    stickNavigation();
+  if (document.documentElement.scrollTop > 110 && window.innerWidth > 1300) {
+    nav.style.position = 'fixed';
+    nav.style.top = '0';
     scrollPoint.style.paddingTop = '75px';
-    // headerLogo.style.top = '10px';
+    headerLogo.style.top = '10px';
     upArrow.style.right = '5px';
-  } else if (document.documentElement.scrollTop > 105 && window.innerWidth < 1300 && window.innerWidth > 1000) {
-    stickNavigation();
-    scrollPoint.style.paddingTop = '85px';
-    headerLogo.style.top = '15px';
-    upArrow.style.right = '5px';
-  } else if (document.documentElement.scrollTop > 100 && window.innerWidth < 1000 && window.innerWidth > 700) {
-    stickNavigation();
+  } else if (document.documentElement.scrollTop > 95 && window.innerWidth < 1300 && window.innerWidth > 1000) {
+    nav.style.position = 'fixed';
+    nav.style.top = '0';
     scrollPoint.style.paddingTop = '80px';
     headerLogo.style.top = '15px';
     upArrow.style.right = '5px';
-  }else if (document.documentElement.scrollTop > 80 && window.innerWidth < 700 && window.innerWidth > 400) {
-    stickNavigation();
-    scrollPoint.style.paddingTop = '55px';
-    // headerLogo.style.top = '10px';
+  } else if (document.documentElement.scrollTop > 100 && window.innerWidth < 1000 && window.innerWidth > 700) {
+    nav.style.position = 'fixed';
+    nav.style.top = '0';
+    scrollPoint.style.paddingTop = '75px';
+    headerLogo.style.top = '15px';
     upArrow.style.right = '5px';
-  } else if (document.documentElement.scrollTop > 60 && window.innerWidth < 400) {
-    stickNavigation();
-    scrollPoint.style.paddingTop = '50px';
-    // headerLogo.style.top = '10px';
+  }else if (document.documentElement.scrollTop > 80 && window.innerWidth < 700 && window.innerWidth > 400) {
+    nav.style.position = 'fixed';
+    nav.style.top = '0';
+    scrollPoint.style.paddingTop = '45px';
+    upArrow.style.right = '5px';
+  } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
+    nav.style.position = 'fixed';
+    nav.style.top = '0';
+    scrollPoint.style.paddingTop = '55px';
     upArrow.style.right = '5px';
   } else {
     nav.style.position = 'relative';
