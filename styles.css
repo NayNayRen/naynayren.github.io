@@ -171,12 +171,13 @@
  }
 
  .header-logo {
+   -webkit-transition: top 150ms ease-out;
    background-color: #000;
-   display: inline;
    height: 50px;
    position: absolute;
    right: 10px;
    top: 10px;
+   transition: top 150ms ease-out;
    z-index: 5;
    width: 75px;
  }
@@ -219,6 +220,10 @@
 
  .link:hover {
    color: #FFEC68;
+ }
+
+ .main {
+   width: 100%;
  }
 
  .more {
@@ -661,7 +666,7 @@
      justify-content: center;
      padding: 0 0 0 15px;
      position: absolute;
-     right: 140px;
+     right: 10px;
      top: 0;
      width: auto;
      z-index: 3;
@@ -850,8 +855,6 @@
      align-items: flex-start;
      height: 40px;
      padding: 0 0 0 10px;
-     right: 110px;
-     /* width: 155px; */
    }
 
    .container h1 {
