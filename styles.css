@@ -175,8 +175,8 @@
    background-color: #000;
    height: 50px;
    position: absolute;
-   right: 5px;
-   top: 5px;
+   right: 10px;
+   top: 10px;
    transition: top 150ms ease-out;
    z-index: 5;
    width: 75px;
@@ -301,12 +301,13 @@
 
  .nav-logo {
    background-color: #000;
+   display: none;
    height: 50px;
    position: absolute;
-   right: 5px;
+   right: 10px;
    top: 50%;
    transform: translateY(-50%);
-   /* z-index: 5; */
+   z-index: 5;
    width: 75px;
  }
 
@@ -665,9 +666,9 @@
      justify-content: center;
      padding: 0 0 0 15px;
      position: absolute;
-     right: 0;
+     right: 140px;
      top: 0;
-     width: 175px;
+     width: auto;
      z-index: 3;
    }
 
@@ -786,7 +787,7 @@
      padding-left: 20px;
    }
 
-   .header-logo {
+   .header-logo, .nav-logo {
      height: 30px;
      width: 50px;
    }
@@ -799,7 +800,7 @@
    }
 
    .nav-container {
-     background-color: transparent;
+     /* background-color: transparent; */
      height: 45px;
      width: 100%;
      z-index: 3;
@@ -885,7 +886,7 @@
      padding: 2px 0;
    }
 
-   .footer-logo, .header-logo {
+   .footer-logo, .header-logo, .nav-logo {
      height: 25px;
      width: 40px;
    }
