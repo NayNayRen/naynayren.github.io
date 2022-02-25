@@ -39,41 +39,42 @@ function fixedNav() {
     nav.style.position = 'sticky';
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '0px';
-    // headerLogo.style.top = '10px';
+    headerLogo.style.display = 'none';
     navLogo.style.display = 'inline';
     upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 95 && window.innerWidth < 1300 && window.innerWidth > 1000) {
     nav.style.position = 'sticky';
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '0px';
-    // headerLogo.style.top = '10px';
+    headerLogo.style.display = 'none';
     navLogo.style.display = 'inline';
     upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 100 && window.innerWidth < 1000 && window.innerWidth > 700) {
     nav.style.position = 'sticky';
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '0px';
-    // headerLogo.style.top = '15px';
+    headerLogo.style.display = 'none';
     navLogo.style.display = 'inline';
     upArrow.style.right = '5px';
   }else if (document.documentElement.scrollTop > 95 && window.innerWidth < 700 && window.innerWidth > 400) {
     nav.style.position = 'sticky';
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '0px';
-    // headerLogo.style.top = '7px';
+    headerLogo.style.display = 'none';
     navLogo.style.display = 'inline';
     upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
     nav.style.position = 'sticky';
     nav.style.top = '0';
     scrollPoint.style.paddingTop = '0px';
-    // headerLogo.style.top = '7px';
+    headerLogo.style.display = 'none';
     navLogo.style.display = 'inline';
     upArrow.style.right = '5px';
   } else {
     nav.style.position = 'relative';
     scrollPoint.style.paddingTop = '0px';
     headerLogo.style.top = '5px';
+    headerLogo.style.display = 'inline';
     navLogo.style.display = 'none';
     upArrow.style.right = '-60px';
   }

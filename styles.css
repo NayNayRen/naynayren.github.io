@@ -171,13 +171,12 @@
  }
 
  .header-logo {
-   -webkit-transition: top 150ms ease-out;
    background-color: #000;
+   display: inline;
    height: 50px;
    position: absolute;
    right: 10px;
    top: 10px;
-   transition: top 150ms ease-out;
    z-index: 5;
    width: 75px;
  }
@@ -818,15 +817,15 @@
      height: auto;
      padding: 50px 10px 0 10px;
      position: absolute;
-     right: 0;
-     top: -320px;
+     right: -200px;
+     top: 0;
      transition: all 250ms ease-out;
      width: 175px;
      /* border: solid 1px blue; */
    }
 
    .move-nav-links-on {
-     top: 0;
+     right: 0;
    }
 
    .profile-photo {
@@ -855,7 +854,8 @@
      align-items: flex-start;
      height: 40px;
      padding: 0 0 0 10px;
-     width: 155px;
+     right: 110px;
+     /* width: 155px; */
    }
 
    .container h1 {
