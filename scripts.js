@@ -36,37 +36,37 @@ const upArrow = document.querySelector('.up-arrow');
 function fixedNav() {
   // scroll point in pixels to start the fixed position and window width
   if (document.documentElement.scrollTop > 110 && window.innerWidth > 1300) {
-    nav.style.position = 'sticky';
+    nav.style.position = 'fixed';
     nav.style.top = '0';
-    scrollPoint.style.paddingTop = '0px';
+    scrollPoint.style.paddingTop = '75px';
     headerLogo.style.display = 'none';
     navLogo.style.display = 'inline';
     upArrow.style.right = '5px';
-  } else if (document.documentElement.scrollTop > 95 && window.innerWidth < 1300 && window.innerWidth > 1000) {
-    nav.style.position = 'sticky';
+  } else if (document.documentElement.scrollTop > 100 && window.innerWidth < 1300 && window.innerWidth > 1000) {
+    nav.style.position = 'fixed';
     nav.style.top = '0';
-    scrollPoint.style.paddingTop = '0px';
+    scrollPoint.style.paddingTop = '75px';
     headerLogo.style.display = 'none';
     navLogo.style.display = 'inline';
     upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 100 && window.innerWidth < 1000 && window.innerWidth > 700) {
-    nav.style.position = 'sticky';
+    nav.style.position = 'fixed';
     nav.style.top = '0';
-    scrollPoint.style.paddingTop = '0px';
+    scrollPoint.style.paddingTop = '75px';
     headerLogo.style.display = 'none';
     navLogo.style.display = 'inline';
     upArrow.style.right = '5px';
   }else if (document.documentElement.scrollTop > 95 && window.innerWidth < 700 && window.innerWidth > 400) {
-    nav.style.position = 'sticky';
+    nav.style.position = 'fixed';
     nav.style.top = '0';
-    scrollPoint.style.paddingTop = '0px';
+    scrollPoint.style.paddingTop = '50px';
     headerLogo.style.display = 'none';
     navLogo.style.display = 'inline';
     upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
-    nav.style.position = 'sticky';
+    nav.style.position = 'fixed';
     nav.style.top = '0';
-    scrollPoint.style.paddingTop = '0px';
+    scrollPoint.style.paddingTop = '50px';
     headerLogo.style.display = 'none';
     navLogo.style.display = 'inline';
     upArrow.style.right = '5px';
