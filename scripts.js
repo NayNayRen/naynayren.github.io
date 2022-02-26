@@ -37,7 +37,6 @@ function fixedNav() {
   if (document.documentElement.scrollTop > 115 && window.innerWidth > 1300) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    nav.style.width = '100%';
     navLogo.style.left = '10px';
     headerLogo.style.right = '-75px';
     upArrow.style.right = '5px';
@@ -45,7 +44,6 @@ function fixedNav() {
   } else if (document.documentElement.scrollTop > 105 && window.innerWidth < 1300 && window.innerWidth > 1000) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    nav.style.width = '100%';
     navLogo.style.left = '10px';
     headerLogo.style.right = '-75px';
     upArrow.style.right = '5px';
@@ -53,7 +51,6 @@ function fixedNav() {
   } else if (document.documentElement.scrollTop > 100 && window.innerWidth < 1000 && window.innerWidth > 700) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    nav.style.width = '100%';
     navLogo.style.left = '10px';
     headerLogo.style.right = '-75px';
     upArrow.style.right = '5px';
@@ -61,7 +58,6 @@ function fixedNav() {
   }else if (document.documentElement.scrollTop > 85 && window.innerWidth < 700 && window.innerWidth > 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    nav.style.width = '100%';
     navLogo.style.left = '10px';
     headerLogo.style.right = '-75px';
     upArrow.style.right = '5px';
@@ -69,7 +65,6 @@ function fixedNav() {
   } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    nav.style.width = '100%';
     navLogo.style.left = '10px';
     headerLogo.style.right = '-75px';
     upArrow.style.right = '5px';
