@@ -241,7 +241,7 @@
    -webkit-transition: top 150ms ease-out;
    background-color: #000;
    height: 50px;
-   position: fixed;
+   position: absolute;
    right: 10px;
    top: 10px;
    transition: top 150ms ease-out;
@@ -742,7 +742,7 @@
      top: 0;
      transition: all 500ms ease;
      width: 0;
-     z-index: 2;
+     z-index: 1;
    }
 
    .burger-overlay-dim {
@@ -820,7 +820,7 @@
 
    .nav-container {
      height: 50px;
-     z-index: 3;
+     /* z-index: 3; */
      /* outline: solid 1px blue; */
    }
 
