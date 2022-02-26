@@ -5,7 +5,6 @@ const containers = document.querySelectorAll('.container');
 const education = document.querySelector('.education');
 const containerSquares = document.querySelectorAll('.container-square');
 const headerLogo = document.querySelector('.header-logo');
-const navLogo = document.querySelector('.nav-logo');
 const upArrow = document.querySelector('.up-arrow');
 
 // const nextBtn = document.querySelector(".next");
@@ -37,41 +36,30 @@ function fixedNav() {
   if (document.documentElement.scrollTop > 115 && window.innerWidth > 1300) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    navLogo.style.left = '10px';
-    headerLogo.style.right = '-75px';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '75px';
   } else if (document.documentElement.scrollTop > 105 && window.innerWidth < 1300 && window.innerWidth > 1000) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    navLogo.style.left = '10px';
-    headerLogo.style.right = '-75px';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '80px';
   } else if (document.documentElement.scrollTop > 100 && window.innerWidth < 1000 && window.innerWidth > 700) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    navLogo.style.left = '10px';
-    headerLogo.style.right = '-75px';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '75px';
   }else if (document.documentElement.scrollTop > 85 && window.innerWidth < 700 && window.innerWidth > 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    navLogo.style.left = '10px';
-    headerLogo.style.right = '-75px';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '50px';
   } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    navLogo.style.left = '10px';
-    headerLogo.style.right = '-75px';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '50px';
   } else {
     nav.style.position = 'relative';
-    navLogo.style.left = '-75px';
     scrollPoint.style.paddingTop = '0px';
     headerLogo.style.right = '10px';
     upArrow.style.right = '-60px';
