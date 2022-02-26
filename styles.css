@@ -869,9 +869,9 @@
 
    .next,
    .prev {
-     font-size: 40px;
-     height: 40px;
-     width: 40px;
+     font-size: 35px;
+     height: 35px;
+     width: 35px;
      top: -10px;
      transform: translateY(0);
    }
