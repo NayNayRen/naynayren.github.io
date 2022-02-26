@@ -35,7 +35,9 @@ function fixedNavSettings(){
   nav.style.position = 'fixed';
   nav.style.top = '0';
   nav.style.width = '100%';
-  navLogo.style.display = 'inline';
+  navLogo.style.left = '10px';
+  headerLogo.style.right = '-75px';
+  upArrow.style.right = '5px';
 }
 
 
@@ -45,31 +47,23 @@ function fixedNav() {
   if (document.documentElement.scrollTop > 115 && window.innerWidth > 1300) {
     fixedNavSettings();
     scrollPoint.style.paddingTop = '75px';
-    headerLogo.style.top = '10px';
-    upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 105 && window.innerWidth < 1300 && window.innerWidth > 1000) {
     fixedNavSettings();
     scrollPoint.style.paddingTop = '80px';
-    headerLogo.style.top = '15px';
-    upArrow.style.right = '5px';
   } else if (document.documentElement.scrollTop > 100 && window.innerWidth < 1000 && window.innerWidth > 700) {
     fixedNavSettings();
     scrollPoint.style.paddingTop = '75px';
-    headerLogo.style.top = '15px';
-    upArrow.style.right = '5px';
   }else if (document.documentElement.scrollTop > 85 && window.innerWidth < 700 && window.innerWidth > 400) {
     fixedNavSettings();
     scrollPoint.style.paddingTop = '50px';
-    upArrow.style.right = '5px';
-  } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
+  } else if (document.documentElement.scrollTop > 70 && window.innerWidth < 400) {
     fixedNavSettings();
     scrollPoint.style.paddingTop = '50px';
-    upArrow.style.right = '5px';
   } else {
     nav.style.position = 'relative';
-    navLogo.style.display = 'none';
+    navLogo.style.left = '-75px';
     scrollPoint.style.paddingTop = '0px';
-    headerLogo.style.top = '10px';
+    headerLogo.style.right = '10px';
     upArrow.style.right = '-60px';
   }
 }
