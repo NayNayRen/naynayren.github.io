@@ -867,14 +867,14 @@
      /* border: solid 1px blue; */
    }
 
-   /* .next,
+   .next,
    .prev {
      font-size: 40px;
      height: 40px;
      width: 40px;
-     top: -15px;
+     top: -10px;
      transform: translateY(0);
-   } */
+   }
 
    .move-nav-links-on {
      top: 50px;
