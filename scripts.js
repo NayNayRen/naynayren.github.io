@@ -90,16 +90,12 @@ function readMore(project) {
 
 // fades each container for the scroll effect
 function fadeIn(element) {
-  element.style.webkitTransition = 'opacity 850ms ease-in';
   element.style.opacity = '1';
-  element.style.transition = 'opacity 850ms ease-in';
 }
 // fades each square for the scroll effect
 function moveSquares(element) {
-  element.style.webkitTransition = 'opacity 1500ms ease, right 750ms ease';
-  element.style.opacity = '0.5';
+  element.style.opacity = '1';
   element.style.right = '10%';
-  element.style.transition = 'opacity 1500ms ease, right 750ms ease';
 }
 
 // settings for container info and decorative squares to be faded in
@@ -125,10 +121,8 @@ function pageContainerActions(){
     } else if (squareDistanceFromTopOfPage < 400 && window.innerWidth < 1000 && window.innerWidth > 700) {
       moveSquares(square);
     } else {
-      square.style.webkitTransition = 'opacity 500ms ease, right 1100ms ease';
       square.style.opacity = '0';
       square.style.right = '-600px';
-      square.style.transition = 'opacity 500ms ease, right 1100ms ease';
     }
   });
 }

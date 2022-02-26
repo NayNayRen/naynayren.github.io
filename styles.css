@@ -93,10 +93,12 @@
  }
 
  .container {
+   -webkit-transition: opacity 500ms ease;
    color: #fff;
    margin: 10px 0;
    min-height: 400px;
    position: relative;
+   transition: opacity 500ms ease;
  }
 
  .container h1 {
@@ -142,14 +144,15 @@
 
  .container-square {
    -webkit-transform: rotate(45deg);
-   -webkit-transition: opacity 1100ms ease, right 750ms ease;
-   background-color: rgba(85, 210, 210, 1);
+   -webkit-transition: opacity 500ms ease, right 1000ms ease;
+   background-color: rgba(85, 210, 210, 0.5);
    height: 450px;
    opacity: 0;
    position: absolute;
    right: -500px;
    top: 0;
    transform: rotate(45deg);
+   transition: opacity 500ms ease, right 1000ms ease;
    width: 450px;
    z-index: -1;
  }
@@ -238,13 +241,13 @@
  }
 
  .header-logo {
-   -webkit-transition: right 250ms ease;
+   -webkit-transition: right 150ms ease;
    background-color: #000;
    height: 50px;
    position: absolute;
    right: 10px;
    top: 10px;
-   transition: right 250ms ease;
+   transition: right 150ms ease;
    z-index: 2;
    width: 75px;
  }
@@ -367,14 +370,14 @@
 
  .nav-logo {
    -webkit-transform: translateY(-50%);
-   -webkit-transition: left 250ms ease;
+   -webkit-transition: left 150ms ease;
    background-color: #000;
    height: 50px;
    left: -75px;
    position: absolute;
    top: 50%;
    transform: translateY(-50%);
-   transition: left 250ms ease;
+   transition: left 150ms ease;
    width: 75px;
    z-index: 2;
  }
@@ -517,11 +520,11 @@
    -webkit-box-align: center;
    -webkit-box-pack: center;
    -webkit-box-shadow: 0 2px 2px #000;
-   -webkit-transition: all 250ms ease-in-out;
+   -webkit-transition: all 150ms ease;
    align-items: center;
    background-color: #fff;
    border-radius: 50%;
-   bottom: 5px;
+   bottom: 10px;
    box-shadow: 0 2px 2px #000;
    color: #FF00BF;
    display: -ms-flexbox;
@@ -535,9 +538,9 @@
    right: -60px;
    text-decoration: none;
    text-shadow: 0 2px 2px #000;
-   transition: all 250ms ease-in-out;
+   transition: all 150ms ease;
    width: 35px;
-   z-index: 3;
+   z-index: 2;
  }
 
  .up-arrow:hover {
