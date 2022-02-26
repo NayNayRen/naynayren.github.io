@@ -232,7 +232,7 @@
    background-color: #000;
    padding: 5px 0;
    position: relative;
-   z-index: 4;
+   z-index: 5;
    width: 100%;
    /* border: solid 1px blue; */
  }
@@ -245,7 +245,7 @@
    right: 10px;
    top: 10px;
    transition: top 150ms ease-out;
-   z-index: 5;
+   z-index: 2;
    width: 75px;
  }
 
@@ -363,6 +363,18 @@
    justify-content: center;
    width: 100%;
    /* border: solid 1px blue; */
+ }
+
+ .nav-logo {
+   background-color: #000;
+   display: none;
+   height: 50px;
+   position: absolute;
+   left: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: 2;
+   width: 75px;
  }
 
  .photo-caption {
@@ -571,7 +583,7 @@
      padding: 5px 0;
    }
 
-   .footer-logo, .header-logo {
+   .footer-logo, .header-logo, .nav-logo {
      height: 40px;
      width: 65px;
    }
@@ -806,7 +818,7 @@
      padding-left: 20px;
    }
 
-   .header-logo {
+   .header-logo, .nav-logo {
      height: 30px;
      width: 50px;
    }
