@@ -7,28 +7,28 @@ const containerSquares = document.querySelectorAll('.container-square');
 const headerLogo = document.querySelector('.header-logo');
 const upArrow = document.querySelector('.up-arrow');
 
-// const nextBtn = document.querySelector(".next");
-// const prevBtn = document.querySelector(".prev");
-// const slide = document.querySelectorAll(".slide");
-// let i = 0;
-//
-// prevBtn.onclick = function () {
-//   slide[i].classList.remove("current");
-//   i--;
-//   if (i < 0) {
-//     i = slide.length - 1;
-//   }
-//   slide[i].classList.add("current");
-// };
-//
-// nextBtn.onclick = function () {
-//   slide[i].classList.remove("current");
-//   i++;
-//   if (i >= slide.length) {
-//     i = 0;
-//   }
-//   slide[i].classList.add("current");
-// };
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+const slide = document.querySelectorAll(".slide");
+let i = 0;
+
+prevBtn.onclick = function () {
+  slide[i].classList.remove("current");
+  i--;
+  if (i < 0) {
+    i = slide.length - 1;
+  }
+  slide[i].classList.add("current");
+};
+
+nextBtn.onclick = function () {
+  slide[i].classList.remove("current");
+  i++;
+  if (i >= slide.length) {
+    i = 0;
+  }
+  slide[i].classList.add("current");
+};
 
 // fixed navigation settings for all screens
 function fixedNav() {
@@ -71,9 +71,6 @@ function readMore(project) {
   let dots = document.querySelector(`.project-photo-container[data-project="${project}"] .dots`);
   let moreText = document.querySelector(`.project-photo-container[data-project="${project}"] .more`);
   let readButton = document.querySelector(`.project-photo-container[data-project="${project}"] .read-button`);
-  // let dots = document.querySelector(`.slide[data-project="${project}"] .dots`);
-  // let moreText = document.querySelector(`.slide[data-project="${project}"] .more`);
-  // let readButton = document.querySelector(`.slide[data-project="${project}"] .read-button`);
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";

@@ -5,9 +5,9 @@
    box-sizing: border-box;
  }
 
- /* .banner {
+ .banner {
    width: 80%;
-   margin: 10px auto;
+   margin: 0 auto 10px auto;
    position: relative;
    border: solid 1px blue;
  }
@@ -15,10 +15,10 @@
  .next,
  .prev {
    align-items: center;
-   background-color: #000;
+   background-color: #fff;
    border-radius: 50%;
-   box-shadow: 0 2px 5px #333333;
-   color: #fff;
+   box-shadow: 0 2px 5px #000;
+   color: #FF00BF;
    font-size: 40px;
    display: flex;
    height: 40px;
@@ -31,11 +31,13 @@
  }
 
  .next {
-   right: 0;
+   padding-left: 5px;
+   right: -10px;
  }
 
- .prev{
-   left: 0;
+ .prev {
+   left: -10px;
+   padding-right: 5px;
  }
 
  .next:hover,
@@ -44,32 +46,81 @@
    cursor: pointer;
  }
 
- .project-photo{
+ .project-photo-1 {
+   background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%), url('img/ghibli.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .project-photo-2 {
+   background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%), url('img/buddha.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .project-photo-3 {
+   background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%), url('img/shine.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .project-photo-4 {
+   background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%), url('img/breathe.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .project-photo-5 {
+   background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%), url('img/summit.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .project-photo-6 {
+   background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%), url('img/fur.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .project-photo-7 {
+   background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 40%), url('img/speach.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .project-photo {
    height: 100%;
    width: 100%;
  }
 
  .slide {
    height: 90%;
-   width: 100%;
-   position: absolute;
    opacity: 0;
-   transition: all 1000ms ease;
+   position: absolute;
    transform: translateX(130%);
+   transition: all 1000ms ease;
+   width: 100%;
  }
 
  .slide-container {
-   display: flex;
-   height: 550px;
-   justify-content: center;
+   height: 500px;
+   margin: 0 auto;
    position: relative;
-   border: solid 1px red;
+   width: 1000px;
+   /* border: solid 1px red; */
  }
 
  .slide.current {
    opacity: 1;
    transform: translateX(0);
- } */
+ }
 
  body {
    background-attachment: fixed;
@@ -168,7 +219,7 @@
    color: #FF00BF;
  }
 
- .degree-container, .project-container {
+ .degree-container {
    -ms-flex-direction: row;
    -ms-flex-pack: center;
    -ms-flex-wrap: wrap;
@@ -183,7 +234,7 @@
    justify-content: center;
  }
 
- .degree-photo-container, .project-photo-container {
+ .degree-photo-container {
    -webkit-box-shadow: 0 0 15px #000;
    background-color: #000;
    border-bottom: solid 1px #FF00BF;
@@ -389,13 +440,21 @@
    width: 250px;
  }
 
- .project-photo-container img {
-   -webkit-transition: opacity 250ms ease;
-   transition: opacity 250ms ease;
- }
-
- .project-photo-container img:hover {
-   opacity: 0.85;
+ .project-container {
+   -ms-flex-direction: row;
+   -ms-flex-pack: center;
+   -ms-flex-wrap: wrap;
+   -webkit-box-direction: normal;
+   -webkit-box-orient: horizontal;
+   -webkit-box-pack: center;
+   display: -ms-flexbox;
+   display: -webkit-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   height: 600px;
+   justify-content: center;
+   border: solid 1px blue;
  }
 
  .read-button {
@@ -531,7 +590,7 @@
      width: 90%;
    }
 
-   .degree-photo-container, .project-photo-container {
+   .degree-photo-container {
      margin: 20px 15px;
      width: 600px;
    }
@@ -575,6 +634,15 @@
      width: 225px;
    }
 
+   .project-container {
+     height: 500px;
+   }
+
+   .slide-container {
+     height: 400px;
+     width: 800px;
+   }
+
    .social-media-container a {
      font-size: 40px;
    }
@@ -603,19 +671,27 @@
      font-size: 18px;
    }
 
-   .degree-photo-container, .project-photo-container {
+   .degree-photo-container {
      margin: 15px 10px;
      width: 500px;
    }
 
-   .photo-title, .photo-caption {
+   /* .photo-title, .photo-caption {
      font-size: 16px;
-   }
-
+   } */
    .profile-photo {
      height: 275px;
      margin: 20px 15px 0 30px;
      width: 200px;
+   }
+
+   .project-container {
+     height: 475px;
+   }
+
+   .slide-container {
+     height: 350px;
+     width: 700px;
    }
 
    .social-media-container a {
@@ -745,7 +821,7 @@
      width: 400px;
    }
 
-   .degree-photo-container, .project-photo-container {
+   .degree-photo-container {
      border-right: none;
      margin: 20px 5px 0 5px;
    }
@@ -819,13 +895,36 @@
      top: 50px;
    }
 
+   .next {
+     right: 5px;
+   }
+
+   .next,
+   .prev {
+     font-size: 40px;
+     height: 40px;
+     width: 40px;
+     top: 0;
+     transform: translateY(0);
+   }
+
+   .prev {
+     left: 5px;
+     padding-right: 5px;
+   }
+
    .profile-photo {
      height: 200px;
      margin: 25px 10px 0 20px;
      width: 150px;
    }
 
-   .project-photo-container {
+   .project-container {
+     height: 425px;
+   }
+
+   .slide-container {
+     height: 300px;
      width: 100%;
    }
 
@@ -861,7 +960,7 @@
      width: 100%;
    }
 
-   .degree-photo-container, .project-photo-container {
+   .degree-photo-container {
      margin: 20px 0 0 0;
      width: 100%;
    }
@@ -906,7 +1005,11 @@
    }
 
    .photo-caption, .read-button {
-     font-size: 14px;
+     font-size: 16px;
+   }
+
+   .project-container {
+     height: 450px;
    }
 
    .profile-photo {
