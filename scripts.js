@@ -66,23 +66,6 @@ function fixedNav() {
   }
 }
 
-// read more buttons for each project in the projects section
-function readMore(project) {
-  let dots = document.querySelector(`.project-photo-container[data-project="${project}"] .dots`);
-  let moreText = document.querySelector(`.project-photo-container[data-project="${project}"] .more`);
-  let readButton = document.querySelector(`.project-photo-container[data-project="${project}"] .read-button`);
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    readButton.textContent = "Read More";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    readButton.textContent = "Read Less";
-    moreText.style.display = "inline";
-  }
-}
-
 // fades each container for the scroll effect
 function fadeIn(element) {
   element.style.opacity = '1';
