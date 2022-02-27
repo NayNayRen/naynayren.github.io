@@ -454,7 +454,7 @@
    flex-wrap: wrap;
    height: 600px;
    justify-content: center;
-   border: solid 1px blue;
+   /* border: solid 1px blue; */
  }
 
  .read-button {
