@@ -53,7 +53,7 @@ function fixedNav() {
     nav.style.top = '0';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '50px';
-  } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
+  } else if (document.documentElement.scrollTop > 60 && window.innerWidth < 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     upArrow.style.right = '5px';
