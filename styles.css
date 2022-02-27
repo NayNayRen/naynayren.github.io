@@ -456,7 +456,7 @@
    flex-wrap: wrap;
    height: 600px;
    justify-content: center;
-   overflow: hidden;
+   overflow-x: hidden;
    /* border: solid 1px blue; */
  }
 
