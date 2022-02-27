@@ -798,21 +798,23 @@
      -ms-flex-direction: column;
      -webkit-box-direction: normal;
      -webkit-box-orient: vertical;
-     -webkit-transition: top 500ms ease;
+     -webkit-transition: opacity 750ms ease, top 500ms ease;
      background-color: #000;
-     border-bottom-left-radius: 5px;
+     border-bottom: solid 1px #FF00BF;
      flex-direction: column;
      height: auto;
-     padding: 0 10px;
+     opacity: 0;
+     padding: 20px 10px 0 10px;
      position: absolute;
      right: 0;
      top: -350px;
-     transition: top 500ms ease;
+     transition: opacity 750ms ease, top 500ms ease;
      width: 175px;
      /* border: solid 1px blue; */
    }
 
    .move-nav-links-on {
+     opacity: 1;
      top: 50px;
    }
 

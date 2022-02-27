@@ -48,7 +48,7 @@ function fixedNav() {
     nav.style.top = '0';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '75px';
-  }else if (document.documentElement.scrollTop > 85 && window.innerWidth < 700 && window.innerWidth > 400) {
+  }else if (document.documentElement.scrollTop > 80 && window.innerWidth < 700 && window.innerWidth > 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     upArrow.style.right = '5px';
