@@ -1,4 +1,6 @@
- @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap');
+ /* @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap'); */
+
+ @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
  * {
    -webkit-box-sizing: border-box;
@@ -13,7 +15,8 @@
    background-color: #000;
    background-position: center;
    background-size: cover;
-   font-family: 'Nunito', sans-serif;
+   /* font-family: 'Nunito', sans-serif; */
+   font-family: 'Raleway', sans-serif;
    margin: 0;
    height: 100vh;
    overflow-x: hidden;
@@ -27,7 +30,7 @@
  .container {
    -webkit-transition: opacity 250ms ease;
    color: #fff;
-   margin: 10px 0;
+   margin: 50px 0;
    min-height: 400px;
    position: relative;
    transition: opacity 250ms ease;
@@ -37,7 +40,6 @@
    color: #00FFFF;
    display: inline-block;
    font-size: 35px;
-   margin-bottom: 5px;
    padding-left: 50px;
    position: relative;
    text-shadow: 0 1px 0 #000,
@@ -74,6 +76,7 @@
  .container-li-title {
    color: #00FFFF;
    font-size: 22px;
+   font-style: normal;
  }
 
  .container-square {
@@ -92,6 +95,7 @@
 
  .container-text, .container ul {
    font-size: 20px;
+   line-height: 28px;
    padding: 0 50px;
    text-shadow: 0 1px 0 #000,
      0 -1px 0 #000,
@@ -351,6 +355,8 @@
  .photo-caption {
    background-color: #000;
    font-size: 20px;
+   font-style: italic;
+   line-height: 28px;
    margin: 0;
    padding: 0 10px;
  }
@@ -663,6 +669,9 @@
  }
 
  @media (max-width: 1000px) {
+   .container{
+     margin: 30px 0 15px 0;
+   }
    .container h1 {
      font-size: 25px;
    }
@@ -809,7 +818,7 @@
    }
 
    .container-li-date, .container-li-title {
-     font-size: 16px;
+     font-size: 18px;
    }
 
    .container-square {
@@ -819,6 +828,7 @@
 
    .container-text, .container ul {
      font-size: 18px;
+     line-height: 25px;
      padding: 0 20px;
      width: 95%;
    }
@@ -862,7 +872,7 @@
    }
 
    .nav-button {
-     font-size: 30px;
+     font-size: 28px;
      margin: 0 0 10px 0;
      text-align: right;
      width: 100%;
@@ -917,6 +927,10 @@
    .next {
      border-bottom-left-radius: 10px;
      right: 0;
+   }
+
+   .photo-caption{
+     line-height: 25px;
    }
 
    .prev {
