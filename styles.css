@@ -50,11 +50,12 @@
    -webkit-transform: translateY(-50%) rotate(45deg);
    background-color: #FF00BF;
    content: '';
-   height: 70px;
+   height: 75px;
+   left: 40px;
    position: absolute;
    top: 50%;
    transform: translateY(-50%) rotate(45deg);
-   width: 70px;
+   width: 75px;
    z-index: -1;
  }
 
@@ -124,10 +125,10 @@
  }
 
  .degree-photo-container {
-   -webkit-box-shadow: 0 0 15px #000;
+   -webkit-box-shadow: 0 0 10px #000;
    background-color: #000;
    border-bottom: solid 1px #FF00BF;
-   box-shadow: 0 0 15px #000;
+   box-shadow: 0 0 10px #000;
    height: 100%;
    margin: 25px 20px;
    width: 700px;
@@ -450,6 +451,7 @@
    height: 600px;
    justify-content: center;
    overflow-x: hidden;
+   padding-top: 10px;
    /* border: solid 1px blue; */
  }
 
@@ -461,6 +463,7 @@
  .slide {
    -webkit-transform: translateX(130%);
    -webkit-transition: all 1000ms ease;
+   box-shadow: 0 0 10px #000;
    height: 100%;
    opacity: 0;
    position: absolute;
@@ -469,7 +472,7 @@
    width: 100%;
  }
 
- .slide a{
+ .slide a {
    text-decoration: none;
  }
 
@@ -576,8 +579,9 @@
    }
 
    .container h1::before {
-     height: 55px;
-     width: 55px;
+     height: 60px;
+     left: 25px;
+     width: 60px;
    }
 
    .container-li-date, .container-li-title {
@@ -643,7 +647,7 @@
      height: 500px;
    }
 
-   .project-photo-title{
+   .project-photo-title {
      font-size: 22px;
    }
 
@@ -663,8 +667,8 @@
    }
 
    .container h1::before {
-     height: 40px;
-     width: 40px;
+     height: 45px;
+     width: 45px;
    }
 
    .container-square {
@@ -797,6 +801,12 @@
      padding-left: 20px;
    }
 
+   .container h1::before {
+     height: 35px;
+     left: 12px;
+     width: 35px;
+   }
+
    .container-li-date, .container-li-title {
      font-size: 16px;
    }
@@ -813,12 +823,9 @@
    }
 
    .degree-photo-container {
+     box-shadow: none;
+     margin: 20px 0 0 0;
      width: 400px;
-   }
-
-   .degree-photo-container {
-     border-right: none;
-     margin: 20px 5px 0 5px;
    }
 
    .footer {
@@ -924,10 +931,15 @@
 
    .project-container {
      height: 425px;
+     padding-top: 0;
    }
 
-   .project-photo-title{
+   .project-photo-title {
      font-size: 20px;
+   }
+
+   .slide {
+     box-shadow: none;
    }
 
    .slide-container {
@@ -953,11 +965,6 @@
      font-size: 22px;
    }
 
-   .container h1::before {
-     height: 35px;
-     width: 35px;
-   }
-
    .container-square {
      display: none;
    }
@@ -968,7 +975,6 @@
    }
 
    .degree-photo-container {
-     margin: 20px 0 0 0;
      width: 100%;
    }
 
