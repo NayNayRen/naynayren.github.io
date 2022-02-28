@@ -33,7 +33,7 @@ nextBtn.onclick = function () {
 // fixed navigation settings for all screens
 function fixedNav() {
   // scroll point in pixels to start the fixed position and window width
-  if (document.documentElement.scrollTop > 115 && window.innerWidth > 1300) {
+  if (document.documentElement.scrollTop > 110 && window.innerWidth > 1300) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     upArrow.style.right = '5px';
