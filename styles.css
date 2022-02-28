@@ -468,6 +468,7 @@
  .resume {
    font-size: 25px;
    text-align: center;
+   text-transform: uppercase;
  }
 
  .slide {
