@@ -40,10 +40,11 @@
    margin-bottom: 5px;
    padding-left: 50px;
    position: relative;
-   text-shadow: 0 1px 1px #000,
-     0 -1px 1px #000,
-     1px 0 1px #000,
-     -1px 0 1px #000;
+   text-shadow: 0 1px 0 #000,
+     0 -1px 0 #000,
+     1px 0 0 #000,
+     -1px 0 0 #000,
+     0 3px 3px #000;
  }
 
  .container h1::before {
@@ -92,11 +93,11 @@
  .container-text, .container ul {
    font-size: 20px;
    padding: 0 50px;
-   text-shadow: 0 1px 1px #000,
-     0 -1px 1px #000,
-     1px 0 1px #000,
-     -1px 0 1px #000,
-     0 2px 2px #000;
+   text-shadow: 0 1px 0 #000,
+     0 -1px 0 #000,
+     1px 0 0 #000,
+     -1px 0 0 #000,
+     0 3px 3px #000;
    width: 75%;
  }
 
