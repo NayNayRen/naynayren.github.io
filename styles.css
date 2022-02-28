@@ -118,6 +118,11 @@
    justify-content: center;
  }
 
+ .degree-photo {
+   height: 100%;
+   width: 100%;
+ }
+
  .degree-photo-container {
    -webkit-box-shadow: 0 0 15px #000;
    background-color: #000;
@@ -127,6 +132,13 @@
    margin: 25px 20px;
    width: 700px;
    z-index: 1;
+ }
+
+ .degree-photo-title {
+   color: #00FFFF;
+   display: block;
+   font-size: 20px;
+   padding: 0 0 0 10px;
  }
 
  .education {
@@ -339,16 +351,13 @@
    padding: 0 10px;
  }
 
- .photo {
-   height: 100%;
-   width: 100%;
- }
-
- .photo-title {
+ .project-photo-title {
+   bottom: 0;
    color: #00FFFF;
    display: block;
-   font-size: 20px;
+   font-size: 24px;
    padding: 0 0 0 10px;
+   position: absolute;
  }
 
  .prev {
@@ -450,12 +459,16 @@
  .slide {
    -webkit-transform: translateX(130%);
    -webkit-transition: all 1000ms ease;
-   height: 90%;
+   height: 100%;
    opacity: 0;
    position: absolute;
-   transform: translateX(130%);
+   transform: translateX(140%);
    transition: all 1000ms ease;
    width: 100%;
+ }
+
+ .slide a{
+   text-decoration: none;
  }
 
  .slide-container {
@@ -585,6 +598,10 @@
      width: 600px;
    }
 
+   .degree-photo-title, .photo-caption {
+     font-size: 18px;
+   }
+
    .footer {
      font-size: 14px;
      padding: 5px 0;
@@ -614,10 +631,6 @@
      font-size: 22px;
    }
 
-   .photo-title, .photo-caption {
-     font-size: 18px;
-   }
-
    .profile-photo {
      height: 300px;
      margin: 25px 20px 0 30px;
@@ -626,6 +639,10 @@
 
    .project-container {
      height: 500px;
+   }
+
+   .project-photo-title{
+     font-size: 22px;
    }
 
    .slide-container {
@@ -669,7 +686,7 @@
    }
 
    .project-container {
-     height: 475px;
+     height: 450px;
    }
 
    .slide-container {
@@ -719,10 +736,6 @@
      cursor: pointer;
    }
 
-   .burger-menu:hover .burger-bars {
-     background-color: #FFEC68;
-   }
-
    .burger-bars {
      -o-transition: all 250ms ease;
      -webkit-transition: all 250ms ease;
@@ -742,6 +755,7 @@
    .burger-bars-rotate-clockwise {
      -ms-transform: rotate(45deg);
      -webkit-transform: rotate(45deg);
+     background-color: #00FFFF;
      height: 3px;
      position: absolute;
      top: 15px;
@@ -751,6 +765,7 @@
    .burger-bars-rotate-counter-clockwise {
      -ms-transform: rotate(-45deg);
      -webkit-transform: rotate(-45deg);
+     background-color: #00FFFF;
      height: 3px;
      position: absolute;
      top: 15px;
@@ -873,23 +888,30 @@
      top: 50px;
    }
 
-   .next {
-     right: 5px;
-   }
-
    .next,
    .prev {
      -webkit-transform: translateY(0);
+     border-radius: 0;
      font-size: 40px;
      height: 40px;
-     top: 5px;
+     top: 0;
      transform: translateY(0);
      width: 40px;
    }
 
+   .next:hover,
+   .prev:hover, .up-arrow:hover {
+     color: #FF00BF;
+   }
+
+   .next {
+     border-bottom-left-radius: 10px;
+     right: 0;
+   }
+
    .prev {
-     left: 5px;
-     padding-right: 5px;
+     border-bottom-right-radius: 10px;
+     left: 0;
    }
 
    .profile-photo {
@@ -899,7 +921,11 @@
    }
 
    .project-container {
-     height: 425px;
+     height: 400px;
+   }
+
+   .project-photo-title{
+     font-size: 20px;
    }
 
    .slide-container {
@@ -988,7 +1014,7 @@
    }
 
    .project-container {
-     height: 450px;
+     height: 425px;
    }
 
    .profile-photo {
