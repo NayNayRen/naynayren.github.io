@@ -35,7 +35,7 @@
  }
 
  .container h1 {
-   color: #00FFFF;
+   color: #3DDBCF;
    display: inline-block;
    font-size: 35px;
    padding-left: 50px;
@@ -50,7 +50,7 @@
 
  .container h1::before {
    -webkit-transform: translateY(-50%) rotate(45deg);
-   background-color: #FF00BF;
+   background-color: #ED429F;
    content: '';
    height: 75px;
    left: 40px;
@@ -68,23 +68,24 @@
  }
 
  .container-li-date {
-   color: #FF00BF;
+   color: #ED429F;
    font-size: 22px;
    font-weight: bold;
  }
 
  .container-li-title {
-   color: #00FFFF;
+   color: #3DDBCF;
    display: block;
    font-size: 22px;
    font-style: normal;
+   font-weight: bold;
    text-transform: uppercase;
  }
 
  .container-square {
    -webkit-transform: rotate(45deg);
    -webkit-transition: opacity 1100ms ease, right 750ms ease;
-   background-color: rgba(85, 210, 210, 0.5);
+   background-color: rgba(61, 219, 207, 0.5);
    height: 450px;
    opacity: 0;
    position: absolute;
@@ -108,7 +109,8 @@
  }
 
  .container-text-colored {
-   color: #FF00BF;
+   color: #ED429F;
+   font-weight: bold;
  }
 
  .degree-container {
@@ -134,7 +136,7 @@
  .degree-photo-container {
    -webkit-box-shadow: 0 0 10px #000;
    background-color: #000;
-   border-bottom: solid 1px #FF00BF;
+   border-bottom: solid 1px #ED429F;
    box-shadow: 0 0 10px #000;
    height: 100%;
    margin: 25px 20px;
@@ -143,9 +145,10 @@
  }
 
  .degree-photo-title {
-   color: #00FFFF;
+   color: #3DDBCF;
    display: block;
    font-size: 20px;
+   font-weight: bold;
    padding: 0 0 0 10px;
  }
 
@@ -163,12 +166,13 @@
    -webkit-box-pack: center;
    align-items: center;
    background-color: rgba(0, 0, 0, 0.85);
-   color: #00FFFF;
+   color: #3DDBCF;
    display: -ms-flexbox;
    display: -webkit-box;
    display: flex;
    flex-direction: column;
    font-size: 20px;
+   font-weight: bold;
    justify-content: center;
    padding: 20px 0;
    position: relative;
@@ -214,15 +218,17 @@
 
  .header h1::after {
    bottom: 7px;
-   color: #00FFFF;
+   color: #3DDBCF;
    font-size: 16px;
+   font-weight: bold;
    content: 'Web Developer';
    position: absolute;
  }
 
  .header span {
-   color: #FF00BF;
+   color: #ED429F;
    font-size: 22px;
+   font-weight: bold;
    padding-left: 50px;
  }
 
@@ -236,12 +242,13 @@
 
  .link {
    -webkit-transition: color 250ms ease;
-   color: #FFDE00;
+   color: #FFE347;
+   font-weight: bold;
    transition: color 250ms ease;
  }
 
  .link:hover {
-   color: #FFEC68;
+   color: #A99836;
  }
 
  .main {
@@ -264,7 +271,7 @@
  .nav-button::before {
    -webkit-transform: translateY(-50%);
    -webkit-transition: all 250ms ease;
-   background-color: #00FFFF;
+   background-color: #3DDBCF;
    content: '';
    height: 0;
    left: 0;
@@ -335,7 +342,7 @@
    background-color: #fff;
    border-radius: 50%;
    box-shadow: 0 2px 5px #000;
-   color: #FF00BF;
+   color: #ED429F;
    cursor: pointer;
    display: -ms-flexbox;
    display: -webkit-box;
@@ -353,7 +360,7 @@
 
  .next:hover,
  .prev:hover {
-   color: #FFEC68;
+   color: #FFE347;
  }
 
  .photo-caption {
@@ -367,9 +374,10 @@
 
  .project-photo-title {
    bottom: 0;
-   color: #00FFFF;
+   color: #3DDBCF;
    display: block;
    font-size: 24px;
+   font-weight: bold;
    padding: 0 0 0 10px;
    position: absolute;
  }
@@ -523,7 +531,7 @@
 
  .social-media-container a {
    -webkit-transition: all 250ms ease-in-out;
-   color: #FF00BF;
+   color: #ED429F;
    font-size: 50px;
    margin: 0 20px;
    padding: 0 0 0 5px;
@@ -535,7 +543,7 @@
  .social-media-container a::before {
    -webkit-transform: translateY(-50%);
    -webkit-transition: all 250ms ease;
-   background-color: #00FFFF;
+   background-color: #3DDBCF;
    content: '';
    height: 0;
    left: -5px;
@@ -563,7 +571,7 @@
    border-radius: 50%;
    bottom: 5px;
    box-shadow: 0 2px 2px #000;
-   color: #FF00BF;
+   color: #ED429F;
    display: -ms-flexbox;
    display: -webkit-box;
    display: flex;
@@ -581,7 +589,7 @@
  }
 
  .up-arrow:hover {
-   color: #FFEC68;
+   color: #FFE347;
  }
 
  @media (max-width: 1300px) {
@@ -736,7 +744,6 @@
      -webkit-box-orient: vertical;
      -webkit-box-pack: center;
      align-items: center;
-     background-color: #000;
      display: -ms-flexbox;
      display: -webkit-box;
      display: flex;
@@ -759,7 +766,7 @@
    .burger-bars {
      -o-transition: all 250ms ease;
      -webkit-transition: all 250ms ease;
-     background-color: #FFDE00;
+     background-color: #FFE347;
      border-radius: 5px;
      height: 2px;
      margin: 2px 0;
@@ -775,7 +782,7 @@
    .burger-bars-rotate-clockwise {
      -ms-transform: rotate(45deg);
      -webkit-transform: rotate(45deg);
-     background-color: #00FFFF;
+     background-color: #3DDBCF;
      height: 3px;
      position: absolute;
      top: 15px;
@@ -785,7 +792,7 @@
    .burger-bars-rotate-counter-clockwise {
      -ms-transform: rotate(-45deg);
      -webkit-transform: rotate(-45deg);
-     background-color: #00FFFF;
+     background-color: #3DDBCF;
      height: 3px;
      position: absolute;
      top: 15px;
@@ -893,7 +900,7 @@
      -webkit-box-orient: vertical;
      -webkit-transition: opacity 750ms ease, top 500ms ease;
      background-color: #000;
-     border-bottom: solid 1px #FF00BF;
+     border-bottom: solid 1px #ED429F;
      flex-direction: column;
      height: auto;
      opacity: 0;
@@ -924,7 +931,7 @@
 
    .next:hover,
    .prev:hover, .up-arrow:hover {
-     color: #FF00BF;
+     color: #ED429F;
    }
 
    .next {

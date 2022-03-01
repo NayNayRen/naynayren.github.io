@@ -56,7 +56,6 @@ function fixedNav() {
   } else if (document.documentElement.scrollTop > 55 && window.innerWidth < 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
-    headerLogo.style.position = 'absolute';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '50px';
   } else {
