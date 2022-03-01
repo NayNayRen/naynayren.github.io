@@ -33,35 +33,40 @@ nextBtn.onclick = function () {
 // fixed navigation settings for all screens
 function fixedNav() {
   // scroll point in pixels to start the fixed position and window width
-  if (document.documentElement.scrollTop > 110 && window.innerWidth > 1300) {
+  if (document.documentElement.scrollTop > 105 && window.innerWidth > 1300) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
+    headerLogo.style.position = 'absolute';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '75px';
   } else if (document.documentElement.scrollTop > 105 && window.innerWidth < 1300 && window.innerWidth > 1000) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
+    headerLogo.style.position = 'absolute';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '80px';
   } else if (document.documentElement.scrollTop > 100 && window.innerWidth < 1000 && window.innerWidth > 700) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
+    headerLogo.style.position = 'absolute';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '75px';
   }else if (document.documentElement.scrollTop > 80 && window.innerWidth < 700 && window.innerWidth > 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
+    headerLogo.style.position = 'absolute';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '50px';
   } else if (document.documentElement.scrollTop > 60 && window.innerWidth < 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
+    headerLogo.style.position = 'absolute';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '50px';
   } else {
     nav.style.position = 'relative';
     scrollPoint.style.paddingTop = '0px';
-    headerLogo.style.right = '10px';
+    headerLogo.style.position = 'fixed';
     upArrow.style.right = '-60px';
   }
 }
