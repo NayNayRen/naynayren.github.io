@@ -43,17 +43,17 @@ function fixedNav() {
     nav.style.top = '0';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '80px';
-  } else if (document.documentElement.scrollTop > 100 && window.innerWidth < 1000 && window.innerWidth > 700) {
+  } else if (document.documentElement.scrollTop > 95 && window.innerWidth < 1000 && window.innerWidth > 700) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '75px';
-  }else if (document.documentElement.scrollTop > 80 && window.innerWidth < 700 && window.innerWidth > 400) {
+  }else if (document.documentElement.scrollTop > 75 && window.innerWidth < 700 && window.innerWidth > 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '50px';
-  } else if (document.documentElement.scrollTop > 55 && window.innerWidth < 400) {
+  } else if (document.documentElement.scrollTop > 60 && window.innerWidth < 400) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     upArrow.style.right = '5px';
