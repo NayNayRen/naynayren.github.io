@@ -70,6 +70,7 @@
  .container-li-date {
    color: #FF00BF;
    font-size: 22px;
+   font-weight: bold;
  }
 
  .container-li-title {
@@ -820,8 +821,8 @@
      width: 35px;
    }
 
-   .container-li-date, .container-li-title {
-     font-size: 18px;
+   .container-li-title {
+     font-size: 16px;
    }
 
    .container-square {
@@ -979,7 +980,7 @@
    }
 
    .container h1 {
-     font-size: 22px;
+     font-size: 20px;
    }
 
    .container-square {
