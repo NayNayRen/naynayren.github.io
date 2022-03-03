@@ -150,6 +150,7 @@
    font-size: 20px;
    font-weight: bold;
    padding: 0 0 0 10px;
+   text-transform: uppercase;
  }
 
  .education {
@@ -382,6 +383,7 @@
    font-weight: bold;
    padding: 0 0 0 10px;
    position: absolute;
+   text-transform: uppercase;
  }
 
  .prev {
@@ -862,6 +864,10 @@
      width: 400px;
    }
 
+   .degree-photo-title {
+    font-size: 16px;
+  }
+
    .footer{
      font-size: 16px;
    }
@@ -972,7 +978,7 @@
    }
 
    .project-photo-title {
-     font-size: 20px;
+     font-size: 18px;
    }
 
    .slide {
