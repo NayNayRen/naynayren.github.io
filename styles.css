@@ -223,6 +223,7 @@
    font-weight: bold;
    content: 'Web Developer';
    position: absolute;
+   text-transform: uppercase;
  }
 
  .header span {
