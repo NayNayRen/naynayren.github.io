@@ -91,6 +91,7 @@
    right: -500px;
    top: 0;
    transform: rotate(45deg);
+   transition: opacity 1100ms ease, right 750ms ease;
    width: 450px;
    z-index: -1;
  }
