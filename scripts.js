@@ -3,7 +3,7 @@ const nav = document.getElementById('nav-container');
 const scrollPoint = document.getElementById('scroll-point');
 const containers = document.querySelectorAll('.container');
 const education = document.querySelector('.education');
-const containerSquares = document.querySelectorAll('.container-square');
+// const containerSquares = document.querySelectorAll('.container-square');
 const headerLogo = document.querySelector('.header-logo');
 const upArrow = document.querySelector('.up-arrow');
 
@@ -81,58 +81,54 @@ function fixedNav() {
 }
 
 // fades each container for the scroll effect
-// function fadeIn(element) {
-//   element.style.opacity = '1';
-// }
-// fades each square for the scroll effect
-function moveSquares(element) {
+function fadeIn(element) {
   element.style.opacity = '1';
-  element.style.right = '10%';
 }
+// fades each square for the scroll effect
+// function moveSquares(element) {
+//   element.style.opacity = '1';
+//   element.style.right = '10%';
+// }
 
 // settings for container info and decorative squares to be faded in
 function pageContainerActions() {
   containers.forEach((container) => {
     const distanceFromTopOfPage = container.getBoundingClientRect().top;
     if (distanceFromTopOfPage < 650 && window.innerWidth > 1000) {
-      // fadeIn(container);
-      container.style.opacity = '1';
+      fadeIn(container);
     } else if (
       distanceFromTopOfPage < 575 &&
       window.innerWidth < 1000 &&
       window.innerWidth > 700
     ) {
-      // fadeIn(container);
-      container.style.opacity = '1';
+      fadeIn(container);
     } else if (
       distanceFromTopOfPage < 500 &&
       window.innerWidth < 700 &&
       window.innerWidth > 400
     ) {
-      // fadeIn(container);
-      container.style.opacity = '1';
+      fadeIn(container);
     } else if (distanceFromTopOfPage < 350 && window.innerWidth < 400) {
-      // fadeIn(container);
-      container.style.opacity = '1';
+      fadeIn(container);
     } else {
       container.style.opacity = '0';
     }
   });
-  containerSquares.forEach((square) => {
-    const squareDistanceFromTopOfPage = square.getBoundingClientRect().top;
-    if (squareDistanceFromTopOfPage < 425 && window.innerWidth > 1000) {
-      moveSquares(square);
-    } else if (
-      squareDistanceFromTopOfPage < 400 &&
-      window.innerWidth < 1000 &&
-      window.innerWidth > 700
-    ) {
-      moveSquares(square);
-    } else {
-      square.style.opacity = '0';
-      square.style.right = '-600px';
-    }
-  });
+  // containerSquares.forEach((square) => {
+  //   const squareDistanceFromTopOfPage = square.getBoundingClientRect().top;
+  //   if (squareDistanceFromTopOfPage < 425 && window.innerWidth > 1000) {
+  //     moveSquares(square);
+  //   } else if (
+  //     squareDistanceFromTopOfPage < 400 &&
+  //     window.innerWidth < 1000 &&
+  //     window.innerWidth > 700
+  //   ) {
+  //     moveSquares(square);
+  //   } else {
+  //     square.style.opacity = '0';
+  //     square.style.right = '-600px';
+  //   }
+  // });
 }
 
 // on page load and scroll sticky nav container takes hold
