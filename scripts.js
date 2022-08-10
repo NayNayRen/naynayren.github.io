@@ -7,27 +7,27 @@ const containerSquares = document.querySelectorAll('.container-square');
 const headerLogo = document.querySelector('.header-logo');
 const upArrow = document.querySelector('.up-arrow');
 
-const nextBtn = document.querySelector(".next");
-const prevBtn = document.querySelector(".prev");
-const slide = document.querySelectorAll(".slide");
+const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.prev');
+const slide = document.querySelectorAll('.slide');
 let i = 0;
 
 prevBtn.onclick = function () {
-  slide[i].classList.remove("current");
+  slide[i].classList.remove('current');
   i--;
   if (i < 0) {
     i = slide.length - 1;
   }
-  slide[i].classList.add("current");
+  slide[i].classList.add('current');
 };
 
 nextBtn.onclick = function () {
-  slide[i].classList.remove("current");
+  slide[i].classList.remove('current');
   i++;
   if (i >= slide.length) {
     i = 0;
   }
-  slide[i].classList.add("current");
+  slide[i].classList.add('current');
 };
 
 // fixed navigation settings for all screens
@@ -38,22 +38,37 @@ function fixedNav() {
     nav.style.top = '0';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '75px';
-  } else if (document.documentElement.scrollTop > 95 && window.innerWidth < 1300 && window.innerWidth > 1000) {
+  } else if (
+    document.documentElement.scrollTop > 95 &&
+    window.innerWidth < 1300 &&
+    window.innerWidth > 1000
+  ) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '80px';
-  } else if (document.documentElement.scrollTop > 95 && window.innerWidth < 1000 && window.innerWidth > 700) {
+  } else if (
+    document.documentElement.scrollTop > 95 &&
+    window.innerWidth < 1000 &&
+    window.innerWidth > 700
+  ) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '75px';
-  }else if (document.documentElement.scrollTop > 75 && window.innerWidth < 700 && window.innerWidth > 400) {
+  } else if (
+    document.documentElement.scrollTop > 75 &&
+    window.innerWidth < 700 &&
+    window.innerWidth > 400
+  ) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     upArrow.style.right = '5px';
     scrollPoint.style.paddingTop = '50px';
-  } else if (document.documentElement.scrollTop > 65 && window.innerWidth < 400) {
+  } else if (
+    document.documentElement.scrollTop > 65 &&
+    window.innerWidth < 400
+  ) {
     nav.style.position = 'fixed';
     nav.style.top = '0';
     upArrow.style.right = '5px';
@@ -66,9 +81,9 @@ function fixedNav() {
 }
 
 // fades each container for the scroll effect
-function fadeIn(element) {
-  element.style.opacity = '1';
-}
+// function fadeIn(element) {
+//   element.style.opacity = '1';
+// }
 // fades each square for the scroll effect
 function moveSquares(element) {
   element.style.opacity = '1';
@@ -76,26 +91,42 @@ function moveSquares(element) {
 }
 
 // settings for container info and decorative squares to be faded in
-function pageContainerActions(){
-  containers.forEach(container => {
+function pageContainerActions() {
+  containers.forEach((container) => {
     const distanceFromTopOfPage = container.getBoundingClientRect().top;
     if (distanceFromTopOfPage < 650 && window.innerWidth > 1000) {
-      fadeIn(container);
-    } else if (distanceFromTopOfPage < 575 && window.innerWidth < 1000 && window.innerWidth > 700) {
-      fadeIn(container);
-    } else if (distanceFromTopOfPage < 500 && window.innerWidth < 700 && window.innerWidth > 400) {
-      fadeIn(container);
+      // fadeIn(container);
+      container.style.opacity = '1';
+    } else if (
+      distanceFromTopOfPage < 575 &&
+      window.innerWidth < 1000 &&
+      window.innerWidth > 700
+    ) {
+      // fadeIn(container);
+      container.style.opacity = '1';
+    } else if (
+      distanceFromTopOfPage < 500 &&
+      window.innerWidth < 700 &&
+      window.innerWidth > 400
+    ) {
+      // fadeIn(container);
+      container.style.opacity = '1';
     } else if (distanceFromTopOfPage < 350 && window.innerWidth < 400) {
-      fadeIn(container);
+      // fadeIn(container);
+      container.style.opacity = '1';
     } else {
       container.style.opacity = '0';
     }
   });
-  containerSquares.forEach(square => {
+  containerSquares.forEach((square) => {
     const squareDistanceFromTopOfPage = square.getBoundingClientRect().top;
     if (squareDistanceFromTopOfPage < 425 && window.innerWidth > 1000) {
       moveSquares(square);
-    } else if (squareDistanceFromTopOfPage < 400 && window.innerWidth < 1000 && window.innerWidth > 700) {
+    } else if (
+      squareDistanceFromTopOfPage < 400 &&
+      window.innerWidth < 1000 &&
+      window.innerWidth > 700
+    ) {
       moveSquares(square);
     } else {
       square.style.opacity = '0';
@@ -117,10 +148,22 @@ window.addEventListener('scroll', () => {
 
 // toggles the links menu left and right when clicked
 burgerMenu.addEventListener('click', () => {
-  document.querySelector('#burger-overlay').classList.toggle('burger-overlay-dim');
-  document.querySelector('.nav-links-container').classList.toggle('move-nav-links-on');
-  document.querySelector('#burger-bars-1').classList.toggle('burger-bars-remove');
-  document.querySelector('#burger-bars-2').classList.toggle('burger-bars-rotate-clockwise');
-  document.querySelector('#burger-bars-3').classList.toggle('burger-bars-rotate-counter-clockwise');
-  document.querySelector('#burger-bars-4').classList.toggle('burger-bars-remove');
+  document
+    .querySelector('#burger-overlay')
+    .classList.toggle('burger-overlay-dim');
+  document
+    .querySelector('.nav-links-container')
+    .classList.toggle('move-nav-links-on');
+  document
+    .querySelector('#burger-bars-1')
+    .classList.toggle('burger-bars-remove');
+  document
+    .querySelector('#burger-bars-2')
+    .classList.toggle('burger-bars-rotate-clockwise');
+  document
+    .querySelector('#burger-bars-3')
+    .classList.toggle('burger-bars-rotate-counter-clockwise');
+  document
+    .querySelector('#burger-bars-4')
+    .classList.toggle('burger-bars-remove');
 });
