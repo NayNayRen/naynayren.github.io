@@ -1,281 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0XSM4K0T5W"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0XSM4K0T5W"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+      gtag('config', 'G-0XSM4K0T5W');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Nate M.</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+  </head>
 
-    gtag('config', 'G-0XSM4K0T5W');
-  </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <title>Nate M.</title>
-  <link rel="icon" href="img/logo.png" type="image/x-icon">
-</head>
-
-<body>
-  <div class="main">
-    <!-- TOP BUTTON ANCHOR -->
-    <a id="top"></a>
-    <!-- BURGER MENU SCREEN TINT -->
-    <div id="burger-overlay" class="burger-overlay"></div>
-    <!-- SCROLL POINT KICKS IN -->
-    <div id="scroll-point"></div>
-    <div class="header">
-      <h1>Nate Moscato</h1>
-      <span>Building websites, so that you don't have to.</span>
-    </div>
-    <div class="nav-container" id="nav-container">
-      <img class="header-logo" src="img/logo.png" alt="My Logo, capital letter N and M side by side.">
-      <div class="burger-menu">
-        <div id="burger-bars-1" class="burger-bars"></div>
-        <div id="burger-bars-2" class="burger-bars"></div>
-        <div id="burger-bars-3" class="burger-bars"></div>
-        <div id="burger-bars-4" class="burger-bars"></div>
+  <body>
+    <div class="main">
+      <!-- TOP BUTTON ANCHOR -->
+      <a id="top"></a>
+      <!-- BURGER MENU SCREEN TINT -->
+      <div id="burger-overlay" class="burger-overlay"></div>
+      <!-- SCROLL POINT KICKS IN -->
+      <div id="scroll-point"></div>
+      <div class="header">
+        <h1>Nate Moscato</h1>
+        <span>Building websites, so that you don't have to.</span>
       </div>
-      <div class="nav-links-container">
-        <a href="#me" class="nav-button">Myself</a>
-        <a href="#education" class="nav-button">Schooling</a>
-        <a href="#projects" class="nav-button">Projects</a>
-        <a href="#work" class="nav-button">Work</a>
-        <a href="#contact" class="nav-button">Contact</a>
-      </div>
-    </div>
-
-    <!-- ME -->
-    <div class="container">
-      <a id="me"></a>
-      <h1>Some insight...</h1><br>
-      <img class="profile-photo" src="img/me.jpeg" alt="A photo of me.">
-      <p class="container-text">Greetings and hellos, thank you for taking an interest in seeing what I've created here. I just wanted to introduce myself a little before you went on your way through the rest of my site. My name is <span
-          class="container-text-colored">Nate Moscato</span>, I am 40 years old, currently residing in Pinellas County, and a front-end developer for roughly 10 months.</p>
-      <p class="container-text">My first resume website was originally created in 2018 towards the end of my Associate's degree, parts and pieces of which can be seen reworked here. I am on a journey to grow my creativity in the ways of web design by
-        producing manageable, cleanly written code, alongside responsive and intriguing websites. The sections covering my <span class="container-text-colored">Education</span> and <span class="container-text-colored">Projects</span> gives more on my
-        schooling and creations.</p>
-      <p class="container-text">After 22 years in restaraunts, I thought pursuing something new could be refreshing, and I took to Computer Science, which also started a few hobbies. A more in depth dive into that portion can be found down in my
-        <span class="container-text-colored">Work</span> section if you'd
-        like. My goal in this is to be successful at creating websites, plain and simple.
-      </p>
-      <p class="container-text"> Please take a moment to cruise through my site, check out what I have covered through my studies, see some of the projects I've created, read a little of my
-        work history, and if you would like to <span class="container-text-colored">Contact</span> me, please do so through any means listed below. There is also a <a href="img/myResume.pdf" class="link" target="_blank">.pdf</a> version of my resume
-        if you're interested, here, or down with my media and contact links. My intentions are not to take over the world, but merely to create a comfortable life while building creative and
-        engaging products.</p>
-    </div>
-
-    <!-- EDUCATION -->
-    <div class="container education">
-      <a id="education"></a>
-      <h1>Back to the books...</h1>
-      <p class="container-text">I returned to school in the Spring of 2016 and began taking classes at <a href="https://www.spcollege.edu/" class="link" target="_blank">St. Petersburg College</a>.
-        I enrolled in the Computer Science program to learn how to code. A few semesters in I had my first class involving the creation of
-        websites. The creativity of design, potential freedom of work schedule, possible income, and change of scenery is what grabbed my attention.
-      </p>
-      <span class="container-square"></span>
-      <p class="container-text">So, after a little experimentaion, I switched my course track to accomidate <span class="container-text-colored">Web Development</span>. I had never
-        done, or thought about doing, any kind of previous coding. I gravitated towards the idea that technology is only gaining traction, and it would be a solid field to get into.
-        Every business needs a website right? After two and a half years of a part time class schedule, to go along with a full time work one,
-        I finished my <span class="container-text-colored">Associate in Science</span> and a degree in Web Development. Now I pursue it as a new career while still learning this new craft.</p>
-      <ul>
-        <li><span class="container-li-title">Program:</span> Associate in Science</li>
-        <li><span class="container-li-title">Degree:</span> Web Design and Management</li>
-        <li><span class="container-li-title">Certification:</span> Web Development Specialist</li>
-        <li><span class="container-li-title">GPA:</span> 3.56</li>
-      </ul>
-      <div class="degree-container">
-        <div class="degree-photo-container">
-          <img class="degree-photo" src="img/as-degree.jpeg" alt="Associate's Degree">
-          <span class="degree-photo-title">Associate's Degree in Science</span>
+      <div class="nav-container" id="nav-container">
+        <img
+          class="header-logo"
+          src="img/logo.png"
+          alt="My Logo, capital letter N and M side by side."
+        />
+        <div class="burger-menu">
+          <div id="burger-bars-1" class="burger-bars"></div>
+          <div id="burger-bars-2" class="burger-bars"></div>
+          <div id="burger-bars-3" class="burger-bars"></div>
+          <div id="burger-bars-4" class="burger-bars"></div>
         </div>
-        <div class="degree-photo-container">
-          <img class="degree-photo" src="img/wd-degree.jpeg" alt="Web Development Specialist Certificate">
-          <span class="degree-photo-title">Web Development Specialist</span>
+        <div class="nav-links-container">
+          <a href="#me" class="nav-button">Myself</a>
+          <a href="#education" class="nav-button">Schooling</a>
+          <a href="#projects" class="nav-button">Projects</a>
+          <a href="#work" class="nav-button">Work</a>
+          <a href="#contact" class="nav-button">Contact</a>
         </div>
       </div>
-    </div>
 
-    <!-- PROJECTS -->
-    <div class="container">
-      <a id="projects"></a>
-      <h1>Creations of the mind...</h1>
-      <p class="container-text">So here are a handful of projects that I've built. Page down through each slide, and if you'd like to visit each build, just click the picture. These are school and personal builds that I thought would be a nice
-        addition for your viewing pleasure. These were reworks done from originals of mine to somewhat update the look, and make them more responsive to different displays.
-      </p>
-      <span class="span container-square"></span>
-      <p class="container-text">All the code and full descriptions, plus a few more, can be found through my <a class="link" href="https://github.com/NayNayRen">GitHub</a> link at here, or at the bottom of the page in my <span
-          class="container-text-colored">Contacts</span>. If you're keen on what you see, reach
-        out to me via social media links below as well.
-      </p>
-      <div class="project-container">
-        <div class="slide-container">
-          <div class="slide current" data-project="ghibli">
-            <a href="https://naynayren.github.io/studio-ghibli" target="_blank">
-              <div class="project-photo project-photo-1"></div>
-            </a>
-            <span class="project-photo-title">Studio Ghibli</span>
-            <p class="photo-caption">A film library of the Japanese animation studio, Studio Ghibli. The information used was pulled from <a class="link" href="https://github.com/public-apis/public-apis"
-                target="_blank">https://github.com/public-apis/public-apis</a>
-              as an open source project.
-            </p>
+      <!-- ME -->
+      <div class="container">
+        <a id="me"></a>
+        <h1>Some insight...</h1>
+        <br />
+        <img class="profile-photo" src="img/me.jpeg" alt="A photo of me." />
+        <p class="container-text">
+          Greetings and hellos, thank you for taking an interest in seeing what
+          I've created here. I just wanted to introduce myself a little before
+          you went on your way through the rest of my site. My name is
+          <span class="container-text-colored">Nate Moscato</span>, I am 40
+          years old, currently residing in Pinellas County, and a front-end
+          developer for roughly 10 months.
+        </p>
+        <p class="container-text">
+          My first resume website was originally created in 2018 towards the end
+          of my Associate's degree, parts and pieces of which can be seen
+          reworked here. I am on a journey to grow my creativity in the ways of
+          web design by producing manageable, cleanly written code, alongside
+          responsive and intriguing websites. The sections covering my
+          <span class="container-text-colored">Education</span> and
+          <span class="container-text-colored">Projects</span> gives more on my
+          schooling and creations.
+        </p>
+        <p class="container-text">
+          After 22 years in restaraunts, I thought pursuing something new could
+          be refreshing, and I took to Computer Science, which also started a
+          few hobbies. A more in depth dive into that portion can be found down
+          in my <span class="container-text-colored">Work</span> section if
+          you'd like. My goal in this is to be successful at creating websites,
+          plain and simple.
+        </p>
+        <p class="container-text">
+          Please take a moment to cruise through my site, check out what I have
+          covered through my studies, see some of the projects I've created,
+          read a little of my work history, and if you would like to
+          <span class="container-text-colored">Contact</span> me, please do so
+          through any means listed below. There is also a
+          <a href="img/myResume.pdf" class="link" target="_blank">.pdf</a>
+          version of my resume if you're interested, here, or down with my media
+          and contact links. My intentions are not to take over the world, but
+          merely to create a comfortable life while building creative and
+          engaging products.
+        </p>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="container education">
+        <a id="education"></a>
+        <h1>Back to the books...</h1>
+        <p class="container-text">
+          I returned to school in the Spring of 2016 and began taking classes at
+          <a href="https://www.spcollege.edu/" class="link" target="_blank"
+            >St. Petersburg College</a
+          >. I enrolled in the Computer Science program to learn how to code. A
+          few semesters in I had my first class involving the creation of
+          websites. The creativity of design, potential freedom of work
+          schedule, possible income, and change of scenery is what grabbed my
+          attention.
+        </p>
+        <span class="container-square"></span>
+        <p class="container-text">
+          So, after a little experimentaion, I switched my course track to
+          accomidate
+          <span class="container-text-colored">Web Development</span>. I had
+          never done, or thought about doing, any kind of previous coding. I
+          gravitated towards the idea that technology is only gaining traction,
+          and it would be a solid field to get into. Every business needs a
+          website right? After two and a half years of a part time class
+          schedule, to go along with a full time work one, I finished my
+          <span class="container-text-colored">Associate in Science</span> and a
+          degree in Web Development. Now I pursue it as a new career while still
+          learning this new craft.
+        </p>
+        <ul>
+          <li>
+            <span class="container-li-title">Program:</span> Associate in
+            Science
+          </li>
+          <li>
+            <span class="container-li-title">Degree:</span> Web Design and
+            Management
+          </li>
+          <li>
+            <span class="container-li-title">Certification:</span> Web
+            Development Specialist
+          </li>
+          <li><span class="container-li-title">GPA:</span> 3.56</li>
+        </ul>
+        <div class="degree-container">
+          <div class="degree-photo-container">
+            <img
+              class="degree-photo"
+              src="img/as-degree.jpeg"
+              alt="Associate's Degree"
+            />
+            <span class="degree-photo-title"
+              >Associate's Degree in Science</span
+            >
           </div>
-
-          <div class="slide" data-project="buddha">
-            <a href="https://naynayren.github.io/laughing-buddha" target="_blank">
-              <div class="project-photo project-photo-2"></div>
-            </a>
-            <span class="project-photo-title">The Laughing Buddha</span>
-            <p class="photo-caption">The idea came from a friend that was working for an Asian bistro. The company for this project, The Laughing Buddha, is not real by any meens. Simply a way to practice some
-              different concepts.
-            </p>
-          </div>
-
-          <div class="slide" data-project="shine">
-            <a href="https://naynayren.github.io/shine-shimmer" target="_blank">
-              <div class="project-photo project-photo-3"></div>
-            </a>
-            <span class="project-photo-title">Shine n Shimmer</span>
-            <p class="photo-caption">This was a project created as an assignment while still at SPC. We were given a choice of ten topics to choose from. We were then tasked with creating a site for the business type we
-              chose. This was, I think, the third site I built.
-            </p>
-          </div>
-
-          <div class="slide" data-project="breathe">
-            <a href="https://naynayren.github.io/inhale-exhale" target="_blank">
-              <div class="project-photo project-photo-4"></div>
-            </a>
-            <span class="project-photo-title">Just Breathe</span>
-            <p class="photo-caption">The original app was a <a class="link" href="https://www.udemy.com/" target="_blank">udemy.com</a> project built by Brad Traversy of <a class="link" href="https://www.traversymedia.com/" target="_blank">Traversy Media</a>. With this one, I switched up the color scheme, backgrounds,
-              action timing and a little of the code as to make it my own.
-            </p>
-          </div>
-
-          <div class="slide" data-project="summit">
-            <a href="https://naynayren.github.io/summit-massage" target="_blank">
-              <div class="project-photo project-photo-5"></div>
-            </a>
-            <span class="project-photo-title">Summit Massage</span>
-            <p class="photo-caption">Summit was built as a result of a friend running her own mobile massage company. This is not her site, the idea to do so came from her business. A practice build to add here when
-              this site was figured out by yours truly.
-            </p>
-          </div>
-
-          <div class="slide" data-project="fur">
-            <a href="https://naynayren.github.io/fur-baby" target="_blank">
-              <div class="project-photo project-photo-6"></div>
-            </a>
-            <span class="project-photo-title">Fur Baby Boutique</span>
-            <p class="photo-caption">The very first site I constructed as a student of SPC in my very first Web Development class. This is the result of late nights staring at my screen to get the littlest adjustment down. This was prior to
-              responsive
-              design being explained.
-            </p>
-          </div>
-
-          <div class="slide" data-project="speach">
-            <a href="https://naynayren.github.io/text-to-speech" target="_blank">
-              <div class="project-photo project-photo-7"></div>
-            </a>
-            <span class="project-photo-title">Text to Speech</span>
-            <p class="photo-caption">Depending on your browser you can get different language choices. This is a portion of a project that was built in a <a class="link" href="https://www.udemy.com/" target="_blank">udemy.com</a> course taught by
-              a coding wizard named Brad Traversy. He's the owner and founder of <a class="link" href="https://www.traversymedia.com/" target="_blank">
-                Traversy Media</a>.
-            </p>
-          </div>
-
-          <div class='buttons'>
-            <span class='prev'><i class="fa fa-caret-left" aria-hidden="true"></i>
-            </span>
-            <span class='next'><i class="fa fa-caret-right" aria-hidden="true"></i>
-            </span>
+          <div class="degree-photo-container">
+            <img
+              class="degree-photo"
+              src="img/wd-degree.jpeg"
+              alt="Web Development Specialist Certificate"
+            />
+            <span class="degree-photo-title">Web Development Specialist</span>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- WORK -->
-    <div class="container">
-      <a id="work"></a>
-      <h1>My history of work...</h1>
-      <p class="container-text">I have <span class="container-text-colored">24 years</span> in the restaurant industry, most of which was served with the same company. Back when I started in restaurants, I was bussing tables for the first four years
-        of my young hospitality life. After a fluke
-        of someone calling in sick one evening, and me filling in for that night, I was moved to the kitchen. I quickly learned all the skills needed, and memorized every recipe in order for me to smash through the ranks.</p>
-      <span class="container-square"></span>
-      <p class="container-text">Once my skills were up to par, I was moved around to a few different locations as a store opener and trainer. Ten years later, I was awarded the first kitchen directly under my management. This first stop in my
-        management role was at the <span class="container-text-colored">Brandon, Florida</span> location. My staff and I proceeded to set record numbers in multiple categories for the next five years while I was there.</p>
-      <p class="container-text">My last stop was
-        <span class="container-text-colored">Sarasota, Florida</span>, where my staff and I again set record numbers for the next two years. While doing so, we were also a food test kitchen, and one of the top "Manager in Training" locations. After
-        two and a half years, I returned to the Tampa
-        Bay area and decided to go back to school, attending St. Petersburg College.
-      </p>
-      <p class="container-text">After my return, and while attending school, I continued on in kitchen work as a lead cook for a country club in <span class="container-text-colored">Countryside, Florida</span>. Upon completing my schooling, and a
-        year and a half of searching, I landed my first development role as a Front-End Developer for a local marketing and design group.</p>
-      <ul>
-        <span class="container-li-date">2021 to Current</span>
-        <li><span class="container-li-title">Front-End Web Developer: </span>My first proffesional development role as a Front-End Web Developer. Assisting the Lead
-          Designer in bringing their site designs to fruition. Taking any and all information needed and returning a well built, fully responsive, and easy to
-          use web application.</li>
-        <span class="container-li-date">2018 to 2021</span>
-        <li><span class="container-li-title">Lead Cook: </span>Assisting in the daily setup and operations of the corporate kitchen at the Countryside Country Club located in Clearwater, FL. Our daily operations include catering to large events,
-          weddings, parties, and celebrations. Along with cooking for members and golfers that pass through for the day.</li>
-        <span class="container-li-date">2015 to 2018</span>
-        <li><span class="container-li-title">Line Cook: </span>Assist in the daily routines of opening and operating a corporate kitchen for Carrabba’s Italian Grill, located in St. Petersburg, FL. Including but not limited to scheduling, ordering,
-          and organization of the kitchen.</li>
-        <span class="container-li-date">2010 to 2015</span>
-        <li><span class="container-li-title">Kitchen Manager: </span>Responsible for the operations of my second multimillion dollar kitchen for Carrabba’s Italian Grill, located in Sarasota, FL. Duties including, but not limited to, scheduling,
-          price watching and ordering for multiple deliveries on a weekly basis, cleanliness, organization, and continuous motivation for my staff, also setting record financial numbers.</li>
-        <span class="container-li-date">2005 to 2010</span>
-        <li><span class="container-li-title">Kitchen Manager: </span>Responsible for the operations of my first multimillion dollar kitchen for Carrabba’s Italian Grill, located in Brandon, FL. Duties including but not limited to, scheduling, price
-          watching and ordering for multiple deliveries on a weekly basis, cleanliness, organization, and continuous motivation for my staff while setting record financial numbers.</li>
-        <span class="container-li-date">1997 to 2005</span>
-        <li><span class="container-li-title">Kitchen Assistant: </span>Assisted in the daily routines of opening and operating a corporate kitchen for Carrabba’s Italian Grill, located in Clearwater, FL. Duties being learned at the time included, but
-          not limited to, scheduling, ordering, and organization of the kitchen.</li>
-      </ul>
-    </div>
+      <!-- PROJECTS -->
+      <div class="container">
+        <a id="projects"></a>
+        <h1>Creations of the mind...</h1>
+        <p class="container-text">
+          So here are a handful of projects that I've built. Page down through
+          each slide, and if you'd like to visit each build, just click the
+          picture. These are school and personal builds that I thought would be
+          a nice addition for your viewing pleasure. These were reworks done
+          from originals of mine to somewhat update the look, and make them more
+          responsive to different displays.
+        </p>
+        <span class="span container-square"></span>
+        <p class="container-text">
+          All the code and full descriptions, plus a few more, can be found
+          through my
+          <a class="link" href="https://github.com/NayNayRen">GitHub</a> link at
+          here, or at the bottom of the page in my
+          <span class="container-text-colored">Contacts</span>. If you're keen
+          on what you see, reach out to me via social media links below as well.
+        </p>
+        <div class="project-container">
+          <div class="slide-container">
+            <div class="slide current" data-project="ghibli">
+              <a
+                href="https://naynayren.github.io/studio-ghibli"
+                target="_blank"
+              >
+                <div class="project-photo project-photo-1"></div>
+              </a>
+              <span class="project-photo-title">Studio Ghibli</span>
+              <p class="photo-caption">
+                A film library of the Japanese animation studio, Studio Ghibli.
+                The information used was pulled from
+                <a
+                  class="link"
+                  href="https://github.com/public-apis/public-apis"
+                  target="_blank"
+                  >https://github.com/public-apis/public-apis</a
+                >
+                as an open source project.
+              </p>
+            </div>
 
-    <!-- CONTACT -->
-    <div class="container">
-      <a id="contact"></a>
-      <h1>Extend a hello...</h1>
-      <p class="container-text">If you would like to contact me, by all means, please do. Follow me on Instagram or Facebook.
-        Check out some of my code and projects on GitHub, or send an email my way. I look forward to meeting new people and making
-        new friends.</p>
-      <span class="container-square"></span>
-      <div class="social-media-container">
-        <a href="https://www.instagram.com/naynay_ren/" target="_blank" aria-label="Instagram"><i aria-hidden="true" class='fa fa-instagram'></i></a>
-        <a href="https://www.facebook.com/profile.php?id=1390524212" target="_blank" aria-label="Facebook"><i aria-hidden="true" class='fa fa-facebook-square'></i></a>
-        <a href="https://github.com/NayNayRen" target="_blank" aria-label="GitHub"><i aria-hidden="true" class="fa fa-github-alt"></i></a>
-        <a href="https://www.linkedin.com/in/natemoscato" target="_blank" aria-label="LinkedIn"><i aria-hidden="true" class="fa fa-linkedin-square"></i></a>
-        <a href="mailto: jeditendencies35@gmail.com" aria-label="GMail"><i aria-hidden="true" class='fa fa-envelope-o'></i></a>
+            <div class="slide" data-project="buddha">
+              <a
+                href="https://naynayren.github.io/laughing-buddha"
+                target="_blank"
+              >
+                <div class="project-photo project-photo-2"></div>
+              </a>
+              <span class="project-photo-title">The Laughing Buddha</span>
+              <p class="photo-caption">
+                The idea came from a friend that was working for an Asian
+                bistro. The company for this project, The Laughing Buddha, is
+                not real by any meens. Simply a way to practice some different
+                concepts.
+              </p>
+            </div>
+
+            <div class="slide" data-project="shine">
+              <a
+                href="https://naynayren.github.io/shine-shimmer"
+                target="_blank"
+              >
+                <div class="project-photo project-photo-3"></div>
+              </a>
+              <span class="project-photo-title">Shine n Shimmer</span>
+              <p class="photo-caption">
+                This was a project created as an assignment while still at SPC.
+                We were given a choice of ten topics to choose from. We were
+                then tasked with creating a site for the business type we chose.
+                This was, I think, the third site I built.
+              </p>
+            </div>
+
+            <div class="slide" data-project="breathe">
+              <a
+                href="https://naynayren.github.io/inhale-exhale"
+                target="_blank"
+              >
+                <div class="project-photo project-photo-4"></div>
+              </a>
+              <span class="project-photo-title">Just Breathe</span>
+              <p class="photo-caption">
+                The original app was a
+                <a class="link" href="https://www.udemy.com/" target="_blank"
+                  >udemy.com</a
+                >
+                project built by Brad Traversy of
+                <a
+                  class="link"
+                  href="https://www.traversymedia.com/"
+                  target="_blank"
+                  >Traversy Media</a
+                >. With this one, I switched up the color scheme, backgrounds,
+                action timing and a little of the code as to make it my own.
+              </p>
+            </div>
+
+            <div class="slide" data-project="summit">
+              <a
+                href="https://naynayren.github.io/summit-massage"
+                target="_blank"
+              >
+                <div class="project-photo project-photo-5"></div>
+              </a>
+              <span class="project-photo-title">Summit Massage</span>
+              <p class="photo-caption">
+                Summit was built as a result of a friend running her own mobile
+                massage company. This is not her site, the idea to do so came
+                from her business. A practice build to add here when this site
+                was figured out by yours truly.
+              </p>
+            </div>
+
+            <div class="slide" data-project="fur">
+              <a href="https://naynayren.github.io/fur-baby" target="_blank">
+                <div class="project-photo project-photo-6"></div>
+              </a>
+              <span class="project-photo-title">Fur Baby Boutique</span>
+              <p class="photo-caption">
+                The very first site I constructed as a student of SPC in my very
+                first Web Development class. This is the result of late nights
+                staring at my screen to get the littlest adjustment down. This
+                was prior to responsive design being explained.
+              </p>
+            </div>
+
+            <div class="slide" data-project="speach">
+              <a
+                href="https://naynayren.github.io/text-to-speech"
+                target="_blank"
+              >
+                <div class="project-photo project-photo-7"></div>
+              </a>
+              <span class="project-photo-title">Text to Speech</span>
+              <p class="photo-caption">
+                Depending on your browser you can get different language
+                choices. This is a portion of a project that was built in a
+                <a class="link" href="https://www.udemy.com/" target="_blank"
+                  >udemy.com</a
+                >
+                course taught by a coding wizard named Brad Traversy. He's the
+                owner and founder of
+                <a
+                  class="link"
+                  href="https://www.traversymedia.com/"
+                  target="_blank"
+                >
+                  Traversy Media</a
+                >.
+              </p>
+            </div>
+
+            <div class="buttons">
+              <span class="prev"
+                ><i class="fa fa-caret-left" aria-hidden="true"></i>
+              </span>
+              <span class="next"
+                ><i class="fa fa-caret-right" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="resume"><a href="img/myResume.pdf" class="link" target="_blank" title=".pdf of my current resume">My Resume</a></div>
-      <p class="container-text">New concepts are still being learned every day. I have found Web Development takes a rediculous amount of patience. Together with this patience and learning comes new skills. I am open to, and very interested in any
-        freelance builds, job opportunities or communications. Also, feedback of any kind would be greatly appreciated. I thank you for, and appreciate, your time in stopping by and taking an interest in what I've got here.</p>
-      <p class="container-text">My best to you,<br><span class="container-text-colored">Nate Moscato</span></p>
-    </div>
-    <!-- BACK TO TOP ARROW -->
-    <a href="#top" aria-label='A back to the top arrow.' class="up-arrow"><i class="fa fa-chevron-up" aria-hidden="false"></i></a>
-    <!-- END MAIN BLOCK -->
-  </div>
-  <!-- FOOTER BLOCK -->
-  <div class="footer">
-    <span>February 2022</span>
-    <div>
-      <span><i class="fa fa-paw container-text-colored" aria-hidden="true"></i></span>
-      <span>Rommel</span>
-      <span><i class="fa fa-paw container-text-colored" aria-hidden="true"></i></span><br>
-      <span>8/21/07 - 4/22/21</span>
-    </div>
-    <img class="footer-logo" src="img/logo.png" alt="My Logo, capital letter N and M side by side.">
-  </div>
-  <script src="scripts.js" charset="utf-8"></script>
-</body>
 
+      <!-- WORK -->
+      <div class="container">
+        <a id="work"></a>
+        <h1>My history of work...</h1>
+        <p class="container-text">
+          I have <span class="container-text-colored">24 years</span> in the
+          restaurant industry, most of which was served with the same company.
+          Back when I started in restaurants, I was bussing tables for the first
+          four years of my young hospitality life. After a fluke of someone
+          calling in sick one evening, and me filling in for that night, I was
+          moved to the kitchen. I quickly learned all the skills needed, and
+          memorized every recipe in order for me to smash through the ranks.
+        </p>
+        <span class="container-square"></span>
+        <p class="container-text">
+          Once my skills were up to par, I was moved around to a few different
+          locations as a store opener and trainer. Ten years later, I was
+          awarded the first kitchen directly under my management. This first
+          stop in my management role was at the
+          <span class="container-text-colored">Brandon, Florida</span> location.
+          My staff and I proceeded to set record numbers in multiple categories
+          for the next five years while I was there.
+        </p>
+        <p class="container-text">
+          My last stop was
+          <span class="container-text-colored">Sarasota, Florida</span>, where
+          my staff and I again set record numbers for the next two years. While
+          doing so, we were also a food test kitchen, and one of the top
+          "Manager in Training" locations. After two and a half years, I
+          returned to the Tampa Bay area and decided to go back to school,
+          attending St. Petersburg College.
+        </p>
+        <p class="container-text">
+          After my return, and while attending school, I continued on in kitchen
+          work as a lead cook for a country club in
+          <span class="container-text-colored">Countryside, Florida</span>. Upon
+          completing my schooling, and a year and a half of searching, I landed
+          my first development role as a Front-End Developer for a local
+          marketing and design group.
+        </p>
+        <ul>
+          <span class="container-li-date">2021 to Current</span>
+          <li>
+            <span class="container-li-title">Front-End Web Developer: </span>My
+            first proffesional development role as a Front-End Web Developer.
+            Assisting the Lead Designer in bringing their site designs to
+            fruition. Taking any and all information needed and returning a well
+            built, fully responsive, and easy to use web application.
+          </li>
+          <span class="container-li-date">2018 to 2021</span>
+          <li>
+            <span class="container-li-title">Lead Cook: </span>Assisting in the
+            daily setup and operations of the corporate kitchen at the
+            Countryside Country Club located in Clearwater, FL. Our daily
+            operations include catering to large events, weddings, parties, and
+            celebrations. Along with cooking for members and golfers that pass
+            through for the day.
+          </li>
+          <span class="container-li-date">2015 to 2018</span>
+          <li>
+            <span class="container-li-title">Line Cook: </span>Assist in the
+            daily routines of opening and operating a corporate kitchen for
+            Carrabba’s Italian Grill, located in St. Petersburg, FL. Including
+            but not limited to scheduling, ordering, and organization of the
+            kitchen.
+          </li>
+          <span class="container-li-date">2010 to 2015</span>
+          <li>
+            <span class="container-li-title">Kitchen Manager: </span>Responsible
+            for the operations of my second multimillion dollar kitchen for
+            Carrabba’s Italian Grill, located in Sarasota, FL. Duties including,
+            but not limited to, scheduling, price watching and ordering for
+            multiple deliveries on a weekly basis, cleanliness, organization,
+            and continuous motivation for my staff, also setting record
+            financial numbers.
+          </li>
+          <span class="container-li-date">2005 to 2010</span>
+          <li>
+            <span class="container-li-title">Kitchen Manager: </span>Responsible
+            for the operations of my first multimillion dollar kitchen for
+            Carrabba’s Italian Grill, located in Brandon, FL. Duties including
+            but not limited to, scheduling, price watching and ordering for
+            multiple deliveries on a weekly basis, cleanliness, organization,
+            and continuous motivation for my staff while setting record
+            financial numbers.
+          </li>
+          <span class="container-li-date">1997 to 2005</span>
+          <li>
+            <span class="container-li-title">Kitchen Assistant: </span>Assisted
+            in the daily routines of opening and operating a corporate kitchen
+            for Carrabba’s Italian Grill, located in Clearwater, FL. Duties
+            being learned at the time included, but not limited to, scheduling,
+            ordering, and organization of the kitchen.
+          </li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="container">
+        <a id="contact"></a>
+        <h1>Extend a hello...</h1>
+        <p class="container-text">
+          If you would like to contact me, by all means, please do. Follow me on
+          Instagram or Facebook. Check out some of my code and projects on
+          GitHub, or send an email my way. I look forward to meeting new people
+          and making new friends.
+        </p>
+        <span class="container-square"></span>
+        <div class="social-media-container">
+          <a
+            href="https://www.instagram.com/naynay_ren/"
+            target="_blank"
+            aria-label="Instagram"
+            ><i aria-hidden="true" class="fa fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=1390524212"
+            target="_blank"
+            aria-label="Facebook"
+            ><i aria-hidden="true" class="fa fa-facebook-square"></i
+          ></a>
+          <a
+            href="https://github.com/NayNayRen"
+            target="_blank"
+            aria-label="GitHub"
+            ><i aria-hidden="true" class="fa fa-github-alt"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/natemoscato"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i aria-hidden="true" class="fa fa-linkedin-square"></i
+          ></a>
+          <a href="mailto: jeditendencies35@gmail.com" aria-label="GMail"
+            ><i aria-hidden="true" class="fa fa-envelope-o"></i
+          ></a>
+        </div>
+        <div class="resume">
+          <a
+            href="img/myResume.pdf"
+            class="link"
+            target="_blank"
+            title=".pdf of my current resume"
+            >My Resume</a
+          >
+        </div>
+        <p class="container-text">
+          New concepts are still being learned every day. I have found Web
+          Development takes a rediculous amount of patience. Together with this
+          patience and learning comes new skills. I am open to, and very
+          interested in any freelance builds, job opportunities or
+          communications. Also, feedback of any kind would be greatly
+          appreciated. I thank you for, and appreciate, your time in stopping by
+          and taking an interest in what I've got here.
+        </p>
+        <p class="container-text">
+          My best to you,<br /><span class="container-text-colored"
+            >Nate Moscato</span
+          >
+        </p>
+      </div>
+      <!-- BACK TO TOP ARROW -->
+      <a href="#top" aria-label="A back to the top arrow." class="up-arrow"
+        ><i class="fa fa-chevron-up" aria-hidden="false"></i
+      ></a>
+      <!-- END MAIN BLOCK -->
+    </div>
+    <!-- FOOTER BLOCK -->
+    <div class="footer">
+      <span>August 2022</span>
+      <div>
+        <span
+          ><i class="fa fa-paw container-text-colored" aria-hidden="true"></i
+        ></span>
+        <span>Rommel</span>
+        <span
+          ><i
+            class="fa fa-paw container-text-colored"
+            aria-hidden="true"
+          ></i></span
+        ><br />
+        <span>8/21/07 - 4/22/21</span>
+      </div>
+      <img
+        class="footer-logo"
+        src="img/logo.png"
+        alt="My Logo, capital letter N and M side by side."
+      />
+    </div>
+    <script src="scripts.js" charset="utf-8"></script>
+  </body>
 </html>
