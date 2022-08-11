@@ -42,6 +42,29 @@ body {
   width: 350px;
 }
 
+footer {
+  align-items: center;
+  border-top: solid 1px #fff;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 5px;
+  min-height: 100px;
+  padding: 5px 0;
+  position: relative;
+  text-align: center;
+}
+
+.footer-logo {
+  margin-top: 10px;
+  width: 75px;
+}
+
+.footer-logo img {
+  width: 100%;
+}
+
 .greeting {
   text-align: center;
   /* outline: solid 1px blue; */
@@ -83,8 +106,20 @@ header h1::after {
   /* outline: solid 1px blue; */
 }
 
+.header-logo {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 75px;
+  /* outline: solid 1px blue; */
+}
+
+.header-logo img {
+  width: 100%;
+}
+
 header span {
-  color: #ffff00;
+  color: #7b01bf;
   font-weight: bold;
 }
 
@@ -261,6 +296,10 @@ main {
     width: 100%;
   }
 
+  .footer-logo {
+    width: 50px;
+  }
+
   .greeting h1 {
     font-size: 28px;
   }
@@ -274,6 +313,12 @@ main {
     font-size: 16px;
     width: 110px;
     /* outline: solid 1px blue; */
+  }
+
+  .header-logo {
+    right: 5px;
+    top: 5px;
+    width: 50px;
   }
 
   .navigation-links-container {
