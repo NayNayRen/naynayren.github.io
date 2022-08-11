@@ -56,9 +56,9 @@ burgerMenu.addEventListener('click', () => {
   document
     .querySelector('#burger-overlay')
     .classList.toggle('burger-overlay-dim');
-  // document
-  //   .querySelector('.nav-links-container')
-  //   .classList.toggle('move-nav-links-on');
+  document
+    .querySelector('.navigation-links-container')
+    .classList.toggle('show-navigation-links');
   document
     .querySelector('#burger-bars-1')
     .classList.toggle('burger-bars-rotate-clockwise');
