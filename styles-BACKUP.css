@@ -42,6 +42,32 @@ body {
   width: 350px;
 }
 
+.content-container ul {
+  list-style-type: none;
+  width: 90%;
+}
+
+.content-container li {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.content-li-date {
+  color: #c00022;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.content-li-title {
+  color: #7b01bf;
+}
+
+.content-text {
+  font-size: 22px;
+  font-weight: bold;
+  width: 90%;
+}
+
 footer {
   align-items: center;
   border-top: solid 1px #fff;
@@ -120,6 +146,7 @@ header h1::after {
 
 header span {
   color: #7b01bf;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -198,6 +225,10 @@ main {
   color: #808080;
 }
 
+.yellow-text {
+  color: #cdcd00;
+}
+
 @media (max-width: 1300px) {
 }
 
@@ -218,11 +249,11 @@ main {
     display: -webkit-box;
     display: flex;
     flex-direction: column;
-    height: 40px;
+    height: 45px;
     justify-content: center;
     position: absolute;
     right: 10px;
-    bottom: 0;
+    bottom: 5px;
     /* transform: translateY(-50%); */
     width: 45px;
     z-index: 2;
@@ -239,7 +270,7 @@ main {
     background-color: #fff;
     border-radius: 5px;
     height: 2px;
-    margin: 2px 0;
+    margin: 3px 0;
     opacity: 1;
     transition: all 250ms ease;
     width: 30px;
@@ -288,11 +319,33 @@ main {
   }
 
   .content-container {
-    padding: 0 5px;
+    padding: 0 10px;
   }
 
   .content-container h2 {
     font-size: 22px;
+    width: 100%;
+  }
+
+  .content-container ul {
+    padding: 0;
+    width: 100%;
+  }
+
+  .content-container li {
+    font-size: 18px;
+  }
+
+  .content-li-date {
+    font-size: 20px;
+  }
+
+  .content-li-title {
+    color: #7b01bf;
+  }
+
+  .content-text {
+    font-size: 20px;
     width: 100%;
   }
 
@@ -319,6 +372,10 @@ main {
     right: 5px;
     top: 5px;
     width: 50px;
+  }
+
+  .header span {
+    font-size: 16px;
   }
 
   .navigation-links-container {
