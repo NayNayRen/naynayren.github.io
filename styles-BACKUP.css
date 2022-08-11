@@ -29,29 +29,31 @@ header {
   flex-direction: column;
   height: 100px;
   justify-content: space-between;
+  padding-left: 5px;
   position: relative;
   width: 100%;
   z-index: 2;
 }
 
 header h1 {
-  color: #900007;
+  color: #c00022;
   margin: 0;
   position: relative;
   width: 200px;
 }
 
 header h1::after {
-  bottom: 5px;
+  bottom: 4px;
   color: #fff;
   content: 'Web Developer';
   font-size: 18px;
   position: absolute;
-  left: calc(100% + 5px);
+  left: 100%;
   width: 125px;
 }
 
 header span {
+  /* color: #0321c2; */
   color: #fff;
 }
 
@@ -87,12 +89,14 @@ main {
 
 .navigation-links-container a {
   color: #fff;
+  font-size: 20px;
   margin: 0 15px 0 15px;
   text-decoration: none;
   text-transform: uppercase;
+  transition: color 150ms ease;
 }
 .navigation-links-container a:hover {
-  color: #9001be;
+  color: #7b01bf;
 }
 
 .up-arrow {
@@ -182,7 +186,7 @@ main {
   .burger-bars-rotate-clockwise {
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-    background-color: #3ddbcf;
+    background-color: #7b01bf;
     height: 3px;
     position: absolute;
     top: 15px;
@@ -192,7 +196,7 @@ main {
   .burger-bars-rotate-counter-clockwise {
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-    background-color: #3ddbcf;
+    background-color: #7b01bf;
     height: 3px;
     position: absolute;
     top: 15px;
@@ -235,7 +239,7 @@ main {
 
   .navigation-links-container ul {
     flex-direction: column;
-    padding: 15px 10px 0 10px;
+    padding: 15px 20px 0 0;
   }
 
   .show-navigation-links {
