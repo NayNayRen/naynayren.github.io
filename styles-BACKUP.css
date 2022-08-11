@@ -25,7 +25,6 @@ body {
 
 header {
   background-color: #000;
-  color: #fff;
   display: flex;
   flex-direction: column;
   height: 100px;
@@ -36,7 +35,24 @@ header {
 }
 
 header h1 {
+  color: #900007;
   margin: 0;
+  position: relative;
+  width: 200px;
+}
+
+header h1::after {
+  bottom: 5px;
+  color: #fff;
+  content: 'Web Developer';
+  font-size: 18px;
+  position: absolute;
+  left: calc(100% + 5px);
+  width: 125px;
+}
+
+header span {
+  color: #fff;
 }
 
 html {
@@ -74,6 +90,9 @@ main {
   margin: 0 15px 0 15px;
   text-decoration: none;
   text-transform: uppercase;
+}
+.navigation-links-container a:hover {
+  color: #9001be;
 }
 
 .up-arrow {
