@@ -102,13 +102,13 @@ footer {
 }
 
 .greeting {
-  text-align: center;
-  /* outline: solid 1px blue; */
+  padding: 0 20px 20px 20px;
 }
 
 .greeting h1 {
   font-size: 32px;
   margin: 0;
+  text-align: center;
 }
 
 header {
@@ -164,6 +164,20 @@ html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  width: 100%;
+}
+
+.image-container {
+  align-items: center;
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  margin-right: 15px;
+  width: 300px;
+}
+
+.image-container img {
+  /* border-radius: 50%; */
   width: 100%;
 }
 
