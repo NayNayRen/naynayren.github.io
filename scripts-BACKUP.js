@@ -4,9 +4,9 @@ function loadScript() {
 
   function activateUpArrow() {
     if (document.documentElement.scrollTop > 0) {
-      upArrow.style.left = '5px';
+      upArrow.style.right = '25px';
     } else {
-      upArrow.style.left = '-60px';
+      upArrow.style.right = '-60px';
     }
   }
 

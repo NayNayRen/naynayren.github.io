@@ -1,12 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fredoka&display=swap');
 
+/* FONT COLORS */
+.blue-text {
+  color: #5786dc;
+}
+.green-text {
+  color: #4be574;
+}
+.purple-text {
+  color: #9654dd;
+}
+.red-text {
+  color: #c00022;
+}
+.yellow-text {
+  color: #ffc354;
+}
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.blue-text {
-  color: #5786dc;
 }
 
 body {
@@ -40,7 +53,6 @@ body {
 
 .content-container h2 {
   border-bottom: solid 1px #fff;
-  color: #ffc354;
   font-size: 28px;
   width: 350px;
 }
@@ -58,13 +70,8 @@ body {
 }
 
 .content-li-date {
-  color: #4be574;
   font-size: 24px;
   font-weight: bold;
-}
-
-.content-li-title {
-  color: #9654dd;
 }
 
 .content-text {
@@ -76,7 +83,6 @@ body {
 footer {
   align-items: center;
   background-color: #000;
-  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,7 +124,6 @@ header {
 }
 
 header h1 {
-  color: #c00022;
   font-size: 34px;
   margin: 0;
   position: relative;
@@ -150,7 +155,6 @@ header h1::after {
 }
 
 header span {
-  color: #9654dd;
   font-size: 18px;
   font-weight: bold;
 }
@@ -211,12 +215,11 @@ main {
   /* outline: solid 1px blue; */
 }
 
-.social-media-container a {
-  color: #5786dc;
+.social-media-container i {
   transition: color 150ms ease;
 }
 
-.social-media-container a:hover {
+.social-media-container i:hover {
   color: #4be574;
 }
 
@@ -239,9 +242,9 @@ main {
   font-size: 30px;
   height: 40px;
   justify-content: center;
-  left: -60px;
   padding-bottom: 5px;
   position: fixed;
+  right: -60px;
   text-decoration: none;
   text-shadow: 0 2px 2px #000;
   transition: all 250ms ease-in-out;
