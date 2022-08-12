@@ -194,7 +194,29 @@ main {
   text-transform: uppercase;
   transition: color 150ms ease;
 }
+
 .navigation-links-container a:hover {
+  color: #4be574;
+}
+
+.social-media-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 50px;
+  height: 150px;
+  justify-content: space-around;
+  margin: auto;
+  width: 700px;
+  /* outline: solid 1px blue; */
+}
+
+.social-media-container a {
+  color: #5786dc;
+  transition: color 150ms ease;
+}
+
+.social-media-container a:hover {
   color: #4be574;
 }
 
@@ -363,6 +385,11 @@ main {
     font-size: 28px;
   }
 
+  header {
+    height: 110px;
+    padding: 0 0 0 5px;
+  }
+
   header h1 {
     font-size: 30px;
     width: 185px;
@@ -383,6 +410,10 @@ main {
 
   .header span {
     font-size: 18px;
+  }
+
+  main {
+    padding-top: 120px;
   }
 
   .navigation-links-container {
@@ -410,7 +441,18 @@ main {
   .show-navigation-links {
     right: 0;
   }
+
+  .social-media-container {
+    font-size: 40px;
+    height: 125px;
+    width: 400px;
+  }
 }
 
 @media (max-width: 400px) {
+  .social-media-container {
+    font-size: 30px;
+    height: 100px;
+    width: 100%;
+  }
 }
