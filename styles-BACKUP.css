@@ -190,7 +190,6 @@ main {
 }
 
 .navigation-links-container a {
-  color: #fff;
   font-family: 'Fredoka', sans-serif;
   font-size: 20px;
   margin: 0 15px 0 15px;
@@ -199,8 +198,29 @@ main {
   transition: color 150ms ease;
 }
 
-.navigation-links-container a:hover {
+.navigation-links-container a:hover,
+.resume-container a:hover,
+.social-media-container i:hover,
+.spc-link:hover,
+.up-arrow:hover {
   color: #4be574;
+}
+
+.resume-container {
+  align-items: center;
+  display: flex;
+  font-size: 40px;
+  height: 150px;
+  justify-content: center;
+  margin: auto;
+  width: 700px;
+  /* outline: solid 1px blue; */
+}
+
+.resume-container a,
+.social-media-container i,
+.spc-link {
+  transition: color 150ms ease;
 }
 
 .social-media-container {
@@ -215,27 +235,16 @@ main {
   /* outline: solid 1px blue; */
 }
 
-.social-media-container i {
-  transition: color 150ms ease;
-}
-
-.social-media-container i:hover {
-  color: #4be574;
-}
-
 .up-arrow {
   -ms-flex-align: center;
   -ms-flex-pack: center;
   -webkit-box-align: center;
   -webkit-box-pack: center;
-  -webkit-box-shadow: 0 2px 2px #000;
   -webkit-transition: all 250ms ease-in-out;
   align-items: center;
   background-color: #fff;
   border-radius: 50%;
-  bottom: 5px;
-  box-shadow: 0 2px 2px #000;
-  color: #c00022;
+  bottom: 10px;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -247,13 +256,9 @@ main {
   right: -60px;
   text-decoration: none;
   text-shadow: 0 2px 2px #000;
-  transition: all 250ms ease-in-out;
+  transition: all 150ms ease-in-out;
   width: 40px;
   z-index: 3;
-}
-
-.up-arrow:hover {
-  color: #808080;
 }
 
 @media (max-width: 1300px) {
@@ -264,6 +269,11 @@ main {
 }
 
 @media (max-width: 1000px) {
+  .resume-container {
+    height: 125px;
+    font-size: 35px;
+    width: 400px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -285,7 +295,6 @@ main {
     position: absolute;
     right: 10px;
     bottom: 10px;
-    /* transform: translateY(-50%); */
     width: 45px;
     z-index: 2;
     /* outline: solid 1px blue; */
@@ -303,7 +312,7 @@ main {
     height: 2px;
     margin: 3px 0;
     opacity: 1;
-    transition: all 250ms ease;
+    transition: all 150ms ease;
     width: 35px;
   }
 
@@ -453,6 +462,12 @@ main {
 }
 
 @media (max-width: 400px) {
+  .resume-container {
+    height: 100px;
+    font-size: 30px;
+    width: 100%;
+  }
+
   .social-media-container {
     font-size: 30px;
     height: 100px;

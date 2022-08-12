@@ -1,7 +1,9 @@
 function loadScript() {
   const burgerMenu = document.querySelector('.burger-menu');
   const upArrow = document.querySelector('.up-arrow');
+  const navigationLinks = document.querySelectorAll('.navigation-link');
 
+  // show and hide up arrow
   function activateUpArrow() {
     if (document.documentElement.scrollTop > 0) {
       upArrow.style.right = '25px';
@@ -10,6 +12,18 @@ function loadScript() {
     }
   }
 
+  // updates page title with value of navigation links
+  function updatePageTitle(link) {
+    document.title = link.getAttribute('value');
+  }
+
+  navigationLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      updatePageTitle(link);
+    });
+  });
+
+  // mobile burger menu actions
   burgerMenu.addEventListener('click', () => {
     document
       .querySelector('#burger-overlay')
