@@ -35,6 +35,32 @@ body {
   display: none;
 }
 
+.certification-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  /* outline: solid 1px blue; */
+}
+
+.certification-container div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 10px;
+  /* outline: solid 1px blue; */
+}
+
+.certification-container img {
+  width: 600px;
+}
+
+.certification-container span {
+  font-size: 18px;
+}
+
 #contact,
 #education,
 #me,
@@ -47,13 +73,15 @@ body {
 
 .content-container {
   min-height: 300px;
-  padding: 0 20px 20px 20px;
+  padding: 20px 40px 20px 40px;
   position: relative;
+  /* outline: solid 1px blue; */
 }
 
 .content-container h2 {
   border-bottom: solid 1px #fff;
   font-size: 28px;
+  margin: 0 0 20px 0;
   width: 350px;
 }
 
@@ -77,6 +105,7 @@ body {
 .content-text {
   font-family: 'Fredoka', sans-serif;
   font-size: 22px;
+  margin: 20px 0 0 0;
   width: 80%;
 }
 
@@ -104,7 +133,7 @@ footer {
 }
 
 .greeting {
-  padding: 0 20px 20px 20px;
+  padding: 0 40px 20px 40px;
 }
 
 .greeting h1 {
@@ -169,18 +198,16 @@ html {
   width: 100%;
 }
 
-.image-container {
-  align-items: center;
-  /* border-radius: 50%; */
-  display: flex;
-  justify-content: center;
-  margin-right: 15px;
+.image-of-me {
+  border-radius: 50%;
+  margin: 0 15px 0 0;
   width: 300px;
 }
 
-.image-container img {
-  /* border-radius: 50%; */
-  width: 100%;
+.image-text-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
 }
 
 main {
@@ -316,9 +343,18 @@ main {
 }
 
 @media (max-width: 1300px) {
+  .certification-container,
   .content-container ul,
   .content-text {
     width: 90%;
+  }
+
+  .certification-container img {
+    width: 500px;
+  }
+
+  .image-of-me {
+    width: 200px;
   }
 }
 
@@ -412,8 +448,21 @@ main {
     width: 100%;
   }
 
-  .content-container {
-    padding: 0 15px 15px 15px;
+  .certification-container {
+    width: 100%;
+  }
+
+  .certification-container div {
+    margin: 20px 0;
+  }
+
+  .certification-container img {
+    width: 400px;
+  }
+
+  .content-container,
+  .greeting {
+    padding: 15px 15px 25px 15px;
   }
 
   .content-container h2 {
@@ -476,6 +525,15 @@ main {
 
   .header span {
     font-size: 18px;
+  }
+
+  .image-of-me {
+    margin: 0 0 0 0;
+    width: 150px;
+  }
+
+  .image-text-container {
+    flex-direction: column;
   }
 
   main {
@@ -549,6 +607,10 @@ main {
 }
 
 @media (max-width: 400px) {
+  .certification-container img {
+    width: 100%;
+  }
+
   .resume-container {
     height: 100px;
     font-size: 30px;
