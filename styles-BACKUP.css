@@ -58,7 +58,8 @@ body {
 }
 
 .certification-container span {
-  font-size: 18px;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 20px;
 }
 
 #contact,
@@ -239,7 +240,7 @@ main {
 }
 
 .navigation-link-dot {
-  bottom: 0;
+  bottom: -15px;
   font-size: 16px;
   left: 50%;
   opacity: 0;
@@ -249,6 +250,7 @@ main {
 }
 
 .active {
+  bottom: 0;
   opacity: 1;
 }
 
