@@ -40,6 +40,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 15px auto 0 auto;
   width: 80%;
   /* outline: solid 1px blue; */
 }
@@ -271,7 +272,7 @@ main {
 
 .next {
   padding-left: 5px;
-  right: -10px;
+  right: 5px;
 }
 
 .next,
@@ -287,7 +288,6 @@ main {
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 0 2px 5px #000;
-  color: #ed429f;
   cursor: pointer;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -305,21 +305,25 @@ main {
 
 .next:hover,
 .prev:hover {
-  color: #ffe347;
+  color: #4be574;
 }
 
 .photo-caption {
   background-color: #000;
   font-size: 20px;
-  font-style: italic;
+  /* font-style: italic; */
   line-height: 28px;
   margin: 0;
   padding: 0 10px;
 }
 
+.prev {
+  left: 5px;
+  padding-right: 5px;
+}
+
 .project-photo-title {
   bottom: 0;
-  color: #3ddbcf;
   display: block;
   font-size: 24px;
   font-weight: bold;
@@ -328,16 +332,26 @@ main {
   text-transform: uppercase;
 }
 
-.prev {
-  left: -10px;
-  padding-right: 5px;
-}
-
-.profile-photo {
-  float: left;
-  height: 325px;
-  margin: 30px 20px 5px 50px;
-  width: 250px;
+.project-container {
+  -ms-flex-direction: row;
+  -ms-flex-pack: center;
+  -ms-flex-wrap: wrap;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  align-items: flex-start;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 600px;
+  justify-content: center;
+  margin: 15px auto 0 auto;
+  overflow: hidden;
+  /* padding-top: 10px; */
+  width: 80%;
+  /* outline: solid 1px blue; */
 }
 
 .project-photo-1 {
@@ -485,25 +499,6 @@ main {
   width: 100%;
 }
 
-.project-container {
-  -ms-flex-direction: row;
-  -ms-flex-pack: center;
-  -ms-flex-wrap: wrap;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-box-pack: center;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 600px;
-  justify-content: center;
-  overflow-x: hidden;
-  padding-top: 10px;
-  /* border: solid 1px blue; */
-}
-
 .resume-container {
   align-items: center;
   display: flex;
@@ -522,9 +517,8 @@ main {
 }
 
 .slide {
-  -webkit-transform: translateX(130%);
+  -webkit-transform: translateX(150%);
   -webkit-transition: all 1000ms ease;
-  box-shadow: 0 0 10px #000;
   height: 100%;
   opacity: 0;
   position: absolute;
@@ -534,7 +528,11 @@ main {
 }
 
 .slide a {
-  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.slide a:hover {
+  color: #4be574;
 }
 
 .slide-container {
@@ -542,7 +540,8 @@ main {
   margin: 0 auto;
   position: relative;
   width: 1000px;
-  /* border: solid 1px red; */
+  z-index: 1;
+  /* outline: solid 1px red; */
 }
 
 .slide.current {
@@ -612,7 +611,8 @@ main {
 @media (max-width: 1300px) {
   .certification-container,
   .content-container ul,
-  .content-text {
+  .content-text,
+  .project-container {
     width: 90%;
   }
 
@@ -846,6 +846,9 @@ main {
   }
 
   .navigation-links-container a:hover,
+  .next:hover,
+  .photo-caption a:hover,
+  .prev:hover,
   .resume-container a:hover,
   .spc-link:hover,
   .up-arrow:hover {
@@ -879,12 +882,6 @@ main {
     width: 40px;
   }
 
-  .next:hover,
-  .prev:hover,
-  .up-arrow:hover {
-    color: #ed429f;
-  }
-
   .next {
     border-bottom-left-radius: 10px;
     right: 0;
@@ -900,8 +897,8 @@ main {
   }
 
   .project-container {
-    height: 445px;
-    padding-top: 0;
+    height: 415px;
+    width: 100%;
   }
 
   .project-photo-title {

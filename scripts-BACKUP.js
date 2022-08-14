@@ -36,6 +36,7 @@ function loadScript() {
     });
   });
 
+  // project previous button
   prevBtn.addEventListener('click', () => {
     slide[i].classList.remove('current');
     i--;
@@ -45,6 +46,7 @@ function loadScript() {
     slide[i].classList.add('current');
   });
 
+  // project next button
   nextBtn.addEventListener('click', () => {
     slide[i].classList.remove('current');
     i++;
