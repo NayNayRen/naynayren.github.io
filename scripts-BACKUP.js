@@ -5,6 +5,7 @@ function loadScript() {
   const navigationLinkActive = document.querySelectorAll(
     '.navigation-link-dot'
   );
+  const containerHeadings = document.querySelectorAll('.container-heading');
 
   const nextBtn = document.querySelector('.next');
   const prevBtn = document.querySelector('.prev');
@@ -23,6 +24,32 @@ function loadScript() {
   // updates page title with value of link clicked
   function updatePageTitle(link) {
     document.title = link.getAttribute('value');
+  }
+
+  // displays and hides container heading
+  function showHideHeading() {
+    containerHeadings.forEach((heading) => {
+      const headingDistanceFromTop = heading.getBoundingClientRect().top;
+      if (headingDistanceFromTop < 700 && window.innerWidth > 1000) {
+        heading.style.opacity = 1;
+      } else if (
+        headingDistanceFromTop < 650 &&
+        window.innerWidth < 1000 &&
+        window.innerWidth > 700
+      ) {
+        heading.style.opacity = 1;
+      } else if (
+        headingDistanceFromTop < 575 &&
+        window.innerWidth < 700 &&
+        window.innerWidth > 400
+      ) {
+        heading.style.opacity = 1;
+      } else if (headingDistanceFromTop < 475 && window.innerWidth < 400) {
+        heading.style.opacity = 1;
+      } else {
+        heading.style.opacity = 0;
+      }
+    });
   }
 
   // updates page title using nav links
@@ -85,7 +112,10 @@ function loadScript() {
 
   window.addEventListener('scroll', () => {
     activateUpArrow();
+    showHideHeading();
   });
+  activateUpArrow();
+  showHideHeading();
 }
 
 window.onload = loadScript;
