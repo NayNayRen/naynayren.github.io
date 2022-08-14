@@ -298,7 +298,7 @@ main {
   align-items: center;
   background-color: #fff;
   border-radius: 50%;
-  bottom: 10px;
+  bottom: 25%;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -541,6 +541,10 @@ main {
 
   .social-media-name {
     display: none;
+  }
+
+  .up-arrow {
+    bottom: 10px;
   }
 }
 

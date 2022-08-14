@@ -9,7 +9,7 @@ function loadScript() {
   // show and hide up arrow
   function activateUpArrow() {
     if (document.documentElement.scrollTop > 0) {
-      upArrow.style.right = '25px';
+      upArrow.style.right = '15px';
     } else {
       upArrow.style.right = '-60px';
     }
