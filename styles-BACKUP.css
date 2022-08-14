@@ -269,6 +269,241 @@ main {
   /* outline: solid 1px blue; */
 }
 
+.next {
+  padding-left: 5px;
+  right: -10px;
+}
+
+.next,
+.prev {
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-shadow: 0 2px 5px #000;
+  -webkit-transform: translateY(-50%);
+  -webkit-transition: color 250ms ease;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px #000;
+  color: #ed429f;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  font-size: 40px;
+  height: 40px;
+  justify-content: center;
+  position: absolute;
+  text-shadow: 0 2px 2px #000;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 250ms ease;
+  width: 40px;
+}
+
+.next:hover,
+.prev:hover {
+  color: #ffe347;
+}
+
+.photo-caption {
+  background-color: #000;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 28px;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.project-photo-title {
+  bottom: 0;
+  color: #3ddbcf;
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0 0 0 10px;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+.prev {
+  left: -10px;
+  padding-right: 5px;
+}
+
+.profile-photo {
+  float: left;
+  height: 325px;
+  margin: 30px 20px 5px 50px;
+  width: 250px;
+}
+
+.project-photo-1 {
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 1)),
+      color-stop(40%, rgba(0, 0, 0, 0))
+    ),
+    url('img/ghibli.png');
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 40%
+    ),
+    url('img/ghibli.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-photo-2 {
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 1)),
+      color-stop(40%, rgba(0, 0, 0, 0))
+    ),
+    url('img/buddha.png');
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 40%
+    ),
+    url('img/buddha.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-photo-3 {
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 1)),
+      color-stop(40%, rgba(0, 0, 0, 0))
+    ),
+    url('img/shine.png');
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 40%
+    ),
+    url('img/shine.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-photo-4 {
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 1)),
+      color-stop(40%, rgba(0, 0, 0, 0))
+    ),
+    url('img/breathe.png');
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 40%
+    ),
+    url('img/breathe.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-photo-5 {
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 1)),
+      color-stop(40%, rgba(0, 0, 0, 0))
+    ),
+    url('img/summit.png');
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 40%
+    ),
+    url('img/summit.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-photo-6 {
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 1)),
+      color-stop(40%, rgba(0, 0, 0, 0))
+    ),
+    url('img/fur.png');
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 40%
+    ),
+    url('img/fur.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-photo-7 {
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(0, 0, 0, 1)),
+      color-stop(40%, rgba(0, 0, 0, 0))
+    ),
+    url('img/speach.png');
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 40%
+    ),
+    url('img/speach.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project-photo {
+  height: 100%;
+  width: 100%;
+}
+
+.project-container {
+  -ms-flex-direction: row;
+  -ms-flex-pack: center;
+  -ms-flex-wrap: wrap;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 600px;
+  justify-content: center;
+  overflow-x: hidden;
+  padding-top: 10px;
+  /* border: solid 1px blue; */
+}
+
 .resume-container {
   align-items: center;
   display: flex;
@@ -284,6 +519,36 @@ main {
 .social-media-container i,
 .spc-link {
   transition: color 150ms ease;
+}
+
+.slide {
+  -webkit-transform: translateX(130%);
+  -webkit-transition: all 1000ms ease;
+  box-shadow: 0 0 10px #000;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  transform: translateX(150%);
+  transition: all 1000ms ease;
+  width: 100%;
+}
+
+.slide a {
+  text-decoration: none;
+}
+
+.slide-container {
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  width: 1000px;
+  /* border: solid 1px red; */
+}
+
+.slide.current {
+  -webkit-transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .social-media-container {
@@ -358,9 +623,31 @@ main {
   .image-of-me {
     width: 200px;
   }
+
+  .project-container {
+    height: 500px;
+  }
+
+  .project-photo-title {
+    font-size: 22px;
+  }
+
+  .slide-container {
+    height: 400px;
+    width: 800px;
+  }
 }
 
 @media (max-width: 1000px) {
+  .project-container {
+    height: 450px;
+  }
+
+  .slide-container {
+    height: 350px;
+    width: 700px;
+  }
+
   .resume-container {
     height: 125px;
     font-size: 35px;
@@ -581,6 +868,55 @@ main {
     padding: 15px 20px 0 0;
   }
 
+  .next,
+  .prev {
+    -webkit-transform: translateY(0);
+    border-radius: 0;
+    font-size: 40px;
+    height: 40px;
+    top: 0;
+    transform: translateY(0);
+    width: 40px;
+  }
+
+  .next:hover,
+  .prev:hover,
+  .up-arrow:hover {
+    color: #ed429f;
+  }
+
+  .next {
+    border-bottom-left-radius: 10px;
+    right: 0;
+  }
+
+  .photo-caption {
+    line-height: 25px;
+  }
+
+  .prev {
+    border-bottom-right-radius: 10px;
+    left: 0;
+  }
+
+  .project-container {
+    height: 445px;
+    padding-top: 0;
+  }
+
+  .project-photo-title {
+    font-size: 18px;
+  }
+
+  .slide {
+    box-shadow: none;
+  }
+
+  .slide-container {
+    height: 300px;
+    width: 100%;
+  }
+
   .show-navigation-links {
     right: 0;
   }
@@ -611,6 +947,10 @@ main {
 @media (max-width: 400px) {
   .certification-container img {
     width: 100%;
+  }
+
+  .project-container {
+    height: 480px;
   }
 
   .resume-container {

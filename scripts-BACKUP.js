@@ -6,6 +6,11 @@ function loadScript() {
     '.navigation-link-dot'
   );
 
+  const nextBtn = document.querySelector('.next');
+  const prevBtn = document.querySelector('.prev');
+  const slide = document.querySelectorAll('.slide');
+  let i = 0;
+
   // show and hide up arrow
   function activateUpArrow() {
     if (document.documentElement.scrollTop > 0) {
@@ -29,6 +34,24 @@ function loadScript() {
       link.children[0].classList.add('active');
       updatePageTitle(link);
     });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    slide[i].classList.remove('current');
+    i--;
+    if (i < 0) {
+      i = slide.length - 1;
+    }
+    slide[i].classList.add('current');
+  });
+
+  nextBtn.addEventListener('click', () => {
+    slide[i].classList.remove('current');
+    i++;
+    if (i >= slide.length) {
+      i = 0;
+    }
+    slide[i].classList.add('current');
   });
 
   // updates page title with up arrow
