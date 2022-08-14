@@ -135,6 +135,19 @@ footer {
   width: 100%;
 }
 
+.github-link {
+  transition: color 150ms ease;
+}
+
+.github-link:hover,
+.navigation-links-container a:hover,
+.resume-container a:hover,
+.social-media-container a:hover,
+.spc-link:hover,
+.up-arrow:hover {
+  color: #4be574;
+}
+
 .greeting {
   padding: 0 40px 20px 40px;
 }
@@ -231,14 +244,6 @@ main {
   text-transform: uppercase;
   transition: color 150ms ease;
   /* outline: solid 1px red; */
-}
-
-.navigation-links-container a:hover,
-.resume-container a:hover,
-.social-media-container a:hover,
-.spc-link:hover,
-.up-arrow:hover {
-  color: #4be574;
 }
 
 .navigation-link-dot {
@@ -786,6 +791,17 @@ main {
     width: 50px;
   }
 
+  .github-link:hover,
+  .navigation-links-container a:hover,
+  .next:hover,
+  .photo-caption a:hover,
+  .prev:hover,
+  .resume-container a:hover,
+  .spc-link:hover,
+  .up-arrow:hover {
+    color: #9654dd;
+  }
+
   .greeting h1 {
     font-size: 28px;
   }
@@ -844,16 +860,6 @@ main {
     font-size: 26px;
     margin: 0;
     padding: 0 0 0 15px;
-  }
-
-  .navigation-links-container a:hover,
-  .next:hover,
-  .photo-caption a:hover,
-  .prev:hover,
-  .resume-container a:hover,
-  .spc-link:hover,
-  .up-arrow:hover {
-    color: #9654dd;
   }
 
   .navigation-link-dot {
