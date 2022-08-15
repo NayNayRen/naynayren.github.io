@@ -51,6 +51,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin: 20px 10px;
+  position: relative;
   /* outline: solid 1px blue; */
 }
 
@@ -59,8 +60,15 @@ body {
 }
 
 .certification-container span {
+  background-color: #ffc354;
+  bottom: 0;
   font-family: 'Fredoka', sans-serif;
   font-size: 20px;
+  left: 0;
+  padding: 2px 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 #contact,
@@ -289,17 +297,17 @@ main {
   -ms-flex-pack: center;
   -webkit-box-align: center;
   -webkit-box-pack: center;
-  -webkit-box-shadow: 0 2px 5px #000;
+  -webkit-box-shadow: 0 0 5px #000;
   -webkit-transform: translateY(-50%);
   -webkit-transition: color 250ms ease;
   align-items: center;
   background-color: #fff;
-  box-shadow: 0 2px 5px #000;
+  box-shadow: 0 0 5px #000;
   cursor: pointer;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  font-size: 44px;
+  font-size: 50px;
   height: 60px;
   justify-content: center;
   position: absolute;
@@ -882,7 +890,7 @@ main {
   .next,
   .prev {
     -webkit-transform: translateY(0);
-    font-size: 40px;
+    font-size: 42px;
     height: 45px;
     top: 0;
     transform: translateY(0);

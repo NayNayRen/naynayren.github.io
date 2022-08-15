@@ -3,7 +3,7 @@ function loadScript() {
   const upArrow = document.querySelector('.up-arrow');
   const navigationLinks = document.querySelectorAll('.navigation-link');
   const containerHeadings = document.querySelectorAll('.container-heading');
-  const topPosition = document.querySelector('#me');
+  const topContainer = document.querySelector('#me');
   const nextBtn = document.querySelector('.next');
   const prevBtn = document.querySelector('.prev');
   const slide = document.querySelectorAll('.slide');
@@ -23,12 +23,12 @@ function loadScript() {
     document.title = link.getAttribute('value');
   }
 
-  // displays and hides container heading
+  // displays and hides container heading and highlights nav menu
   function headingAndNavActions() {
     containerHeadings.forEach((heading) => {
-      const middleOfWindow = window.innerHeight * 0.5;
+      const windowHeight = window.innerHeight;
       const headingDistanceFromTop = heading.getBoundingClientRect().top;
-      if (headingDistanceFromTop < middleOfWindow) {
+      if (headingDistanceFromTop < windowHeight * 0.5) {
         navigationLinks.forEach((link) => {
           if (link.getAttribute('value') === heading.innerText) {
             // updatePageTitle(link);
@@ -40,7 +40,7 @@ function loadScript() {
           }
         });
       }
-      if (topPosition.getBoundingClientRect().top > 75) {
+      if (topContainer.getBoundingClientRect().top > windowHeight * 0.09) {
         // updatePageTitle(upArrow);
         navigationLinks.forEach((link) => {
           link.classList.replace('green-text', 'purple-text');
