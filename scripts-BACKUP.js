@@ -19,9 +19,9 @@ function loadScript() {
   }
 
   // updates page title with value of link clicked
-  function updatePageTitle(link) {
-    document.title = link.getAttribute('value');
-  }
+  // function updatePageTitle(link) {
+  //   document.title = link.getAttribute('value');
+  // }
 
   // displays and hides container heading and highlights nav menu
   function headingAndNavActions() {
@@ -39,9 +39,16 @@ function loadScript() {
             link.children[0].classList.remove('active');
           }
         });
+        heading.classList.replace('yellow-text', 'green-text');
+        heading.style.borderColor = '#4be574';
+      } else {
+        heading.classList.replace('green-text', 'yellow-text');
+        heading.style.borderColor = '#fff';
       }
-      if (topContainer.getBoundingClientRect().top > windowHeight * 0.09) {
+      if (topContainer.getBoundingClientRect().top > windowHeight * 0.099) {
         // updatePageTitle(upArrow);
+        heading.classList.replace('green-text', 'yellow-text');
+        heading.style.borderColor = '#fff';
         navigationLinks.forEach((link) => {
           link.classList.replace('green-text', 'purple-text');
           link.children[0].classList.remove('active');
