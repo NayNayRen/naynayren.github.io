@@ -233,6 +233,11 @@ main {
   padding-top: 130px;
 }
 
+.navigation-links-container {
+  position: relative;
+  /* outline: solid 1px blue; */
+}
+
 .navigation-links-container a {
   font-family: 'Fredoka', sans-serif;
   font-size: 20px;
@@ -261,11 +266,6 @@ main {
   opacity: 1;
 }
 
-.navigation-links-container {
-  position: relative;
-  /* outline: solid 1px blue; */
-}
-
 .navigation-links-container ul {
   display: flex;
   flex-direction: row;
@@ -277,8 +277,10 @@ main {
 }
 
 .next {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
   padding-left: 5px;
-  right: 5px;
+  right: 0;
 }
 
 .next,
@@ -292,14 +294,13 @@ main {
   -webkit-transition: color 250ms ease;
   align-items: center;
   background-color: #fff;
-  border-radius: 50%;
   box-shadow: 0 2px 5px #000;
   cursor: pointer;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  font-size: 40px;
-  height: 40px;
+  font-size: 44px;
+  height: 60px;
   justify-content: center;
   position: absolute;
   text-shadow: 0 2px 2px #000;
@@ -317,14 +318,15 @@ main {
 .photo-caption {
   background-color: #000;
   font-size: 20px;
-  /* font-style: italic; */
   line-height: 28px;
   margin: 0;
   padding: 0 10px;
 }
 
 .prev {
-  left: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  left: 0;
   padding-right: 5px;
 }
 
@@ -355,7 +357,6 @@ main {
   justify-content: center;
   margin: 15px auto 0 auto;
   overflow: hidden;
-  /* padding-top: 10px; */
   width: 80%;
   /* outline: solid 1px blue; */
 }
@@ -593,23 +594,25 @@ main {
   -ms-flex-pack: center;
   -webkit-box-align: center;
   -webkit-box-pack: center;
-  -webkit-transition: all 250ms ease-in-out;
+  -webkit-transition: all 150ms ease;
   align-items: center;
   background-color: #fff;
-  border-radius: 50%;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
   bottom: 25%;
+  box-shadow: -2px 2px 5px #000;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  font-size: 30px;
-  height: 40px;
+  font-size: 35px;
+  height: 60px;
   justify-content: center;
   padding-bottom: 10px;
   position: fixed;
   right: -60px;
   text-decoration: none;
   text-shadow: 0 2px 2px #000;
-  transition: all 150ms ease-in-out;
+  transition: all 150ms ease;
   width: 40px;
   z-index: 3;
 }
@@ -881,16 +884,15 @@ main {
   .next,
   .prev {
     -webkit-transform: translateY(0);
-    border-radius: 0;
     font-size: 40px;
-    height: 40px;
+    height: 45px;
     top: 0;
     transform: translateY(0);
     width: 40px;
   }
 
   .next {
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 0;
     right: 0;
   }
 
@@ -899,7 +901,7 @@ main {
   }
 
   .prev {
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0;
     left: 0;
   }
 
@@ -945,6 +947,8 @@ main {
 
   .up-arrow {
     bottom: 10px;
+    font-size: 30px;
+    height: 50px;
   }
 }
 

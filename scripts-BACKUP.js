@@ -2,11 +2,8 @@ function loadScript() {
   const burgerMenu = document.querySelector('.burger-menu');
   const upArrow = document.querySelector('.up-arrow');
   const navigationLinks = document.querySelectorAll('.navigation-link');
-  const navigationLinkActive = document.querySelectorAll(
-    '.navigation-link-dot'
-  );
   const containerHeadings = document.querySelectorAll('.container-heading');
-
+  const topPosition = document.querySelector('#me');
   const nextBtn = document.querySelector('.next');
   const prevBtn = document.querySelector('.prev');
   const slide = document.querySelectorAll('.slide');
@@ -15,7 +12,7 @@ function loadScript() {
   // show and hide up arrow
   function activateUpArrow() {
     if (document.documentElement.scrollTop > 0) {
-      upArrow.style.right = '15px';
+      upArrow.style.right = '0';
     } else {
       upArrow.style.right = '-60px';
     }
@@ -27,41 +24,35 @@ function loadScript() {
   }
 
   // displays and hides container heading
-  function showHideHeading() {
+  function headingAndNavActions() {
     containerHeadings.forEach((heading) => {
+      const middleOfWindow = window.innerHeight * 0.5;
       const headingDistanceFromTop = heading.getBoundingClientRect().top;
-      if (headingDistanceFromTop < 700 && window.innerWidth > 1000) {
-        heading.style.opacity = 1;
-      } else if (
-        headingDistanceFromTop < 650 &&
-        window.innerWidth < 1000 &&
-        window.innerWidth > 700
-      ) {
-        heading.style.opacity = 1;
-      } else if (
-        headingDistanceFromTop < 575 &&
-        window.innerWidth < 700 &&
-        window.innerWidth > 400
-      ) {
-        heading.style.opacity = 1;
-      } else if (headingDistanceFromTop < 475 && window.innerWidth < 400) {
-        heading.style.opacity = 1;
-      } else {
-        heading.style.opacity = 0;
+      if (headingDistanceFromTop < middleOfWindow) {
+        navigationLinks.forEach((link) => {
+          if (link.getAttribute('value') === heading.innerText) {
+            // updatePageTitle(link);
+            link.classList.replace('purple-text', 'green-text');
+            link.children[0].classList.add('active');
+          } else {
+            link.classList.replace('green-text', 'purple-text');
+            link.children[0].classList.remove('active');
+          }
+        });
+      }
+      if (topPosition.getBoundingClientRect().top > 75) {
+        // updatePageTitle(upArrow);
+        navigationLinks.forEach((link) => {
+          link.classList.replace('green-text', 'purple-text');
+          link.children[0].classList.remove('active');
+        });
       }
     });
   }
 
-  // updates page title using nav links
-  navigationLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      navigationLinkActive.forEach((activeLink) => {
-        activeLink.classList.remove('active');
-      });
-      link.children[0].classList.add('active');
-      updatePageTitle(link);
-    });
-  });
+  // upArrow.addEventListener('click', () => {
+  //   updatePageTitle(upArrow);
+  // });
 
   // project previous button
   prevBtn.addEventListener('click', () => {
@@ -81,14 +72,6 @@ function loadScript() {
       i = 0;
     }
     slide[i].classList.add('current');
-  });
-
-  // updates page title with up arrow
-  upArrow.addEventListener('click', () => {
-    navigationLinkActive.forEach((activeLink) => {
-      activeLink.classList.remove('active');
-    });
-    updatePageTitle(upArrow);
   });
 
   // mobile burger menu actions
@@ -112,10 +95,10 @@ function loadScript() {
 
   window.addEventListener('scroll', () => {
     activateUpArrow();
-    showHideHeading();
+    headingAndNavActions();
   });
   activateUpArrow();
-  showHideHeading();
+  headingAndNavActions();
 }
 
 window.onload = loadScript;
