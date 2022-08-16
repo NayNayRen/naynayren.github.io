@@ -1057,6 +1057,10 @@ main {
     /* outline: solid 1px blue; */
   }
 
+  header span {
+    font-size: 14px;
+  }
+
   .project-container {
     height: 480px;
   }
