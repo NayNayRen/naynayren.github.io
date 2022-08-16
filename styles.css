@@ -213,21 +213,24 @@ header {
 }
 
 header h1 {
+  display: inline;
   font-size: 34px;
   margin: 0;
   position: relative;
-  width: 220px;
+  /* width: 220px; */
+  width: auto;
   /* outline: solid 1px blue; */
 }
 
 header h1::after {
-  bottom: 5px;
+  bottom: 0;
   color: #ffc354;
   content: 'Web Developer';
   font-size: 20px;
+  padding: 0 0 5px 5px;
   position: absolute;
   left: 100%;
-  width: 150px;
+  width: 100%;
   /* outline: solid 1px blue; */
 }
 
@@ -899,13 +902,14 @@ main {
 
   header h1 {
     font-size: 30px;
-    width: 185px;
+    /* width: 185px; */
   }
 
   header h1::after {
-    bottom: 4px;
+    /* bottom: 4px; */
     font-size: 16px;
-    width: 120px;
+    /* left: 190px; */
+    /* width: 120px; */
     /* outline: solid 1px blue; */
   }
 
@@ -1048,15 +1052,8 @@ main {
   }
 
   header h1 {
-    font-size: 26px;
-    width: 165px;
-    /* outline: solid 1px blue; */
-  }
-
-  header h1::after {
-    bottom: 4px;
-    font-size: 16px;
-    width: 110px;
+    font-size: 28px;
+    /* width: 100%; */
     /* outline: solid 1px blue; */
   }
 
