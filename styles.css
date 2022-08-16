@@ -906,7 +906,6 @@ main {
 
   header h1::after {
     font-size: 16px;
-    padding: 0 0 0 4px;
   }
 
   .header-logo {
