@@ -1056,7 +1056,7 @@ main {
     bottom: 4px;
     font-size: 16px;
     width: 115px;
-    outline: solid 1px blue;
+    /* outline: solid 1px blue; */
   }
 
   .project-container {
