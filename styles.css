@@ -898,8 +898,8 @@ main {
   }
 
   header {
-    height: 110px;
-    padding: 0 0 0 5px;
+    height: 105px;
+    padding: 0 0 0 0;
   }
 
   header h1 {
@@ -989,6 +989,7 @@ main {
   }
 
   .photo-caption {
+    font-size: 18px;
     line-height: 25px;
     padding: 0 0 0 0;
   }
