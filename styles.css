@@ -380,9 +380,11 @@ main {
 .photo-caption {
   background-color: #000;
   font-size: 20px;
+  height: 100%;
   line-height: 28px;
   margin: 0;
   padding: 0 0 0 10px;
+  /* outline: solid 1px blue; */
 }
 
 .prev {
@@ -739,7 +741,7 @@ main {
 
 @media (max-width: 1000px) {
   .project-container {
-    height: 450px;
+    height: 460px;
   }
 
   .slide-container {
