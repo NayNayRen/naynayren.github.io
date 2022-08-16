@@ -906,6 +906,7 @@ main {
 
   header h1::after {
     font-size: 16px;
+    padding: 0 0 0 4px;
   }
 
   .header-logo {
@@ -915,7 +916,7 @@ main {
   }
 
   .header span {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .image-of-me {
@@ -1048,12 +1049,10 @@ main {
 
   header h1 {
     font-size: 26px;
-    /* width: 100%; */
-    /* outline: solid 1px blue; */
   }
 
   header span {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .project-container {
