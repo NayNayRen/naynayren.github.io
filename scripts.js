@@ -1,165 +1,111 @@
-const burgerMenu = document.querySelector('.burger-menu');
-const nav = document.getElementById('nav-container');
-const scrollPoint = document.getElementById('scroll-point');
-const containers = document.querySelectorAll('.container');
-const education = document.querySelector('.education');
-// const containerSquares = document.querySelectorAll('.container-square');
-const headerLogo = document.querySelector('.header-logo');
-const upArrow = document.querySelector('.up-arrow');
+function loadScript() {
+  const burgerMenu = document.querySelector('.burger-menu');
+  const upArrow = document.querySelector('.up-arrow');
+  const navigationLinks = document.querySelectorAll('.navigation-link');
+  const containerHeadings = document.querySelectorAll('.container-heading');
+  const topContainer = document.querySelector('#me');
+  const nextBtn = document.querySelector('.next');
+  const prevBtn = document.querySelector('.prev');
+  const slide = document.querySelectorAll('.slide');
+  let i = 0;
 
-const nextBtn = document.querySelector('.next');
-const prevBtn = document.querySelector('.prev');
-const slide = document.querySelectorAll('.slide');
-let i = 0;
-
-prevBtn.onclick = function () {
-  slide[i].classList.remove('current');
-  i--;
-  if (i < 0) {
-    i = slide.length - 1;
-  }
-  slide[i].classList.add('current');
-};
-
-nextBtn.onclick = function () {
-  slide[i].classList.remove('current');
-  i++;
-  if (i >= slide.length) {
-    i = 0;
-  }
-  slide[i].classList.add('current');
-};
-
-// fixed navigation settings for all screens
-function fixedNav() {
-  // scroll point in pixels to start the fixed position and window width
-  if (document.documentElement.scrollTop > 105 && window.innerWidth > 1300) {
-    nav.style.position = 'fixed';
-    nav.style.top = '0';
-    upArrow.style.right = '5px';
-    scrollPoint.style.paddingTop = '75px';
-  } else if (
-    document.documentElement.scrollTop > 95 &&
-    window.innerWidth < 1300 &&
-    window.innerWidth > 1000
-  ) {
-    nav.style.position = 'fixed';
-    nav.style.top = '0';
-    upArrow.style.right = '5px';
-    scrollPoint.style.paddingTop = '80px';
-  } else if (
-    document.documentElement.scrollTop > 95 &&
-    window.innerWidth < 1000 &&
-    window.innerWidth > 700
-  ) {
-    nav.style.position = 'fixed';
-    nav.style.top = '0';
-    upArrow.style.right = '5px';
-    scrollPoint.style.paddingTop = '75px';
-  } else if (
-    document.documentElement.scrollTop > 75 &&
-    window.innerWidth < 700 &&
-    window.innerWidth > 400
-  ) {
-    nav.style.position = 'fixed';
-    nav.style.top = '0';
-    upArrow.style.right = '5px';
-    scrollPoint.style.paddingTop = '50px';
-  } else if (
-    document.documentElement.scrollTop > 65 &&
-    window.innerWidth < 400
-  ) {
-    nav.style.position = 'fixed';
-    nav.style.top = '0';
-    upArrow.style.right = '5px';
-    scrollPoint.style.paddingTop = '50px';
-  } else {
-    nav.style.position = 'relative';
-    scrollPoint.style.paddingTop = '0px';
-    upArrow.style.right = '-60px';
-  }
-}
-
-// fades each container for the scroll effect
-function fadeIn(element) {
-  element.style.opacity = '1';
-}
-// fades each square for the scroll effect
-// function moveSquares(element) {
-//   element.style.opacity = '1';
-//   element.style.right = '10%';
-// }
-
-// settings for container info and decorative squares to be faded in
-function pageContainerActions() {
-  containers.forEach((container) => {
-    const distanceFromTopOfPage = container.getBoundingClientRect().top;
-    if (distanceFromTopOfPage < 650 && window.innerWidth > 1000) {
-      fadeIn(container);
-    } else if (
-      distanceFromTopOfPage < 575 &&
-      window.innerWidth < 1000 &&
-      window.innerWidth > 700
-    ) {
-      fadeIn(container);
-    } else if (
-      distanceFromTopOfPage < 500 &&
-      window.innerWidth < 700 &&
-      window.innerWidth > 400
-    ) {
-      fadeIn(container);
-    } else if (distanceFromTopOfPage < 350 && window.innerWidth < 400) {
-      fadeIn(container);
+  // show and hide up arrow
+  function activateUpArrow() {
+    if (document.documentElement.scrollTop > 0) {
+      upArrow.style.right = '0';
     } else {
-      container.style.opacity = '0';
+      upArrow.style.right = '-60px';
     }
-  });
-  // containerSquares.forEach((square) => {
-  //   const squareDistanceFromTopOfPage = square.getBoundingClientRect().top;
-  //   if (squareDistanceFromTopOfPage < 425 && window.innerWidth > 1000) {
-  //     moveSquares(square);
-  //   } else if (
-  //     squareDistanceFromTopOfPage < 400 &&
-  //     window.innerWidth < 1000 &&
-  //     window.innerWidth > 700
-  //   ) {
-  //     moveSquares(square);
-  //   } else {
-  //     square.style.opacity = '0';
-  //     square.style.right = '-600px';
-  //   }
+  }
+
+  // updates page title with value of link clicked
+  // function updatePageTitle(link) {
+  //   document.title = link.getAttribute('value');
+  // }
+
+  // displays and hides container heading and highlights nav menu
+  function headingAndNavActions() {
+    containerHeadings.forEach((heading) => {
+      const windowHeight = window.innerHeight;
+      const headingDistanceFromTop = heading.getBoundingClientRect().top;
+      if (headingDistanceFromTop < windowHeight * 0.5) {
+        navigationLinks.forEach((link) => {
+          if (link.getAttribute('value') === heading.innerText) {
+            // updatePageTitle(link);
+            link.classList.replace('purple-text', 'green-text');
+            link.children[0].classList.add('active');
+          } else {
+            link.classList.replace('green-text', 'purple-text');
+            link.children[0].classList.remove('active');
+          }
+        });
+        heading.classList.replace('yellow-text', 'green-text');
+        heading.style.borderColor = '#4be574';
+      } else {
+        heading.classList.replace('green-text', 'yellow-text');
+        heading.style.borderColor = '#fff';
+      }
+      if (topContainer.getBoundingClientRect().top > 115) {
+        // updatePageTitle(upArrow);
+        heading.classList.replace('green-text', 'yellow-text');
+        heading.style.borderColor = '#fff';
+        navigationLinks.forEach((link) => {
+          link.classList.replace('green-text', 'purple-text');
+          link.children[0].classList.remove('active');
+        });
+      }
+    });
+  }
+
+  // upArrow.addEventListener('click', () => {
+  //   updatePageTitle(upArrow);
   // });
+
+  // project previous button
+  prevBtn.addEventListener('click', () => {
+    slide[i].classList.remove('current');
+    i--;
+    if (i < 0) {
+      i = slide.length - 1;
+    }
+    slide[i].classList.add('current');
+  });
+
+  // project next button
+  nextBtn.addEventListener('click', () => {
+    slide[i].classList.remove('current');
+    i++;
+    if (i >= slide.length) {
+      i = 0;
+    }
+    slide[i].classList.add('current');
+  });
+
+  // mobile burger menu actions
+  burgerMenu.addEventListener('click', () => {
+    document
+      .querySelector('#burger-overlay')
+      .classList.toggle('burger-overlay-dim');
+    document
+      .querySelector('.navigation-links-container')
+      .classList.toggle('show-navigation-links');
+    document
+      .querySelector('#burger-bars-1')
+      .classList.toggle('burger-bars-rotate-clockwise');
+    document
+      .querySelector('#burger-bars-2')
+      .classList.toggle('burger-bars-remove');
+    document
+      .querySelector('#burger-bars-3')
+      .classList.toggle('burger-bars-rotate-counter-clockwise');
+  });
+
+  window.addEventListener('scroll', () => {
+    activateUpArrow();
+    headingAndNavActions();
+  });
+  activateUpArrow();
+  headingAndNavActions();
 }
 
-// on page load and scroll sticky nav container takes hold
-// on page load and scroll containers are faded in and out when reaching the distance from the top and according to window width
-window.addEventListener('load', () => {
-  fixedNav();
-  pageContainerActions();
-});
-window.addEventListener('scroll', () => {
-  fixedNav();
-  pageContainerActions();
-});
-
-// toggles the links menu left and right when clicked
-burgerMenu.addEventListener('click', () => {
-  document
-    .querySelector('#burger-overlay')
-    .classList.toggle('burger-overlay-dim');
-  document
-    .querySelector('.nav-links-container')
-    .classList.toggle('move-nav-links-on');
-  document
-    .querySelector('#burger-bars-1')
-    .classList.toggle('burger-bars-remove');
-  document
-    .querySelector('#burger-bars-2')
-    .classList.toggle('burger-bars-rotate-clockwise');
-  document
-    .querySelector('#burger-bars-3')
-    .classList.toggle('burger-bars-rotate-counter-clockwise');
-  document
-    .querySelector('#burger-bars-4')
-    .classList.toggle('burger-bars-remove');
-});
+window.onload = loadScript;
