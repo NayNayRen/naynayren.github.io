@@ -221,7 +221,7 @@ header h1 {
 }
 
 header h1::after {
-  bottom: 3px;
+  bottom: 5px;
   color: #ffc354;
   content: 'Web Developer';
   font-size: 20px;
