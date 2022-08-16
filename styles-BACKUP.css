@@ -430,13 +430,13 @@ main {
       from(rgba(0, 0, 0, 1)),
       color-stop(40%, rgba(0, 0, 0, 0))
     ),
-    url('img/ghibli.png');
+    url('img/ghibli.jpeg');
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 40%
     ),
-    url('img/ghibli.png');
+    url('img/ghibli.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -450,13 +450,13 @@ main {
       from(rgba(0, 0, 0, 1)),
       color-stop(40%, rgba(0, 0, 0, 0))
     ),
-    url('img/buddha.png');
+    url('img/buddha.jpeg');
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 40%
     ),
-    url('img/buddha.png');
+    url('img/buddha.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -470,13 +470,13 @@ main {
       from(rgba(0, 0, 0, 1)),
       color-stop(40%, rgba(0, 0, 0, 0))
     ),
-    url('img/shine.png');
+    url('img/shine.jpeg');
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 40%
     ),
-    url('img/shine.png');
+    url('img/shine.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -490,13 +490,13 @@ main {
       from(rgba(0, 0, 0, 1)),
       color-stop(40%, rgba(0, 0, 0, 0))
     ),
-    url('img/breathe.png');
+    url('img/breathe.jpeg');
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 40%
     ),
-    url('img/breathe.png');
+    url('img/breathe.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -510,13 +510,13 @@ main {
       from(rgba(0, 0, 0, 1)),
       color-stop(40%, rgba(0, 0, 0, 0))
     ),
-    url('img/summit.png');
+    url('img/summit.jpeg');
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 40%
     ),
-    url('img/summit.png');
+    url('img/summit.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -530,13 +530,13 @@ main {
       from(rgba(0, 0, 0, 1)),
       color-stop(40%, rgba(0, 0, 0, 0))
     ),
-    url('img/fur.png');
+    url('img/fur.jpeg');
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 40%
     ),
-    url('img/fur.png');
+    url('img/fur.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -550,13 +550,13 @@ main {
       from(rgba(0, 0, 0, 1)),
       color-stop(40%, rgba(0, 0, 0, 0))
     ),
-    url('img/speach.png');
+    url('img/speach.jpeg');
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 40%
     ),
-    url('img/speach.png');
+    url('img/speach.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
