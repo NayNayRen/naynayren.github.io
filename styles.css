@@ -246,6 +246,7 @@ header h1::after {
 }
 
 header span {
+  display: block;
   font-size: 18px;
   font-weight: bold;
 }
