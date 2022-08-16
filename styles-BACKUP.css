@@ -379,7 +379,7 @@ main {
   font-size: 20px;
   line-height: 28px;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 0 0 10px;
 }
 
 .prev {
@@ -387,16 +387,6 @@ main {
   border-top-right-radius: 5px;
   left: 0;
   padding-right: 5px;
-}
-
-.project-photo-title {
-  bottom: 0;
-  display: block;
-  font-size: 24px;
-  font-weight: bold;
-  padding: 0 0 0 10px;
-  position: absolute;
-  text-transform: uppercase;
 }
 
 .project-container {
@@ -565,6 +555,16 @@ main {
 .project-photo {
   height: 100%;
   width: 100%;
+}
+
+.project-photo-title {
+  bottom: 0;
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0 0 0 10px;
+  position: absolute;
+  text-transform: uppercase;
 }
 
 .resume-container {
@@ -989,6 +989,7 @@ main {
 
   .photo-caption {
     line-height: 25px;
+    padding: 0 0 0 0;
   }
 
   .prev {
@@ -1002,7 +1003,8 @@ main {
   }
 
   .project-photo-title {
-    font-size: 18px;
+    font-size: 20px;
+    padding: 0 0 0 0;
   }
 
   .slide {
