@@ -45,7 +45,7 @@ function loadScript() {
         heading.classList.replace('green-text', 'yellow-text');
         heading.style.borderColor = '#fff';
       }
-      if (topContainer.getBoundingClientRect().top > windowHeight * 0.099) {
+      if (topContainer.getBoundingClientRect().top > 115) {
         // updatePageTitle(upArrow);
         heading.classList.replace('green-text', 'yellow-text');
         heading.style.borderColor = '#fff';

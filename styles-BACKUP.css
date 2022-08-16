@@ -222,7 +222,7 @@ header h1 {
 
 header h1::after {
   bottom: 3px;
-  color: #fff;
+  color: #ffc354;
   content: 'Web Developer';
   font-size: 20px;
   position: absolute;
@@ -584,11 +584,23 @@ main {
   /* outline: solid 1px blue; */
 }
 
+.resume-container a {
+  overflow: hidden;
+  padding-bottom: 15px;
+  position: relative;
+  /* outline: solid 1px blue; */
+}
+
 .resume-container a,
 .social-media-container i,
 .spc-link {
   -webkit-transition: color 150ms ease;
   transition: color 150ms ease;
+}
+
+.resume-container a:hover .social-media-name,
+.social-media-container a:hover .social-media-name {
+  bottom: -2px;
 }
 
 .slide {
@@ -647,7 +659,7 @@ main {
 
 .social-media-container a {
   overflow: hidden;
-  padding: 0 20px 10px 20px;
+  padding: 0 20px 15px 20px;
   position: relative;
   /* outline: solid 1px red; */
 }
@@ -661,10 +673,6 @@ main {
   position: absolute;
   transform: translateX(-50%);
   transition: bottom 150ms ease;
-}
-
-.social-media-container a:hover .social-media-name {
-  bottom: -2px;
 }
 
 .up-arrow {
@@ -774,7 +782,7 @@ main {
   .burger-bars {
     -o-transition: all 250ms ease;
     -webkit-transition: all 150ms ease;
-    background-color: #fff;
+    background-color: #9654dd;
     border-radius: 5px;
     height: 2px;
     margin: 3px 0;
@@ -790,7 +798,7 @@ main {
   .burger-bars-rotate-clockwise {
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-    background-color: #c00022;
+    background-color: #4be574;
     height: 3px;
     position: absolute;
     top: 12px;
@@ -800,7 +808,7 @@ main {
   .burger-bars-rotate-counter-clockwise {
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-    background-color: #c00022;
+    background-color: #4be574;
     height: 3px;
     position: absolute;
     top: 12px;
@@ -860,10 +868,6 @@ main {
     font-size: 22px;
   }
 
-  .content-li-title {
-    color: #7b01bf;
-  }
-
   .content-text {
     font-size: 20px;
     width: 100%;
@@ -878,6 +882,7 @@ main {
   .photo-caption a:hover,
   .prev:hover,
   .resume-container a:hover,
+  .social-media-container a:hover,
   .spc-link:hover,
   .up-arrow:hover {
     color: #9654dd;
@@ -1022,10 +1027,6 @@ main {
 
   .social-media-container a {
     padding: 0;
-  }
-
-  .social-media-container a:hover {
-    color: #5786dc;
   }
 
   .social-media-name {
