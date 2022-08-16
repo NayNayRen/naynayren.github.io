@@ -1048,14 +1048,15 @@ main {
   }
 
   header h1 {
-    font-size: 28px;
-    width: 175px;
+    font-size: 26px;
+    width: 165px;
+    /* outline: solid 1px blue; */
   }
 
   header h1::after {
     bottom: 4px;
     font-size: 16px;
-    width: 115px;
+    width: 110px;
     /* outline: solid 1px blue; */
   }
 
