@@ -124,13 +124,13 @@ body {
 .skills-container li {
   font-family: 'Fredoka', sans-serif;
   font-size: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   /* font-weight: bold; */
 }
 
 .content-li-date {
   font-size: 24px;
-  /* margin-bottom: 5px; */
+  margin: 15px 0 5px 0;
   /* font-weight: bold; */
 }
 
@@ -641,7 +641,7 @@ main {
 
 .skills-container li span {
   -webkit-transform: translateY(-50%);
-  height: 100%;
+  /* height: 100%; */
   left: calc(100% + 15px);
   position: absolute;
   top: 50%;
