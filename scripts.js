@@ -39,16 +39,16 @@ function loadScript() {
             link.children[0].classList.remove('active');
           }
         });
-        heading.classList.replace('yellow-text', 'green-text');
-        heading.style.borderColor = '#4be574';
+        heading.classList.replace('red-text', 'green-text');
+        // heading.style.borderColor = '#4be574';
       } else {
-        heading.classList.replace('green-text', 'yellow-text');
-        heading.style.borderColor = '#fff';
+        heading.classList.replace('green-text', 'red-text');
+        // heading.style.borderColor = '#fff';
       }
       if (topContainer.getBoundingClientRect().top > 115) {
         // updatePageTitle(upArrow);
-        heading.classList.replace('green-text', 'yellow-text');
-        heading.style.borderColor = '#fff';
+        heading.classList.replace('green-text', 'red-text');
+        // heading.style.borderColor = '#fff';
         navigationLinks.forEach((link) => {
           link.classList.replace('green-text', 'purple-text');
           link.children[0].classList.remove('active');
