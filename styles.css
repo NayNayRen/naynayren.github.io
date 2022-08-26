@@ -220,19 +220,19 @@ header h1 {
   display: inline;
   font-size: 34px;
   margin: 0;
-  position: relative;
+  /* position: relative; */
   width: auto;
   /* outline: solid 1px blue; */
 }
 
 header h1::after {
-  bottom: 0;
+  /* bottom: 0; */
   color: #ffc354;
   content: 'Web Developer';
   font-size: 20px;
-  padding: 0 0 5px 0;
-  position: absolute;
-  left: 100%;
+  /* padding: 0 0 5px 0; */
+  /* position: absolute; */
+  /* left: 100%; */
   width: 100%;
   /* outline: solid 1px blue; */
 }
@@ -903,16 +903,17 @@ main {
 
   .content-container,
   .greeting {
-    padding: 15px 15px 25px 15px;
+    padding: 15px 0 25px 0;
   }
 
   .content-container h2 {
     font-size: 24px;
+    padding: 0 15px 0 15px;
     width: 100%;
   }
 
   .content-container ul {
-    padding: 0;
+    padding: 0 15px 0 15px;
     width: 100%;
   }
 
@@ -926,6 +927,7 @@ main {
 
   .content-text {
     font-size: 20px;
+    padding: 0 15px 0 15px;
     width: 100%;
   }
 
@@ -950,11 +952,11 @@ main {
 
   header {
     height: 105px;
-    padding: 0 0 0 0;
+    padding: 0 0 0 10px;
   }
 
   header h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   header h1::after {
@@ -962,13 +964,13 @@ main {
   }
 
   .header-logo {
-    right: 5px;
+    right: 10px;
     top: 5px;
     width: 50px;
   }
 
-  .header span {
-    font-size: 16px;
+  header span {
+    font-size: 14px;
   }
 
   .image-of-me {
@@ -1031,7 +1033,7 @@ main {
     height: 45px;
     top: 0;
     transform: translateY(0);
-    width: 40px;
+    width: 45px;
   }
 
   .next {
@@ -1042,7 +1044,7 @@ main {
   .photo-caption {
     font-size: 18px;
     line-height: 25px;
-    padding: 0 0 0 0;
+    padding: 0 15px 0 15px;
   }
 
   .prev {
@@ -1057,7 +1059,7 @@ main {
 
   .project-photo-title {
     font-size: 20px;
-    padding: 0 0 0 0;
+    padding: 0 15px 0 15px;
   }
 
   .slide {
@@ -1108,14 +1110,6 @@ main {
 @media (max-width: 400px) {
   .certification-container img {
     width: 100%;
-  }
-
-  header h1 {
-    font-size: 26px;
-  }
-
-  header span {
-    font-size: 12px;
   }
 
   .project-container {
