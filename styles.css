@@ -952,7 +952,7 @@ main {
 
   header {
     height: 105px;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 5px;
   }
 
   header h1 {
@@ -964,7 +964,7 @@ main {
   }
 
   .header-logo {
-    right: 10px;
+    right: 5px;
     top: 5px;
     width: 50px;
   }
