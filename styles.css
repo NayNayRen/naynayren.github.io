@@ -1138,16 +1138,16 @@ main {
     width: 100%;
   }
 
-  /* header h1 {
+  header h1 {
     font-size: 24px;
-  } */
+  }
 
   header h1::after {
     font-size: 14px;
   }
 
   .header-logo {
-    width: 40px;
+    width: 45px;
   }
 
   .project-container {
