@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fredoka&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fredoka&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 /* FONT COLORS */
 .blue-text {
@@ -25,7 +26,8 @@
 body {
   background-color: #fff;
   height: 100vh;
-  font-family: 'Didact Gothic', sans-serif;
+  /* font-family: "Didact Gothic", sans-serif; */
+  font-family: "Raleway", sans-serif;
   margin: 0;
   overflow-x: hidden;
   padding: 0;
@@ -78,7 +80,7 @@ body {
 .certification-container span {
   background-color: #ffc354;
   bottom: 0;
-  font-family: 'Fredoka', sans-serif;
+  /* font-family: "Fredoka", sans-serif; */
   font-size: 20px;
   left: 0;
   padding: 2px 0;
@@ -122,7 +124,7 @@ body {
 
 .content-container li,
 .skills-container li {
-  font-family: 'Fredoka', sans-serif;
+  /* font-family: "Fredoka", sans-serif; */
   font-size: 22px;
   margin-bottom: 10px;
   /* font-weight: bold; */
@@ -135,7 +137,7 @@ body {
 }
 
 .content-text {
-  font-family: 'Fredoka', sans-serif;
+  /* font-family: "Fredoka", sans-serif; */
   font-size: 22px;
   margin: 20px 0 0 0;
   width: 80%;
@@ -226,7 +228,7 @@ header h1 {
 
 header h1::after {
   color: #ffc354;
-  content: 'Web Developer';
+  content: "Web Developer";
   font-size: 20px;
   width: 100%;
   /* outline: solid 1px blue; */
@@ -291,7 +293,7 @@ main {
 
 .navigation-links-container a {
   -webkit-transition: color 150ms ease;
-  font-family: 'Fredoka', sans-serif;
+  /* font-family: "Fredoka", sans-serif; */
   font-size: 20px;
   margin: 0 15px 0 15px;
   overflow: hidden;
@@ -314,7 +316,7 @@ main {
   transform: translateX(-50%);
   transition: all 150ms ease;
 }
-
+/* HAS TO BE AFTER THE SETTING ABOVE */
 .active {
   bottom: 0;
   opacity: 1;
@@ -424,13 +426,13 @@ main {
       from(rgba(0, 0, 0, 1)),
       color-stop(40%, rgba(0, 0, 0, 0))
     ),
-    url('img/ghibli.jpeg');
+    url("img/linux-audio-pop.jpeg");
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 40%
     ),
-    url('img/ghibli.jpeg');
+    url("img/linux-audio-pop.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -444,13 +446,13 @@ main {
       from(rgba(0, 0, 0, 1)),
       color-stop(40%, rgba(0, 0, 0, 0))
     ),
-    url('img/buddha.jpeg');
+    url("img/buddha.jpeg");
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 40%
     ),
-    url('img/buddha.jpeg');
+    url("img/buddha.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -464,13 +466,13 @@ main {
       from(rgba(0, 0, 0, 1)),
       color-stop(40%, rgba(0, 0, 0, 0))
     ),
-    url('img/shine.jpeg');
+    url("img/shine.jpeg");
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 40%
     ),
-    url('img/shine.jpeg');
+    url("img/shine.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -484,13 +486,13 @@ main {
       from(rgba(0, 0, 0, 1)),
       color-stop(40%, rgba(0, 0, 0, 0))
     ),
-    url('img/breathe.jpeg');
+    url("img/breathe.jpeg");
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 40%
     ),
-    url('img/breathe.jpeg');
+    url("img/breathe.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -504,13 +506,13 @@ main {
       from(rgba(0, 0, 0, 1)),
       color-stop(40%, rgba(0, 0, 0, 0))
     ),
-    url('img/summit.jpeg');
+    url("img/summit.jpeg");
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 40%
     ),
-    url('img/summit.jpeg');
+    url("img/summit.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -524,13 +526,13 @@ main {
       from(rgba(0, 0, 0, 1)),
       color-stop(40%, rgba(0, 0, 0, 0))
     ),
-    url('img/fur.jpeg');
+    url("img/fur.jpeg");
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 40%
     ),
-    url('img/fur.jpeg');
+    url("img/fur.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -544,13 +546,13 @@ main {
       from(rgba(0, 0, 0, 1)),
       color-stop(40%, rgba(0, 0, 0, 0))
     ),
-    url('img/speach.jpeg');
+    url("img/speach.jpeg");
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 40%
     ),
-    url('img/speach.jpeg');
+    url("img/speach.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -592,6 +594,7 @@ main {
   overflow: hidden;
   padding-bottom: 15px;
   position: relative;
+  text-decoration: none;
   /* outline: solid 1px blue; */
 }
 
@@ -604,7 +607,7 @@ main {
 
 .resume-container a:hover .social-media-name,
 .social-media-container a:hover .social-media-name {
-  bottom: -2px;
+  bottom: 0;
 }
 
 .skills-container ul {
@@ -786,6 +789,10 @@ main {
     font-size: 18px;
   }
 
+  .photo-caption {
+    font-size: 18px;
+  }
+
   .project-container {
     height: 460px;
   }
@@ -903,8 +910,9 @@ main {
 
   .content-container h2 {
     font-size: 24px;
-    padding: 0 15px 0 15px;
-    width: 100%;
+    margin-left: 15px;
+    padding: 0;
+    width: 90%;
   }
 
   .content-container ul {
@@ -1037,7 +1045,7 @@ main {
   }
 
   .photo-caption {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     padding: 0 15px 0 15px;
   }
@@ -1105,6 +1113,18 @@ main {
 @media (max-width: 400px) {
   .certification-container img {
     width: 100%;
+  }
+
+  /* header h1 {
+    font-size: 24px;
+  } */
+
+  header h1::after {
+    font-size: 14px;
+  }
+
+  .header-logo {
+    width: 40px;
   }
 
   .project-container {
