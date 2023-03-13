@@ -3,7 +3,8 @@
 
 /* FONT COLORS */
 .blue-text {
-  color: #5786dc;
+  /* color: #5786dc; */
+  color: #48e2e2;
 }
 .green-text {
   color: #4be574;
@@ -12,10 +13,12 @@
   color: #9654dd;
 }
 .red-text {
-  color: #c00022;
+  /* color: #c00022; */
+  color: #f54e94;
 }
 .yellow-text {
-  color: #ffc354;
+  /* color: #ffc354; */
+  color: #ffa052;
 }
 
 * {
@@ -78,13 +81,10 @@ body {
 }
 
 .certification-container span {
-  background-color: #ffc354;
-  bottom: 0;
+  /* background-color: #ffc354; */
   /* font-family: "Fredoka", sans-serif; */
   font-size: 20px;
-  left: 0;
   padding: 2px 0;
-  position: absolute;
   text-align: center;
   width: 100%;
 }
@@ -109,7 +109,8 @@ body {
 
 .content-container h2 {
   -webkit-transition: color 150ms ease;
-  border-bottom: solid 1px #ffc354;
+  /* border-bottom: solid 1px #ffc354; */
+  border-bottom: solid 1px #ffa052;
   font-size: 28px;
   margin: 0 0 20px 0;
   transition: color 150ms ease;
@@ -212,7 +213,7 @@ header {
   flex-direction: column;
   height: 120px;
   justify-content: space-between;
-  padding: 0 0 20px 5px;
+  padding: 5px 5px 20px 10px;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -227,9 +228,11 @@ header h1 {
 }
 
 header h1::after {
-  color: #ffc354;
+  /* color: #ffc354; */
+  color: #ffa052;
   content: "Web Developer";
   font-size: 20px;
+  padding-left: 5px;
   width: 100%;
   /* outline: solid 1px blue; */
 }
@@ -642,7 +645,8 @@ main {
 }
 
 .skills-container li {
-  color: #ffc354;
+  /* color: #ffc354; */
+  color: #ffa052;
   position: relative;
   width: -moz-fit-content;
   width: -webkit-fit-content;
@@ -968,7 +972,7 @@ main {
 
   header {
     height: 105px;
-    padding: 0 0 0 5px;
+    padding: 5px 10px 0 10px;
   }
 
   header h1 {
@@ -980,8 +984,8 @@ main {
   }
 
   .header-logo {
-    right: 5px;
-    top: 5px;
+    /* right: 5px;
+    top: 5px; */
     width: 50px;
   }
 

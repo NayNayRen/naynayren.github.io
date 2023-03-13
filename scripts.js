@@ -1,20 +1,20 @@
 function loadScript() {
-  const burgerMenu = document.querySelector('.burger-menu');
-  const upArrow = document.querySelector('.up-arrow');
-  const navigationLinks = document.querySelectorAll('.navigation-link');
-  const containerHeadings = document.querySelectorAll('.container-heading');
-  const topContainer = document.querySelector('#me');
-  const nextBtn = document.querySelector('.next');
-  const prevBtn = document.querySelector('.prev');
-  const slide = document.querySelectorAll('.slide');
+  const burgerMenu = document.querySelector(".burger-menu");
+  const upArrow = document.querySelector(".up-arrow");
+  const navigationLinks = document.querySelectorAll(".navigation-link");
+  const containerHeadings = document.querySelectorAll(".container-heading");
+  const topContainer = document.querySelector("#me");
+  const nextBtn = document.querySelector(".next");
+  const prevBtn = document.querySelector(".prev");
+  const slide = document.querySelectorAll(".slide");
   let i = 0;
 
   // show and hide up arrow
   function activateUpArrow() {
     if (document.documentElement.scrollTop > 0) {
-      upArrow.style.right = '0';
+      upArrow.style.right = "0";
     } else {
-      upArrow.style.right = '-60px';
+      upArrow.style.right = "-60px";
     }
   }
 
@@ -30,28 +30,28 @@ function loadScript() {
       const headingDistanceFromTop = heading.getBoundingClientRect().top;
       if (headingDistanceFromTop < windowHeight * 0.5) {
         navigationLinks.forEach((link) => {
-          if (link.getAttribute('value') === heading.innerText) {
+          if (link.getAttribute("value") === heading.innerText) {
             // updatePageTitle(link);
-            link.classList.replace('purple-text', 'green-text');
-            link.children[0].classList.add('active');
+            link.classList.replace("purple-text", "green-text");
+            link.children[0].classList.add("active");
           } else {
-            link.classList.replace('green-text', 'purple-text');
-            link.children[0].classList.remove('active');
+            link.classList.replace("green-text", "purple-text");
+            link.children[0].classList.remove("active");
           }
         });
-        heading.classList.replace('red-text', 'green-text');
+        heading.classList.replace("purple-text", "green-text");
         // heading.style.borderColor = '#4be574';
       } else {
-        heading.classList.replace('green-text', 'red-text');
+        heading.classList.replace("green-text", "purple-text");
         // heading.style.borderColor = '#fff';
       }
       if (topContainer.getBoundingClientRect().top > 115) {
         // updatePageTitle(upArrow);
-        heading.classList.replace('green-text', 'red-text');
+        heading.classList.replace("green-text", "purple-text");
         // heading.style.borderColor = '#fff';
         navigationLinks.forEach((link) => {
-          link.classList.replace('green-text', 'purple-text');
-          link.children[0].classList.remove('active');
+          link.classList.replace("green-text", "purple-text");
+          link.children[0].classList.remove("active");
         });
       }
     });
@@ -62,45 +62,45 @@ function loadScript() {
   // });
 
   // project previous button
-  prevBtn.addEventListener('click', () => {
-    slide[i].classList.remove('current');
+  prevBtn.addEventListener("click", () => {
+    slide[i].classList.remove("current");
     i--;
     if (i < 0) {
       i = slide.length - 1;
     }
-    slide[i].classList.add('current');
+    slide[i].classList.add("current");
   });
 
   // project next button
-  nextBtn.addEventListener('click', () => {
-    slide[i].classList.remove('current');
+  nextBtn.addEventListener("click", () => {
+    slide[i].classList.remove("current");
     i++;
     if (i >= slide.length) {
       i = 0;
     }
-    slide[i].classList.add('current');
+    slide[i].classList.add("current");
   });
 
   // mobile burger menu actions
-  burgerMenu.addEventListener('click', () => {
+  burgerMenu.addEventListener("click", () => {
     document
-      .querySelector('#burger-overlay')
-      .classList.toggle('burger-overlay-dim');
+      .querySelector("#burger-overlay")
+      .classList.toggle("burger-overlay-dim");
     document
-      .querySelector('.navigation-links-container')
-      .classList.toggle('show-navigation-links');
+      .querySelector(".navigation-links-container")
+      .classList.toggle("show-navigation-links");
     document
-      .querySelector('#burger-bars-1')
-      .classList.toggle('burger-bars-rotate-clockwise');
+      .querySelector("#burger-bars-1")
+      .classList.toggle("burger-bars-rotate-clockwise");
     document
-      .querySelector('#burger-bars-2')
-      .classList.toggle('burger-bars-remove');
+      .querySelector("#burger-bars-2")
+      .classList.toggle("burger-bars-remove");
     document
-      .querySelector('#burger-bars-3')
-      .classList.toggle('burger-bars-rotate-counter-clockwise');
+      .querySelector("#burger-bars-3")
+      .classList.toggle("burger-bars-rotate-counter-clockwise");
   });
 
-  window.addEventListener('scroll', () => {
+  window.addEventListener("scroll", () => {
     activateUpArrow();
     headingAndNavActions();
   });
