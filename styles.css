@@ -401,10 +401,11 @@ main {
 .photo-caption {
   background-color: #000;
   font-size: 20px;
-  height: 100%;
-  line-height: 28px;
+  height: 100px;
+  line-height: 25px;
   margin: 0;
-  padding: 0 0 0 10px;
+  overflow-y: scroll;
+  padding: 0 5px 5px 10px;
   /* outline: solid 1px blue; */
 }
 
@@ -815,7 +816,7 @@ main {
   }
 
   .project-container {
-    height: 460px;
+    height: 450px;
   }
 
   .slide-container {
@@ -1081,8 +1082,7 @@ main {
 
   .photo-caption {
     font-size: 16px;
-    line-height: 25px;
-    padding: 0 15px 0 15px;
+    padding: 0 5px 5px 15px;
   }
 
   .prev {
@@ -1091,13 +1091,13 @@ main {
   }
 
   .project-container {
-    height: 415px;
+    height: 400px;
     width: 100%;
   }
 
   .project-photo-title {
     font-size: 20px;
-    padding: 0 15px 0 15px;
+    padding: 0 5px 0 15px;
   }
 
   .slide {
@@ -1163,7 +1163,7 @@ main {
   }
 
   .project-container {
-    height: 480px;
+    height: 415px;
   }
 
   .resume-container {
