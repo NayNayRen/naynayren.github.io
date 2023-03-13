@@ -18,11 +18,6 @@ function loadScript() {
     }
   }
 
-  // updates page title with value of link clicked
-  // function updatePageTitle(link) {
-  //   document.title = link.getAttribute('value');
-  // }
-
   // displays and hides container heading and highlights nav menu
   function headingAndNavActions() {
     containerHeadings.forEach((heading) => {
@@ -39,15 +34,15 @@ function loadScript() {
             link.children[0].classList.remove("active");
           }
         });
-        heading.classList.replace("purple-text", "green-text");
+        // heading.classList.replace("red-text", "green-text");
         // heading.style.borderColor = '#4be574';
       } else {
-        heading.classList.replace("green-text", "purple-text");
+        // heading.classList.replace("green-text", "red-text");
         // heading.style.borderColor = '#fff';
       }
       if (topContainer.getBoundingClientRect().top > 115) {
         // updatePageTitle(upArrow);
-        heading.classList.replace("green-text", "purple-text");
+        // heading.classList.replace("green-text", "red-text");
         // heading.style.borderColor = '#fff';
         navigationLinks.forEach((link) => {
           link.classList.replace("green-text", "purple-text");
@@ -56,10 +51,6 @@ function loadScript() {
       }
     });
   }
-
-  // upArrow.addEventListener('click', () => {
-  //   updatePageTitle(upArrow);
-  // });
 
   // project previous button
   prevBtn.addEventListener("click", () => {
