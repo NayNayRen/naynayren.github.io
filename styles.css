@@ -1,4 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fredoka&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 /* FONT COLORS */
@@ -10,7 +9,8 @@
   color: #4be574;
 }
 .purple-text {
-  color: #9654dd;
+  /* color: #9654dd; */
+  color: #a567e7;
 }
 .red-text {
   /* color: #c00022; */
@@ -29,7 +29,6 @@
 body {
   background-color: #fff;
   height: 100vh;
-  /* font-family: "Didact Gothic", sans-serif; */
   font-family: "Raleway", sans-serif;
   margin: 0;
   overflow-x: hidden;
@@ -81,10 +80,9 @@ body {
 }
 
 .certification-container span {
-  /* background-color: #ffc354; */
-  /* font-family: "Fredoka", sans-serif; */
+  background-color: #000;
   font-size: 20px;
-  padding: 2px 0;
+  padding: 5px 0;
   text-align: center;
   width: 100%;
 }
@@ -104,6 +102,7 @@ body {
   min-height: 300px;
   padding: 20px 40px 20px 40px;
   position: relative;
+  text-shadow: 0 2px 2px #000;
   /* outline: solid 1px blue; */
 }
 
@@ -125,22 +124,18 @@ body {
 
 .content-container li,
 .skills-container li {
-  /* font-family: "Fredoka", sans-serif; */
   font-size: 22px;
   margin-bottom: 10px;
-  /* font-weight: bold; */
 }
 
 .content-li-date {
   font-size: 24px;
   margin: 15px 0 5px 0;
-  /* font-weight: bold; */
 }
 
 .content-text {
-  /* font-family: "Fredoka", sans-serif; */
   font-size: 22px;
-  margin: 20px 0 0 0;
+  margin: 20px 0;
   width: 80%;
 }
 
@@ -288,16 +283,16 @@ main {
       left top,
       right top,
       from(rgba(0, 0, 0, 1)),
-      to(rgba(0, 0, 0, 0.85))
+      to(rgba(0, 0, 0, 0.875))
     ),
-    url("img/white-bg.jpg");
+    url("img/pink-bg.jpg");
   background-attachment: fixed;
   background-image: linear-gradient(
       90deg,
       rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0.85)
+      rgba(0, 0, 0, 0.875)
     ),
-    url("img/white-bg.jpg");
+    url("img/pink-bg.jpg");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -313,7 +308,6 @@ main {
 
 .navigation-links-container a {
   -webkit-transition: color 150ms ease;
-  /* font-family: "Fredoka", sans-serif; */
   font-size: 20px;
   margin: 0 15px 0 15px;
   overflow: hidden;
@@ -399,13 +393,12 @@ main {
 }
 
 .photo-caption {
-  /* background-color: #000; */
   font-size: 20px;
-  height: 100px;
   line-height: 25px;
   margin: 0;
+  max-height: 100px;
   overflow-y: scroll;
-  padding: 0 5px 5px 10px;
+  padding: 0 5px 10px 10px;
   /* outline: solid 1px blue; */
 }
 
@@ -439,7 +432,7 @@ main {
   /* outline: solid 1px blue; */
 }
 
-.project-photo-1 {
+/* .project-photo-1 {
   background-image: -webkit-gradient(
       linear,
       left bottom,
@@ -577,7 +570,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .project-photo img {
   height: 100%;
@@ -590,7 +583,7 @@ main {
   display: block;
   font-size: 24px;
   font-weight: bold;
-  padding: 0 0 0 10px;
+  padding: 5px 0 5px 10px;
   /* position: absolute; */
   text-transform: uppercase;
 }
@@ -864,7 +857,8 @@ main {
   .burger-bars {
     -o-transition: all 250ms ease;
     -webkit-transition: all 150ms ease;
-    background-color: #9654dd;
+    /* background-color: #9654dd; */
+    background-color: #a567e7;
     border-radius: 5px;
     height: 2px;
     margin: 3px 0;
@@ -970,7 +964,8 @@ main {
   .social-media-container a:hover,
   .spc-link:hover,
   .up-arrow:hover {
-    color: #9654dd;
+    /* color: #9654dd; */
+    color: #a567e7;
   }
 
   .greeting h1 {
@@ -1018,15 +1013,15 @@ main {
         left top,
         right top,
         from(rgba(0, 0, 0, 1)),
-        to(rgba(0, 0, 0, 0.85))
+        to(rgba(0, 0, 0, 0.875))
       ),
-      url("/img/white-bg-mobile.jpg");
+      url("/img/pink-bg-mobile.jpg");
     background-image: linear-gradient(
         90deg,
         rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 0.85)
+        rgba(0, 0, 0, 0.875)
       ),
-      url("/img/white-bg-mobile.jpg");
+      url("/img/pink-bg-mobile.jpg");
     padding-top: 120px;
   }
 
@@ -1084,7 +1079,7 @@ main {
 
   .photo-caption {
     font-size: 16px;
-    padding: 0 5px 5px 15px;
+    padding: 0 10px 5px 15px;
   }
 
   .prev {
@@ -1098,8 +1093,8 @@ main {
   }
 
   .project-photo-title {
-    font-size: 20px;
-    padding: 0 5px 0 15px;
+    font-size: 18px;
+    padding: 5px 5px 5px 15px;
   }
 
   .slide {
