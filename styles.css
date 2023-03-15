@@ -399,7 +399,7 @@ main {
 }
 
 .photo-caption {
-  background-color: #000;
+  /* background-color: #000; */
   font-size: 20px;
   height: 100px;
   line-height: 25px;
@@ -567,30 +567,31 @@ main {
       from(rgba(0, 0, 0, 1)),
       color-stop(40%, rgba(0, 0, 0, 0))
     ),
-    url("img/speach.jpeg");
+    url("img/speech.jpeg");
   background-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 1) 0%,
       rgba(0, 0, 0, 0) 40%
     ),
-    url("img/speach.jpeg");
+    url("img/speech.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.project-photo {
+.project-photo img {
   height: 100%;
   width: 100%;
 }
 
 .project-photo-title {
-  bottom: 0;
+  /* bottom: 0; */
+  /* background-color: #000; */
   display: block;
   font-size: 24px;
   font-weight: bold;
   padding: 0 0 0 10px;
-  position: absolute;
+  /* position: absolute; */
   text-transform: uppercase;
 }
 
@@ -678,7 +679,8 @@ main {
 .slide {
   -webkit-transform: translateX(150%);
   -webkit-transition: all 1000ms ease;
-  height: 100%;
+  background-color: #000;
+  min-height: 100%;
   opacity: 0;
   position: absolute;
   transform: translateX(150%);
@@ -700,7 +702,7 @@ main {
   margin: 0 auto;
   position: relative;
   width: 1000px;
-  /* outline: solid 1px red; */
+  /* outline: solid 1px blue; */
 }
 
 .slide.current {
@@ -793,7 +795,7 @@ main {
   }
 
   .project-container {
-    height: 500px;
+    height: 525px;
   }
 
   .project-photo-title {
@@ -816,7 +818,7 @@ main {
   }
 
   .project-container {
-    height: 450px;
+    height: 475px;
   }
 
   .slide-container {
@@ -1067,16 +1069,16 @@ main {
 
   .next,
   .prev {
-    -webkit-transform: translateY(0);
+    /* -webkit-transform: translateY(0); */
     font-size: 42px;
-    height: 45px;
-    top: 0;
-    transform: translateY(0);
-    width: 45px;
+    height: 50px;
+    /* top: 25%; */
+    /* transform: translateY(0); */
+    /* width: 45px; */
   }
 
   .next {
-    border-top-left-radius: 0;
+    /* border-top-left-radius: 0; */
     right: 0;
   }
 
@@ -1086,12 +1088,12 @@ main {
   }
 
   .prev {
-    border-top-right-radius: 0;
+    /* border-top-right-radius: 0; */
     left: 0;
   }
 
   .project-container {
-    height: 400px;
+    height: 450px;
     width: 100%;
   }
 
@@ -1162,8 +1164,13 @@ main {
     width: 45px;
   }
 
+  .next,
+  .prev {
+    top: 25%;
+  }
+
   .project-container {
-    height: 415px;
+    height: 300px;
   }
 
   .resume-container {
