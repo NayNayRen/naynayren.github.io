@@ -370,12 +370,12 @@ main {
   -ms-flex-pack: center;
   -webkit-box-align: center;
   -webkit-box-pack: center;
-  -webkit-box-shadow: 0 0 1px #000;
+  -webkit-box-shadow: 0 0 5px #000;
   -webkit-transform: translateY(-50%);
   -webkit-transition: color 150ms ease;
   align-items: center;
   background-color: #fff;
-  box-shadow: 0 0 1px #000;
+  box-shadow: 0 0 5px #000;
   cursor: pointer;
   display: -ms-flexbox;
   display: -webkit-box;
