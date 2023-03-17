@@ -98,6 +98,10 @@ body {
   top: -115px;
 }
 
+.container-heading {
+  font-style: italic;
+}
+
 .content-container {
   min-height: 300px;
   padding: 20px 40px 20px 40px;
@@ -282,15 +286,15 @@ main {
       linear,
       left top,
       right top,
-      from(rgba(0, 0, 0, 1)),
-      to(rgba(0, 0, 0, 0.875))
+      from(rgba(0, 0, 0, 0.975)),
+      to(rgba(0, 0, 0, 0.925))
     ),
     url("img/pink-bg.jpg");
   background-attachment: fixed;
   background-image: linear-gradient(
       90deg,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0.875)
+      rgba(0, 0, 0, 0.975),
+      rgba(0, 0, 0, 0.925)
     ),
     url("img/pink-bg.jpg");
   background-position: center;
@@ -366,12 +370,12 @@ main {
   -ms-flex-pack: center;
   -webkit-box-align: center;
   -webkit-box-pack: center;
-  -webkit-box-shadow: 0 0 5px #000;
+  -webkit-box-shadow: 0 0 1px #333333;
   -webkit-transform: translateY(-50%);
-  -webkit-transition: color 250ms ease;
+  -webkit-transition: color 150ms ease;
   align-items: center;
   background-color: #fff;
-  box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 1px #333333;
   cursor: pointer;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -380,10 +384,10 @@ main {
   height: 60px;
   justify-content: center;
   position: absolute;
-  text-shadow: 0 2px 2px #000;
+  text-shadow: none;
   top: 50%;
   transform: translateY(-50%);
-  transition: color 250ms ease;
+  transition: color 150ms ease;
   width: 40px;
 }
 
@@ -426,7 +430,7 @@ main {
   flex-wrap: wrap;
   height: 600px;
   justify-content: center;
-  margin: 15px auto 0 auto;
+  margin: 50px auto 0 auto;
   overflow: hidden;
   width: 80%;
   /* outline: solid 1px blue; */
@@ -747,25 +751,24 @@ main {
   -ms-flex-pack: center;
   -webkit-box-align: center;
   -webkit-box-pack: center;
-  -webkit-box-shadow: -2px 2px 5px #000;
+  -webkit-box-shadow: 0 0 5px #000;
   -webkit-transition: all 150ms ease;
   align-items: center;
   background-color: #fff;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   bottom: 25%;
-  box-shadow: -2px 2px 5px #000;
+  box-shadow: 0 0 5px #000;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
   font-size: 35px;
-  height: 60px;
+  height: 50px;
   justify-content: center;
-  padding-bottom: 10px;
   position: fixed;
   right: -60px;
   text-decoration: none;
-  text-shadow: 0 2px 2px #000;
+  text-shadow: none;
   transition: all 150ms ease;
   width: 40px;
   z-index: 3;
@@ -1089,6 +1092,7 @@ main {
 
   .project-container {
     height: 450px;
+    margin: 30px auto 0 auto;
     width: 100%;
   }
 
@@ -1138,7 +1142,6 @@ main {
   .up-arrow {
     bottom: 10px;
     font-size: 30px;
-    height: 50px;
   }
 }
 
