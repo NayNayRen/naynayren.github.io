@@ -3,6 +3,7 @@ function loadScript() {
   const upArrow = document.querySelector(".up-arrow");
   const navigationLinks = document.querySelectorAll(".navigation-link");
   const containerHeadings = document.querySelectorAll(".container-heading");
+  const fadingText = document.querySelectorAll(".fading-text");
   const topContainer = document.querySelector("#me");
   const nextBtn = document.querySelector(".next");
   const prevBtn = document.querySelector(".prev");
@@ -52,6 +53,18 @@ function loadScript() {
     });
   }
 
+  function showHideText() {
+    fadingText.forEach((text) => {
+      const windowHeight = window.innerHeight;
+      const textDistanceFromTop = text.getBoundingClientRect().top;
+      if (textDistanceFromTop < windowHeight * 0.75) {
+        text.style.opacity = "1";
+      } else {
+        text.style.opacity = "0";
+      }
+    });
+  }
+
   // project previous button
   prevBtn.addEventListener("click", () => {
     slide[i].classList.remove("current");
@@ -94,9 +107,11 @@ function loadScript() {
   window.addEventListener("scroll", () => {
     activateUpArrow();
     headingAndNavActions();
+    showHideText();
   });
   activateUpArrow();
   headingAndNavActions();
+  showHideText();
 }
 
 window.onload = loadScript;

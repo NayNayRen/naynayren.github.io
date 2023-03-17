@@ -143,6 +143,11 @@ body {
   width: 80%;
 }
 
+.fading-text {
+  -webkit-transition: opacity 150ms ease;
+  transition: opacity 150ms ease;
+}
+
 footer {
   -ms-flex-align: center;
   -ms-flex-direction: column;
