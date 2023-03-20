@@ -182,6 +182,7 @@ footer {
 
 .github-link {
   -webkit-transition: color 150ms ease;
+  font-size: 28px;
   transition: color 150ms ease;
 }
 
@@ -196,6 +197,7 @@ footer {
 
 .greeting {
   padding: 0 40px 20px 40px;
+  text-shadow: 0 2px 2px #000;
 }
 
 .greeting h1 {
@@ -441,159 +443,16 @@ main {
   /* outline: solid 1px blue; */
 }
 
-/* .project-photo-1 {
-  background-image: -webkit-gradient(
-      linear,
-      left bottom,
-      left top,
-      from(rgba(0, 0, 0, 1)),
-      color-stop(40%, rgba(0, 0, 0, 0))
-    ),
-    url("img/linux-audio-pop.jpeg");
-  background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 40%
-    ),
-    url("img/linux-audio-pop.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.project-photo-2 {
-  background-image: -webkit-gradient(
-      linear,
-      left bottom,
-      left top,
-      from(rgba(0, 0, 0, 1)),
-      color-stop(40%, rgba(0, 0, 0, 0))
-    ),
-    url("img/buddha.jpeg");
-  background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 40%
-    ),
-    url("img/buddha.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.project-photo-3 {
-  background-image: -webkit-gradient(
-      linear,
-      left bottom,
-      left top,
-      from(rgba(0, 0, 0, 1)),
-      color-stop(40%, rgba(0, 0, 0, 0))
-    ),
-    url("img/shine.jpeg");
-  background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 40%
-    ),
-    url("img/shine.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.project-photo-4 {
-  background-image: -webkit-gradient(
-      linear,
-      left bottom,
-      left top,
-      from(rgba(0, 0, 0, 1)),
-      color-stop(40%, rgba(0, 0, 0, 0))
-    ),
-    url("img/breathe.jpeg");
-  background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 40%
-    ),
-    url("img/breathe.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.project-photo-5 {
-  background-image: -webkit-gradient(
-      linear,
-      left bottom,
-      left top,
-      from(rgba(0, 0, 0, 1)),
-      color-stop(40%, rgba(0, 0, 0, 0))
-    ),
-    url("img/summit.jpeg");
-  background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 40%
-    ),
-    url("img/summit.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.project-photo-6 {
-  background-image: -webkit-gradient(
-      linear,
-      left bottom,
-      left top,
-      from(rgba(0, 0, 0, 1)),
-      color-stop(40%, rgba(0, 0, 0, 0))
-    ),
-    url("img/fur.jpeg");
-  background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 40%
-    ),
-    url("img/fur.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.project-photo-7 {
-  background-image: -webkit-gradient(
-      linear,
-      left bottom,
-      left top,
-      from(rgba(0, 0, 0, 1)),
-      color-stop(40%, rgba(0, 0, 0, 0))
-    ),
-    url("img/speech.jpeg");
-  background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0) 40%
-    ),
-    url("img/speech.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
 .project-photo img {
   height: 100%;
   width: 100%;
 }
 
 .project-photo-title {
-  /* bottom: 0; */
-  /* background-color: #000; */
   display: block;
   font-size: 24px;
   font-weight: bold;
   padding: 5px 0 5px 10px;
-  /* position: absolute; */
   text-transform: uppercase;
 }
 
@@ -863,9 +722,7 @@ main {
   }
 
   .burger-bars {
-    -o-transition: all 250ms ease;
     -webkit-transition: all 150ms ease;
-    /* background-color: #9654dd; */
     background-color: #a567e7;
     border-radius: 5px;
     height: 2px;
@@ -901,7 +758,7 @@ main {
 
   .burger-overlay {
     -webkit-transition: all 500ms ease;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
     height: 100%;
     opacity: 0;
     position: fixed;

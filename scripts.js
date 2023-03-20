@@ -19,7 +19,7 @@ function loadScript() {
     }
   }
 
-  // displays and hides container heading and highlights nav menu
+  // changes heading border color and highlights nav menu link
   function headingAndNavActions() {
     containerHeadings.forEach((heading) => {
       const windowHeight = window.innerHeight;
@@ -27,7 +27,6 @@ function loadScript() {
       if (headingDistanceFromTop < windowHeight * 0.5) {
         navigationLinks.forEach((link) => {
           if (link.getAttribute("value") === heading.innerText) {
-            // updatePageTitle(link);
             link.classList.replace("purple-text", "green-text");
             link.children[0].classList.add("active");
           } else {
@@ -35,16 +34,15 @@ function loadScript() {
             link.children[0].classList.remove("active");
           }
         });
-        // heading.classList.replace("red-text", "green-text");
-        // heading.style.borderColor = '#4be574';
+        // to green
+        heading.style.borderColor = "#4be574";
       } else {
-        // heading.classList.replace("green-text", "red-text");
-        // heading.style.borderColor = '#fff';
+        // to orange
+        heading.style.borderColor = "#ffa052";
       }
       if (topContainer.getBoundingClientRect().top > 115) {
-        // updatePageTitle(upArrow);
-        // heading.classList.replace("green-text", "red-text");
-        // heading.style.borderColor = '#fff';
+        // to orange
+        heading.style.borderColor = "#ffa052";
         navigationLinks.forEach((link) => {
           link.classList.replace("green-text", "purple-text");
           link.children[0].classList.remove("active");
@@ -53,6 +51,7 @@ function loadScript() {
     });
   }
 
+  // does the fade in and out of text
   function showHideText() {
     fadingText.forEach((text) => {
       const windowHeight = window.innerHeight;
@@ -95,20 +94,29 @@ function loadScript() {
       .classList.toggle("show-navigation-links");
     document
       .querySelector("#burger-bars-1")
-      .classList.toggle("burger-bars-rotate-clockwise");
+      // .classList.toggle("burger-bars-rotate-clockwise");
+      .classList.toggle("burger-bars-remove");
     document
       .querySelector("#burger-bars-2")
-      .classList.toggle("burger-bars-remove");
+      .classList.toggle("burger-bars-rotate-clockwise");
+    // .classList.toggle("burger-bars-remove");
     document
       .querySelector("#burger-bars-3")
       .classList.toggle("burger-bars-rotate-counter-clockwise");
   });
-
+  // scroll
   window.addEventListener("scroll", () => {
     activateUpArrow();
     headingAndNavActions();
     showHideText();
   });
+  // resize
+  window.addEventListener("resize", () => {
+    activateUpArrow();
+    headingAndNavActions();
+    showHideText();
+  });
+  // load
   activateUpArrow();
   headingAndNavActions();
   showHideText();
