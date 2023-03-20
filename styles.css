@@ -144,8 +144,8 @@ body {
 }
 
 .fading-text {
-  -webkit-transition: opacity 150ms ease;
-  transition: opacity 150ms ease;
+  -webkit-transition: opacity 250ms ease;
+  transition: opacity 250ms ease;
 }
 
 footer {
