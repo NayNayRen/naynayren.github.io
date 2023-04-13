@@ -27,7 +27,7 @@ function loadScript() {
     containerHeadings.forEach((heading) => {
       const windowHeight = window.innerHeight;
       const headingDistanceFromTop = heading.getBoundingClientRect().top;
-      if (headingDistanceFromTop < windowHeight * 0.5) {
+      if (headingDistanceFromTop < windowHeight * 0.75) {
         navigationLinks.forEach((link) => {
           if (link.getAttribute("value") === heading.innerText) {
             link.classList.replace("purple-text", "green-text");
@@ -53,7 +53,7 @@ function loadScript() {
       const windowHeight = window.innerHeight;
       const underlineDistanceFromTop =
         headingUnderline.getBoundingClientRect().top;
-      if (underlineDistanceFromTop < windowHeight * 0.5) {
+      if (underlineDistanceFromTop < windowHeight * 0.75) {
         headingUnderline.style.width = "100%";
       } else {
         headingUnderline.style.width = "0";
