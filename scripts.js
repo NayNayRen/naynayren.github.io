@@ -3,6 +3,9 @@ function loadScript() {
   const upArrow = document.querySelector(".up-arrow");
   const navigationLinks = document.querySelectorAll(".navigation-link");
   const containerHeadings = document.querySelectorAll(".container-heading");
+  const containerHeadingUnderlines = document.querySelectorAll(
+    ".container-heading-underline"
+  );
   const fadingText = document.querySelectorAll(".fading-text");
   const topContainer = document.querySelector("#me");
   const nextBtn = document.querySelector(".next");
@@ -19,8 +22,8 @@ function loadScript() {
     }
   }
 
-  // changes heading border color and highlights nav menu link
-  function headingAndNavActions() {
+  // highlights nav menu link
+  function navigationActions() {
     containerHeadings.forEach((heading) => {
       const windowHeight = window.innerHeight;
       const headingDistanceFromTop = heading.getBoundingClientRect().top;
@@ -34,19 +37,29 @@ function loadScript() {
             link.children[0].classList.remove("active");
           }
         });
-        // to green
-        heading.style.borderColor = "#4be574";
-      } else {
-        // to orange
-        heading.style.borderColor = "#ffa052";
       }
       if (topContainer.getBoundingClientRect().top > 115) {
-        // to orange
-        heading.style.borderColor = "#ffa052";
         navigationLinks.forEach((link) => {
           link.classList.replace("green-text", "purple-text");
           link.children[0].classList.remove("active");
         });
+      }
+    });
+  }
+
+  // shows and hides the heading underline
+  function showHideUnderline() {
+    containerHeadingUnderlines.forEach((headingUnderline) => {
+      const windowHeight = window.innerHeight;
+      const underlineDistanceFromTop =
+        headingUnderline.getBoundingClientRect().top;
+      if (underlineDistanceFromTop < windowHeight * 0.5) {
+        headingUnderline.style.width = "100%";
+      } else {
+        headingUnderline.style.width = "0";
+      }
+      if (topContainer.getBoundingClientRect().top > 115) {
+        headingUnderline.style.width = "0";
       }
     });
   }
@@ -94,31 +107,33 @@ function loadScript() {
       .classList.toggle("show-navigation-links");
     document
       .querySelector("#burger-bars-1")
-      // .classList.toggle("burger-bars-rotate-clockwise");
       .classList.toggle("burger-bars-remove");
     document
       .querySelector("#burger-bars-2")
       .classList.toggle("burger-bars-rotate-clockwise");
-    // .classList.toggle("burger-bars-remove");
     document
       .querySelector("#burger-bars-3")
       .classList.toggle("burger-bars-rotate-counter-clockwise");
   });
+
   // scroll
   window.addEventListener("scroll", () => {
     activateUpArrow();
-    headingAndNavActions();
+    navigationActions();
+    showHideUnderline();
     showHideText();
   });
   // resize
   window.addEventListener("resize", () => {
     activateUpArrow();
-    headingAndNavActions();
+    navigationActions();
+    showHideUnderline();
     showHideText();
   });
   // load
   activateUpArrow();
-  headingAndNavActions();
+  navigationActions();
+  showHideUnderline();
   showHideText();
 }
 
