@@ -38,7 +38,8 @@ function loadScript() {
           }
         });
       }
-      if (topContainer.getBoundingClientRect().top > 115) {
+      // was 115
+      if (topContainer.getBoundingClientRect().top > 225) {
         navigationLinks.forEach((link) => {
           link.classList.replace("green-text", "purple-text");
           link.children[0].classList.remove("active");
@@ -58,7 +59,8 @@ function loadScript() {
       } else {
         headingUnderline.style.width = "0";
       }
-      if (topContainer.getBoundingClientRect().top > 115) {
+      // was 115
+      if (topContainer.getBoundingClientRect().top > 225) {
         headingUnderline.style.width = "0";
       }
     });
