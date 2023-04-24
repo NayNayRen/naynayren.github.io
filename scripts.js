@@ -54,14 +54,18 @@ function loadScript() {
       const windowHeight = window.innerHeight;
       const underlineDistanceFromTop =
         headingUnderline.getBoundingClientRect().top;
-      if (underlineDistanceFromTop < windowHeight * 0.75) {
+      if (window.innerWidth <= 400) {
         headingUnderline.style.width = "100%";
       } else {
-        headingUnderline.style.width = "0";
-      }
-      // was 115
-      if (topContainer.getBoundingClientRect().top > 200) {
-        headingUnderline.style.width = "0";
+        if (underlineDistanceFromTop < windowHeight * 0.75) {
+          headingUnderline.style.width = "100%";
+        } else {
+          headingUnderline.style.width = "0";
+        }
+        // was 115
+        if (topContainer.getBoundingClientRect().top > 200) {
+          headingUnderline.style.width = "0";
+        }
       }
     });
   }
