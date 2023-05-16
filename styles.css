@@ -141,6 +141,11 @@ body {
   margin: 15px 0 5px 0;
 }
 
+.content-li-title {
+  display: block;
+  /* outline: solid 1px blue; */
+}
+
 .content-text {
   font-size: 22px;
   margin: 20px 0;
