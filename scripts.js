@@ -75,7 +75,7 @@ function loadScript() {
     fadingText.forEach((text) => {
       const windowHeight = window.innerHeight;
       const textDistanceFromTop = text.getBoundingClientRect().top;
-      if (textDistanceFromTop < windowHeight * 0.75) {
+      if (textDistanceFromTop < windowHeight * 0.7) {
         text.style.opacity = "1";
       } else {
         text.style.opacity = "0";
