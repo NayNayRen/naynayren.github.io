@@ -27,7 +27,7 @@ function loadScript() {
     containerHeadings.forEach((heading) => {
       const windowHeight = window.innerHeight;
       const headingDistanceFromTop = heading.getBoundingClientRect().top;
-      if (headingDistanceFromTop < windowHeight * 0.75) {
+      if (headingDistanceFromTop < windowHeight * 0.7) {
         navigationLinks.forEach((link) => {
           if (link.getAttribute("value") === heading.innerText) {
             link.classList.replace("purple-text", "green-text");
@@ -57,7 +57,7 @@ function loadScript() {
       if (window.innerWidth <= 400) {
         headingUnderline.style.width = "100%";
       } else {
-        if (underlineDistanceFromTop < windowHeight * 0.75) {
+        if (underlineDistanceFromTop < windowHeight * 0.7) {
           headingUnderline.style.width = "100%";
         } else {
           headingUnderline.style.width = "0";
