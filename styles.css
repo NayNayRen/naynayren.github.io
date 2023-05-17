@@ -137,12 +137,14 @@ body {
 }
 
 .content-li-date {
-  font-size: 24px;
-  margin: 15px 0 5px 0;
+  font-size: 20px;
+  font-style: italic;
+  /* margin: 15px 0 5px 0; */
 }
 
 .content-li-title {
-  display: block;
+  display: inline;
+  font-size: 24px;
   /* outline: solid 1px blue; */
 }
 
@@ -828,8 +830,8 @@ main {
     font-size: 20px;
   }
 
-  .content-li-date {
-    font-size: 22px;
+  .content-li-title {
+    font-size: 20px;
   }
 
   .content-text {
@@ -850,7 +852,6 @@ main {
   .social-media-container a:hover,
   .spc-link:hover,
   .up-arrow:hover {
-    /* color: #9654dd; */
     color: #a567e7;
   }
 
@@ -1044,6 +1045,10 @@ main {
 
   .container-heading-underline {
     width: 100%;
+  }
+
+  .content-li-title {
+    display: block;
   }
 
   header h1 {
