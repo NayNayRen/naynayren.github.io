@@ -159,8 +159,8 @@ body {
 }
 
 .fading-text {
-  -webkit-transition: opacity 500ms ease, margin 500ms ease;
-  transition: opacity 500ms ease, margin 500ms ease;
+  -webkit-transition: opacity 300ms ease, margin 300ms ease;
+  transition: opacity 300ms ease, margin 300ms ease;
 }
 
 footer {
@@ -192,6 +192,31 @@ footer {
 }
 
 .footer-logo img {
+  width: 100%;
+}
+
+.footer-puppy {
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  /* -webkit-transform: translateY(-50%); */
+  align-items: center;
+  border-radius: 5px;
+  bottom: 10px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  left: 10px;
+  position: absolute;
+  /* top: 50%;
+  transform: translateY(-50%); */
+  width: 125px;
+}
+
+.footer-puppy img {
+  border-radius: 5px;
   width: 100%;
 }
 
@@ -227,9 +252,9 @@ header {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-box-pack: justify;
-  -webkit-box-shadow: 0 0 15px #000;
+  -webkit-box-shadow: 0 5px 15px #000;
   background-color: #000;
-  box-shadow: 0 0 15px #000;
+  box-shadow: 0 5px 15px #000;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -513,6 +538,7 @@ main {
 
 .skills-container {
   padding-top: 25px;
+  overflow: hidden;
   /* outline: solid 1px blue; */
 }
 
@@ -696,6 +722,10 @@ main {
 }
 
 @media (max-width: 1000px) {
+  .footer-puppy {
+    width: 115px;
+  }
+
   .navigation-links-container a {
     font-size: 18px;
   }
@@ -1053,6 +1083,10 @@ main {
 
   .content-li-title {
     display: block;
+  }
+
+  .footer-puppy {
+    width: 85px;
   }
 
   header h1 {
