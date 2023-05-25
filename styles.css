@@ -111,6 +111,7 @@ body {
 
 .content-container {
   min-height: 300px;
+  overflow: hidden;
   padding: 20px 40px 20px 40px;
   position: relative;
   text-shadow: 0 2px 2px #000;
@@ -134,6 +135,8 @@ body {
 .content-container li {
   font-size: 22px;
   margin-bottom: 10px;
+  width: 100%;
+  /* outline: solid 1px blue; */
 }
 
 .content-li-date {
@@ -152,11 +155,12 @@ body {
   font-size: 22px;
   margin: 20px 0;
   width: 75%;
+  /* outline: solid 1px blue; */
 }
 
 .fading-text {
-  -webkit-transition: opacity 250ms ease;
-  transition: opacity 250ms ease;
+  -webkit-transition: opacity 500ms ease, margin 500ms ease;
+  transition: opacity 500ms ease, margin 500ms ease;
 }
 
 footer {
