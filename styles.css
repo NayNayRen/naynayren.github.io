@@ -187,7 +187,9 @@ footer {
 }
 
 .footer-logo {
-  margin-top: 10px;
+  bottom: 10px;
+  left: 10px;
+  position: absolute;
   width: 75px;
 }
 
@@ -200,19 +202,14 @@ footer {
   -ms-flex-pack: center;
   -webkit-box-align: center;
   -webkit-box-pack: center;
-  /* -webkit-transform: translateY(-50%); */
   align-items: center;
   border-radius: 5px;
-  bottom: 10px;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
   justify-content: center;
-  left: 10px;
-  position: absolute;
-  /* top: 50%;
-  transform: translateY(-50%); */
-  width: 125px;
+  margin: 5px 0;
+  width: 115px;
 }
 
 .footer-puppy img {
@@ -723,7 +720,7 @@ main {
 
 @media (max-width: 1000px) {
   .footer-puppy {
-    width: 115px;
+    width: 100px;
   }
 
   .navigation-links-container a {
