@@ -154,13 +154,14 @@ body {
 .content-text {
   font-size: 22px;
   margin: 20px 0;
+  text-indent: 50px;
   width: 75%;
   /* outline: solid 1px blue; */
 }
 
 .fading-text {
-  -webkit-transition: opacity 300ms ease, margin 300ms ease;
-  transition: opacity 300ms ease, margin 300ms ease;
+  -webkit-transition: opacity 500ms ease, margin 500ms ease;
+  transition: opacity 500ms ease, margin 500ms ease;
 }
 
 footer {
@@ -220,6 +221,7 @@ footer {
 .github-link {
   -webkit-transition: color 150ms ease;
   font-size: 28px;
+  text-indent: 0;
   transition: color 150ms ease;
 }
 
@@ -447,7 +449,7 @@ main {
   font-size: 20px;
   line-height: 25px;
   margin: 0;
-  height: 100px;
+  height: 105px;
   overflow-y: scroll;
   padding: 0 5px 10px 10px;
   /* outline: solid 1px blue; */
@@ -475,9 +477,9 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 600px;
+  height: 605px;
   justify-content: center;
-  margin: 50px auto 0 auto;
+  margin: 50px auto 25px auto;
   overflow: hidden;
   width: 80%;
   /* outline: solid 1px blue; */
@@ -556,7 +558,8 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   list-style-type: none;
-  padding: 10px;
+  margin: 0 0 10px 0;
+  padding: 0 10px;
   width: 80%;
   /* outline: solid 1px blue; */
 }
@@ -574,7 +577,7 @@ main {
   display: flex;
   flex-direction: row;
   font-size: 22px;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
   position: relative;
   width: -moz-fit-content;
   width: -webkit-fit-content;
@@ -868,6 +871,7 @@ main {
   .content-text {
     font-size: 20px;
     padding: 0 15px 0 15px;
+    text-indent: 25px;
     width: 100%;
   }
 
@@ -1072,6 +1076,10 @@ main {
 
   .content-container h2 {
     width: 90%;
+  }
+
+  .content-text {
+    text-indent: 0;
   }
 
   .container-heading-underline {
