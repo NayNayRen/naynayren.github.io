@@ -7,6 +7,7 @@ function loadScript() {
     ".container-heading-underline"
   );
   const fadingText = document.querySelectorAll(".fading-text");
+  const fadingSkills = document.querySelectorAll(".fading-skills");
   const topContainer = document.querySelector("#me");
   const nextBtn = document.querySelector(".next");
   const prevBtn = document.querySelector(".prev");
@@ -16,7 +17,11 @@ function loadScript() {
   // show and hide up arrow
   function activateUpArrow() {
     if (document.documentElement.scrollTop > 0) {
-      upArrow.style.right = "0";
+      if (window.innerWidth <= 700) {
+        upArrow.style.right = "5px";
+      } else {
+        upArrow.style.right = "10px";
+      }
     } else {
       upArrow.style.right = "-60px";
     }
@@ -70,6 +75,21 @@ function loadScript() {
     });
   }
 
+  // does the fade in and out of skills list
+  function showHideSkills() {
+    fadingSkills.forEach((skill) => {
+      const windowHeight = window.innerHeight;
+      const skillDistanceFromTop = skill.getBoundingClientRect().top;
+      if (skillDistanceFromTop < windowHeight * 0.7) {
+        skill.style.opacity = "1";
+        skill.style.marginLeft = "0";
+      } else {
+        skill.style.opacity = "0";
+        skill.style.marginLeft = "100px";
+      }
+    });
+  }
+
   // does the fade in and out of text
   function showHideText() {
     fadingText.forEach((text) => {
@@ -77,10 +97,10 @@ function loadScript() {
       const textDistanceFromTop = text.getBoundingClientRect().top;
       if (textDistanceFromTop < windowHeight * 0.7) {
         text.style.opacity = "1";
-        text.style.margin = "0 0 20px 0";
+        text.style.margin = "20px 0";
       } else {
         text.style.opacity = "0";
-        text.style.margin = "0 0 20px 100px";
+        text.style.margin = "20px 0 20px 100px";
       }
     });
   }
@@ -129,6 +149,7 @@ function loadScript() {
     activateUpArrow();
     navigationActions();
     showHideUnderline();
+    showHideSkills();
     showHideText();
   });
   // resize
@@ -136,12 +157,14 @@ function loadScript() {
     activateUpArrow();
     navigationActions();
     showHideUnderline();
+    showHideSkills();
     showHideText();
   });
   // load
   activateUpArrow();
   navigationActions();
   showHideUnderline();
+  showHideSkills();
   showHideText();
 }
 

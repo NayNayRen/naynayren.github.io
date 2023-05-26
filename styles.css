@@ -159,6 +159,7 @@ body {
   /* outline: solid 1px blue; */
 }
 
+.fading-skills,
 .fading-text {
   -webkit-transition: opacity 500ms ease, margin 500ms ease;
   transition: opacity 500ms ease, margin 500ms ease;
@@ -182,7 +183,7 @@ footer {
   font-weight: bold;
   justify-content: center;
   min-height: 100px;
-  padding: 5px 0;
+  padding: 15px 0;
   position: relative;
   text-align: center;
 }
@@ -577,7 +578,7 @@ main {
   display: flex;
   flex-direction: row;
   font-size: 22px;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
   position: relative;
   width: -moz-fit-content;
   width: -webkit-fit-content;
@@ -587,7 +588,7 @@ main {
 
 .skills-container li img {
   margin-left: 20px;
-  width: 28px;
+  width: 25px;
 }
 
 .slide {
@@ -672,8 +673,9 @@ main {
   -webkit-transition: all 150ms ease;
   align-items: center;
   background-color: #fff;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
+  border-radius: 50%;
+  /* border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px; */
   bottom: 25%;
   box-shadow: 0 0 5px #000;
   display: -ms-flexbox;
@@ -687,7 +689,7 @@ main {
   text-decoration: none;
   text-shadow: none;
   transition: all 150ms ease;
-  width: 40px;
+  width: 50px;
   z-index: 3;
 }
 
@@ -876,6 +878,7 @@ main {
   }
 
   .footer-logo {
+    left: 5px;
     width: 50px;
   }
 
@@ -909,7 +912,6 @@ main {
 
   .header-logo {
     right: 5px;
-    /* top: 5px; */
     width: 50px;
   }
 
@@ -1065,7 +1067,8 @@ main {
   .up-arrow {
     bottom: 10px;
     font-size: 30px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
   }
 }
 
@@ -1088,6 +1091,10 @@ main {
 
   .content-li-title {
     display: block;
+  }
+
+  .footer-logo {
+    width: 45px;
   }
 
   .footer-puppy {
