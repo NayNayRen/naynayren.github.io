@@ -62,30 +62,15 @@ function loadScript() {
       if (window.innerWidth <= 400) {
         headingUnderline.style.width = "100%";
       } else {
-        if (underlineDistanceFromTop < windowHeight * 0.7) {
+        if (underlineDistanceFromTop < windowHeight * 0.75) {
           headingUnderline.style.width = "100%";
         } else {
           headingUnderline.style.width = "0";
         }
-        // was 115
-        if (topContainer.getBoundingClientRect().top > 200) {
+        // was 200, smaller the number, closer to the top
+        if (topContainer.getBoundingClientRect().top > 225) {
           headingUnderline.style.width = "0";
         }
-      }
-    });
-  }
-
-  // does the fade in and out of skills list
-  function showHideSkills() {
-    fadingSkills.forEach((skill) => {
-      const windowHeight = window.innerHeight;
-      const skillDistanceFromTop = skill.getBoundingClientRect().top;
-      if (skillDistanceFromTop < windowHeight * 0.7) {
-        skill.style.opacity = "1";
-        skill.style.marginLeft = "0";
-      } else {
-        skill.style.opacity = "0";
-        skill.style.marginLeft = "100px";
       }
     });
   }
@@ -95,12 +80,27 @@ function loadScript() {
     fadingText.forEach((text) => {
       const windowHeight = window.innerHeight;
       const textDistanceFromTop = text.getBoundingClientRect().top;
-      if (textDistanceFromTop < windowHeight * 0.7) {
+      if (textDistanceFromTop < windowHeight * 0.75) {
         text.style.opacity = "1";
         text.style.margin = "20px 0";
       } else {
         text.style.opacity = "0";
         text.style.margin = "20px 0 20px 100px";
+      }
+    });
+  }
+
+  // does the fade in and out of skills list
+  function showHideSkills() {
+    fadingSkills.forEach((skill) => {
+      const windowHeight = window.innerHeight;
+      const skillDistanceFromTop = skill.getBoundingClientRect().top;
+      if (skillDistanceFromTop < windowHeight * 0.75) {
+        skill.style.opacity = "1";
+        skill.style.marginLeft = "0";
+      } else {
+        skill.style.opacity = "0";
+        skill.style.marginLeft = "100px";
       }
     });
   }

@@ -162,6 +162,7 @@ body {
 .fading-skills,
 .fading-text {
   -webkit-transition: opacity 500ms ease, margin 500ms ease;
+  opacity: 0;
   transition: opacity 500ms ease, margin 500ms ease;
 }
 
@@ -231,7 +232,8 @@ footer {
 .resume-container a:hover,
 .social-media-container a:hover,
 .spc-link:hover,
-.up-arrow:hover {
+.up-arrow:hover,
+.yso-link:hover {
   color: #4be574;
 }
 
@@ -693,6 +695,11 @@ main {
   z-index: 3;
 }
 
+.yso-link {
+  -webkit-transition: color 150ms ease;
+  transition: color 150ms ease;
+}
+
 @media (max-width: 1300px) {
   .certification-container,
   .content-container ul,
@@ -889,7 +896,8 @@ main {
   .resume-container a:hover,
   .social-media-container a:hover,
   .spc-link:hover,
-  .up-arrow:hover {
+  .up-arrow:hover,
+  .yso-link:hover {
     color: #a567e7;
   }
 
