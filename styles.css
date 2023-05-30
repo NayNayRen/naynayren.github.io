@@ -543,6 +543,10 @@ main {
   /* outline: solid 1px blue; */
 }
 
+.skills-container div {
+  width: 100%;
+}
+
 .skills-container ul {
   -ms-flex-align: start;
   -ms-flex-direction: row;
