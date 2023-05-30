@@ -140,9 +140,8 @@ body {
 }
 
 .content-li-date {
-  font-size: 20px;
+  font-size: 18px;
   font-style: italic;
-  /* margin: 15px 0 5px 0; */
 }
 
 .content-li-title {
@@ -184,7 +183,7 @@ footer {
   font-weight: bold;
   justify-content: center;
   min-height: 100px;
-  padding: 25px 0;
+  padding: 20px 0;
   position: relative;
   text-align: center;
 }
@@ -211,7 +210,7 @@ footer {
   display: -webkit-box;
   display: flex;
   justify-content: center;
-  margin: 5px 0;
+  margin: 10px 0;
   width: 115px;
 }
 
@@ -874,7 +873,7 @@ main {
   }
 
   .content-li-title {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .content-text {
