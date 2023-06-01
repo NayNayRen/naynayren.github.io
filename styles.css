@@ -352,7 +352,7 @@ main {
   color: #fff;
   background-color: #000;
   min-height: 100%;
-  padding-top: 130px;
+  padding: 130px 0 50px 0;
 }
 
 .navigation-links-container {
@@ -965,7 +965,7 @@ main {
         rgba(0, 0, 0, 0.8)
       ),
       url("/img/pink-bg-mobile.jpg");
-    padding-top: 120px;
+    padding: 120px 0 30px 0;
   }
 
   .navigation-links-container {
