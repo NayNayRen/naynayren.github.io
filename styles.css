@@ -1026,8 +1026,8 @@ main {
   }
 
   .project-container {
-    height: 450px;
-    margin: 30px auto 0 auto;
+    height: 460px;
+    margin: 40px auto 0 auto;
     width: 100%;
   }
 
@@ -1138,7 +1138,7 @@ main {
   }
 
   .project-container {
-    height: 300px;
+    height: 330px;
   }
 
   .resume-container {
