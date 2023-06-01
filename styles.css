@@ -448,12 +448,15 @@ main {
 }
 
 .photo-caption {
+  /* background-color: #fff; */
+  /* color: #000; */
   font-size: 20px;
   line-height: 25px;
   margin: 0;
-  height: 105px;
+  height: 110px;
   overflow-y: scroll;
-  padding: 0 5px 10px 10px;
+  padding: 5px 10px 10px 10px;
+  text-shadow: none;
   /* outline: solid 1px blue; */
 }
 
@@ -479,7 +482,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 605px;
+  height: 630px;
   justify-content: center;
   margin: 50px auto 25px auto;
   overflow: hidden;
@@ -1015,7 +1018,7 @@ main {
 
   .photo-caption {
     font-size: 16px;
-    padding: 0 10px 5px 15px;
+    padding: 5px 10px 5px 15px;
   }
 
   .prev {
