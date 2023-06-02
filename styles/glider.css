@@ -1,0 +1,246 @@
+.glider {
+  -ms-flex-align: center;
+  -ms-flex-pack: start;
+  -ms-overflow-style: none;
+  -webkit-box-align: center;
+  -webkit-box-pack: start;
+  -webkit-overflow-scrolling: touch;
+  align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  height: auto;
+  justify-content: flex-start;
+  overflow: hidden;
+  width: 100%;
+  /* outline: solid 1px red; */
+}
+
+.glider::-webkit-scrollbar {
+  opacity: 0;
+  height: 0;
+}
+
+.glider,
+.glider-track {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.glider-container {
+  display: block;
+  height: auto;
+  margin: 50px auto 25px auto;
+  position: relative;
+  width: 75%;
+}
+
+.glider-dot {
+  -webkit-transition: background 150ms ease;
+  background-color: #fff;
+  border-radius: 50%;
+  /* color: #fff; */
+  cursor: pointer;
+  display: block;
+  height: 15px;
+  margin: 7px;
+  transition: background 150ms ease;
+  width: 15px;
+}
+
+.glider-dot:hover {
+  background: #4be574;
+}
+
+.glider-dot.active {
+  background: #a567e7;
+}
+
+.glider-dot,
+.glider-next,
+.glider-prev {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  user-select: none;
+}
+
+.glider-dots {
+  -moz-user-select: none;
+  -ms-flex-pack: center;
+  -ms-flex-wrap: wrap;
+  -ms-user-select: none;
+  -webkit-box-pack: center;
+  -webkit-user-select: none;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  user-select: none;
+}
+
+.glider-track {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.glider.drag {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.glider.draggable {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  cursor: -webkit-grab;
+  cursor: grab;
+  user-select: none;
+}
+
+.glider.draggable .glider-slide img {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
+  user-select: none;
+}
+
+.glider-hide {
+  opacity: 0;
+}
+
+.glider-next {
+  right: 10px;
+  left: auto;
+}
+
+/* .glider-next.disabled,
+.glider-prev.disabled {
+  opacity: 0.25;
+  color: #666;
+  cursor: default;
+} */
+
+.glider-next,
+.glider-prev {
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -webkit-box-shadow: 0 0 5px #000;
+  -webkit-transform: translateY(-50%);
+  -webkit-transition: color 150ms ease;
+  align-items: center;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #000;
+  color: #a567e7;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  font-size: 35px;
+  height: 50px;
+  justify-content: center;
+  /* opacity: 1; */
+  position: absolute;
+  text-shadow: none;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 150ms ease;
+  width: 50px;
+  /* z-index: 2; */
+}
+
+.glider-prev {
+  left: 10px;
+}
+
+.glider-next:hover,
+.glider-prev:hover {
+  color: #4be574;
+}
+
+.glider-slide {
+  -ms-flex-align: start;
+  -ms-flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-box-align: start;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  align-items: flex-start;
+  background-color: #000;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  margin-bottom: 15px;
+  width: 100%;
+  /* outline: solid 1px red; */
+}
+
+@media (max-width: 1300px) {
+  .glider-container {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .glider-container {
+    margin: 40px auto 0 auto;
+    width: 95%;
+  }
+}
+
+@media (max-width: 700px) {
+  .glider-container {
+    margin: 30px auto 0 auto;
+    width: 100%;
+  }
+
+  .glider-dot {
+    height: 12px;
+    width: 12px;
+  }
+
+  .glider-next {
+    right: 5px;
+  }
+
+  .glider-next,
+  .glider-prev {
+    font-size: 30px;
+    height: 40px;
+    top: 25%;
+    width: 40px;
+  }
+
+  .glider-next:hover,
+  .glider-prev:hover {
+    color: #a567e7;
+  }
+
+  .glider-prev {
+    left: 5px;
+  }
+
+  .glider-slide {
+    margin-bottom: 5px;
+  }
+}
