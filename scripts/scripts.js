@@ -9,10 +9,6 @@ function loadScript() {
   const fadingText = document.querySelectorAll(".fading-text");
   const fadingSkills = document.querySelectorAll(".fading-skills");
   const topContainer = document.querySelector("#me");
-  // const nextBtn = document.querySelector(".next");
-  // const prevBtn = document.querySelector(".prev");
-  // const slide = document.querySelectorAll(".slide");
-  // let i = 0;
 
   // show and hide up arrow
   function activateUpArrow() {
@@ -104,26 +100,6 @@ function loadScript() {
       }
     });
   }
-
-  // project previous button
-  // prevBtn.addEventListener("click", () => {
-  //   slide[i].classList.remove("current");
-  //   i--;
-  //   if (i < 0) {
-  //     i = slide.length - 1;
-  //   }
-  //   slide[i].classList.add("current");
-  // });
-
-  // project next button
-  // nextBtn.addEventListener("click", () => {
-  //   slide[i].classList.remove("current");
-  //   i++;
-  //   if (i >= slide.length) {
-  //     i = 0;
-  //   }
-  //   slide[i].classList.add("current");
-  // });
 
   // mobile burger menu actions
   burgerMenu.addEventListener("click", () => {
