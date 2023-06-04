@@ -42,7 +42,7 @@
 
 .glider-dot {
   -webkit-transition: background 150ms ease;
-  background-color: #a567e7;
+  background: #a567e7;
   border-radius: 50%;
   /* color: #fff; */
   cursor: pointer;
