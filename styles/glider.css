@@ -195,6 +195,7 @@
   flex-direction: column;
   height: auto;
   justify-content: center;
+  margin: 0 2px;
   width: 100%;
   /* outline: solid 1px red; */
 }
@@ -338,6 +339,10 @@
 @media (max-width: 400px) {
   .desktop {
     display: none;
+  }
+
+  .glider-slide {
+    margin: 0;
   }
 
   .mobile {
