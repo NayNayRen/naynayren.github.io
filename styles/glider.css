@@ -302,7 +302,7 @@
   .glider-prev {
     font-size: 30px;
     height: 40px;
-    top: 25%;
+    top: 30%;
     width: 40px;
   }
 
@@ -359,6 +359,6 @@
   }
 
   .project-photo img {
-    width: 80%;
+    width: 85%;
   }
 }
