@@ -1,4 +1,4 @@
-.desktop {
+.desktop-project-photo {
   display: block;
 }
 
@@ -223,7 +223,7 @@
   z-index: 1;
 }
 
-.mobile {
+.mobile-project-photo {
   display: none;
 }
 
@@ -263,7 +263,7 @@
 
 .project-photo-title {
   background-color: #000;
-  display: block;
+  /* display: block; */
   font-size: 22px;
   font-weight: bold;
   padding: 10px 0 10px 10px;
@@ -336,7 +336,7 @@
 }
 
 @media (max-width: 400px) {
-  .desktop {
+  .desktop-project-photo {
     display: none;
   }
 
@@ -354,7 +354,7 @@
     /* padding: 10px 0 15px 0; */
   }
 
-  .mobile {
+  .mobile-project-photo {
     display: block;
   }
 

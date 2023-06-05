@@ -6,7 +6,7 @@ function loadGlider() {
       slidesToShow: 1,
       slidesToScroll: 1,
       scrollLock: true,
-      draggable: true,
+      draggable: false,
       rewind: true,
       duration: 2,
       dots: glider.parentNode.querySelector(".dots"),
