@@ -82,9 +82,10 @@ body {
 .certification-container span {
   background-color: #000;
   font-size: 20px;
-  padding: 5px 0;
+  padding: 15px 0;
   text-align: center;
   width: 100%;
+  z-index: 1;
 }
 
 #contact,
@@ -114,7 +115,7 @@ body {
   overflow: hidden;
   padding: 20px 40px 20px 40px;
   position: relative;
-  text-shadow: 0 2px 2px #000;
+  /* text-shadow: 0 2px 2px #000; */
   /* outline: solid 1px blue; */
 }
 
@@ -244,7 +245,7 @@ footer {
 
 .greeting {
   padding: 0 40px 20px 40px;
-  text-shadow: 0 2px 2px #000;
+  /* text-shadow: 0 2px 2px #000; */
 }
 
 .greeting h1 {
@@ -692,7 +693,7 @@ main {
     top: 0;
     transition: all 500ms ease;
     width: 0;
-    z-index: 1;
+    z-index: 2;
   }
 
   .burger-overlay-dim {
@@ -900,8 +901,30 @@ main {
 }
 
 @media (max-width: 400px) {
+  .certification-container {
+    background-color: rgba(255, 255, 255, 0.25);
+    padding-top: 30px;
+  }
+
+  .certification-container div {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .certification-container div:first-of-type {
+    margin: 0 0 15px 0;
+  }
+
+  .certification-container div:last-of-type {
+    margin: 15px 0 0 0;
+  }
+
   .certification-container img {
-    width: 100%;
+    -webkit-box-shadow: 0 0 20px #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0 0 20px #000;
+    width: 85%;
   }
 
   .content-container h2 {
