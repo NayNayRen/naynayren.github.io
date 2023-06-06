@@ -1,7 +1,6 @@
 .desktop-display {
-  display: inline;
+  display: block;
   font-size: 16px;
-  margin-left: 10px;
 }
 
 .desktop-project-photo {
@@ -196,24 +195,32 @@
 }
 
 .glider-slide-dropdown {
+  -ms-flex-align: center;
+  -ms-flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
   -webkit-box-shadow: 0 0 5px #000;
-  -webkit-transform: translateX(-50%);
   -webkit-transition: top 250ms ease;
+  align-items: center;
   background-color: #fff;
   border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
   box-shadow: 0 0 5px #000;
-  color: #a567e7;
+  color: #000;
+  /* color: #a567e7; */
   /* color: #f54e94; */
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
   font-size: 14px;
   font-weight: bold;
-  left: 50%;
   padding: 8px 30px;
   position: absolute;
+  right: 0;
   text-shadow: none;
   text-transform: uppercase;
-  top: -50px;
-  transform: translateX(-50%);
+  top: -60px;
   transition: top 250ms ease;
   z-index: 1;
 }
@@ -232,7 +239,6 @@
 .mobile-display {
   display: none;
   font-size: 22px;
-  margin-left: 10px;
 }
 
 .mobile-project-photo {
@@ -274,17 +280,7 @@
 }
 
 .project-photo-title {
-  -ms-flex-align: center;
-  -ms-flex-direction: row;
-  -webkit-box-align: center;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  align-items: center;
   background-color: #000;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  flex-direction: row;
   font-size: 22px;
   font-weight: bold;
   padding: 10px 0 10px 10px;
@@ -370,8 +366,7 @@
     display: none;
   }
 
-  .glider,
-  .project-photo {
+  .glider {
     background-color: transparent;
   }
 
@@ -381,16 +376,14 @@
 
   .glider-slide {
     margin: 0;
-    /* padding: 10px 0 15px 0; */
   }
 
-  .glider-slide-dropdown,
-  .project-photo:hover .glider-slide-dropdown {
-    top: 15px;
+  .glider-slide-dropdown {
+    padding: 5px 15px 2px 15px;
   }
 
   .mobile-display {
-    display: inline;
+    display: block;
   }
 
   .mobile-project-photo {
@@ -398,9 +391,8 @@
   }
 
   .project-photo {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding-top: 15px;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding-top: 30px;
   }
 
   .project-photo img {
