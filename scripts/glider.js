@@ -21,7 +21,6 @@ function loadGlider() {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            // itemWidth: 150,
           },
         },
         {
@@ -30,7 +29,6 @@ function loadGlider() {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            // itemWidth: 150,
             duration: 1,
           },
         },
@@ -40,7 +38,6 @@ function loadGlider() {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
-            // itemWidth: 150,
             duration: 1,
           },
         },
