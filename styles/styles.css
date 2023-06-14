@@ -906,10 +906,10 @@ main {
     padding-top: 30px;
   }
 
-  /* .certification-container div {
+  .certification-container div {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-  } */
+  }
 
   .certification-container div:first-of-type {
     margin: 0 0 15px 0;
@@ -921,11 +921,11 @@ main {
 
   .certification-container img {
     -webkit-box-shadow: 0 0 20px #000;
-    /* border-top-left-radius: 5px;
-    border-top-right-radius: 5px; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     box-shadow: 0 0 20px #000;
-    /* width: 85%; */
-    width: 100%;
+    width: 85%;
+    /* width: 100%; */
   }
 
   .content-container h2 {
