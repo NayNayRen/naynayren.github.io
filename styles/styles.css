@@ -111,11 +111,12 @@ body {
 }
 
 .content-container {
+  margin: auto;
   min-height: 300px;
   overflow: hidden;
   padding: 20px 40px 20px 40px;
   position: relative;
-  /* text-shadow: 0 2px 2px #000; */
+  width: 90%;
   /* outline: solid 1px blue; */
 }
 
@@ -155,7 +156,7 @@ body {
   font-size: 22px;
   margin: 20px 0;
   text-indent: 50px;
-  width: 75%;
+  width: 80%;
   /* outline: solid 1px blue; */
 }
 
@@ -244,8 +245,10 @@ footer {
 }
 
 .greeting {
+  margin: auto;
   padding: 0 40px 20px 40px;
-  /* text-shadow: 0 2px 2px #000; */
+  width: 90%;
+  /* outline: solid 1px blue; */
 }
 
 .greeting h1 {
@@ -595,6 +598,11 @@ main {
     width: 500px;
   }
 
+  .content-container,
+  .greeting {
+    width: 95%;
+  }
+
   .image-of-me {
     width: 200px;
   }
@@ -605,6 +613,11 @@ main {
 }
 
 @media (max-width: 1000px) {
+  .content-container,
+  .greeting {
+    width: 100%;
+  }
+
   .footer-puppy {
     width: 100px;
   }
