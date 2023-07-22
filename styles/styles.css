@@ -458,7 +458,7 @@ main {
 .skills-container {
   padding-top: 25px;
   overflow: hidden;
-  outline: solid 1px blue;
+  /* outline: solid 1px blue; */
 }
 
 .skills-container div {
