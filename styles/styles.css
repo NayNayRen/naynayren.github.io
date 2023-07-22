@@ -458,17 +458,10 @@ main {
 .skills-container {
   padding-top: 25px;
   overflow: hidden;
-  /* outline: solid 1px blue; */
+  outline: solid 1px blue;
 }
 
 .skills-container div {
-  width: -moz-fit-content;
-  width: -webkit-fit-content;
-  width: fit-content;
-  /* outline: solid 1px blue; */
-}
-
-.skills-container ul {
   -ms-flex-align: start;
   -ms-flex-direction: row;
   -ms-flex-pack: space-evenly;
@@ -515,6 +508,13 @@ main {
 .skills-container li img {
   margin-left: 20px;
   width: 25px;
+}
+
+.skills-container ul {
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  /* outline: solid 1px blue; */
 }
 
 .social-media-container {
@@ -607,7 +607,7 @@ main {
     width: 200px;
   }
 
-  .skills-container ul {
+  .skills-container div {
     width: 100%;
   }
 }
@@ -877,10 +877,6 @@ main {
   }
 
   .skills-container div {
-    width: 100%;
-  }
-
-  .skills-container ul {
     -ms-flex-direction: column;
     -ms-flex-pack: start;
     -webkit-box-direction: normal;
@@ -889,6 +885,10 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     /* outline: solid 1px blue; */
+  }
+
+  .skills-container ul {
+    width: 100%;
   }
 
   .social-media-container {
