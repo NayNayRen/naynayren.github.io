@@ -96,7 +96,7 @@ function loadScript() {
         skill.style.marginLeft = "0";
       } else {
         skill.style.opacity = "0";
-        skill.style.marginLeft = "75px";
+        skill.style.marginLeft = "50px";
       }
     });
   }

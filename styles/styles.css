@@ -465,7 +465,7 @@ main {
   -ms-flex-align: start;
   -ms-flex-direction: row;
   -ms-flex-pack: space-evenly;
-  -ms-flex-wrap: wrap;
+  /* -ms-flex-wrap: wrap; */
   -webkit-box-align: start;
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
@@ -475,12 +475,11 @@ main {
   display: -webkit-box;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-evenly;
   list-style-type: none;
   margin: 0 0 10px 0;
-  padding: 0 10px;
-  width: 80%;
+  width: 90%;
   /* outline: solid 1px blue; */
 }
 
@@ -511,6 +510,8 @@ main {
 }
 
 .skills-container ul {
+  margin: 0;
+  padding: 0;
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
@@ -630,6 +631,11 @@ main {
     height: 125px;
     font-size: 35px;
     width: 400px;
+  }
+
+  .skills-container div {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
