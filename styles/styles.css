@@ -470,7 +470,7 @@ main {
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
   -webkit-box-pack: space-evenly;
-  align-items: flex-start;
+  align-items: center;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -479,6 +479,7 @@ main {
   justify-content: space-evenly;
   list-style-type: none;
   margin: 0 0 10px 0;
+  min-height: 300px;
   width: 90%;
   /* outline: solid 1px blue; */
 }
