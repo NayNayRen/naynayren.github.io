@@ -96,7 +96,7 @@ body {
 #work {
   left: 0;
   position: absolute;
-  top: -115px;
+  top: -125px;
 }
 
 .container-heading-underline {
@@ -123,7 +123,7 @@ body {
 .content-container h2 {
   font-size: 28px;
   font-style: italic;
-  margin: 0 0 20px 0;
+  margin: 0 0 50px 0;
   position: relative;
   width: 350px;
   /* outline: solid 1px blue; */
@@ -162,9 +162,9 @@ body {
 
 .fading-skills,
 .fading-text {
-  -webkit-transition: opacity 500ms ease, margin 500ms ease;
+  -webkit-transition: opacity 750ms ease, margin 500ms ease;
   opacity: 0;
-  transition: opacity 500ms ease, margin 500ms ease;
+  transition: opacity 750ms ease, margin 500ms ease;
 }
 
 footer {
@@ -362,7 +362,7 @@ main {
   color: #fff;
   background-color: #000;
   min-height: 100%;
-  padding: 130px 0 50px 0;
+  padding: 130px 0 30px 0;
 }
 
 .navigation-links-container {
@@ -455,6 +455,16 @@ main {
   bottom: 0;
 }
 
+.signature {
+  display: block;
+  font-size: 34px;
+  font-weight: bold;
+  padding: 10px 10px 0 0;
+  text-align: right;
+  width: 100%;
+  /* outline: solid 1px blue; */
+}
+
 .skills-container {
   padding-top: 25px;
   overflow: hidden;
@@ -465,7 +475,6 @@ main {
   -ms-flex-align: start;
   -ms-flex-direction: row;
   -ms-flex-pack: space-evenly;
-  /* -ms-flex-wrap: wrap; */
   -webkit-box-align: start;
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
@@ -475,7 +484,6 @@ main {
   display: -webkit-box;
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   justify-content: space-evenly;
   list-style-type: none;
   margin: 0 0 10px 0;
@@ -592,7 +600,8 @@ main {
 @media (max-width: 1300px) {
   .certification-container,
   .content-container ul,
-  .content-text {
+  .content-text,
+  .signature {
     width: 90%;
   }
 
@@ -620,6 +629,10 @@ main {
     width: 100%;
   }
 
+  .content-container h2 {
+    margin: 0 0 30px 0;
+  }
+
   .footer-puppy {
     width: 100px;
   }
@@ -632,6 +645,10 @@ main {
     height: 125px;
     font-size: 35px;
     width: 400px;
+  }
+
+  .signature {
+    font-size: 30px;
   }
 
   .skills-container div {
@@ -740,7 +757,7 @@ main {
 
   .content-container h2 {
     font-size: 24px;
-    margin-left: 15px;
+    margin: 0 0 30px 15px;
     padding: 0;
     width: 75%;
   }
@@ -875,15 +892,20 @@ main {
     padding: 15px 20px 0 0;
   }
 
-  .skills-container {
-    padding-top: 20px;
-  }
-
   .show-navigation-links {
     right: 0;
   }
 
-  .skills-container div {
+  .signature {
+    font-size: 26px;
+    padding: 10px 0 0 10px;
+  }
+
+  .skills-container {
+    padding-top: 20px;
+  }
+
+  /* .skills-container div {
     -ms-flex-direction: column;
     -ms-flex-pack: start;
     -webkit-box-direction: normal;
@@ -891,8 +913,7 @@ main {
     -webkit-box-pack: start;
     flex-direction: column;
     justify-content: flex-start;
-    /* outline: solid 1px blue; */
-  }
+  } */
 
   .skills-container ul {
     width: 100%;
