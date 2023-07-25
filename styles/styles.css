@@ -517,6 +517,7 @@ main {
 }
 
 .skills-container li img {
+  height: auto;
   margin-left: 20px;
   width: 25px;
 }
