@@ -76,6 +76,7 @@ body {
 }
 
 .certification-container img {
+  height: auto;
   width: 600px;
 }
 
@@ -327,6 +328,7 @@ html {
 
 .image-of-me {
   border-radius: 50%;
+  height: auto;
   margin: 0 15px 0 0;
   width: 300px;
 }
