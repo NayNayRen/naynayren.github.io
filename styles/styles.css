@@ -349,14 +349,14 @@ main {
       from(rgba(0, 0, 0, 0.975)),
       to(rgba(0, 0, 0, 0.925))
     ),
-    url("/img/pink-bg.jpg");
+    url("/img/pink-bg.jpeg");
   background-attachment: fixed;
   background-image: linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.975),
       rgba(0, 0, 0, 0.925)
     ),
-    url("/img/pink-bg.jpg");
+    url("/img/pink-bg.jpeg");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -845,13 +845,13 @@ main {
         from(rgba(0, 0, 0, 1)),
         to(rgba(0, 0, 0, 0.8))
       ),
-      url("/img/pink-bg-mobile.jpg");
+      url("/img/pink-bg-mobile.jpeg");
     background-image: linear-gradient(
         90deg,
         rgba(0, 0, 0, 1),
         rgba(0, 0, 0, 0.8)
       ),
-      url("/img/pink-bg-mobile.jpg");
+      url("/img/pink-bg-mobile.jpeg");
     padding: 120px 0 10px 0;
   }
 
@@ -936,8 +936,8 @@ main {
   .up-arrow {
     bottom: 10px;
     font-size: 30px;
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
   }
 }
 
