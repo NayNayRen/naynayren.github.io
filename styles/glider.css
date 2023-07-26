@@ -211,10 +211,10 @@
 
 .glider-slide-dropdown {
   -ms-flex-align: center;
-  -ms-flex-direction: column;
+  -ms-flex-direction: row;
   -webkit-box-align: center;
   -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-shadow: 0 0 5px #000;
   -webkit-transition: top 250ms ease;
   align-items: center;
@@ -222,12 +222,10 @@
   border-bottom-left-radius: 5px;
   box-shadow: 0 0 5px #000;
   color: #000;
-  /* color: #a567e7; */
-  /* color: #f54e94; */
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 14px;
   font-weight: bold;
   padding: 8px 30px;
@@ -238,6 +236,10 @@
   top: -60px;
   transition: top 250ms ease;
   z-index: 1;
+}
+
+.glider-slide-dropdown i {
+  margin-left: 5px;
 }
 
 .glider-track {
@@ -355,7 +357,7 @@
 
   .glider-slide-dropdown {
     font-size: 12px;
-    padding: 5px 15px;
+    /* padding: 5px 15px; */
   }
 
   .glider-slide-dropdown,
