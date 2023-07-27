@@ -1,5 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap"); */
-
 /* FONT COLORS */
 .blue-text {
   /* color: #5786dc; */
@@ -135,24 +133,6 @@ body {
   width: 70%;
 }
 
-.content-container li {
-  font-size: 22px;
-  margin-bottom: 10px;
-  width: 100%;
-  /* outline: solid 1px blue; */
-}
-
-.content-li-date {
-  font-size: 18px;
-  font-style: italic;
-}
-
-.content-li-title {
-  display: inline;
-  font-size: 24px;
-  /* outline: solid 1px blue; */
-}
-
 .content-text {
   font-size: 22px;
   margin: 20px 0;
@@ -163,9 +143,9 @@ body {
 
 .fading-skills,
 .fading-text {
-  -webkit-transition: opacity 750ms ease, margin 500ms ease;
+  -webkit-transition: opacity 750ms ease, margin-left 500ms ease;
   opacity: 0;
-  transition: opacity 750ms ease, margin 500ms ease;
+  transition: opacity 750ms ease, margin-left 500ms ease;
 }
 
 footer {
@@ -255,9 +235,34 @@ footer {
 }
 
 .greeting h1 {
-  font-size: 32px;
+  -ms-flex-align: center;
+  -ms-flex-direction: row;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: row;
+  font-size: 34px;
+  justify-content: center;
   margin: 0;
-  text-align: center;
+  /* outline: solid 1px blue; */
+}
+
+.greeting h1 i {
+  font-size: 16px;
+}
+
+.greeting h1 i:first-of-type {
+  margin-right: 5px;
+}
+
+.greeting h1 i:last-of-type {
+  margin-left: 5px;
 }
 
 header {
@@ -433,7 +438,6 @@ main {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  font-size: 40px;
   height: 150px;
   justify-content: center;
   margin: auto;
@@ -442,8 +446,9 @@ main {
 }
 
 .resume-container a {
+  font-size: 40px;
   overflow: hidden;
-  padding-bottom: 15px;
+  padding: 0 30px 15px 30px;
   position: relative;
   text-decoration: none;
   /* outline: solid 1px blue; */
@@ -459,6 +464,20 @@ main {
 .resume-container a:hover .social-media-name,
 .social-media-container a:hover .social-media-name {
   bottom: 0;
+}
+
+.resume-container i {
+  font-size: 16px;
+  position: absolute;
+  top: 15px;
+}
+
+.resume-container i:first-of-type {
+  left: 0;
+}
+
+.resume-container i:last-of-type {
+  right: 0;
 }
 
 .signature {
@@ -510,7 +529,7 @@ main {
   display: -webkit-box;
   display: flex;
   flex-direction: row;
-  font-size: 22px;
+  font-size: 26px;
   margin: 0 0 15px 0;
   position: relative;
   width: -moz-fit-content;
@@ -522,7 +541,7 @@ main {
 .skills-container li img {
   height: auto;
   margin-left: 20px;
-  width: 25px;
+  width: 28px;
 }
 
 .skills-container ul {
@@ -599,6 +618,24 @@ main {
   z-index: 3;
 }
 
+.work-container li {
+  font-size: 22px;
+  margin: 20px 0 10px 0;
+  width: 100%;
+  /* outline: solid 1px blue; */
+}
+
+.work-li-date {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.work-li-title {
+  display: inline;
+  font-size: 24px;
+  /* outline: solid 1px blue; */
+}
+
 .yso-link {
   -webkit-transition: color 150ms ease;
   transition: color 150ms ease;
@@ -628,6 +665,14 @@ main {
   .skills-container div {
     width: 100%;
   }
+
+  .skills-container li {
+    font-size: 22px;
+  }
+
+  .skills-container li img {
+    width: 25px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -650,8 +695,15 @@ main {
 
   .resume-container {
     height: 125px;
-    font-size: 35px;
     width: 400px;
+  }
+
+  .resume-container a {
+    font-size: 35px;
+  }
+
+  .resume-container i {
+    top: 10px;
   }
 
   .signature {
@@ -774,14 +826,6 @@ main {
     width: 100%;
   }
 
-  .content-container li {
-    font-size: 20px;
-  }
-
-  .content-li-title {
-    font-size: 22px;
-  }
-
   .content-text {
     font-size: 20px;
     padding: 0 15px 0 15px;
@@ -899,6 +943,16 @@ main {
     padding: 15px 20px 0 0;
   }
 
+  .resume-container a {
+    padding: 0 30px 0 30px;
+  }
+
+  .resume-container i {
+    -webkit-transform: translateY(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
   .show-navigation-links {
     right: 0;
   }
@@ -911,16 +965,6 @@ main {
   .skills-container {
     padding-top: 20px;
   }
-
-  /* .skills-container div {
-    -ms-flex-direction: column;
-    -ms-flex-pack: start;
-    -webkit-box-direction: normal;
-    -webkit-box-orient: vertical;
-    -webkit-box-pack: start;
-    flex-direction: column;
-    justify-content: flex-start;
-  } */
 
   .skills-container ul {
     width: 100%;
@@ -945,6 +989,14 @@ main {
     font-size: 30px;
     height: 45px;
     width: 45px;
+  }
+
+  .work-container li {
+    font-size: 20px;
+  }
+
+  .work-li-title {
+    font-size: 22px;
   }
 }
 
@@ -988,10 +1040,6 @@ main {
     width: 100%;
   }
 
-  .content-li-title {
-    display: block;
-  }
-
   .footer-logo {
     width: 45px;
   }
@@ -1014,8 +1062,11 @@ main {
 
   .resume-container {
     height: 100px;
-    font-size: 30px;
     width: 100%;
+  }
+
+  .resume-container a {
+    font-size: 30px;
   }
 
   .skills-container {
@@ -1026,5 +1077,9 @@ main {
     font-size: 35px;
     height: 100px;
     width: 100%;
+  }
+
+  .work-li-title {
+    display: block;
   }
 }

@@ -78,10 +78,10 @@ function loadScript() {
       const textDistanceFromTop = text.getBoundingClientRect().top;
       if (textDistanceFromTop < windowHeight * 0.75) {
         text.style.opacity = "1";
-        text.style.margin = "20px 0";
+        text.style.marginLeft = "0";
       } else {
         text.style.opacity = "0";
-        text.style.margin = "20px 0 20px 100px";
+        text.style.marginLeft = "100px";
       }
     });
   }
