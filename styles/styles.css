@@ -896,13 +896,13 @@ main {
         from(rgba(0, 0, 0, 1)),
         to(rgba(0, 0, 0, 0.8))
       ),
-      url("/img/pink-bg-mobile-backup.jpeg");
+      url("/img/pink-bg-mobile.jpeg");
     background-image: linear-gradient(
         90deg,
         rgba(0, 0, 0, 1),
         rgba(0, 0, 0, 0.8)
       ),
-      url("/img/pink-bg-mobile-backup.jpeg");
+      url("/img/pink-bg-mobile.jpeg");
     padding: 120px 0 10px 0;
   }
 
