@@ -120,7 +120,7 @@ body {
 }
 
 .content-container h2 {
-  font-size: 28px;
+  font-size: 34px;
   font-style: italic;
   margin: 0 0 50px 0;
   position: relative;
@@ -296,13 +296,21 @@ header h1 {
 }
 
 header h1::after {
-  /* color: #ffc354; */
   color: #ffa052;
   content: "Web Developer";
   font-size: 20px;
   padding-left: 5px;
   width: 100%;
-  /* outline: solid 1px blue; */
+}
+
+header span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+header span:first-of-type {
+  display: none;
 }
 
 .header-logo {
@@ -316,12 +324,6 @@ header h1::after {
 .header-logo img {
   height: auto;
   width: 100%;
-}
-
-header span {
-  display: block;
-  font-size: 18px;
-  font-weight: bold;
 }
 
 html {
@@ -781,7 +783,8 @@ main {
 
   .burger-overlay {
     -webkit-transition: all 500ms ease;
-    background-color: rgba(0, 0, 0, 0.95);
+    /* background-color: rgba(0, 0, 0, 0.95); */
+    background-color: #000;
     height: 100%;
     opacity: 0;
     position: fixed;
@@ -815,7 +818,7 @@ main {
   }
 
   .content-container h2 {
-    font-size: 24px;
+    font-size: 28px;
     margin: 0 0 30px 15px;
     padding: 0;
     width: 75%;
@@ -860,20 +863,20 @@ main {
   }
 
   header h1 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   header h1::after {
+    font-size: 18px;
+  }
+
+  header span {
     font-size: 16px;
   }
 
   .header-logo {
     right: 5px;
     width: 50px;
-  }
-
-  header span {
-    font-size: 14px;
   }
 
   .image-of-me {
@@ -907,13 +910,14 @@ main {
   }
 
   .navigation-links-container {
-    -webkit-transition: right 500ms ease;
-    background-color: #000;
+    -webkit-transition: all 500ms ease;
+    background-color: transparent;
+    opacity: 0;
     padding-left: 20px;
     position: absolute;
     right: -100%;
     top: 100%;
-    transition: right 500ms ease;
+    transition: all 500ms ease;
     /* outline: solid 1px blue; */
   }
 
@@ -943,6 +947,11 @@ main {
     padding: 15px 20px 0 0;
   }
 
+  .navigation-links-toggle {
+    opacity: 1;
+    right: 0;
+  }
+
   .resume-container a {
     padding: 0 30px 0 30px;
   }
@@ -951,10 +960,6 @@ main {
     -webkit-transform: translateY(-50%);
     top: 50%;
     transform: translateY(-50%);
-  }
-
-  .show-navigation-links {
-    right: 0;
   }
 
   .signature {
@@ -1029,6 +1034,7 @@ main {
   }
 
   .content-container h2 {
+    font-size: 26px;
     width: 90%;
   }
 
@@ -1041,23 +1047,35 @@ main {
   }
 
   .footer-logo {
-    width: 45px;
+    left: 10px;
+    /* width: 45px; */
   }
 
   .footer-puppy {
     width: 85px;
   }
 
-  header h1 {
-    font-size: 24px;
+  header {
+    padding: 5px 10px 0 10px;
   }
 
   header h1::after {
+    display: none;
+  }
+
+  header span {
     font-size: 14px;
   }
 
+  header span:first-of-type {
+    display: block;
+    font-size: 16px;
+    padding: 2px 0 5px 0;
+  }
+
   .header-logo {
-    width: 45px;
+    right: 10px;
+    /* width: 45px; */
   }
 
   .resume-container {

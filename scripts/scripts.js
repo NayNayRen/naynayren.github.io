@@ -108,7 +108,7 @@ function loadScript() {
       .classList.toggle("burger-overlay-dim");
     document
       .querySelector(".navigation-links-container")
-      .classList.toggle("show-navigation-links");
+      .classList.toggle("navigation-links-toggle");
     document
       .querySelector("#burger-bars-1")
       .classList.toggle("burger-bars-remove");
