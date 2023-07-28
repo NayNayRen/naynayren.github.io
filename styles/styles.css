@@ -27,7 +27,8 @@
 body {
   background-color: #000;
   height: 100vh;
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Poppins", sans-serif;
   margin: 0;
   overflow-x: hidden;
   padding: 0;
@@ -124,7 +125,7 @@ body {
   font-style: italic;
   margin: 0 0 50px 0;
   position: relative;
-  width: 350px;
+  width: 375px;
   /* outline: solid 1px blue; */
 }
 
@@ -324,6 +325,23 @@ header span:first-of-type {
 .header-logo img {
   height: auto;
   width: 100%;
+}
+
+.header-title-container {
+  -ms-flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  /* outline: solid 1px blue; */
 }
 
 html {
@@ -837,7 +855,7 @@ main {
   }
 
   .footer-logo {
-    left: 5px;
+    left: 10px;
     width: 50px;
   }
 
@@ -858,7 +876,7 @@ main {
   }
 
   header {
-    height: 105px;
+    height: 110px;
     padding: 5px 10px 0 5px;
   }
 
@@ -875,7 +893,7 @@ main {
   }
 
   .header-logo {
-    right: 5px;
+    right: 10px;
     width: 50px;
   }
 
@@ -1050,17 +1068,12 @@ main {
     width: 100%;
   }
 
-  .footer-logo {
-    left: 10px;
-    /* width: 45px; */
-  }
-
   .footer-puppy {
     width: 85px;
   }
 
   header {
-    padding: 5px 10px 0 10px;
+    padding: 5px 5px 0 5px;
   }
 
   header h1::after {
@@ -1074,12 +1087,7 @@ main {
   header span:first-of-type {
     display: block;
     font-size: 18px;
-    padding: 2px 0 5px 0;
-  }
-
-  .header-logo {
-    right: 10px;
-    /* width: 45px; */
+    padding: 0;
   }
 
   .resume-container {
