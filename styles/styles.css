@@ -254,7 +254,7 @@ footer {
 }
 
 .greeting h1 i {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .greeting h1 i:first-of-type {
@@ -467,7 +467,7 @@ main {
 }
 
 .resume-container i {
-  font-size: 16px;
+  font-size: 14px;
   position: absolute;
   top: 15px;
 }
