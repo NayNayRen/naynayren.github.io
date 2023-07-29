@@ -236,34 +236,30 @@ footer {
 }
 
 .greeting h1 {
-  -ms-flex-align: center;
-  -ms-flex-direction: row;
-  -ms-flex-pack: center;
-  -webkit-box-align: center;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-box-pack: center;
-  align-items: center;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  flex-direction: row;
   font-size: 34px;
-  justify-content: center;
-  margin: 0;
+  margin: 0 auto;
+  padding: 0 25px;
+  position: relative;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
   /* outline: solid 1px blue; */
 }
 
 .greeting h1 i {
+  -webkit-transform: translateY(-50%);
   font-size: 14px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .greeting h1 i:first-of-type {
-  margin-right: 5px;
+  left: 0;
 }
 
 .greeting h1 i:last-of-type {
-  margin-left: 5px;
+  right: 0;
 }
 
 header {
@@ -640,6 +636,10 @@ main {
   margin: 20px 0 10px 0;
   width: 100%;
   /* outline: solid 1px blue; */
+}
+
+.work-container li i {
+  font-size: 14px;
 }
 
 .work-li-date {
@@ -1072,6 +1072,11 @@ main {
 
   .footer-puppy {
     width: 85px;
+  }
+
+  .greeting h1 {
+    font-size: 26px;
+    /* padding: 0 20px; */
   }
 
   header {
