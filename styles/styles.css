@@ -640,6 +640,18 @@ main {
   /* outline: solid 1px blue; */
 }
 
+.work-container p {
+  background-color: #222222;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 0 20px #000;
+  color: #fff;
+  line-height: 26px;
+  margin: 0;
+  padding: 15px 20px;
+  width: 100%;
+}
+
 .work-li-date {
   font-size: 18px;
   font-style: italic;
@@ -647,7 +659,7 @@ main {
 
 .work-li-title {
   display: inline;
-  font-size: 24px;
+  font-size: 26px;
   /* outline: solid 1px blue; */
 }
 
@@ -1018,8 +1030,12 @@ main {
     font-size: 20px;
   }
 
+  .work-container p {
+    padding: 15px 10px;
+  }
+
   .work-li-title {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 
