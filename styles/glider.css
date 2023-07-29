@@ -312,6 +312,11 @@
     margin: 0;
   }
 
+  .project-photo {
+    margin: 0 auto;
+    width: 80%;
+  }
+
   .project-photo-title {
     font-size: 20px;
   }
@@ -320,6 +325,10 @@
 @media (max-width: 1000px) {
   .glider-container {
     margin: 40px auto 0 auto;
+    width: 90%;
+  }
+
+  .project-photo {
     width: 90%;
   }
 
@@ -363,6 +372,10 @@
   .glider-slide-dropdown,
   .project-photo:hover .glider-slide-dropdown {
     top: 0;
+  }
+
+  .project-photo {
+    width: 100%;
   }
 
   .project-photo-caption {
@@ -415,7 +428,7 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     box-shadow: 0 0 20px #000;
-    width: 85%;
+    width: 90%;
   }
 
   .project-photo-title {

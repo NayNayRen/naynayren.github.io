@@ -1049,8 +1049,7 @@ main {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     box-shadow: 0 0 20px #000;
-    width: 85%;
-    /* width: 100%; */
+    width: 90%;
   }
 
   .content-container h2 {
