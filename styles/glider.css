@@ -37,7 +37,6 @@
   display: flex;
   height: auto;
   justify-content: flex-start;
-  /* margin-bottom: 15px; */
   overflow: hidden;
   width: 100%;
   /* outline: solid 1px red; */
@@ -59,7 +58,7 @@
   height: auto;
   margin: 50px auto 15px auto;
   position: relative;
-  width: 85%;
+  width: 90%;
   /* outline: solid red; */
 }
 
@@ -172,7 +171,6 @@
   transform: translateY(-50%);
   transition: color 150ms ease;
   width: 50px;
-  /* z-index: 2; */
 }
 
 .glider-prev {
