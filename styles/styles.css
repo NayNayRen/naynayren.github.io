@@ -27,7 +27,6 @@
 body {
   background-color: #000;
   height: 100vh;
-  /* font-family: "Raleway", sans-serif; */
   font-family: "Poppins", sans-serif;
   margin: 0;
   overflow-x: hidden;
@@ -101,7 +100,8 @@ body {
 
 .container-heading-underline {
   -webkit-transition: width 250ms ease;
-  background-color: #4be574;
+  background-color: #ffa052;
+  border-radius: 5px;
   height: 2px;
   left: 0;
   position: absolute;
@@ -638,10 +638,6 @@ main {
   /* outline: solid 1px blue; */
 }
 
-.work-container li i {
-  font-size: 14px;
-}
-
 .work-li-date {
   font-size: 18px;
   font-style: italic;
@@ -1116,10 +1112,6 @@ main {
     height: 100px;
     width: 100%;
   }
-
-  /* .work-container li i {
-    display: none;
-  } */
 
   .work-li-title {
     display: block;
