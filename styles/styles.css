@@ -312,7 +312,7 @@ header span:first-of-type {
 .header-logo {
   position: absolute;
   right: 10px;
-  top: 10px;
+  top: 15px;
   width: 75px;
   /* outline: solid 1px blue; */
 }
@@ -1116,6 +1116,10 @@ main {
     height: 100px;
     width: 100%;
   }
+
+  /* .work-container li i {
+    display: none;
+  } */
 
   .work-li-title {
     display: block;
