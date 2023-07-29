@@ -11,12 +11,12 @@
   color: #a567e7;
 }
 .red-text {
-  color: #fa86b7;
-  /* color: #f54e94; */
+  /* color: #fa86b7; */
+  color: #f54e94;
 }
 .yellow-text {
+  /* color: #f16d00; */
   color: #ffac51;
-  /* color: #ffa051; */
 }
 
 * {
@@ -293,7 +293,7 @@ header h1 {
 }
 
 header h1::after {
-  /* color: #ffa051; */
+  /* color: #f16d00; */
   color: #ffac51;
   content: "Web Developer";
   font-size: 20px;
@@ -538,7 +538,7 @@ main {
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
   align-items: center;
-  /* color: #ffa051; */
+  /* color: #f16d00; */
   color: #ffac51;
   display: -ms-flexbox;
   display: -webkit-box;
