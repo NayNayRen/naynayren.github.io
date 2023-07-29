@@ -486,7 +486,7 @@ main {
 .resume-container i {
   font-size: 14px;
   position: absolute;
-  top: 15px;
+  top: 25px;
 }
 
 .resume-container i:first-of-type {
@@ -720,7 +720,7 @@ main {
   }
 
   .resume-container i {
-    top: 10px;
+    top: 20px;
   }
 
   .signature {
