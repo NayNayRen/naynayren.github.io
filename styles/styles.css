@@ -460,9 +460,12 @@ main {
 }
 
 .resume-container a {
+  background-color: #a567e7;
+  border-radius: 40px;
+  color: #000;
   font-size: 40px;
   overflow: hidden;
-  padding: 0 30px 10px 30px;
+  padding: 0 50px;
   position: relative;
   text-decoration: none;
   /* outline: solid 1px blue; */
@@ -475,23 +478,24 @@ main {
   transition: color 150ms ease;
 }
 
-.resume-container a:hover .social-media-name,
 .social-media-container a:hover .social-media-name {
   bottom: 0;
 }
 
 .resume-container i {
-  font-size: 14px;
+  -webkit-transform: translateY(-50%);
+  font-size: 22px;
   position: absolute;
-  top: 25px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .resume-container i:first-of-type {
-  left: 0;
+  left: 20px;
 }
 
 .resume-container i:last-of-type {
-  right: 0;
+  right: 20px;
 }
 
 .signature {
@@ -727,11 +731,11 @@ main {
   }
 
   .resume-container a {
-    font-size: 35px;
+    font-size: 32px;
   }
 
   .resume-container i {
-    top: 20px;
+    font-size: 20px;
   }
 
   .signature {
@@ -871,7 +875,6 @@ main {
   .glider-link:hover,
   .next:hover,
   .prev:hover,
-  .resume-container a:hover,
   .social-media-container a:hover,
   .spc-link:hover,
   .up-arrow:hover,
@@ -983,13 +986,11 @@ main {
   }
 
   .resume-container a {
-    padding: 0 30px 0 30px;
+    font-size: 30px;
   }
 
-  .resume-container i {
-    -webkit-transform: translateY(-50%);
-    top: 50%;
-    transform: translateY(-50%);
+  .resume-container a:hover {
+    color: #000;
   }
 
   .signature {
@@ -1032,17 +1033,18 @@ main {
 
   .work-container p {
     font-size: 20px;
-    padding: 15px 10px;
+    padding: 15px 15px;
   }
 
   .work-li-title {
     font-size: 24px;
+    padding-left: 10px;
   }
 }
 
 @media (max-width: 400px) {
   .burger-menu {
-    bottom: 5px;
+    /* bottom: 5px; */
     right: 5px;
   }
 
@@ -1121,7 +1123,11 @@ main {
   }
 
   .resume-container a {
-    font-size: 30px;
+    font-size: 28px;
+  }
+
+  .resume-container i {
+    font-size: 18px;
   }
 
   .skills-container {
@@ -1142,14 +1148,15 @@ main {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     font-size: 18px;
+    margin-top: 5px;
   }
 
   .work-li-date {
-    padding-left: 10px;
+    padding-left: 15px;
   }
 
   .work-li-title {
     display: block;
-    padding-left: 10px;
+    padding-left: 15px;
   }
 }
