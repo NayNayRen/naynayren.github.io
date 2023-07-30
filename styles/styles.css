@@ -495,10 +495,11 @@ main {
 }
 
 .signature {
-  display: block;
+  /* display: block; */
   font-size: 34px;
+  font-style: italic;
   font-weight: bold;
-  padding: 10px 10px 0 0;
+  padding: 10px 0 0 0;
   text-align: right;
   width: 100%;
   /* outline: solid 1px blue; */
@@ -634,7 +635,6 @@ main {
 }
 
 .work-container li {
-  font-size: 22px;
   margin: 20px 0 10px 0;
   width: 100%;
   /* outline: solid 1px blue; */
@@ -644,8 +644,8 @@ main {
   background-color: #222222;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  box-shadow: 0 0 20px #000;
   color: #fff;
+  font-size: 22px;
   line-height: 26px;
   margin: 0;
   padding: 15px 20px;
@@ -653,7 +653,7 @@ main {
 }
 
 .work-li-date {
-  font-size: 18px;
+  font-size: 16px;
   font-style: italic;
 }
 
@@ -851,7 +851,7 @@ main {
   }
 
   .content-container ul {
-    padding: 0 15px 0 15px;
+    padding: 0;
     width: 100%;
   }
 
@@ -998,7 +998,7 @@ main {
   }
 
   .skills-container {
-    padding-top: 20px;
+    padding: 20px 15px 0 15px;
   }
 
   .skills-container ul {
@@ -1027,10 +1027,11 @@ main {
   }
 
   .work-container li {
-    font-size: 20px;
+    padding: 0 15px;
   }
 
   .work-container p {
+    font-size: 20px;
     padding: 15px 10px;
   }
 
@@ -1078,6 +1079,7 @@ main {
   }
 
   .content-text {
+    font-size: 18px;
     text-indent: 0;
   }
 
@@ -1132,7 +1134,22 @@ main {
     width: 100%;
   }
 
+  .work-container li {
+    padding: 0;
+  }
+
+  .work-container p {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 18px;
+  }
+
+  .work-li-date {
+    padding-left: 10px;
+  }
+
   .work-li-title {
     display: block;
+    padding-left: 10px;
   }
 }
