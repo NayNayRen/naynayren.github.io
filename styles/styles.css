@@ -463,7 +463,8 @@ main {
   background-color: #a567e7;
   border-radius: 40px;
   color: #000;
-  font-size: 40px;
+  font-size: 38px;
+  font-weight: bold;
   overflow: hidden;
   padding: 0 50px;
   position: relative;
