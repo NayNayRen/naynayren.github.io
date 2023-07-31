@@ -144,10 +144,14 @@ body {
 
 .fading-skills,
 .fading-text {
-  -webkit-transition: opacity 750ms ease, margin-left 500ms ease;
+  -webkit-transition: opacity 500ms ease, margin-left 500ms ease;
   opacity: 0;
-  transition: opacity 750ms ease, margin-left 500ms ease;
+  transition: opacity 500ms ease, margin-left 500ms ease;
 }
+/* added to show the second paragraph on large screens */
+/* .fading-text:first-of-type{
+  opacity: 1;
+} */
 
 footer {
   -ms-flex-align: center;
@@ -647,13 +651,14 @@ main {
 
 .work-container p {
   background-color: #222222;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
   color: #fff;
   font-size: 22px;
   line-height: 26px;
   margin: 0;
-  padding: 15px 20px;
+  padding: 25px 20px;
   width: 100%;
 }
 
@@ -1148,6 +1153,7 @@ main {
   .work-container p {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
     font-size: 18px;
     margin-top: 5px;
   }

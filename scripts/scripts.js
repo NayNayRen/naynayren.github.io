@@ -8,7 +8,7 @@ function loadScript() {
   );
   const fadingText = document.querySelectorAll(".fading-text");
   const fadingSkills = document.querySelectorAll(".fading-skills");
-  const topContainer = document.querySelector("#me");
+  const topHeadingContainer = document.querySelector("#me");
 
   // show and hide up arrow
   function activateUpArrow() {
@@ -40,7 +40,7 @@ function loadScript() {
         });
       }
       // was 115
-      if (topContainer.getBoundingClientRect().top > 200) {
+      if (topHeadingContainer.getBoundingClientRect().top > 200) {
         navigationLinks.forEach((link) => {
           link.classList.replace("green-text", "purple-text");
           link.children[0].classList.remove("active");
@@ -64,7 +64,7 @@ function loadScript() {
           headingUnderline.style.width = "0";
         }
         // was 200, smaller the number, closer to the top
-        if (topContainer.getBoundingClientRect().top > 225) {
+        if (topHeadingContainer.getBoundingClientRect().top > 225) {
           headingUnderline.style.width = "0";
         }
       }
