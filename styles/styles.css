@@ -149,9 +149,9 @@ body {
   transition: opacity 500ms ease, margin-left 500ms ease;
 }
 /* added to show the second paragraph on large screens */
-/* .fading-text:first-of-type{
+.fading-text:first-of-type{
   opacity: 1;
-} */
+}
 
 footer {
   -ms-flex-align: center;
@@ -264,6 +264,10 @@ footer {
 
 .greeting h1 i:last-of-type {
   right: 0;
+}
+
+.greeting p{
+  margin: 20px 0 0 0;
 }
 
 header {
@@ -548,7 +552,6 @@ main {
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
   align-items: center;
-  /* color: #f16d00; */
   color: #ffac51;
   display: -ms-flexbox;
   display: -webkit-box;
