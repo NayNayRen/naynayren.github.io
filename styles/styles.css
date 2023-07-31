@@ -135,6 +135,7 @@ body {
 
 .content-text {
   font-size: 22px;
+  line-height: 30px;
   margin: 20px 0;
   text-indent: 50px;
   width: 80%;
@@ -358,6 +359,7 @@ html {
   border-radius: 50%;
   height: auto;
   margin: 0 25px 0 0;
+  /* outline: solid 2px #49e4e4; */
   width: 300px;
 }
 
@@ -505,13 +507,10 @@ main {
 }
 
 .signature {
-  /* display: block; */
   font-size: 34px;
   font-style: italic;
   font-weight: bold;
   padding: 10px 0 0 0;
-  text-align: right;
-  width: 100%;
   /* outline: solid 1px blue; */
 }
 
@@ -713,7 +712,6 @@ main {
 
   .certification-container,
   .content-text,
-  .signature,
   .skills-container ul,
   .work-container {
     width: 90%;
@@ -749,7 +747,6 @@ main {
 
   .certification-container,
   .content-text,
-  .signature,
   .skills-container ul {
     width: 95%;
   }
@@ -987,7 +984,7 @@ main {
         rgba(0, 0, 0, 1),
         rgba(0, 0, 0, 0.8)),
       url("/img/pink-bg-mobile.webp");
-    padding: 130px 0 10px 0;
+    padding: 130px 0 0 0;
   }
 
   .navigation-links-container {
@@ -1043,7 +1040,6 @@ main {
 
   .signature {
     font-size: 26px;
-    padding: 10px 0 0 10px;
   }
 
   .skills-container {
