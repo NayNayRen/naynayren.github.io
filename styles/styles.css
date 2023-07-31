@@ -3,17 +3,21 @@
   /* color: #48e2e2; */
   color: #49e4e4;
 }
+
 .green-text {
   color: #4be574;
 }
+
 .purple-text {
   /* color: #9654dd; */
   color: #a567e7;
 }
+
 .red-text {
   /* color: #fa86b7; */
   color: #f54e94;
 }
+
 .yellow-text {
   /* color: #f16d00; */
   color: #ffac51;
@@ -148,8 +152,9 @@ body {
   opacity: 0;
   transition: opacity 500ms ease, margin-left 500ms ease;
 }
+
 /* added to show the second paragraph on large screens */
-.fading-text:first-of-type{
+.fading-text:first-of-type {
   opacity: 1;
 }
 
@@ -266,7 +271,7 @@ footer {
   right: 0;
 }
 
-.greeting p{
+.greeting p {
   margin: 20px 0 0 0;
 }
 
@@ -357,7 +362,7 @@ html {
 .image-of-me {
   border-radius: 50%;
   height: auto;
-  margin: 0 15px 0 0;
+  margin: 0 25px 0 0;
   width: 300px;
 }
 
@@ -375,20 +380,16 @@ html {
 }
 
 main {
-  background-image: -webkit-gradient(
-      linear,
+  background-image: -webkit-gradient(linear,
       left top,
       right top,
       from(rgba(0, 0, 0, 0.975)),
-      to(rgba(0, 0, 0, 0.925))
-    ),
+      to(rgba(0, 0, 0, 0.925))),
     url("/img/pink-bg.webp");
   background-attachment: fixed;
-  background-image: linear-gradient(
-      90deg,
+  background-image: linear-gradient(90deg,
       rgba(0, 0, 0, 0.975),
-      rgba(0, 0, 0, 0.925)
-    ),
+      rgba(0, 0, 0, 0.925)),
     url("/img/pink-bg.webp");
   background-position: center;
   background-size: cover;
@@ -428,6 +429,7 @@ main {
   transform: translateX(-50%);
   transition: all 150ms ease;
 }
+
 /* HAS TO BE AFTER THE SETTING ABOVE */
 .active {
   bottom: 0;
@@ -665,9 +667,32 @@ main {
   width: 100%;
 }
 
+.work-li-company {
+  font-size: 22px;
+  margin: 0 5px;
+  /* outline: solid 1px blue; */
+}
+
 .work-li-date {
   font-size: 16px;
-  font-style: italic;
+  /* font-style: italic; */
+}
+
+.work-li-heading-container {
+  -ms-flex-align: baseline;
+  -ms-flex-direction: row;
+  -ms-flex-pack: start;
+  -webkit-box-align: baseline;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: start;
+  align-items: baseline;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* outline:solid 1px blue; */
 }
 
 .work-li-title {
@@ -682,6 +707,7 @@ main {
 }
 
 @media (max-width: 1300px) {
+
   .certification-container,
   .content-container ul,
   .content-text,
@@ -716,6 +742,7 @@ main {
 }
 
 @media (max-width: 1000px) {
+
   .content-container,
   .greeting {
     width: 100%;
@@ -758,6 +785,7 @@ main {
 }
 
 @media (max-width: 700px) {
+
   .burger-menu {
     -ms-flex-align: start;
     -ms-flex-direction: column;
@@ -934,19 +962,15 @@ main {
   }
 
   main {
-    background-image: -webkit-gradient(
-        linear,
+    background-image: -webkit-gradient(linear,
         left top,
         right top,
         from(rgba(0, 0, 0, 1)),
-        to(rgba(0, 0, 0, 0.8))
-      ),
+        to(rgba(0, 0, 0, 0.8))),
       url("/img/pink-bg-mobile.webp");
-    background-image: linear-gradient(
-        90deg,
+    background-image: linear-gradient(90deg,
         rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 0.8)
-      ),
+        rgba(0, 0, 0, 0.8)),
       url("/img/pink-bg-mobile.webp");
     padding: 130px 0 10px 0;
   }
@@ -1045,9 +1069,20 @@ main {
     padding: 15px 15px;
   }
 
+  .work-li-company {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .work-li-heading-container {
+    align-items: baseline;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+
   .work-li-title {
     font-size: 24px;
-    padding-left: 10px;
   }
 }
 
@@ -1161,12 +1196,16 @@ main {
     margin-top: 5px;
   }
 
-  .work-li-date {
+  .work-li-heading-container {
+    padding-left: 15px;
+  }
+
+  /* .work-li-date {
     padding-left: 15px;
   }
 
   .work-li-title {
     display: block;
     padding-left: 15px;
-  }
+  } */
 }
