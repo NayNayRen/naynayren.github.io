@@ -319,6 +319,10 @@ header span:first-of-type {
   display: none;
 }
 
+header span:last-of-type {
+  font-style: italic;
+}
+
 .header-logo {
   position: absolute;
   right: 10px;
@@ -515,8 +519,9 @@ main {
 }
 
 .skills-container {
-  padding-top: 25px;
+  margin: 30px 0 0 20px;
   overflow: hidden;
+  width: 80%;
   /* outline: solid 1px blue; */
 }
 
@@ -535,9 +540,8 @@ main {
   flex-direction: row;
   justify-content: space-evenly;
   list-style-type: none;
-  margin: 0 0 10px 0;
   min-height: 300px;
-  width: 80%;
+  width: 100%;
   /* outline: solid 1px blue; */
 }
 
@@ -554,7 +558,6 @@ main {
   display: flex;
   flex-direction: row;
   font-size: 26px;
-  margin: 0 0 15px 0;
   position: relative;
   width: -moz-fit-content;
   width: -webkit-fit-content;
@@ -645,15 +648,15 @@ main {
 
 .work-container {
   list-style-type: none;
-  margin-left: 20px;
+  margin: 30px 0 30px 20px;
   padding: 0;
   width: 80%;
   /* outline: solid 1px red; */
 }
 
 .work-container li {
-  margin: 20px 0 10px 0;
-  width: 100%;
+  margin: 40px 0 0 0;
+  width: 85%;
   /* outline: solid 1px blue; */
 }
 
@@ -663,7 +666,7 @@ main {
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 26px;
   margin: 0;
   padding: 25px 25px;
@@ -694,6 +697,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0 0 10px 0;
   /* outline: solid 1px blue; */
 }
 
@@ -712,7 +716,7 @@ main {
 
   .certification-container,
   .content-text,
-  .skills-container ul,
+  .skills-container,
   .work-container {
     width: 90%;
   }
@@ -722,7 +726,8 @@ main {
   }
 
   .content-container,
-  .greeting {
+  .greeting,
+  .work-container li {
     width: 95%;
   }
 
@@ -730,7 +735,7 @@ main {
     width: 200px;
   }
 
-  .skills-container div {
+  .skills-container ul {
     width: 100%;
   }
 
@@ -746,8 +751,7 @@ main {
 @media (max-width: 1000px) {
 
   .certification-container,
-  .content-text,
-  .skills-container ul {
+  .content-text {
     width: 95%;
   }
 
@@ -791,9 +795,15 @@ main {
     flex-wrap: wrap;
   }
 
+  .skills-container,
   .work-container {
-    margin-left: 0;
+    margin: 15px 0 0 0;
     width: 95%;
+  }
+
+  .work-container li {
+    margin: 20px 0 0 0;
+    width: 100%;
   }
 
   .work-li-company {
@@ -1044,11 +1054,11 @@ main {
 
   .skills-container {
     padding: 20px 15px 0 15px;
+    width: 100%;
   }
 
   .skills-container ul {
     padding: 0;
-    width: 100%;
   }
 
   .social-media-container {
@@ -1081,8 +1091,7 @@ main {
   }
 
   .work-container p {
-    font-size: 20px;
-    margin-top: 5px;
+    font-size: 18px;
     padding: 15px 15px;
   }
 
@@ -1098,7 +1107,7 @@ main {
     -webkit-box-pack: start;
     flex-direction: column;
     justify-content: flex-start;
-    padding-left: 10px;
+    padding: 0 0 5px 10px;
   }
 
   .work-li-title {
@@ -1214,10 +1223,9 @@ main {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    font-size: 18px;
   }
 
   .work-li-heading-container {
-    padding-left: 15px;
+    padding: 0 0 0 15px;
   }
 }
