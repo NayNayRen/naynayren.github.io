@@ -519,7 +519,7 @@ main {
 }
 
 .skills-container {
-  margin: 30px 0 0 20px;
+  margin: 30px auto 0 auto;
   overflow: hidden;
   width: 80%;
   /* outline: solid 1px blue; */
@@ -558,6 +558,7 @@ main {
   display: flex;
   flex-direction: row;
   font-size: 26px;
+  margin-bottom: 15px;
   position: relative;
   width: -moz-fit-content;
   width: -webkit-fit-content;
@@ -647,8 +648,11 @@ main {
 }
 
 .work-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
-  margin: 30px 0 30px 20px;
+  margin: 30px auto 30px auto;
   padding: 0;
   width: 80%;
   /* outline: solid 1px red; */
@@ -735,10 +739,6 @@ main {
     width: 200px;
   }
 
-  .skills-container ul {
-    width: 100%;
-  }
-
   .skills-container li {
     font-size: 22px;
   }
@@ -793,6 +793,15 @@ main {
   .skills-container div {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+
+  .skills-container ul:last-of-type li:last-of-type {
+    margin-bottom: 0;
+    /* outline: solid 1px blue; */
+  }
+
+  .skills-container ul {
+    width: 100%;
   }
 
   .skills-container,
