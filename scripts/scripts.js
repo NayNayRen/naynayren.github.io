@@ -81,7 +81,7 @@ function loadScript() {
         text.style.marginLeft = "0";
       } else {
         text.style.opacity = "0";
-        text.style.marginLeft = "100px";
+        text.style.marginLeft = "75px";
       }
     });
   }

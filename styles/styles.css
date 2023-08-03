@@ -23,16 +23,14 @@
   color: #ffac51;
 }
 
-* {
+/* * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
+} */
 
 body {
   background-color: #000;
-  height: 100vh;
   font-family: "Poppins", sans-serif;
-  margin: 0;
   overflow-x: hidden;
   padding: 0;
 }
@@ -177,6 +175,25 @@ footer {
   text-align: center;
 }
 
+footer a {
+  -webkit-transition: color 150ms ease;
+  color: #a567e7;
+  transition: color 150ms ease;
+}
+
+footer a:hover,
+.github-link:hover,
+.glider-link:hover,
+.navigation-links-container a:hover,
+.resume-container a:hover,
+.social-media-container a:hover,
+.spc-link:hover,
+.terms-conditions a:hover,
+.up-arrow:hover,
+.yso-link:hover {
+  color: #4be574;
+}
+
 .footer-logo {
   bottom: 10px;
   left: 10px;
@@ -215,17 +232,6 @@ footer {
   font-size: 28px;
   text-indent: 0;
   transition: color 150ms ease;
-}
-
-.github-link:hover,
-.glider-link:hover,
-.navigation-links-container a:hover,
-.resume-container a:hover,
-.social-media-container a:hover,
-.spc-link:hover,
-.up-arrow:hover,
-.yso-link:hover {
-  color: #4be574;
 }
 
 .glider-link {
@@ -349,14 +355,6 @@ header span:last-of-type {
   justify-content: center;
   margin-bottom: 10px;
   /* outline: solid 1px blue; */
-}
-
-html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  width: 100%;
 }
 
 .image-of-me {
@@ -620,6 +618,38 @@ main {
   transition: bottom 150ms ease;
 }
 
+.terms-conditions {
+  margin: 0 auto;
+  width: 75%;
+  /* outline: solid 1px blue; */
+}
+
+.terms-conditions a {
+  -webkit-transition: color 250ms ease;
+  color: #a567e7;
+  transition: color 250ms ease;
+}
+
+.terms-conditions h1 {
+  color: #f54e94;
+  font-size: 32px;
+}
+
+.terms-conditions h2 {
+  color: #49e4e4;
+  font-size: 26px;
+}
+
+.terms-conditions p {
+  font-size: 20px;
+}
+
+.terms-conditions ul {
+  font-size: 18px;
+  font-style: italic;
+  padding: 10px 25px;
+}
+
 .up-arrow {
   -ms-flex-align: center;
   -ms-flex-pack: center;
@@ -665,7 +695,7 @@ main {
 }
 
 .work-container p {
-  background-color: #222222;
+  background-color: #4a4a4a;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
@@ -674,6 +704,7 @@ main {
   line-height: 26px;
   margin: 0;
   padding: 25px 25px;
+  text-shadow: 0 2px 2px #000;
   width: 100%;
 }
 
@@ -822,6 +853,28 @@ main {
 
 @media (max-width: 700px) {
 
+  .terms-conditions {
+    padding: 0 25px 15px 25px;
+    width: 100%;
+  }
+
+  .terms-conditions h1 {
+    font-size: 28px;
+  }
+
+  .terms-conditions h2 {
+    font-size: 22px;
+  }
+
+  .terms-conditions p {
+    font-size: 18px;
+  }
+
+  .terms-conditions ul {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
   .burger-menu {
     -ms-flex-align: start;
     -ms-flex-direction: column;
@@ -939,12 +992,14 @@ main {
     width: 50px;
   }
 
+  footer a:hover,
   .github-link:hover,
   .glider-link:hover,
   .next:hover,
   .prev:hover,
   .social-media-container a:hover,
   .spc-link:hover,
+  .terms-conditions a:hover,
   .up-arrow:hover,
   .yso-link:hover {
     color: #a567e7;
@@ -1127,8 +1182,8 @@ main {
 }
 
 @media (max-width: 400px) {
+
   .burger-menu {
-    /* bottom: 5px; */
     right: 5px;
   }
 
@@ -1222,6 +1277,18 @@ main {
     font-size: 35px;
     height: 100px;
     width: 100%;
+  }
+
+  .terms-conditions {
+    padding: 0 15px 15px 15px;
+  }
+
+  .terms-conditions h1 {
+    font-size: 24px;
+  }
+
+  .terms-conditions h2 {
+    font-size: 20px;
   }
 
   .work-container li {

@@ -166,7 +166,6 @@
   justify-content: center;
   /* opacity: 1; */
   position: absolute;
-  text-shadow: none;
   top: 50%;
   transform: translateY(-50%);
   transition: color 150ms ease;
@@ -229,7 +228,6 @@
   padding: 8px 30px;
   position: absolute;
   right: 0;
-  text-shadow: none;
   text-transform: uppercase;
   top: -60px;
   transition: top 250ms ease;
@@ -272,16 +270,16 @@
 }
 
 .project-photo-caption {
-  background-color: #222222;
+  background-color: #4a4a4a;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   font-size: 20px;
+  height: 125px;
   line-height: 25px;
   margin: 0;
-  height: 125px;
   overflow-y: scroll;
   padding: 15px 20px 15px 20px;
-  text-shadow: none;
+  text-shadow: 0 2px 2px #000;
   /* outline: solid 1px blue; */
 }
 
@@ -302,7 +300,6 @@
   font-size: 22px;
   font-weight: bold;
   padding: 10px 0 10px 10px;
-  text-shadow: none;
   text-transform: uppercase;
   width: 100%;
 }
