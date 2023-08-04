@@ -271,6 +271,7 @@
 
 .project-photo-caption {
   background-color: #4a4a4a;
+  border: solid 1px #fff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   font-size: 20px;
@@ -327,7 +328,7 @@
 
   .project-photo-caption {
     font-size: 18px;
-    height: 120px;
+    /* height: 120px; */
   }
 
   .project-photo-title {
@@ -377,8 +378,8 @@
   }
 
   .project-photo-caption {
-    font-size: 16px;
-    padding: 10px 15px 10px 15px;
+    /* font-size: 16px; */
+    padding: 15px 15px 15px 15px;
   }
 
   .project-photo-caption a:hover {
@@ -386,7 +387,7 @@
   }
 
   .project-photo-title {
-    padding: 5px 5px 5px 15px;
+    padding: 10px 5px 10px 15px;
   }
 }
 
@@ -430,6 +431,8 @@
   }
 
   .project-photo-caption {
+    border-left: none;
+    border-right: none;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
