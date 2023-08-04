@@ -139,7 +139,12 @@ body {
   /* outline: solid 1px blue; */
 }
 
-.fading-skills,
+.fading-skills {
+  -webkit-transition: opacity 500ms ease;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+
 .fading-text {
   -webkit-transition: opacity 500ms ease, margin-left 500ms ease;
   opacity: 0;
@@ -703,7 +708,8 @@ main {
 .work-container p {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  background-color: rgba(74, 74, 74, 0.15);
+  /* background-color: rgba(74, 74, 74, 0.15); */
+  background-color: rgba(36, 36, 36, 0.5);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
