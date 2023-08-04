@@ -31,7 +31,7 @@
   -webkit-box-pack: start;
   -webkit-overflow-scrolling: touch;
   align-items: center;
-  background-color: #000;
+  background-color: transparent;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -185,11 +185,16 @@
   -ms-flex-align: start;
   -ms-flex-direction: column;
   -ms-flex-pack: center;
+  -webkit-backdrop-filter: blur(5px);
   -webkit-box-align: start;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-box-pack: center;
   align-items: center;
+  backdrop-filter: blur(5px);
+  background-color: rgba(74, 74, 74, 0.15);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -197,6 +202,7 @@
   height: auto;
   justify-content: center;
   margin: 0 2px;
+  position: relative;
   width: 100%;
   /* outline: solid 1px red; */
 }
@@ -234,6 +240,10 @@
   z-index: 1;
 }
 
+.glider-slide a:hover .glider-slide-dropdown {
+  top: 0;
+}
+
 .glider-slide-dropdown i {
   margin-left: 5px;
 }
@@ -259,19 +269,12 @@
 }
 
 .project-photo {
-  background-color: #000;
-  position: relative;
+  margin: 0 auto;
   width: 100%;
   /* outline: solid 1px red; */
 }
 
-.project-photo:hover .glider-slide-dropdown {
-  top: 0;
-}
-
 .project-photo-caption {
-  background-color: #4a4a4a;
-  border: solid 1px #fff;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   font-size: 20px;
@@ -303,6 +306,7 @@
   padding: 10px 0 10px 10px;
   text-transform: uppercase;
   width: 100%;
+  z-index: 1;
 }
 
 @media (max-width: 1300px) {
@@ -312,23 +316,17 @@
 
   .project-photo {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
   }
 }
 
 @media (max-width: 1000px) {
   .glider-container {
     margin: 40px auto 0 auto;
-    width: 90%;
-  }
-
-  .project-photo {
-    width: 90%;
   }
 
   .project-photo-caption {
     font-size: 18px;
-    /* height: 120px; */
   }
 
   .project-photo-title {
@@ -378,7 +376,6 @@
   }
 
   .project-photo-caption {
-    /* font-size: 16px; */
     padding: 15px 15px 15px 15px;
   }
 
@@ -408,6 +405,11 @@
     padding: 0;
   }
 
+  .glider-slide {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
   .mobile-display {
     display: block;
   }
@@ -431,13 +433,7 @@
   }
 
   .project-photo-caption {
-    border-left: none;
-    border-right: none;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-  }
-
-  .project-photo-title {
-    z-index: 1;
   }
 }
