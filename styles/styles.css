@@ -1035,12 +1035,12 @@ main {
     background-image: -webkit-gradient(linear,
         left top,
         right top,
-        from(rgba(0, 0, 0, 1)),
-        to(rgba(0, 0, 0, 0.85))),
+        from(rgba(0, 0, 0, 0.975)),
+        to(rgba(0, 0, 0, 0.8))),
       url("/img/pink-bg-mobile.webp");
     background-image: linear-gradient(90deg,
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 0.85)),
+        rgba(0, 0, 0, 0.975),
+        rgba(0, 0, 0, 0.8)),
       url("/img/pink-bg-mobile.webp");
     padding: 130px 0 0 0;
   }
