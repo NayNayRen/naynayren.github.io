@@ -36,7 +36,7 @@ function loadGlider() {
           // screens greater than > 1300px
           breakpoint: 1300,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             duration: 1,
           },
