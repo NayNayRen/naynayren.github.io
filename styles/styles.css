@@ -321,7 +321,6 @@ header h1 {
 }
 
 header h1::after {
-  /* color: #f16d00; */
   color: #ffac51;
   content: "Web Developer";
   font-size: 20px;
@@ -1219,16 +1218,9 @@ main {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
+    margin: 0;
     padding: 30px 0;
     width: 100%;
-  }
-
-  .certification-container div:first-of-type {
-    margin: 0 0 15px 0;
-  }
-
-  .certification-container div:last-of-type {
-    margin: 15px 0 0 0;
   }
 
   .certification-container img {
@@ -1268,7 +1260,8 @@ main {
   }
 
   header {
-    height: 130px;
+    min-height: 120px;
+    max-height: 130px;
   }
 
   header h1::after {
