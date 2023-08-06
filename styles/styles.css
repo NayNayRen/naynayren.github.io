@@ -1229,13 +1229,18 @@ main {
   }
 
   .certification-container div {
+    background-color: rgba(255, 255, 255, 0.25);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     margin: 0;
-    padding: 30px 0;
+    padding: 30px 0 0 0;
     width: 100%;
   }
+
+  /* .certification-container div:last-of-type {
+    padding-top: 60px;
+  } */
 
   .certification-container img {
     -webkit-box-shadow: 0 0 20px #000;
@@ -1336,8 +1341,6 @@ main {
   }
 
   .work-container p {
-    /* border-left: none;
-    border-right: none; */
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
