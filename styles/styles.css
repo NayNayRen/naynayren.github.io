@@ -190,6 +190,7 @@ footer {
 footer a {
   -webkit-transition: color 150ms ease;
   color: #a567e7;
+  font-size: 12px;
   transition: color 150ms ease;
 }
 
@@ -953,6 +954,19 @@ main {
     opacity: 1;
     width: 100%;
   }
+
+  /* .burger-text {
+    opacity: 0.05;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 75%;
+  }
+
+  .burger-text img {
+    height: auto;
+    width: 100%;
+  } */
 
   .certification-container {
     width: 100%;
