@@ -94,16 +94,15 @@ function loadScript() {
       const skillDistanceFromTop = skill.getBoundingClientRect().top;
       if (skillDistanceFromTop < windowHeight * 0.75) {
         skill.style.opacity = "1";
-        // skill.style.marginLeft = "0";
       } else {
         skill.style.opacity = "0";
-        // skill.style.marginLeft = "50px";
       }
     });
   }
 
+  // fades header title in on page load
   function showHeaderText() {
-    headerTitleContainer.style.top = "5px";
+    headerTitleContainer.style.top = "10px";
     headerTitleContainer.style.opacity = "1";
   }
 
