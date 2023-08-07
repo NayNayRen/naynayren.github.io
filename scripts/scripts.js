@@ -9,6 +9,7 @@ function loadScript() {
   const fadingText = document.querySelectorAll(".fading-text");
   const fadingSkills = document.querySelectorAll(".fading-skills");
   const topHeadingContainer = document.querySelector("#me");
+  const headerTitleContainer = document.querySelector(".header-title-container");
 
   // show and hide up arrow
   function activateUpArrow() {
@@ -101,6 +102,11 @@ function loadScript() {
     });
   }
 
+  function showHeaderText() {
+    headerTitleContainer.style.top = "5px";
+    headerTitleContainer.style.opacity = "1";
+  }
+
   // mobile burger menu actions
   burgerMenu.addEventListener("click", () => {
     document
@@ -142,6 +148,7 @@ function loadScript() {
   showHideUnderline();
   showHideSkills();
   showHideText();
+  showHeaderText();
 }
 
 window.onload = loadScript;
