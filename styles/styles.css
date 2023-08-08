@@ -343,7 +343,7 @@ header span:last-of-type {
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-box-pack: center;
-  -webkit-transition: top 1000ms ease, opacity 1500ms ease;
+  -webkit-transition: top 500ms ease, opacity 750ms ease;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -354,8 +354,8 @@ header span:last-of-type {
   line-height: 1;
   opacity: 0;
   position: absolute;
-  top: -80px;
-  transition: top 1000ms ease, opacity 1500ms ease;
+  top: -5px;
+  transition: top 500ms ease, opacity 750ms ease;
   /* outline: solid 1px blue; */
 }
 
