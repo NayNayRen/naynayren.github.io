@@ -277,7 +277,7 @@
 }
 
 .project-photo-caption {
-  border-bottom: solid 1px #000;
+  border-bottom: solid 1px #727171;
   font-size: 20px;
   height: 125px;
   line-height: 25px;
@@ -341,7 +341,6 @@
 
   .project-photo-caption {
     font-size: 18px;
-    /* width: 95%; */
   }
 
   .project-photo-title {

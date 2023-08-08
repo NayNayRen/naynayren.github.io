@@ -150,7 +150,7 @@ function loadScript() {
   // waits 1.5 seconds after page load to fire 
   setTimeout(() => {
     showHeaderText();
-  }, 1500);
+  }, 1000);
 }
 
 window.onload = loadScript;

@@ -85,9 +85,7 @@ body {
 }
 
 .certification-container span {
-  /* -webkit-box-shadow: 0 5px 5px #000; */
   background-color: #000;
-  /* box-shadow: 0 5px 5px #000; */
   font-size: 20px;
   padding: 10px 0;
   text-align: center;
@@ -929,7 +927,6 @@ main {
 
   .burger-overlay {
     -webkit-transition: all 500ms ease;
-    /* background-color: rgba(0, 0, 0, 0.95); */
     background-color: #000;
     height: 100%;
     opacity: 0;
@@ -945,19 +942,6 @@ main {
     opacity: 1;
     width: 100%;
   }
-
-  /* .burger-text {
-    opacity: 0.05;
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
-    width: 75%;
-  }
-
-  .burger-text img {
-    height: auto;
-    width: 100%;
-  } */
 
   .certification-container {
     width: 100%;
@@ -984,7 +968,6 @@ main {
     font-size: 20px;
     padding: 0 15px 0 15px;
     text-indent: 25px;
-    /* width: 100%; */
   }
 
   .footer-logo {
