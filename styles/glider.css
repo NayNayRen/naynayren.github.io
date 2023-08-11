@@ -59,7 +59,7 @@
   height: auto;
   margin: 50px auto 15px auto;
   position: relative;
-  width: 100%;
+  width: 1000px;
   /* outline: solid 1px red; */
 }
 
@@ -322,7 +322,7 @@
   }
 
   .glider-container {
-    width: 90%;
+    width: 800px;
   }
 
   .project-photo {
@@ -337,6 +337,7 @@
 @media (max-width: 1000px) {
   .glider-container {
     margin: 40px auto 0 auto;
+    width: 90%;
   }
 
   .project-photo-caption {
