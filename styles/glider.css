@@ -190,7 +190,7 @@
   -webkit-box-orient: vertical;
   -webkit-box-pack: center;
   align-items: center;
-  background-color: rgba(36, 36, 36, 0.5);
+  background-color: rgba(36, 36, 36, 0.6);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
@@ -285,7 +285,7 @@
   overflow-y: scroll;
   padding: 15px 20px 15px 20px;
   text-shadow: 0 2px 2px #000;
-  width: 95%;
+  width: calc(95% - 10px);
   /* outline: solid 1px blue; */
 }
 
@@ -307,9 +307,11 @@
 .project-photo-title {
   -ms-flex-align: center;
   -ms-flex-direction: row;
+  -ms-flex-pack: justify;
   -webkit-box-align: center;
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
+  -webkit-box-pack: justify;
   align-items: center;
   background-color: #000;
   display: -ms-flexbox;
@@ -318,8 +320,8 @@
   flex-direction: row;
   font-size: 22px;
   font-weight: bold;
-  /* line-height: 1; */
-  padding: 10px 0 10px 10px;
+  justify-content: space-between;
+  padding: 10px;
   text-transform: uppercase;
   width: 95%;
   z-index: 1;
@@ -337,7 +339,6 @@
   display: flex;
   flex-direction: row;
   height: auto;
-  margin-left: 5px;
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
@@ -361,6 +362,10 @@
 
   .project-photo {
     width: 85%;
+  }
+
+  .project-photo-caption {
+    width: calc(90% + 15px);
   }
 
   .project-photo-title {
@@ -431,21 +436,31 @@
   .project-photo-title {
     -ms-flex-align: start;
     -ms-flex-direction: column;
+    -ms-flex-pack: center;
     -webkit-box-align: start;
     -webkit-box-direction: normal;
     -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 10px 5px 10px 15px;
+    justify-content: center;
+    padding: 5px 5px 10px 15px;
   }
 
   .project-stack {
     margin: 5px 0 0 0;
   }
 
+  /* .project-stack img {
+    width: 20px;
+  } */
+
   .project-stack img:first-of-type {
     margin: 0 5px 0 0;
-    width: 20px;
+  }
+
+  .project-stack img:last-of-type {
+    margin: 0 0 0 5px;
   }
 }
 
@@ -500,6 +515,7 @@
 
   .project-photo-caption {
     padding: 10px 5px 15px 5px;
+    width: calc(90% + 5px);
   }
 
   .project-photo-title {
