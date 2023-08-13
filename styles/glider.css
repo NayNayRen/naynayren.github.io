@@ -351,6 +351,10 @@
   width: 25px;
 }
 
+.project-stack img:last-of-type {
+  margin: 0 0 0 5px;
+}
+
 @media (max-width: 1300px) {
   .glider {
     width: 100%;
