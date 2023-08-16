@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip-ink: auto;
+}
+
 /* Remove default margin */
 body,
 h1,
@@ -20,16 +26,12 @@ dd {
     margin: 0;
 }
 
-ul,
-li {
-    margin: 0;
-    padding: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-    list-style: none;
+/* Set core body defaults */
+body {
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
 }
 
 /* Set core html defaults */
@@ -41,26 +43,24 @@ html {
     width: 100%;
 }
 
-/* Set core body defaults */
-body {
-    -webkit-font-smoothing: antialiased;
-    line-height: 1.5;
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-    -webkit-text-decoration-skip: ink;
-    text-decoration-skip-ink: auto;
-}
-
 /* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
 select {
     font: inherit;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
