@@ -22,8 +22,6 @@
 body {
   background-color: #000;
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
-  padding: 0;
 }
 
 .burger-menu {
@@ -1176,9 +1174,9 @@ main {
     padding: 15px 15px;
   }
 
-  .work-li-company {
+  /* .work-li-company {
     font-size: 18px;
-  }
+  } */
 
   .work-li-heading-container {
     -ms-flex-direction: column;
@@ -1193,7 +1191,7 @@ main {
 
   .work-li-title {
     display: block;
-    font-size: 22px;
+    /* font-size: 22px; */
     margin-right: 0;
   }
 }

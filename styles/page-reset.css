@@ -12,8 +12,26 @@ a:not([class]) {
     text-decoration-skip-ink: auto;
 }
 
+/* Set core body defaults */
+body {
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    text-rendering: optimizeSpeed;
+}
+
+/* Inherit fonts for inputs and buttons */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
 /* Remove default margin */
-body,
 h1,
 h2,
 h3,
@@ -26,14 +44,6 @@ dd {
     margin: 0;
 }
 
-/* Set core body defaults */
-body {
-    -webkit-font-smoothing: antialiased;
-    line-height: 1.5;
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-}
-
 /* Set core html defaults */
 html {
     height: 100%;
@@ -41,14 +51,6 @@ html {
     padding: 0;
     scroll-behavior: smooth;
     width: 100%;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-    font: inherit;
 }
 
 ul,
