@@ -318,6 +318,7 @@
   display: -webkit-box;
   display: flex;
   flex-direction: row;
+  font-family: 'Chakra Petch', sans-serif;
   font-size: 22px;
   font-weight: bold;
   justify-content: space-between;
