@@ -3,9 +3,6 @@
         <img src="img/logo.png" alt="My Logo" width="153" height="100" />
     </a>
 </p>
-<p align="center">
-    ^ Click Me To Visit ^
-</p>
 
 ## About naynayren.github.io
 
