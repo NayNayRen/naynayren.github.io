@@ -1,7 +1,5 @@
 <p align="center">
-    <a href="https://naynayren.github.io/">
-        <img src="img/logo.png" alt="My Logo" width="153" height="100" />
-    </a>
+    <img src="img/logo.png" alt="My Logo" width="153" height="100" />
 </p>
 
 ## About naynayren.github.io
@@ -16,7 +14,7 @@ This is the codebase for my portfolio/resume site. I'm a Junior Web Developer tr
 
 The stack used to build this portfolio is HTML, CSS, vanilla JavaScript, and a carousel-like slider that's used for my projects called <a href="https://nickpiscitelli.github.io/Glider.js/">Glider.js</a>. I'm always tweaking or adding or updating and pushing to this build as my home base of sorts.
 
-My logo above is linked to my actual site.
+- Visit : **[naynayren.github.io](https://naynayren.github.io/)**
 
 ## Projects Built
 
