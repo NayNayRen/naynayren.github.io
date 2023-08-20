@@ -27,7 +27,7 @@ These projects also have their codebase kept here. They are viewable through the
 - **[Your Social Offers Rebate App](https://ysot.yso.co/)**
 - **[Linux Audio Pop Fix](https://naynayren.github.io/linux-audio-pop/)**
 - **[Shine n' Shimmer Pool Service](https://naynayren.github.io/shine-shimmer/)**
-- **[Just Breathe Meditation App](https://naynayren.github.io/inhale-exhale/)**
+- **[Just Breathe...](https://naynayren.github.io/inhale-exhale/)**
 - **[Summit Massage](https://naynayren.github.io/summit-massage/)**
 - **[Fur Babies Canine Boutique](https://naynayren.github.io/fur-baby/)**
 - **[Text to Speech App](https://naynayren.github.io/text-to-speech/)**
