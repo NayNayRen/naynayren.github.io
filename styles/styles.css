@@ -563,10 +563,15 @@ main {
 }
 
 .signature {
+  display: block;
   font-size: 34px;
   font-style: italic;
   font-weight: bold;
-  padding: 10px 0 0 0;
+  padding-left: 15px;
+  text-indent: 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
   /* outline: solid 1px blue; */
 }
 
@@ -578,15 +583,15 @@ main {
 }
 
 .skills-container div {
-  -ms-flex-align: start;
+  -ms-flex-align: center;
   -ms-flex-direction: row;
   -ms-flex-pack: space-evenly;
   -ms-flex-wrap: wrap;
-  -webkit-box-align: start;
+  -webkit-box-align: center;
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
   -webkit-box-pack: space-evenly;
-  align-items: flex-start;
+  align-items: center;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -594,9 +599,9 @@ main {
   flex-wrap: wrap;
   justify-content: space-evenly;
   list-style-type: none;
-  min-height: 300px;
+  min-height: 350px;
   width: 100%;
-  /* outline: solid 1px blue; */
+  /* border: solid 1px blue; */
 }
 
 .skills-container li {
@@ -628,7 +633,7 @@ main {
 
 .skills-container ul {
   list-style-type: none;
-  margin-right: 25px;
+  margin: 0 15px;
   padding: 0;
   width: -moz-fit-content;
   width: -webkit-fit-content;
@@ -1136,7 +1141,7 @@ main {
   }
 
   .skills-container ul {
-    margin-right: 0;
+    margin: 0 0 0 15px;
     width: 100%;
   }
 
