@@ -26,7 +26,12 @@ function loadHeaderAndArrow() {
         activateUpArrow();
     });
 
+    // resize
+    window.addEventListener("resize", () => {
+        activateUpArrow();
+    });
 
+    // load
     activateUpArrow();
     // waits 1.5 seconds after page load to fire 
     setTimeout(() => {
