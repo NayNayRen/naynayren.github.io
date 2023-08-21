@@ -1,6 +1,6 @@
 function loadScript() {
   const burgerMenu = document.querySelector(".burger-menu");
-  const upArrow = document.querySelector(".up-arrow");
+  // const upArrow = document.querySelector(".up-arrow");
   const navigationLinks = document.querySelectorAll(".navigation-link");
   const containerHeadings = document.querySelectorAll(".container-heading");
   const containerHeadingUnderlines = document.querySelectorAll(
@@ -9,20 +9,20 @@ function loadScript() {
   const fadingText = document.querySelectorAll(".fading-text");
   const fadingSkills = document.querySelectorAll(".fading-skills");
   const topHeadingContainer = document.querySelector("#me");
-  const headerTitleContainer = document.querySelector(".header-title-container");
+  // const headerTitleContainer = document.querySelector(".header-title-container");
 
   // show and hide up arrow
-  function activateUpArrow() {
-    if (document.documentElement.scrollTop > 0) {
-      if (window.innerWidth <= 700) {
-        upArrow.style.right = "5px";
-      } else {
-        upArrow.style.right = "10px";
-      }
-    } else {
-      upArrow.style.right = "-60px";
-    }
-  }
+  // function activateUpArrow() {
+  //   if (document.documentElement.scrollTop > 0) {
+  //     if (window.innerWidth <= 700) {
+  //       upArrow.style.right = "5px";
+  //     } else {
+  //       upArrow.style.right = "10px";
+  //     }
+  //   } else {
+  //     upArrow.style.right = "-60px";
+  //   }
+  // }
 
   // highlights nav menu link
   function navigationActions() {
@@ -101,10 +101,10 @@ function loadScript() {
   }
 
   // fades header title in on page load
-  function showHeaderText() {
-    headerTitleContainer.style.top = "10px";
-    headerTitleContainer.style.opacity = "1";
-  }
+  // function showHeaderText() {
+  //   headerTitleContainer.style.top = "10px";
+  //   headerTitleContainer.style.opacity = "1";
+  // }
 
   // mobile burger menu actions
   burgerMenu.addEventListener("click", () => {
@@ -127,7 +127,7 @@ function loadScript() {
 
   // scroll
   window.addEventListener("scroll", () => {
-    activateUpArrow();
+    // activateUpArrow();
     navigationActions();
     showHideUnderline();
     showHideSkills();
@@ -135,22 +135,25 @@ function loadScript() {
   });
   // resize
   window.addEventListener("resize", () => {
-    activateUpArrow();
+    // activateUpArrow();
     navigationActions();
     showHideUnderline();
     showHideSkills();
     showHideText();
   });
   // load
-  activateUpArrow();
+  // activateUpArrow();
   navigationActions();
   showHideUnderline();
   showHideSkills();
   showHideText();
   // waits 1.5 seconds after page load to fire 
-  setTimeout(() => {
-    showHeaderText();
-  }, 750);
+  // setTimeout(() => {
+  //   showHeaderText();
+  // }, 750);
 }
 
-window.onload = loadScript;
+// window.onload = loadScript;
+window.addEventListener('load', () => {
+  loadScript();
+});
