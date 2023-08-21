@@ -564,10 +564,11 @@ main {
 
 .signature {
   display: block;
+  font-family: 'Cedarville Cursive', cursive;
   font-size: 34px;
   font-style: italic;
   font-weight: bold;
-  padding-left: 15px;
+  padding: 15px 0 0 15px;
   text-indent: 0;
   width: -moz-fit-content;
   width: -webkit-fit-content;
@@ -1133,6 +1134,7 @@ main {
 
   .signature {
     font-size: 26px;
+    padding: 10px 0 0 0;
   }
 
   .skills-container {
