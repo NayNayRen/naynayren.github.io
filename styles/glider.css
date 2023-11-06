@@ -318,7 +318,7 @@
   display: -webkit-box;
   display: flex;
   flex-direction: row;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 22px;
   font-weight: bold;
   justify-content: space-between;
@@ -470,7 +470,6 @@
 }
 
 @media (max-width: 400px) {
-
   .glider-slide {
     margin: 0;
   }
@@ -515,7 +514,8 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     box-shadow: 0 0 20px #000;
-    width: 85%;
+    /* max-width: 275px; */
+    width: 80%;
   }
 
   .project-photo-caption {
@@ -525,6 +525,5 @@
 
   .project-photo-title {
     width: 100%;
-    ;
   }
 }
