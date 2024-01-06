@@ -80,7 +80,7 @@ body {
 
 .certification-container span {
   background-color: #000;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 20px;
   padding: 10px 0;
   text-align: center;
@@ -123,7 +123,7 @@ body {
 }
 
 .content-container h2 {
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 34px;
   font-style: italic;
   margin: 0 0 50px 0;
@@ -172,7 +172,7 @@ footer {
   display: -webkit-box;
   display: flex;
   flex-direction: column;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 16px;
   font-weight: bold;
   justify-content: center;
@@ -268,7 +268,7 @@ footer a:hover,
 }
 
 .greeting h1 {
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 34px;
   margin: 0 auto;
   padding: 0;
@@ -296,7 +296,7 @@ header {
   display: -webkit-box;
   display: flex;
   flex-direction: column;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   height: 145px;
   justify-content: flex-end;
   padding: 5px 5px 25px 10px;
@@ -394,16 +394,20 @@ header span:last-of-type {
 }
 
 main {
-  background-image: -webkit-gradient(linear,
+  background-image: -webkit-gradient(
+      linear,
       left top,
       right top,
-      from(rgba(0, 0, 0, 0.975)),
-      to(rgba(0, 0, 0, 0.9))),
+      from(rgba(0, 0, 0, 0.98)),
+      to(rgba(0, 0, 0, 0.9))
+    ),
     url("/img/pink-bg.webp");
   background-attachment: fixed;
-  background-image: linear-gradient(90deg,
-      rgba(0, 0, 0, 0.975),
-      rgba(0, 0, 0, 0.9)),
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.98),
+      rgba(0, 0, 0, 0.9)
+    ),
     url("/img/pink-bg.webp");
   background-position: center;
   background-size: cover;
@@ -484,7 +488,7 @@ main {
 .privacy-policy h1,
 .terms-conditions h1 {
   color: #f54e94;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 32px;
 }
 
@@ -564,7 +568,7 @@ main {
 
 .signature {
   display: block;
-  font-family: 'Cedarville Cursive', cursive;
+  font-family: "Cedarville Cursive", cursive;
   font-size: 34px;
   font-style: italic;
   font-weight: bold;
@@ -761,7 +765,7 @@ main {
   display: -webkit-box;
   display: flex;
   flex-direction: row;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   justify-content: space-between;
   padding: 0 0 10px 0;
   /* outline: solid 1px blue; */
@@ -779,7 +783,6 @@ main {
 }
 
 @media (max-width: 1300px) {
-
   .certification-container,
   .content-text,
   .skills-container,
@@ -803,7 +806,6 @@ main {
 }
 
 @media (max-width: 1000px) {
-
   .certification-container,
   .content-text {
     width: 95%;
@@ -875,7 +877,6 @@ main {
 }
 
 @media (max-width: 700px) {
-
   .burger-menu {
     -ms-flex-align: start;
     -ms-flex-direction: column;
@@ -1041,15 +1042,19 @@ main {
   }
 
   main {
-    background-image: -webkit-gradient(linear,
+    background-image: -webkit-gradient(
+        linear,
         left top,
         right top,
         from(rgba(0, 0, 0, 0.975)),
-        to(rgba(0, 0, 0, 0.8))),
+        to(rgba(0, 0, 0, 0.8))
+      ),
       url("/img/pink-bg-mobile.webp");
-    background-image: linear-gradient(90deg,
+    background-image: linear-gradient(
+        90deg,
         rgba(0, 0, 0, 0.975),
-        rgba(0, 0, 0, 0.8)),
+        rgba(0, 0, 0, 0.8)
+      ),
       url("/img/pink-bg-mobile.webp");
     padding: 130px 0 0 0;
   }
@@ -1204,7 +1209,6 @@ main {
 }
 
 @media (max-width: 400px) {
-
   .burger-menu {
     right: 5px;
   }
